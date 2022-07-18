@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="배컴" />
+    <meta name="keywords" content="랠리즈">
+    <meta name="description" content="랠리즈">
+    <title>랠리즈 - 샘플 - 유저리스트</title>
+    <link rel="stylesheet" href="../../common/_inc/css/mainVer2.css"><!--기본 CSS-->
+    <!-- 샘플확인용 스타일-->
+    <style>
+        div.containerVer2 { padding: 100px 0 0 0; }
+        ul.sampleList { width: 100%; position: fixed; top: 0; display: flex; flex-wrap: wrap; padding: 0; z-index: 999; }
+        ul.sampleList li { width: calc(100% / 4); height: 40px; line-height: 40px; background: #343b4c; color: #fff; font-size: 12px; text-align: center; border-bottom: 1px solid #454c5f; }
+        ul.sampleList li.on { background: #222734; font-weight: bold; }
+        div.contWrap { width: 100%; height: 100vh; padding: 20px 16px; background: #fff; }
+        ul { padding: 20px 0; border-bottom: 30px solid #fff;}
+      </style>
+      <!-- //샘플확인용 스타일-->
+</head>
+<body>
+
+    <ul class="sampleList">
+        <li><a href="button.html" target="_self">button</a></li>
+        <li><a href="buttonWrap.html" target="_self">buttonWrap</a></li>
+        <li><a href="form.html" target="_self">form</a></li>
+        <li><a href="inputList.html" target="_self">inputType</a></li>
+        <li class="on"><a href="userList.html" target="_self">userList</a></li>
+        <li><a href="mainHeader.html" target="_self">mainHeader</a></li>
+        <li><a href="subHeader.html" target="_self">subHeader</a></li>
+        <li><a href="page.html" target="_self">page</a></li>
+    </ul>
+
+    <div class="containerVer2">
+
+        <div class="contWrap">
+
+            <!-- 유저 리스트 - 기본 버튼 -->
+            <ul class="userDefaultList">
+                <li>
+                    <div class="imgBox">
+                        <div class="userImage"></div>
+                    </div>
+                    <div class="userInfoBox">
+                        <p class="userName">김랠리1-1</p>
+                        <p class="relation">직원1-1</p>
+                        <p class="phone">010-2222-3333</p>
+                    </div>
+                    <div class="btnBox">
+                        <button type="button" class="tinyS bdrDarkGray">해제</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgBox">
+                        <div class="userImage"></div>
+                    </div>
+                    <div class="userInfoBox">
+                        <p class="userName">김랠리1-2</p>
+                        <p class="relation">직원1-2</p>
+                        <p class="phone">010-2222-3333</p>
+                    </div>
+                    <div class="btnBox">
+                        <button type="button" class="tinyS bdrDarkGray">해제</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgBox">
+                        <div class="userImage"></div>
+                    </div>
+                    <div class="userInfoBox">
+                        <p class="userName">김랠리1-3</p>
+                        <p class="profileName">프로필명</p>
+                        <p class="phone">010-2222-3333</p>
+                    </div>
+                    <div class="btnBox">
+                        <button type="button" class="tinyS bdrPrimary">수정</button>
+                        <button type="button" class="tinyS bdrDarkGray">해제</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgBox">
+                        <div class="userImage"></div>
+                    </div>
+                    <div class="userInfoBox">
+                        <p class="userName">김랠리1-3</p>
+                        <p class="profileName">프로필명</p>
+                        <p class="phone">010-2222-3333</p>
+                    </div>
+                    <div class="btnBox">
+                        <button type="button" class="btnSmallToggle"><i class="icon-more"><span class="blind">스몰 토글 모달 오픈</i></span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+            <!-- 유저 리스트 - 기본 버튼 -->
+    
+            <!-- 유저 리스트 - 정보성 텍스트 -->
+            <ul class="userDefaultList">
+                <li>
+                    <div class="imgBox">
+                        <div class="userImage"></div>
+                    </div>
+                    <div class="userInfoBox">
+                        <p class="userName">김랠리1-4</p>
+                        <p class="relation">직원1-4</p>
+                        <p class="phone">010-2222-3333</p>
+                    </div>
+                    <div class="rightBox"><!--버튼이 아닌 정보성 텍스트-->
+                        <p class="registDate">등록일자 2022.03.16</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgBox">
+                        <div class="userImage"></div>
+                    </div>
+                    <div class="userInfoBox">
+                        <p class="userName">김랠리1-5</p>
+                        <p class="relation">직원1-5</p>
+                        <p class="phone">010-2222-3333</p>
+                    </div>
+                    <div class="rightBox">
+                        <p class="sendDate">2022.01.21 16:40 발송완료</p>
+                    </div>
+                </li>
+            </ul>
+            <!-- 유저 리스트 - 정보성 텍스트 -->
+    
+            <!-- 유저 리스트 - 라디오버튼, 체크박스 -->
+            <ul class="userDefaultList">
+                <li>
+                    <div class="imgBox">
+                        <div class="userImage"></div>
+                    </div>
+                    <div class="userInfoBox">
+                        <p class="userName">이랠리2-1</p>
+                        <p class="relation">직원2-1</p>
+                        <p class="phone">010-2222-3333</p>
+                    </div>
+                    <div class="btnBox">
+                        <div class="radioWrap">
+                            <input type="radio" name="aa" id="fun07"><label for="fun07"><span class="blind">아님</span></label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgBox">
+                        <div class="userImage"></div>
+                    </div>
+                    <div class="userInfoBox">
+                        <p class="userName">이랠리2-2</p>
+                        <p class="relation">직원2-2</p>
+                        <p class="phone">010-2222-3333</p>
+                    </div>
+                    <div class="btnBox">
+                        <div class="radioWrap">
+                            <input type="radio" name="aa" id="fun08"><label for="fun08"><span class="blind">아님</span></label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgBox">
+                        <div class="userImage"></div>
+                    </div>
+                    <div class="userInfoBox">
+                        <p class="userName">이랠리2-2</p>
+                        <p class="relation">직원2-2</p>
+                        <p class="phone">010-2222-3333</p>
+                    </div>
+                    <div class="btnBox">
+                        <div class="checkBoxWrap alignRight">
+                            <input type="checkbox" id="fnc01" name="" value="" />
+                            <label for="fnc01"></label>
+                            <span class="checkmark"></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- 유저 리스트 - 라디오버튼, 체크박스 -->
+    
+            <!-- 유저 리스트 - 화살표 -->
+            <ul class="userDefaultList">
+                <li>
+                    <div class="imgBox">
+                        <div class="userImage"></div>
+                    </div>
+                    <div class="userInfoBox">
+                        <p class="userName">이랠리3-1</p>
+                        <p class="relation">직원3-1</p>
+                        <p class="phone">010-2222-3333</p>
+                    </div>
+                    <div class="btnBox">
+                        <button type="button" class="btnGo"><i class="icon-arrowRight"><span class="blind">바로가기</span></i></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgBox">
+                        <div class="userImage"></div>
+                    </div>
+                    <div class="userInfoBox">
+                        <p class="userName">이랠리3-2</p>
+                        <p class="relation">직원3-2</p>
+                        <p class="phone">010-2222-3333</p>
+                    </div>
+                    <div class="btnBox">
+                        <button type="button" class="btnGo"><i class="icon-arrowRight"><span class="blind">바로가기</span></i></button>
+                    </div>
+                </li>
+            </ul>
+            <!-- 유저 리스트 - 화살표 -->
+          
+            <!-- 채팅 리스트 - 버튼 -->
+            <ul class="chatroomList">
+                <li>
+                    <div class="chatInfoBox">
+                        <p class="chatroomName">김랠리, 송랠리, 권랠리</p>
+                        <p class="amount">참여인원 3명</p>
+                        <p class="date">2022.01.03  09:15:00</p>
+                    </div>
+                    <div class="btnBox">
+                        <button type="button" class="tinyS bdrPrimary">입장</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="chatInfoBox">
+                        <p class="chatroomName">이랠리, 송랠리, 권랠리, 송랠리, 권랠리</p>
+                        <p class="amount">참여인원 13명</p>
+                        <p class="date">2022.01.03  09:15:00</p>
+                    </div>
+                    <div class="btnBox">
+                        <button type="button" class="tinyS bdrPrimary">입장</button>
+                    </div>
+                </li>
+            </ul>
+            <!-- 채팅 리스트 -  버튼 -->
+    
+            <!-- 권한 리스트 -->
+            <ul class="userAuthList">
+                <li>
+                    <div class="authInfoBox">
+                        <p class="authName">원장</p>
+                    </div>
+                    <div class="btnBox">
+                        <button type="button" class="tinyS bdrPrimary"><i class="icon-user"></i>9999</button>
+                        <button type="button" class="tinyS bdrDarkGray">상세</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="authInfoBox">
+                        <p class="authName">강사</p>
+                    </div>
+                    <div class="btnBox">
+                        <button type="button" class="tinyS bdrPrimary"><i class="icon-user"></i>9999</button>
+                        <button type="button" class="tinyS bdrPrimary">수정</button>
+                    </div>
+                </li>
+            </ul>
+            <!-- 권한 리스트 -->
+    
+    
+             <!-- 수강료 리스트 -->
+             <ul class="classPayList">
+                <li>
+                    <div class="payInfoBox">
+                        <p class="subjectName">과목이름 123</p>
+                        <p class="price">120,000원</p>
+                    </div>
+                    <div class="btnBox">
+                        <button type="button" class="tinyS bdrPrimary"><i class="icon-user"></i>9999</button>
+                        <button type="button" class="tinyS bdrPrimary">수정</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="payInfoBox">
+                        <p class="subjectName">과목이름 345</p>
+                        <p class="price">5,999,000원</p>
+                    </div>
+                    <div class="btnBox">
+                        <button type="button" class="tinyS bdrPrimary"><i class="icon-user"></i>9999</button>
+                        <button type="button" class="tinyS bdrPrimary">수정</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="payInfoBox">
+                        <p class="subjectName">과목이름 647</p>
+                        <p class="price">20,000원</p>
+                    </div>
+                    <div class="btnBox">
+                        <button type="button" class="tinyS bdrPrimary"><i class="icon-user"></i>9999</button>
+                        <button type="button" class="tinyS bdrPrimary">수정</button>
+                    </div>
+                </li>
+            </ul>
+            <!-- 수강료 리스트 -->
+            
+        </div>
+
+        
+    </div>
+    
+</body>
+</html>

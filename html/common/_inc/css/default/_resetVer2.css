@@ -1,0 +1,119 @@
+@import url(../font/NotoSansKR/NotoSansKR.css);
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  font-size: 14px;
+  font-family: -apple-system, "Apple SD Gothic Neo", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "NotoSansKR", "Open Sans", "Helvetica Neue", sans-serif !important;
+  line-height: 135%;
+  height: 100%;
+  -webkit-text-size-adjust: none;
+  color: #575B65;
+  letter-spacing: -0.2px;
+  font-weight: 400; }
+  html .bolder, body .bolder {
+    font-weight: 800; }
+  html .bold, body .bold {
+    font-weight: 700; }
+  html .normal, body .normal {
+    font-weight: 400; }
+  html .light, body .light {
+    font-weight: 300; }
+  @media (max-width: 320px) {
+    html, body {
+      font-size: 13px; } }
+  @media (max-width: 280px) {
+    html, body {
+      font-size: 12px; } }
+  html .MuiTypography-body1, body .MuiTypography-body1 {
+    font-family: -apple-system, "Apple SD Gothic Neo", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "NotoSansKR", "Open Sans", "Helvetica Neue", sans-serif !important; }
+
+body, input, select, button, textarea, h1, h2, h3, h4, h5, h6, table {
+  font: inherit;
+  color: inherit; }
+
+input, select, button, textarea, h1, h2, h3, h4, h5, h6, table, p, span, label, ul, ol, dl, li, dt, dd, blockquote, address, th, td {
+  font: inherit;
+  color: inherit; }
+
+html, body, div, form, input, select, button, textarea, legend, fieldset, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, blockquote, address, p, th, td, caption {
+  padding: 0;
+  margin: 0; }
+
+ol, ul, li {
+  list-style: none; }
+
+em, address {
+  font-style: normal; }
+
+p {
+  word-break: break-word; }
+
+strong {
+  font-weight: 700; }
+
+img, fieldset {
+  vertical-align: middle;
+  border: 0 none; }
+
+input, select, textarea {
+  vertical-align: middle;
+  resize: none; }
+
+hr {
+  display: none; }
+
+br {
+  font-family: "Dotum"; }
+
+.blind {
+  width: 0;
+  height: 0;
+  line-height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+table caption {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  text-indent: -9999px;
+  font-size: 0;
+  line-height: 0; }
+
+header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption {
+  display: block; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: 0; }
+
+a:active, a:hover, a:focus {
+  text-decoration: none;
+  outline: 0; }
+
+::-moz-selection {
+  background: #ffd400;
+  color: #fff; }
+
+::selection {
+  background: #ffd400;
+  color: #fff; }
+
+::-moz-selection {
+  background: #ffd400;
+  color: #fff; }
+
+::-webkit-selection {
+  background: #ffd400;
+  color: #fff; }

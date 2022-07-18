@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="배컴" />
+    <meta name="keywords" content="랠리즈">
+    <meta name="description" content="랠리즈">
+    <title>랠리즈 - 샘플 - 버튼 그룹</title>
+    <link rel="stylesheet" href="../../common/_inc/css/mainVer2.css"><!--기본 CSS-->
+    <!-- 샘플확인용 스타일-->
+    <style>
+        div { margin: 10px 0;}
+        div.containerVer2 { padding: 100px 0 0 0; }
+        ul.sampleList { width: 100%; position: fixed; top: 0; display: flex; flex-wrap: wrap;  padding: 0; z-index: 999; }
+        ul.sampleList li { width: calc(100% / 4); height: 40px; line-height: 40px; background: #343b4c; color: #fff; font-size: 12px; text-align: center; border-bottom: 1px solid #454c5f; }
+        ul.sampleList li.on { background: #222734; font-weight: bold; }
+    </style>
+    <!-- //샘플확인용 스타일-->
+</head>
+<body>
+
+    <ul class="sampleList">
+        <li><a href="button.html" target="_self">button</a></li>
+        <li class="on"><a href="buttonWrap.html" target="_self">buttonWrap</a></li>
+        <li><a href="form.html" target="_self">form</a></li>
+        <li><a href="inputList.html" target="_self">inputType</a></li>
+        <li><a href="userList.html" target="_self">userList</a></li>
+        <li><a href="mainHeader.html" target="_self">mainHeader</a></li>
+        <li><a href="subHeader.html" target="_self">subHeader</a></li>
+        <li><a href="page.html" target="_self">page</a></li>
+    </ul>
+
+    <div class="containerVer2">
+
+        <div class="sample">
+
+            <div class="btnWrap">
+                <button type="button" class="lg primary">완료</button>
+                <button type="button" class="btnSubmitLater">나중에 하기</button>
+            </div>
+
+            <div class="btnWrap">
+                <button type="button" class="lg bdrLgtGray">완료</button>
+            </div>
+
+            <div class="btnWrap fixed" style="bottom: 100px;"><!--샘플확인용 스타일. 삭제! -->
+                <button type="button" class="lg primary">완료</button>
+            </div>
+
+            <div class="btnGroup col2">
+                <button type="button" class="bdrLgtGray">나중에 하기</button>
+                <button type="button" class="primary">학생등록</button>
+            </div>
+
+            <div class="btnGroup col2">
+                <button type="button" class="bdrPrimary">나중에 하기</button>
+                <button type="button" class="primary">학생등록</button>
+            </div>
+
+            <div class="btnGroup col3">
+                <button type="button" class="primary">버튼1</button>
+                <button type="button" class="primary">버튼 2</button>
+                <button type="button" class="primary">버튼 3</button>
+            </div>
+
+            <div class="btnGroup col3 fixed">
+                <button type="button" class="primary">청구서 발행</button>
+                <button type="button" class="primary">청구서 취소</button>
+                <button type="button" class="primary">청구서 예약</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

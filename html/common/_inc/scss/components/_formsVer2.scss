@@ -1,0 +1,1285 @@
+@charset "UTF-8";
+@import "../_helperVer2";
+
+
+div.containerVer2 {
+
+    // 텍스트타입 Input
+    div.inputWrap {
+        position: relative;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], input[type="url"], input[type="tel"], input[type="number"], input[type="time"], input[type="date"],  input[type="month"] , input[type="search"] {
+        @include border-radius(10px);
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 48px;
+        padding: 10px;
+        background: $White;
+        border: 1px solid $Gray-03;
+        color: $Gray-06;
+        align-items: center;
+        @include breakpoint(sssmobile) {
+            @include font-size(12);
+        }
+        &.thin {
+            height: 32px;
+            padding: 8px 10px;
+        }
+        &.md { //select랑 같이 쓸 경우.
+            height: 40px;
+            padding: 8px 10px;
+        }
+        &::placeholder {
+            color: $Gray-04;
+        }
+        &:focus {
+            border:1px solid $Primary;
+            outline: $Primary;
+        }
+        &:disabled {
+            background: $Gray-03;
+            color: $Gray-04;
+        }
+    }
+
+
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type="date"]::-webkit-calendar-picker-indicator, input[type="month"]::-webkit-calendar-picker-indicator, input[type="time"]::-webkit-calendar-picker-indicator  { 
+        background: transparent;
+        z-index: 1;
+        position: absolute;
+        top:0;
+        right:0;
+        width: 100%;
+        height:48px;
+    } 
+
+    input::-webkit-datetime-edit-day-field:focus,
+    input::-webkit-datetime-edit-month-field:focus,
+    input::-webkit-datetime-edit-year-field:focus {
+        background-color: $Primary;
+    }
+    input[type="date"],  input[type="time"]{
+        flex-direction:row;
+        position:relative;
+        padding:10px;
+        text-align: center;
+        &:before {
+            font-family: 'icomoon' !important;
+            speak: never;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            z-index: 0;    
+            color:$Gray-04; 
+            vertical-align: middle;
+            display: inline-block;
+        }
+    }
+    input[type="date"] {
+        &::before {
+            content: '\e908';
+        }
+    }
+    input[type="time"] {
+        &::before {
+            content: '\e929';
+            color:$Gray-05; 
+        }
+    }
+
+
+
+    //셀렉트 박스
+    div.selectWrap {
+        @include font-size(14);
+        @include border-radius(8px);
+        position: relative;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $Gray-03;
+        &:before {
+            @include font-size(24);
+            content: '\e958';
+            font-family: 'icomoon' !important;
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            speak: never;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            pointer-events: none;
+            color: $Gray-05;
+        }    
+        select {    
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            -webkit-border-radius: 0;
+            width: 100%;
+            height: 40px;
+            padding: 10px;    
+            background: none;
+            border: none;
+            &:focus {
+                @include border-radius(8px);
+                border: 1px solid $Primary;
+                outline: $Primary;
+            }
+        }
+    }
+
+
+
+
+    //textarea
+    div.textareaWrap {
+        textarea {
+            @include border-radius(10px);
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 200px;
+            padding: 10px;
+            background: $White;
+            border: 1px solid $Gray-03;
+            &.visible {
+                overflow: visible;
+                height: auto;
+            }
+            &:focus {
+                border:1px solid $Primary;
+                outline: $Primary;
+            }
+            &::placeholder {
+                color: $Gray-04;
+                font-weight: normal;
+            }
+            &:disabled {
+                background: $Gray-03;
+                color: $Gray-04;
+            }
+        }
+    }
+
+
+
+
+
+    // 체크 박스
+    div.checkBoxWrap {
+        position: relative;
+        width: 100%;
+        min-height: 20px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        line-height: 135% !important;
+        label {
+            display: block;
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 20px;
+            padding: 0 0 0 20px;
+            z-index: 10;
+            text-align: left;
+        }
+        input {
+            position: absolute;
+            opacity: 0;
+            height: 0;
+            width: 0;
+            &:checked ~ .checkmark {
+                border: 1px solid $Primary !important;
+                &:after {
+                    display: block;
+                }
+            }
+        }
+        span.checkmark {
+            @include border-radius(3px);
+            position: absolute;
+            top: 1px;
+            left: 0;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #CFD3D5;
+            background:$White;
+            z-index: 2;
+            @include breakpoint(sssmobile) {
+                top: 2px;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                display: none;
+                top: 1px;
+                left: 4px;
+                width: 4px;
+                height: 8px;
+                border: solid $Primary;
+                border-width: 0 2px 2px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+        }
+
+        &.disabled {
+            input {
+                &:checked ~ .checkmark {
+                    border:1px solid $Gray-04 !important;
+                    background: $Gray-03;
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+            label {
+                color: $Gray-04;
+            }
+            span.checkmark {
+                border:1px solid $Gray-04 !important;
+                background: $Gray-03;
+                &:after {
+                    border: 1px solid $Gray-04;
+                    background: $Gray-03;
+                }
+            }
+        }
+
+        //오른쪽 체크박스
+        &.alignRight {
+            label {
+                padding: 0 20px 0 0;
+                text-align: right;
+            }
+            span.checkmark {
+                left: auto;
+                right: 0;
+            }
+        }
+
+        //스몰 사이즈
+        &.small {
+            label {
+                @include font-size(12);
+                padding: 0 0 0 18px;
+                font-weight: 300;
+            }
+            span.checkmark {
+                @include border-radius(3px);
+                width: 12px;
+                height: 12px;
+                top: 4px;
+                &:after {
+                    top: 0;
+                    left: 3px;
+                    width: 3px;
+                    height: 6px;
+                }
+            }
+        }
+
+        //원형
+        &.circle {
+            label {
+                padding: 1px 0 0 24px;
+            }
+            input {
+                &:checked ~ span.checkmark {
+                    border: 2px solid $Primary !important;
+                    background: $Primary !important;
+                    &:after {
+                        top: 2px;
+                        left: 5px;
+                        width: 4px;
+                        height: 8px;
+                        border-color: $White;
+                    }
+                }
+            }
+            span.checkmark {
+                @include border-radius(100px);
+                width: 20px;
+                height: 20px;
+                top: 0;
+                &:after {
+                    display: block;
+                    top: 3px;
+                    left: 6px;
+                    width: 4px;
+                    height: 8px;
+                    border: solid #CFD3D5;
+                    border-width: 0 2px 2px 0;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                }
+            }
+        }
+
+        //원형 오른쪽
+        &.circleRight {
+            label {
+                padding: 1px 24px 0 0;
+                text-align: right;
+            }
+            input {
+                &:checked ~ span.checkmark {
+                    border: 2px solid $Primary !important;
+                    background: $Primary !important;
+                    &:after {
+                        top: 2px;
+                        right: 5px;
+                        width: 4px;
+                        height: 8px;
+                        border-color: $White;
+                    }
+                }
+            }
+            span.checkmark {
+                @include border-radius(100px);
+                width: 20px;
+                height: 20px;
+                top: 0;
+                left: unset;
+                right: 0;
+                &:after {
+                    display: block;
+                    top: 3px;
+                    left: unset;
+                    right: 6px;
+                    width: 4px;
+                    height: 8px;
+                    border: solid #CFD3D5;
+                    border-width: 0 2px 2px 0;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                }
+            }
+        }
+
+    }
+
+
+    // 라디오버튼
+    div.radioWrap {
+        align-items: center;
+        margin: 0 0 0 20px;
+        &:first-child {
+            margin:0;
+        }
+        label {
+            display: inline-block;
+            //width: 100%;
+            min-height: 20px;
+            vertical-align: middle;
+            margin: 0 0 0 5px;
+        }
+        input[type='radio'] {
+            -webkit-appearance: none;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            outline: none;
+            border: 1px solid #cfd3d5;
+            vertical-align: middle;
+            &:before {
+                content: '';
+                display: block;
+                width: 8px;
+                height: 8px;
+                margin: 3px;
+                border-radius: 50%;
+            }
+            &:checked:before {
+                background: $Primary;
+            }
+            &:checked {
+                border-color: $Primary;
+            }
+            &:disabled {
+                background: $Gray-03;
+            }
+        }
+    }
+
+
+    //즐겨찾기
+    div.bookmarkWrap {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        label {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: url("../images/ico/bookmarkOff.svg") no-repeat;
+        }
+        input {
+            &:checked ~ label {
+                background: url("../images/ico/bookmarkOn.svg") no-repeat;
+            }
+        }
+    }
+
+
+    //요일 선택
+    div.weeklySelectWrap {
+        text-align: center;
+        > button {
+            @include border-radius(100%);
+            display: inline-block;
+            width: 42px;
+            height: 42px;
+            margin: 0 8px 0 0;
+            background: $Gray-03;
+            color: $Gray-06;
+            &.on {
+                background: $Primary;
+                color: $White;
+            }
+        }
+    }
+
+
+    //토글 스위치
+    label.btnToggle {
+        position: relative;
+        display: inline-block;
+        width: 36px;
+        height: 14px;
+        > input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+            &:checked + .slider {
+                background: $GGreen;
+                border: 1px solid $Green-03;
+            }
+            &:focus + .slider {
+                box-shadow: 0 0 1px $Primary;
+            }
+            &:checked + .slider:before {
+                -webkit-transform: translateX(26px);
+                -ms-transform: translateX(26px);
+                transform: translateX(26px);
+                left: -9px;
+                bottom: -4px;
+                width: 18px;
+                height: 18px;
+                background: $Primary;
+                border: 1px solid $Primary;
+            }
+
+        }
+        div.slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #CFD3D5;
+            border: 1px solid #CFD3D5;
+            -webkit-transition: .4s;
+            transition: .4s;
+            color: $White;
+            &:before {
+                position: absolute;
+                content: '\ea10';
+                font-family: 'icomoon' !important;
+                width: 18px;
+                height: 18px;
+                left: -2px;
+                bottom: -4px;
+                background: $White;
+                border: 1px solid #CFD3D5;
+                -webkit-transition: .4s;
+                transition: .4s;
+                @include font-size(11);
+                text-align: center;
+            }  
+            &.round {
+                border-radius: 34px;
+                &:before {
+                    border-radius: 50%;
+                }
+            }     
+        }
+    }
+
+
+
+    //텍스트 속성
+    p,span {
+
+        //단순 안내
+        &.desc {
+            @include font-size(12);
+            margin: 6px 0 0 0;
+            color: $Gray-05;
+        }
+
+        //필수입력
+        &.essential {
+            @include font-size(10);
+            margin: 0 0 0 7px;
+            color: $Secomdary;
+            font-weight: 700;
+        }
+
+        //선택입력
+        &.optional {
+            @include font-size(10);
+            margin: 0 0 0 7px;
+            color: $Gray-05;
+            font-weight: 700;
+        } 
+        
+        //실패,중복
+        &.fail {
+            @include font-size(10);
+            margin: 6px 0 0 0;
+            color: $Warning;
+            font-weight: 300
+        } 
+        
+        //성공
+        &.success {
+            @include font-size(10);
+            margin: 6px 0 0 0;
+            color: $Primary;
+            font-weight: 500
+        }
+
+        //input 밑 설명
+        &.descNotice {
+            @include font-size(10);
+            margin: 6px 0 0 0;
+            color: $Blue-03;
+        }
+    }
+
+    //input 정렬이 세로형
+    dl.inputListRow {
+        dt {
+            width: 100%;
+            margin: 0 0 8px 0;
+            color: $Black;
+            font-weight: 700;
+        }
+        dd {
+            width: 100%;
+            margin: 0 0 32px 0;
+            &:last-child {
+                margin: 0;
+            }
+            > ul {
+                li {
+                    float: left;
+                    width: 50%;
+                    padding: 0 0 0 10px;
+                    &:first-child {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    //input 정렬이 가로형
+    dl.inputListCol {
+        @extend %clearfix;
+        dt {
+            float: left;
+            width: 80px;
+            height: 48px;
+            margin: 0 10px 8px 0;
+            color: $Black;
+            font-weight: 700;
+            line-height: 48px;
+            //select가 같이 있을 때
+            &.h40 {
+                height: 40px;
+                line-height: 40px;
+            }
+        }
+        dd {
+            float: left;
+            width: calc(100% - 95px);
+            height: 48px;
+            margin: 0 0 8px 0;
+            &:last-child {
+                margin: 0;
+            }
+        }
+
+        //dd의 column이 2개일 때
+        &.col2 {
+            dt {
+                width: 80px;
+                margin: 0 10px 8px 0;
+            }
+            dd {
+                width: calc(100% - 95px);
+            }
+        }
+
+        //dd의 column이 3개일 때
+        &.col3 {
+            dt {
+                width: 80px;
+                margin: 0 10px 8px 0;
+            }
+            dd {
+                width: calc(100% - 95px);
+            }
+        }
+    }
+
+
+    dl.inputListRow, dl.inputListCol {
+        dd {
+            //dd의 하위 li 입력란이 2개
+            > ul.col2 {
+                @extend %clearfix;
+                //li 기본은 4:6
+                li {
+                    float: left;
+                    width: 40%;
+                    padding: 0 10px 0 0;
+                    &:last-child {
+                        width: 60%;
+                        padding: 0;
+                    }
+                    //li가 동일한 사이즈일 때
+                    &.w50 {
+                        width: 50%;
+                        &:last-child {
+                            width: 50%;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+
+            //dd의 하위 li 입력란이 3개
+            > ul.col3 {
+                @extend %clearfix;
+                li {
+                    float: left;
+                    width: 33.333%;
+                    padding: 0 10px 0 0;
+                    &:last-child {
+                        padding: 0;
+                    }
+                }
+            }
+        }    
+    }
+
+
+    //탭
+    div.tabWrap {
+        width: 100%;
+        //탭 2개
+        ul.tab {
+            display: flex;
+            width: 100%;
+            height: 48px;
+            padding: 0 20px;
+            border-bottom: 1px solid $Gray-03;
+            > li {
+                padding: 0 10px;
+                color: $Gray-05;
+                line-height: 44px;
+                font-weight: 500;
+                text-align: center;
+                &.on {
+                    color: $Primary;
+                    border-bottom: 3px solid $Primary;
+                }
+            }
+            //탭 2개
+            &.col2 {
+                > li {
+                    width: 50%;
+                }
+            }
+
+            //탭 3개
+            &.col3 {
+                > li {
+                    width: 33.333%;
+                }
+            }
+        }
+    }
+
+
+
+
+
+    //첨부된 파일 리스트
+    div.attachListWrap {
+        margin: 16px 0 0 0;
+        > ul.attachList {
+            width: 100%;
+            border-top: 1px solid $Gray-03;
+            > li {
+                position: relative;
+                width: 100%;
+                height: 32px;
+                padding: 6px 8px;
+                background: $Gray-01;
+                border-left: 1px solid $Gray-03;
+                border-right: 1px solid $Gray-03;
+                border-bottom: 1px solid $Gray-03;
+                span.fileName {
+                    @include font-size(11);
+                    position: relative;
+                    padding: 0 0 0 16px;
+                    color: $Blue-03;
+                    &::before {
+                        @include font-size(12);
+                        content: "\e963";
+                        position: absolute;
+                        top: 4px;
+                        left: 0;
+                        font-family: 'icomoon' !important;
+                        speak: never;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-variant: normal;
+                        text-transform: none;
+                        line-height: 100%;
+                        pointer-events: none;
+                    }
+                }
+                button.btnDelete {
+                    @include font-size(10);
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    width: 20px;
+                    height: 20px;
+                    color: $Gray-04;
+                    > i {
+                        display: inline-block;
+                        margin: 5px 0 0 0;
+                    }
+                }
+            }
+            &.disable {
+                > li {
+                    span.fileName {
+                        color: $Gray-04;
+                    }
+                }
+            }
+        } 
+    }
+
+
+    //파일 첨부 
+    div.fileAttachWrap {
+        label.btnFileAttach {
+            display: block;
+            width: 100%;
+            height: 32px;
+            border: 1px dashed $Gray-03;
+            color: $Gray-06;
+            text-align: center;
+            > span {
+                @include font-size(12);
+                position: relative;
+                line-height: 29px;
+                &::before {
+                    @include font-size(12);
+                    content: "\e963";
+                    position: absolute;
+                    top: 3px;
+                    left: -16px;
+                    font-family: 'icomoon' !important;
+                    speak: never;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-variant: normal;
+                    text-transform: none;
+                    line-height: 100%;
+                    pointer-events: none;
+                }
+            }
+            &.disable {
+                > span {
+                    color: $Gray-04;
+                }
+            }
+        }
+    }
+
+
+    ////// 유저,채팅,권한 등등 리스트의 기본 스타일
+    ul.defaultStyle {
+        width: 100%;
+        > li {
+            display: flex;
+            width: 100%;
+            height: 48px;
+            padding: 8px 0;
+            background: $White;
+            border-bottom: 1px solid $Gray-03;
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+
+
+    //유저리스트 
+    ul.userDefaultList {
+        @extend ul.defaultStyle;
+        > li {
+            //사진
+            div.imgBox {
+                width: 42px;
+                //프로필 사진
+                div.userImage {
+                    @include border-radius(100px);
+                    width: 32px;
+                    height: 32px;
+                    margin: 0 10px 0 0;
+                    background-color: $Gray-03;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+
+                }
+                //클래스 사진
+                div.classImage {
+                    @include border-radius(100px);
+                    width: 32px;
+                    height: 32px;
+                    margin: 0 10px 0 0;
+                    background-color: $Gray-03;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            //유저 정보
+            div.userInfoBox {
+                width: calc(100% - 177px);
+                cursor: pointer;
+                p {
+                    line-height: 100%;
+                    //사용자 이름
+                    &.userName {
+                        display: inline-block;
+                        margin: 0 0 4px 0;
+                        color: $Black;
+                        font-weight: 700;
+                    }
+                    //클래스 이름
+                    &.className {
+                        color: $Black;
+                        font-weight: 700;
+                    }
+                    //학원 이름
+                    &.instName {
+                        color: $Black;
+                        font-weight: 700;
+                    }               
+                    //관계
+                    &.relation {
+                        @include font-size(12);
+                        display: inline-block;
+                        color: $Gray-06;
+                        font-weight: 300;
+                    }
+                    //프로필명
+                    &.profileName {
+                        @include font-size(12);
+                        display: inline-block;
+                        color: $Gray-06;
+                        font-weight: 300;
+                    }
+                    //전화번호
+                    &.phone {
+                        @include font-size(12);
+                        color: $Gray-06;
+                        font-weight: 300;
+                        letter-spacing: 0;
+                    }
+                }
+            }
+            //버튼 및 체크박스
+            div.btnBox {
+                position: relative;
+                width: 125px;
+                margin: 0 0 0 10px;
+                text-align: right;
+                //라디오 버튼
+                div.radioWrap {
+                    padding: 7px 0;
+                    label {
+                        margin: 0;
+                    }
+                }
+                //체크박스
+                div.checkBoxWrap {
+                    margin: 7px 0;
+                }
+                //바로가기 화살표
+                button.btnGo {
+                    width: 24px;
+                    height: 24px;
+                    margin: 6px 0 0 0;
+                    i {
+                        color: $Gray-04;
+                    }
+                }
+                //스몰토글 오픈 버튼
+                button.btnSmallToggle {
+                    width: 24px;
+                    height: 24px;
+                    margin: 6px 0 0 0;
+                    i {
+                        color: $Gray-04;
+                    }
+                }
+            }
+            div.rightBox { //텍스트가 들어갈 경우(커서 때문에.)
+                position: relative;
+                width: 125px;
+                margin: 0 0 0 10px;
+                text-align: right;
+                cursor: pointer;
+                p {
+                    @include font-size(10);
+                    position: relative;
+                    margin: 7px 0;
+                    color: $Gray-04;
+                    font-weight: 300;
+                    text-align: right;
+                    //등록일
+                    &.registDate {
+                    }
+                    //발송일
+                    &.sendDate {
+                        padding: 0 20px 0 0;
+                        &::after {
+                            @include font-size(14);
+                            font-family: 'icomoon' !important;
+                            speak: never;
+                            content: '\e901';
+                            position: absolute;
+                            top: 2px;
+                            right: 0;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-variant: normal;
+                            text-transform: none;
+                            line-height: 1;
+                            pointer-events: none;
+                            color: $Gray-04;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    //채팅 리스트
+    ul.chatroomList {
+        @extend ul.defaultStyle;
+        > li {
+            //채팅 정보
+            div.chatInfoBox {
+                width: calc(100% - 130px);
+                p {
+                    line-height: 100%;
+                    //소통방 이름
+                    &.chatroomName {
+                        margin: 0 0 4px 0;
+                        color: $Black;
+                        font-weight: 700;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                    //참여인원
+                    &.amount {
+                        @include font-size(12);
+                        display: inline-block;
+                        color: $Primary;
+                        font-weight: 300;
+                    }
+                    //날짜
+                    &.date {
+                        @include font-size(12);
+                        display: inline-block;
+                        margin: 0 0 0 4px;
+                        color: $Gray-06;
+                        font-weight: 300;
+                        letter-spacing: 0;
+                    }
+                }
+            }
+            div.btnBox {
+                position: relative;
+                width: 120px;
+                margin: 0 0 0 10px;
+                text-align: right;
+            }
+        }    
+    }
+
+
+    //권한 리스트
+    ul.userAuthList {
+        @extend ul.defaultStyle;
+        > li {
+            div.authInfoBox {
+                width: calc(100% - 150px);
+                p {
+                    line-height: 100%;
+                    //권한명 이름
+                    &.authName {
+                        padding: 10px 0;
+                        color: $Black;
+                        font-weight: 700;
+                    }
+                }            
+            }
+            div.btnBox {
+                position: relative;
+                width: 140px;
+                margin: 0 0 0 10px;
+                text-align: right;
+                button {
+                    i {
+                        @include font-size(16);
+                        margin: 1px 4px 0 0;
+                    }
+                }
+            }
+        }
+    }
+
+
+    //수강료 리스트
+    ul.classPayList {
+        @extend ul.defaultStyle;
+        > li {
+            div.payInfoBox {
+                width: calc(100% - 150px);
+                p {
+                    line-height: 100%;
+                    //과목명
+                    &.subjectName {
+                        margin: 0 0 4px 0;
+                        color: $Black;
+                        font-weight: 700;
+                    }
+                    //수강료
+                    &.price {
+                        @include font-size(12);
+                        color: $Gray-06;
+                        font-weight: 300;
+                        letter-spacing: 0;
+                    }
+                }            
+            }
+            div.btnBox {
+                position: relative;
+                width: 140px;
+                margin: 0 0 0 10px;
+                text-align: right;
+                button {
+                    i {
+                        @include font-size(16);
+                        margin: 1px 4px 0 0;
+                    }
+                }
+            }
+        }
+    }
+
+
+    //알림
+    div.alertWrap {
+        width: 100%;
+        padding: 16px;
+        background: $Gray-01;
+        ul.alertList {
+            li {
+                margin: 0 0 8px 0;
+                &:last-child {
+                    margin: 0;
+                }
+                //클래스 및 일반 알림
+                div.alertMsgBox {
+                    position: relative;
+                    display: flex;
+                    border-top-left-radius: 8px;
+                    border-top-right-radius: 8px;
+                    padding: 16px;
+                    background: $White;
+                    cursor: pointer;
+                    div.icoAlert {
+                        @include border-radius(100px);
+                        width: 40px;
+                        height: 40px;
+                        margin: 0 10px 0 0;
+                        background: #ffe9cf;
+                        text-align: center;
+                        i {
+                            @include font-size(16);
+                            display: block;
+                            padding: 10px 0;
+                            color: #ff7e20;
+                        }
+                    }
+                    p.message {
+                        @include font-size(12);
+                        width: calc(100% - 70px);
+                        padding: 0 20px 0 0;
+                        color: $Gray-06;
+                        em.instName {
+                            display: block;
+                            color: $Black;
+                            font-weight: bold;
+                        }
+                    }
+                    div.icoArrow {
+                        @include centerer(false, true);
+                        width: 20px;
+                        height: 20px;
+                        right: 16px;
+                        text-align: center;
+                        i {
+                            @include font-size(16);
+                            color: $Gray-04;
+                        }
+                    }
+                }
+                //청구서 알림
+                div.alertBillBox {
+                    @include border-radius(8px);
+                    position: relative;
+                    display: flex;
+                    padding: 16px;
+                    background: $White;
+                    cursor: pointer;
+                    div.icoBill {
+                        @include border-radius(100px);
+                        width: 40px;
+                        height: 40px;
+                        margin: 0 10px 0 0;
+                        background: #f5f5f5;
+                        text-align: center;
+                        img {
+                            width: 24px;
+                            max-width: 100%;
+                        }
+                    }
+                    p.message {
+                        @include font-size(14);
+                        width: calc(100% - 50px);
+                        padding: 0 20px 0 0;
+                        color: #271e16;
+                        font-weight: 700;
+                        em.instName {
+                            @include font-size(12);
+                            display: block;
+                            color: $Gray-06;
+                            font-weight: 400;
+                        }
+                    }
+                    button.btnClose {
+                        width: 24px;
+                        height: 24px;
+                        top: 16px;
+                        right: 16px;
+                        text-align: center;
+                        background: $Gray-02;
+                        i {
+                            @include font-size(16);
+                            color: $Black;
+                        }
+                    }
+                    button.btnPayment {
+                        @include border-radius(8px);
+                        width: 100%;
+                        height: 32px;
+                        background: $Primary;
+                        color: $White;
+                    }
+                }
+                div.btnBox {
+                    display: flex;
+                    padding: 10px 16px;
+                    border-bottom-left-radius: 8px;
+                    border-bottom-right-radius: 8px;
+                    border-top: 1px solid $Gray-02;
+                    background: $White;
+                    div.checkBoxWrap {
+                        width: calc(100% - 40px);
+                    }
+                    button.btnClose {
+                        @include font-size(12);
+                        width: 30px;
+                        height: 20px;
+                        margin: 0 0 0 10px;
+                        color: $Black;
+                        font-weight: 300
+                    }
+                }
+            }
+        }
+        button.btnShowAll {
+            @include border-radius(8px);
+            @include font-size(12);
+            width: 100%;
+            height: 40px;
+            margin: 8px 0 0 0;
+            border: 1px solid $Gray-02;
+            background: $White;
+            color: $Gray-04;
+            i {
+                @include font-size(20);
+                display: inline-block;
+                margin: 0 6px 0 0;
+                vertical-align: top;
+            }
+        }
+    }
+
+}

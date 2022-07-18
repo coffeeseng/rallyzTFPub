@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="배컴" />
+    <meta name="keywords" content="랠리즈">
+    <meta name="description" content="랠리즈">
+    <title>랠리즈 - 샘플 - 버튼</title>
+    <link rel="stylesheet" href="../../common/_inc/css/mainVer2.css"><!--기본 CSS-->
+    <!-- 샘플확인용 스타일-->
+    <style>
+        div.containerVer2 { padding: 100px 0 0 0; }
+        ul.sampleList { width: 100%; position: fixed; top: 0; display: flex; flex-wrap: wrap;  padding: 0; z-index: 999; }
+        ul.sampleList li { width: calc(100% / 4); height: 40px; line-height: 40px; background: #343b4c; color: #fff; font-size: 12px; text-align: center; border-bottom: 1px solid #454c5f; }
+        ul.sampleList li.on { background: #222734; font-weight: bold; }
+        div.sample { padding: 0 16px; }
+        button { display:block; margin: 20px auto 20px auto !important; }
+    </style>
+    <!-- //샘플확인용 스타일-->
+</head>
+<body>
+
+    <ul class="sampleList">
+        <li class="on"><a href="button.html" target="_self">button</a></li>
+        <li><a href="buttonWrap.html" target="_self">buttonWrap</a></li>
+        <li><a href="form.html" target="_self">form</a></li>
+        <li><a href="inputList.html" target="_self">inputType</a></li>
+        <li><a href="userList.html" target="_self">userList</a></li>
+        <li><a href="mainHeader.html" target="_self">mainHeader</a></li>
+        <li><a href="subHeader.html" target="_self">subHeader</a></li>
+        <li><a href="page.html" target="_self">page</a></li>
+    </ul>
+
+    <div class="containerVer2">
+
+        <div class="sample">
+
+            <!-- 토글 버튼 2개 -->
+            <div class="btnGroupToggle">
+                <button type="button" class="left on">아니오</button>
+                <button type="button" class="right">예</button>
+            </div>
+            <!-- //토글 버튼 2개 -->
+
+            <!-- 작은 토글 버튼 2개 -->
+            <div class="btnGroupSmallToggle">
+                <button type="button" class="left on">아니야</button>
+                <button type="button" class="right">맞아</button>
+            </div>
+            <!-- //작은 토글 버튼 2개 -->
+
+        </div>
+
+        <div class="sample">
+
+            <!-- LG 사이즈 -->
+            <button type="button" class="lg primary">LG 버튼</button>
+            <!-- //LG 사이즈 -->
+
+            <!-- MD 사이즈 -->
+            <button type="button" class="md primary">MD 버튼</button>
+            <!-- //MD 사이즈 -->
+
+            <!-- SM 사이즈 -->
+            <button type="button" class="sm primary">SM 버튼</button>
+            <!-- //SM 사이즈 -->
+
+            <!-- XS 사이즈 -->
+            <button type="button" class="xs primary">XS 버튼</button>
+            <!-- //XS 사이즈 -->
+
+            <!-- XXS 사이즈 -->
+            <button type="button" class="xxs primary">XXS 버튼</button>
+            <!-- //XXS 사이즈 -->
+
+            <!-- tinyR 사이즈 -->
+            <button type="button" class="tinyR darkGray">Tiny 라운드 버튼</button>
+            <!-- //tinyR 사이즈 -->
+
+            <!-- tinyS 사이즈 -->
+            <button type="button" class="tinyS primary">Tiny 스퀘어 버튼</button>
+            <!-- //tinyS 사이즈 -->
+
+            <!-- tinyS 사이즈 + 아이콘 -->
+            <button type="button" class="tinyS darkGray">Tiny 스퀘어 버튼<i class="icon-arrowRight right"></i></button>
+            <!-- //tinyS 사이즈 + 아이콘 -->
+
+            <!-- tinyS 사이즈 + 아이콘 -->
+            <button type="button" class="tinyS bdrPrimary"><i class="icon-arrowRight"></i> Tiny 스퀘어 라인 버튼</button>
+            <!-- //tinyS 사이즈 + 아이콘 -->
+
+            <!-- tinyS border -->
+            <button type="button" class="tinyS bdrPrimary">Tiny 스퀘어 라인 버튼</button>
+            <!-- //tinyS border -->
+
+            <!-- tinyS border -->
+            <button type="button" class="tinyS bdrDarkGray">Tiny 스퀘어 라인 버튼</button>
+            <!-- //tinyS border -->
+
+            <!-- 회색 컬러 -->
+            <button type="button" class="md darkGray">darkgray 버튼</button>
+            <!-- //회색 컬러 -->
+
+            <!-- 초록 컬러 -->
+            <button type="button" class="sm primary">primary 버튼</button>
+            <!-- //초록 컬러 -->
+
+            <!-- primary border -->
+            <button type="button" class="md bdrPrimary">primary 라인 버튼</button>
+            <!-- //primary border -->
+
+            <!-- lightgray border -->
+            <button type="button" class="md bdrLgtGray">lightgray 라인 버튼</button>
+            <!-- //lightgray border -->
+
+            <!-- micro bold 사이즈 -->
+            <button type="button" class="microB primary">마이크로 볼트 버튼</button>
+            <!-- //micro bold  사이즈 -->
+
+            <!-- micro 노멀 사이즈 -->
+            <button type="button" class="microN darkGray">마이크로 노멀 버튼</button>
+            <!-- //micro 노멀  사이즈 -->
+
+            <!-- micro bold 사이즈 + 아이콘 -->
+            <button type="button" class="microB primary">마이크로 볼트 버튼<i class="icon-arrowRight right"></i></button>
+            <!-- //micro bold 사이즈 + 아이콘 -->
+
+            <!-- micro bold 사이즈 + 아이콘 -->
+            <button type="button" class="microN darkGray">마이크로 노멀 버튼<i class="icon-arrowRight right"></i></button>
+            <!-- //micro bold 사이즈 + 아이콘 -->
+
+            <div class="btnWrap">
+                <button type="button" class="lg primary">완료</button>
+            </div>
+
+        </div>
+
+        
+        <div class="btnWrap fixed">
+            <button type="button" class="lg primary">완료</button>
+        </div>
+
+        
+    </div>
+</body>
+</html>

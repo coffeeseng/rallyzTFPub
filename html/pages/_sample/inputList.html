@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="배컴" />
+    <meta name="keywords" content="랠리즈">
+    <meta name="description" content="랠리즈">
+    <title>랠리즈 - 샘플 - input, form 리스트</title>
+    <link rel="stylesheet" href="../../common/_inc/css/mainVer2.css"><!--기본 CSS-->
+    <!-- 샘플확인용 스타일-->
+    <style>
+        div.containerVer2 { padding: 100px 16px; }
+        ul.sampleList { width: 100%; position: fixed; top: 0; display: flex; flex-wrap: wrap;  padding: 0; z-index: 999; }
+        ul.sampleList li { width: calc(100% / 4); height: 40px; line-height: 40px; background: #343b4c; color: #fff; font-size: 12px; text-align: center; border-bottom: 1px solid #454c5f; }
+        ul.sampleList li.on { background: #222734; font-weight: bold; }
+        dl.inputListCol { padding: 40px 0 0 0; }
+        dl.inputListRow { padding: 40px 0 0 0; }
+      </style>
+      <!-- //샘플확인용 스타일-->
+</head>
+<body>
+
+    <ul class="sampleList">
+        <li><a href="button.html" target="_self">button</a></li>
+        <li><a href="buttonWrap.html" target="_self">buttonWrap</a></li>
+        <li><a href="form.html" target="_self">form</a></li>
+        <li class="on"><a href="inputList.html" target="_self">inputType</a></li>
+        <li><a href="userList.html" target="_self">userList</a></li>
+        <li><a href="mainHeader.html" target="_self">mainHeader</a></li>
+        <li><a href="subHeader.html" target="_self">subHeader</a></li>
+        <li><a href="page.html" target="_self">page</a></li>
+    </ul>
+
+    <div class="containerVer2">
+
+        <!-- input + button -->
+        <dl class="inputListRow">
+            <dt>학원명 1</dt>
+            <dd>
+                <div class="inputWrap">
+                    <button type="button" class="inputBtn primary bdrPrimary">입력</button>
+                    <input type="text" placeholder="">
+                </div>
+            </dd>
+        </dl>
+        <!-- //input + button -->
+        
+        <!-- 정보 입력 1 row -->
+        <dl class="inputListRow">
+            <dt>학원명 2</dt>
+            <dd>
+                <div class="inputWrap">
+                    <input type="text" placeholder="">
+                </div>
+            </dd>
+            <dt>학원 정보</dt>
+            <dd>
+                <div class="inputWrap">
+                    <input type="text" placeholder="">
+                </div>
+                <div class="inputWrap mgt_10">
+                    <input type="text" placeholder="">
+                </div>
+            </dd>
+        </dl>
+        <!-- //정보 입력 1 row -->
+
+        <!-- 정보 입력 1 row + select -->
+        <dl class="inputListRow">
+            <dt>학원 주소 1</dt>
+            <dd>
+                <ul class="col2">
+                    <li>
+                        <div class="selectWrap">
+                            <select>
+                                <option value="">선택1</option>
+                                <option value="">선택2</option>
+                                <option value="">선택3</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inputWrap">
+                            <input type="text" class="md" placeholder=""><!-- select랑 같이 쓰는 input은 .md -->
+                        </div>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+        <!-- //정보 입력 1 row -->
+
+        <!-- 정보 입력 1 row + select -->
+        <dl class="inputListRow">
+            <dt>학원 주소 2</dt>
+            <dd>
+                <ul class="col3">
+                    <li>
+                        <div class="selectWrap">
+                            <select>
+                                <option value="">선택1</option>
+                                <option value="">선택2</option>
+                                <option value="">선택3</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="selectWrap">
+                            <select>
+                                <option value="">선택1</option>
+                                <option value="">선택2</option>
+                                <option value="">선택3</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inputWrap">
+                            <input type="text" class="md" placeholder=""><!-- select랑 같이 쓰는 input은 .md -->
+                        </div>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+        <!-- //정보 입력 1 row -->
+
+
+        <!-- 정보 입력 1 col -->
+        <dl class="inputListCol">
+            <dt>학원명 3-1</dt>
+            <dd>
+                <div class="inputWrap">
+                    <input type="text" placeholder="">
+                </div>
+            </dd>
+            <dt>학원명 3-2</dt>
+            <dd>
+                <div class="inputWrap">
+                    <input type="text" placeholder="">
+                </div>
+            </dd>      
+        </dl>
+        <!-- //정보 입력 1 col -->
+
+        <!-- 정보 입력 2 col -->
+        <dl class="inputListCol col2">
+            <dt>학원명 4</dt>
+            <dd>
+                <ul class="col2">
+                    <li>
+                        <div class="inputWrap">
+                            <input type="text" placeholder="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inputWrap">
+                            <input type="text" placeholder="">
+                        </div>
+                    </li>
+                </ul>
+            </dd>           
+        </dl>
+        <!-- //정보 입력 2 col -->
+
+        <!-- 정보 입력 2 col -->
+        <dl class="inputListCol col2">
+            <dt class="h40">학원명 5</dt><!-- select가 같이 쓸 땐 .h40 -->
+            <dd>
+                <ul class="col2">
+                    <li class="w50">
+                        <div class="selectWrap">
+                            <select>
+                                <option value="">선택1</option>
+                                <option value="">선택2</option>
+                                <option value="">선택3</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="w50">
+                        <div class="inputWrap">
+                            <input type="text" class="md" placeholder=""><!-- select랑 같이 쓰는 input은 .md -->
+                        </div>
+                    </li>
+                </ul>
+            </dd>           
+        </dl>
+        <!-- //정보 입력 2 col -->
+
+        <!-- 정보 입력 3 col -->
+        <dl class="inputListCol col3">
+            <dt>학원명 6</dt>
+            <dd>
+                <ul class="col3">
+                    <li>
+                        <div class="inputWrap">
+                            <input type="text" placeholder="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inputWrap">
+                            <input type="text" placeholder="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inputWrap">
+                            <input type="text" placeholder="">
+                        </div>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+        <!-- //정보 입력 3 col -->
+
+    </div>
+</body>
+</html>

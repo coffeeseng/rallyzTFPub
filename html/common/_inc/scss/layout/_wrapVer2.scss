@@ -1,0 +1,398 @@
+@charset "UTF-8";
+@import "../_helperVer2";
+
+//** 웹사이트 구성 레이아웃 **//
+body, html {
+    background: $White;
+    @include breakpoint(tablet) {
+        background: lighten($Gray-03, 2%);
+    }
+}
+
+div.containerVer2 {
+    width: 100%;
+    height: 100vh;
+    div.contWrap {
+        width: 100%;
+        height: 100%;
+        @include breakpoint(tablet) {
+            position: relative;
+            width: 800px;
+            margin: 0 auto;
+            padding: 0 0 100px 0;
+        }
+
+        //메인 헤더
+        div.mainHeaderWrap {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 48px;
+            z-index: 100;
+            background: linear-gradient(to right, $Primary 60%, $Secomdary);
+            header.mainHeader {
+                position: relative;
+                width: 100%;
+                height: inherit;
+                padding: 6px 16px;
+                @include breakpoint(tablet) {
+                    width: 800px;
+                    padding: 6px 0;
+                    margin: 0 auto;
+                }
+
+                //BI
+                h1.bi {
+                    @include font-size(35);
+                    display: inline-block;
+                    width: auto;
+                    color: $White;
+                    vertical-align: middle;
+                }
+
+                //현재 페이지 표시
+                span.currentPosition {
+                    @include font-size(14);
+                    display: inline-block;
+                    margin: 2px 0 0 6px;
+                    vertical-align: middle;
+                    color: $White;
+                    font-weight: 500;
+                }
+
+                //최상단 Global메뉴
+                ul.topBtnList {
+                    position: absolute;
+                    top: 0;
+                    right: 16px;
+                    @include breakpoint(tablet) {
+                        right: 0;
+                    }
+                    > li {
+                        position: relative;
+                        display: inline-block;
+                        height: 48px;
+                        margin: 0 0 0 4px;
+                        vertical-align: top;
+                        button {
+                            height: inherit;
+                            padding: 0 6px;
+                            i {
+                                @include font-size(22);
+                                display: inline-block;
+                                color: $White;
+                            }
+                            div.profileImage {
+                                @include border-radius(100px);
+                                width: 24px;
+                                height: 24px;
+                                margin: 0 auto;
+                                background-color: $Gray-04;
+                                background-size: cover;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                i {
+                                    @include font-size(13);
+                                    display: block;
+                                    padding: 5px 0;
+                                    color: $White;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                //유저 인포 버튼 터치 후 노출
+                div.userInfoBoxWrap {
+                    display: none;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100vh;
+                    background:rgba(0,0,0,0.2);
+                    z-index: 99999;
+                    &.on {
+                        display: block;
+                    }
+                    div.userInfoBox {
+                        @include border-radius(5px);
+                        position: absolute;
+                        top: 42px;
+                        right: 10px;
+                        width: 240px;
+                        height: 290px;
+                        padding: 30px 15px;
+                        background: $White;
+                        box-shadow: 2px 2px 7px rgba(1,1,1,0.1);
+                        text-align: center;
+                        line-height: 130%;
+                        z-index: 200;
+                        @include breakpoint(tablet) {
+                            right: calc((100% - 800px) / 2);
+                            margin: 0 10px 0 0;
+                        }                
+                        div.profileImage {
+                            @include border-radius(100px);
+                            width: 90px;
+                            height: 90px;
+                            margin: 0 auto;
+                            background-color: #006a2f;
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            i {
+                                @include font-size(45);
+                                display: block;
+                                padding: 22px 0;
+                                color: $White;
+                            }
+                        }
+                        p.useName {
+                            @include font-size(18);
+                            margin: 14px 0;
+                            font-weight: 700;
+                        }
+                        div.infoBtnList {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            margin: 30px 0 16px 0;
+                            > button {
+                                display: block;
+                                > i {
+                                    @include font-size(21);
+                                    color: $Gray-05;
+                                }
+                                > span {
+                                    @include font-size(13);
+                                    display: block;
+                                    margin: 5px 0 0 0;
+                                    color: $Black;
+                                    font-weight: 700;
+                                }
+                            }
+                            &.col2 {
+                                > button {
+                                    width: 42%;
+                                    margin: 0 4%;
+                                }
+                            }
+                            &.col3 {
+                                > button {
+                                    width: 27%;
+                                    margin: 0 3.16%;
+                                }
+                            }        
+                        }
+                        div.termBtnList {
+                            > button {
+                                @include font-size(13);
+                                margin: 0 0 0 7px;
+                                color: $Gray-05;
+                                font-weight: 700;
+                                &:first-child {
+                                    margin:0;
+                                }
+                                &.bdl {
+                                    position: relative;
+                                    padding: 0 0 0 7px;
+                                    &::before{
+                                        position: absolute;
+                                        top: 6px;
+                                        left: 0;
+                                        display: inline-block;
+                                        content: '';
+                                        width: 1px;
+                                        height: 10px;
+                                        background: $Gray-05;
+                                    }
+                                }
+                            }
+                        }
+                    }    
+                }
+            }
+
+            //GNB
+            div.gnbWrap {
+                width: 100%;
+                height: 48px;
+                background: $White;
+                border-bottom: 1px solid $Gray-03;
+                ul.gnbList {
+                    width: 100%;
+                    height: inherit;
+                    padding: 0 20px;
+                    text-align: center;
+                    @include breakpoint(tablet) {
+                        width: 800px;
+                        margin: 0 auto;
+                    }
+                    li {
+                        display: inline-block;
+                        min-width: 38px;
+                        height: inherit;
+                        margin: 0 12px;
+                        text-align: center;
+                        @include breakpoint(tablet) {
+                            margin: 0 20px;
+                        }
+                        &.on {
+                            border-bottom: 3px solid $Primary;
+                            i {
+                                color: $Primary;
+                            }
+                        }
+                        button {
+                            width: 100%;
+                            height: inherit;
+                            padding: 6px 0 5px 0;
+                        }
+                        i {
+                            @include font-size(22);
+                            margin: 0;
+                            color: $Gray-07;
+                        }
+                    }
+                }
+            }
+
+            //스크롤 애니메이션
+            &.on {
+                -webkit-animation-name: headerSlide;
+                animation-name: headerSlide;
+                -webkit-animation-duration: 0.2s;
+                animation-duration: 0.2s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+            }
+            &.off {
+                top:0;
+            }
+
+        }
+
+
+        //서브페이지 헤더
+        div.subHeaderWrap {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 48px;
+            z-index: 100;
+            background: $Gray-02;
+            header.subHeader {
+                position: relative;
+                width: 100%;
+                height: inherit;
+                text-align: center;
+                @include breakpoint(tablet) {
+                    width: 800px;
+                    margin: 0 auto;
+                }
+                h1.pageName {
+                    padding: 0 60px;
+                    font-weight: 700;
+                    color: $Black;
+                    line-height: 48px;
+                }
+
+                //학원명이 있을 때
+                &.subTxt {
+                    padding: 9px 0;
+                    h1.pageName {
+                        line-height: 100%
+                    }
+                    span.subTxt {
+                        @include font-size(12);
+                        display: block;
+                        margin: 4px 0 0 0;
+                        font-weight: 300;
+                        color: $Black;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                }
+
+                //뒤로가기,닫기 버튼 - 왼쪽 고정
+                button.btnPoLeft {
+                    position: absolute;
+                    top: 10px;
+                    left: 16px;
+                    width: 30px;
+                    height: 30px;
+                    > i {
+                        display: inline-block;
+                        margin: 2px 0 0 0;
+                    }
+                }
+
+                //글쓰기 완료 등 기능성 버튼 - 오른쪽 고정
+                button.btnPoRight {
+                    position: absolute;
+                    top: 8px;
+                    right: 16px;
+                }
+
+                //폰트아이콘 버튼 - 오른쪽 고정
+                button.icoBtn {
+                    position: absolute;
+                    top: 10px;
+                    right: 16px;
+                    width: 30px;
+                    height: 30px;
+                    > i {
+                        @include font-size(22);
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+
+
+        div.articleWrap {
+            width: 100%;
+            height: 100%;
+            padding: 48px 0;
+            background: $White;
+            @include breakpoint(tablet) {
+                height: auto;
+                min-height: 100vh;
+            }
+            &.bgW {
+                background: $White;
+            }
+            &.bgLgtray {
+                background: $Gray-01;
+                > article {
+                    @include breakpoint(tablet) {
+                        background:$Gray-01;
+                    }
+                }
+            }
+            //각 페이지의 article
+            > article {
+                
+            }
+        }
+    }
+    
+    //alert
+    span.alert {
+        @include border-radius(100%);
+        @include font-size(7);
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        top: 10px;
+        right: 2px;
+        font-family: Arial, Helvetica, sans-serif!important;                
+        background-color: $Warning;                
+        color: $White;
+        line-height: 14px;
+    }
+}

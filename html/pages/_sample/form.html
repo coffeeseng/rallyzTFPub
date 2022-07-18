@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="배컴" />
+    <meta name="keywords" content="랠리즈">
+    <meta name="description" content="랠리즈">
+    <title>랠리즈 - 샘플 - 폼</title>
+    <link rel="stylesheet" href="../../common/_inc/css/mainVer2.css"><!--기본 CSS-->
+    <!-- 샘플확인용 스타일-->
+    <style>
+        div.containerVer2 { padding: 100px 0 0 0; }
+        ul.sampleList { width: 100%; position: fixed; top: 0; display: flex; flex-wrap: wrap;  padding: 0; z-index: 999; }
+        ul.sampleList li { width: calc(100% / 4); height: 40px; line-height: 40px; background: #343b4c; color: #fff; font-size: 12px; text-align: center; border-bottom: 1px solid #454c5f; }
+        ul.sampleList li.on { background: #222734; font-weight: bold; }
+        div.sample { padding: 0 16px; margin: 20px 0;}
+        div { margin: 10px 0 0 0;}
+        div.checkBoxWrap { padding: 15px 0;}
+        div.slider { margin: 0;}
+        div.radioWrap { padding: 0; margin: 20px; }
+    </style>
+    <!-- //샘플확인용 스타일-->
+</head>
+<body>
+
+    <ul class="sampleList">
+        <li><a href="button.html" target="_self">button</a></li>
+        <li><a href="buttonWrap.html" target="_self">buttonWrap</a></li>
+        <li class="on"><a href="form.html" target="_self">form</a></li>
+        <li><a href="inputList.html" target="_self">inputType</a></li>
+        <li><a href="userList.html" target="_self">userList</a></li>
+        <li><a href="mainHeader.html" target="_self">mainHeader</a></li>
+        <li><a href="subHeader.html" target="_self">subHeader</a></li>
+        <li><a href="page.html" target="_self">page</a></li>
+    </ul>
+
+    <div class="containerVer2">
+
+            <div class="sample">
+
+                <!-- 첨부된 파일 리스트 -->
+                <div class="attachListWrap">
+                    <ul class="attachList">
+                        <li>
+                            <span class="fileName">myfilename2574.png</span>
+                            <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제하기</span></i></button>
+                        </li>
+                        <li>
+                            <span class="fileName">smailnamesmilesilie.png</span>
+                            <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제하기</span></i></button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //첨부된 파일 리스트 -->
+
+                <!-- 첨부된 파일 리스트 - disable -->
+                <div class="attachListWrap">
+                    <ul class="attachList disable">
+                        <li>
+                            <span class="fileName">disableFile.png</span>
+                            <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제하기</span></i></button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //첨부된 파일 리스트 - disable -->
+
+                <!-- 파일 첨부하기 -->
+                <div class="fileAttachWrap">
+                    <label class="btnFileAttach" for="inputFile1"><span>Attachments</span></label>
+                </div>
+                <!-- //파일 첨부하기 -->
+
+                <!-- 파일 첨부하기 - disable -->
+                <div class="fileAttachWrap">
+                    <label class="btnFileAttach disable" for="inputFile1"><span>Attachments</span></label>
+                </div>
+                <!-- //파일 첨부하기 - disable -->
+
+                <!-- 즐겨찾기 -->
+                <div class="bookmarkWrap">
+                    <input type="checkbox" id="fun10" name="" value="" class="blind" />
+                    <label for="fun10"><span class="blind">즐겨찾기</span></label>
+                </div>
+
+                <div class="bookmarkWrap">
+                    <input type="checkbox" id="fun11" name="" value="" class="blind" />
+                    <label for="fun11"><span class="blind">즐겨찾기</span></label>
+                </div>
+                <!--//즐겨찾기-->
+
+                <!--요일 선택-->
+                <div class="weeklySelectWrap">
+                    <button type="button" id="mon" class="mon day" value="월">월</button>
+                    <button type="button" id="tue" class="tue day" value="화">화</button>
+                    <button type="button" id="wed" class="wed day" value="수">수</button>
+                    <button type="button" id="thu" class="thu day" value="목">목</button>
+                    <button type="button" id="fri" class="fri day" value="금">금</button>
+                    <button type="button" id="sat" class="sat day" value="토">토</button>
+                    <button type="button" id="sun" class="sun day on" value="일">일</button>
+                </div>
+                <!--//요일 선택-->
+
+                <div class="checkBoxWrap">
+                    <input type="checkbox" id="fnc01" name="" value="" />
+                    <label for="fnc01">오늘 하루 보지 않기</label>
+                    <span class="checkmark"></span>
+                </div>
+
+                <div class="checkBoxWrap alignRight">
+                    <input type="checkbox" id="fnc02" name="" value="" />
+                    <label for="fnc02">오늘 하루 보지 않기</label>
+                    <span class="checkmark"></span>
+                </div>
+
+                <div class="checkBoxWrap disabled">
+                    <input type="checkbox" id="fnc03" name="" value="" />
+                    <label for="fnc03">오늘 하루 보지 않기</label>
+                    <span class="checkmark"></span>
+                </div>
+
+                <div class="checkBoxWrap small">
+                    <input type="checkbox" id="fnc04" name="" value="" />
+                    <label for="fnc04">오늘 하루 보지 않기</label>
+                    <span class="checkmark"></span>
+                </div>
+
+                <div class="checkBoxWrap circle">
+                    <input type="checkbox" id="fnc05" name="" value="" />
+                    <label for="fnc05">오늘 하루 보지 않기</label>
+                    <span class="checkmark"></span>
+                </div>
+
+                <div class="checkBoxWrap circleRight">
+                    <input type="checkbox" id="fnc06" name="" value="" />
+                    <label for="fnc06">오늘 하루 보지 않기</label>
+                    <span class="checkmark"></span>
+                </div>
+
+                <div class="radioWrap">
+                    <input type="radio" name="aa" id="fun07"><label for="fun07">아닙니다.</label>
+                </div>
+
+                <div class="radioWrap">
+                    <input type="radio" name="aa" id="fun08"><label for="fun08">아니라구요</label>
+                </div>
+
+                <div>
+                    <label class="btnToggle">
+                        <input type="checkbox"><div class="slider round"></div>
+                    </label>
+                </div>
+                
+                <div class="inputWrap">
+                    <input type="text">
+                </div>
+    
+                <div class="inputWrap">
+                    <input type="text" placeholder="내용나옵니다.">
+                </div>
+
+                <div class="inputWrap">
+                    <input type="text" class="thin">
+                </div>
+    
+                <div class="inputWrap">
+                    <input type="text" class="thin" placeholder="thin 타입">
+                </div>
+
+                <div class="inputWrap">
+                    <input type="text" disabled>
+                </div>
+    
+                <div class="inputWrap">
+                    <input type="text" class="thin" disabled placeholder="thin 타입">
+                </div>
+
+                <div class="inputWrap">
+                    <input type="date">
+                </div>
+
+                <div class="inputWrap">
+                    <input type="time">
+                </div>
+
+                <div class="inputWrap">
+                    <input type="number">
+                </div>
+
+                <div class="selectWrap">
+                    <select>
+                        <option value="선택하세요"></option>
+                        <option value="선택하세요2"></option>
+                        <option value="선택하세요3"></option>
+                    </select>
+                </div>
+
+                <div class="textareaWrap">
+                    <textarea placeholder="내용을 입력하세요"></textarea>
+                </div>
+
+                <div class="textareaWrap">
+                    <textarea disabled>내용이 입력되었습니다.</textarea>
+                </div>
+            
+            </div>
+
+            <div class="sample">
+
+                <!-- 탭 2개 -->
+                <div class="tabWrap">
+                    <ul class="tab col2">
+                        <li class="on">탭111</li>
+                        <li>탭222</li>
+                    </ul>
+                </div>
+                <!-- //탭 2개 -->
+
+                <!-- 탭 3개 -->
+                <div class="tabWrap">
+                    <ul class="tab col3">
+                        <li>탭111</li>
+                        <li class="on">탭222</li>
+                        <li>탭223</li>
+                    </ul>
+                </div>
+                <!-- //탭 3개 -->
+
+            </div>
+        
+        </div>
+</body>
+</html>

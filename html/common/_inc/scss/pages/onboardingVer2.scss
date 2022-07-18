@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@import "../_helperVer2";
+
+
+div.containerVer2 {
+
+    article.onboarding {
+        background: $White;
+    
+        //인트로
+        &.intro {
+    
+        }
+    
+        //즐겨찾기
+        &.bookmark {
+            padding: 0 16px;
+        }
+    
+        //학원만들기
+        &.instCreate {
+            padding: 0 16px;
+        }
+    
+        //클래스만들기
+        &.classCreate {
+            padding: 0 16px;
+        }
+    
+        //생성완료
+        &.createDone {
+            padding: 0 16px;
+            //학원
+            &.inst {
+    
+            }
+            //클래스
+            &.class {
+    
+            }        
+        }
+    
+        //학생등록
+        &.addStudent {
+            padding: 0;
+        }
+    
+        //자녀연결
+        &.dd {
+    
+        }
+    
+        //학원찾기
+        &.searchInst {
+    
+        }
+    
+    
+    }
+
+}

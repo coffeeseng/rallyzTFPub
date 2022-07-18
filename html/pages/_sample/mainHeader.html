@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="배컴" />
+    <meta name="keywords" content="랠리즈">
+    <meta name="description" content="랠리즈">
+    <title>랠리즈 - 샘플 - 메인헤더</title>
+    <link rel="stylesheet" href="../../common/_inc/css/mainVer2.css"><!--기본 CSS-->
+    <!-- 샘플확인용 스타일-->
+    <style>
+        div.containerVer2 { padding: 100px 0 0 0; }
+        ul.sampleList { width: 100%; position: fixed; bottom: 0; display: flex; flex-wrap: wrap;  padding: 0; z-index: 999; }
+        ul.sampleList li { width: calc(100% / 4); height: 40px; line-height: 40px; background: #343b4c; color: #fff; font-size: 12px; text-align: center; border-bottom: 1px solid #454c5f; }
+        ul.sampleList li.on { background: #222734; font-weight: bold; }
+        </style>
+        <!-- //샘플확인용 스타일-->
+</head>
+<body>
+
+    <ul class="sampleList">
+        <li><a href="button.html" target="_self">button</a></li>
+        <li><a href="buttonWrap.html" target="_self">buttonWrap</a></li>
+        <li><a href="form.html" target="_self">form</a></li>
+        <li><a href="inputList.html" target="_self">inputType</a></li>
+        <li><a href="userList.html" target="_self">userList</a></li>
+        <li class="on"><a href="mainHeader.html" target="_self">mainHeader</a></li>
+        <li><a href="subHeader.html" target="_self">subHeader</a></li>
+        <li><a href="page.html" target="_self">page</a></li>
+    </ul>
+
+    <div class="containerVer2">
+
+        <div class="contWrap">
+
+            <!-- 헤더 -->
+            <div class="mainHeaderWrap">
+                <header class="mainHeader">
+                    <h1 class="bi">
+                        <i class="icon-bi-kr"></i><span class="blind">랠리즈</span>
+                    </h1>
+                    <span class="currentPosition">홈</span>
+                    <ul class="topBtnList">
+                        <li><button type="button" class="btn"><i class="icon-search"><span class="blind">검색</span></i></button></li>
+                        <li>
+                            <button type="button" class="btn"><span class="alert">N</span><i class="icon-alert"><span class="blind">알람</span></i></button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btnUserInfo"><!-- .btnUserInfo 버튼 터치하면 div.userInfoBox 노출 -->
+                                <div class="profileImage">
+                                    <i class="icon-user"><span class="blind">유저 인포</span></i>
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
+                </header>
+                <div class="gnbWrap">
+                    <ul class="gnbList">
+                        <li>
+                            <button type="button"><i class="icon-gnbHome-ver2"><span class="blind">홈</span></i></button>
+                        </li>
+                        <li class="on"><button type="button"><i class="icon-gnbFeed-ver2"><span class="blind">피드</span></i></button>
+                        </li>
+                        <li>
+                            <button type="button"><i class="icon-gnbChat-ver2 chat"><span class="blind">소통</span></i></button>
+                        </li>
+                        <li>
+                            <button type="button"><i class="icon-gnbCalendar-ver2 schedule"><span class="blind">일정</span></i></button>
+                        </li>
+                        <li>
+                            <button type="button"><i class="icon-gnbMore-ver2 more"><span class="blind">더보기</span></i></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //헤더 -->
+
+
+        </div>
+    </div>
+</body>
+</html>

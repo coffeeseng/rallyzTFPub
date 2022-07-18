@@ -1,0 +1,456 @@
+div.btnGroupToggle:after, div.btnGroup.col2:after, div.btnGroup.col3:after, div.btnGroup.col4:after, div.btnLineGroup:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+button, a {
+  cursor: pointer;
+  background-color: transparent;
+  outline: 0;
+  border: none; }
+
+button {
+  display: inline-block;
+  letter-spacing: -0.5px;
+  text-align: center;
+  font-weight: 400; }
+  button.lg {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    font-size: 17px;
+    display: block;
+    width: 320px;
+    height: 50px;
+    padding: 0 15px;
+    max-width: 100%;
+    margin: 0 auto;
+    font-weight: bold; }
+  button.md {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    font-size: 17px;
+    display: block;
+    width: 280px;
+    height: 50px;
+    padding: 0 15px;
+    max-width: 100%;
+    margin: 0 auto; }
+  button.sm {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    font-size: 17px;
+    display: block;
+    width: 240px;
+    height: 50px;
+    padding: 0 10px;
+    max-width: 100%;
+    margin: 0 auto; }
+  button.xs {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    font-size: 15px;
+    display: inline-block;
+    min-width: 46px;
+    max-width: 100%;
+    height: 30px;
+    padding: 0 8px;
+    margin: 0 auto; }
+  button.xxs {
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    font-size: 14px;
+    display: inline-block;
+    min-width: 40px;
+    max-width: 100%;
+    height: 26px;
+    padding: 3px 6px;
+    margin: 0 auto;
+    font-weight: bold; }
+  button.thin {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    display: block;
+    width: 320px;
+    height: 40px;
+    padding: 0 15px;
+    max-width: 100%;
+    margin: 0 auto; }
+
+.btn {
+  background: none; }
+
+.btnPrimary {
+  color: #fff;
+  background: #33CC33; }
+
+.btnNaver {
+  color: #fff;
+  background: #19CE60; }
+
+.btnLightGray {
+  color: #7E8086;
+  background: #E0E3E6; }
+
+.btnDarkGray {
+  color: #fff;
+  background: #5C606A; }
+
+.btnWarning {
+  color: #fff;
+  background: #ff6644; }
+
+a.textLink {
+  color: #33CC33;
+  font-weight: bold; }
+
+button.exitBtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: none; }
+
+.btnLine {
+  border: 1px solid !important;
+  background: #fff; }
+  .btnLine.primary {
+    color: #33CC33;
+    border-color: #33CC33; }
+  .btnLine.gray {
+    color: #5C606A;
+    border-color: #5C606A; }
+  .btnLine.warning {
+    color: #ff6644;
+    border-color: #ff6644; }
+  .btnLine.secondary {
+    color: #3438FF;
+    border-color: #3438FF; }
+  .btnLine.info {
+    color: #5887FF;
+    border-color: #5887FF; }
+  .btnLine.col2 {
+    float: left;
+    width: 49%;
+    margin-left: 2%; }
+    .btnLine.col2:first-child {
+      margin: 0; }
+
+.inputBtn {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  font-size: 14px;
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  min-width: 46px;
+  height: 30px;
+  padding: 0 5px;
+  font-weight: 400;
+  background: none;
+  border: 1px solid; }
+  .inputBtn.gray {
+    border-color: #271E16;
+    color: #271E16; }
+  .inputBtn.darkGray {
+    border-color: #272A2F;
+    color: #272A2F; }
+  .inputBtn.primary {
+    border-color: #33CC33;
+    color: #33CC33; }
+  .inputBtn.small {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    height: 30px; }
+
+button.btnVertical2 {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  width: 75px;
+  height: 102px; }
+
+div.btnGroupToggle {
+  width: 100%; }
+  div.btnGroupToggle button {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 50px;
+    background: none;
+    border: 1px solid #E0E3E6;
+    color: #5C606A; }
+    @media (max-width: 575px) {
+      div.btnGroupToggle button {
+        height: 50px; } }
+    div.btnGroupToggle button.on {
+      border: 1px solid #33CC33;
+      color: #33CC33;
+      background: #D6F5D6;
+      font-weight: bold; }
+    div.btnGroupToggle button.left {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px; }
+    div.btnGroupToggle button.right {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px; }
+  div.btnGroupToggle.col3 button {
+    width: 33.3%; }
+
+button.headerTEXTBtn {
+  font-size: 15px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  position: fixed;
+  z-index: 999;
+  top: 12px;
+  right: 10px;
+  min-width: 48px;
+  height: 24px;
+  padding: 0 10px;
+  background: #33CC33;
+  color: #fff; }
+  button.headerTEXTBtn.done {
+    background: #5C606A;
+    color: #fff !important; }
+  @media all and (min-width: 1000px) {
+    button.headerTEXTBtn {
+      position: absolute; } }
+  @media all and (min-width: 1000px) {
+    button.headerTEXTBtn.poAbs {
+      right: calc((100% - 780px)/2); } }
+
+button.headClassMainIcon {
+  font-size: 23px; }
+
+button.btnInstMng {
+  font-size: 15px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  position: fixed;
+  z-index: 999;
+  top: 9px;
+  right: 10px;
+  min-width: 75px;
+  height: 24px;
+  padding: 0 8px;
+  background: #5C606A;
+  color: #fff; }
+  @media all and (min-width: 1000px) {
+    button.btnInstMng {
+      position: absolute; } }
+
+button.btnSmToggle {
+  font-size: 14px;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  width: 55px;
+  height: 48px;
+  color: #B6BCBF;
+  z-index: 10; }
+  button.btnSmToggle::before {
+    font-size: 15px;
+    font-family: 'icomoon' !important;
+    speak: never;
+    content: '\e922';
+    position: absolute;
+    top: 17px;
+    left: 25px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    pointer-events: none; }
+  button.btnSmToggle.inside {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    width: 24px;
+    height: 24px; }
+    button.btnSmToggle.inside::before {
+      top: 4px;
+      left: 10px; }
+
+div.btnGroup {
+  text-align: center; }
+  div.btnGroup button {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    width: 100%;
+    height: 50px;
+    font-weight: 600;
+    border: 0; }
+  div.btnGroup.col2 button {
+    float: left;
+    width: 49%;
+    margin-left: 2%; }
+    div.btnGroup.col2 button:first-child {
+      margin-left: 0; }
+  div.btnGroup.col3 button {
+    float: left;
+    width: 32.5%;
+    margin-left: 1%; }
+    div.btnGroup.col3 button:first-child {
+      margin-left: 0; }
+  div.btnGroup.col4 button {
+    float: left;
+    width: 23.5%;
+    margin-left: 2%; }
+    div.btnGroup.col4 button:first-child {
+      margin-left: 0; }
+
+div.btnWrap button.btnSubmitLater {
+  display: block;
+  width: 70px;
+  margin: 16px auto 0 auto;
+  text-decoration: underline;
+  color: #575B65; }
+
+.btnPoLeft {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background: none; }
+
+.btnPoRight {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background: none; }
+
+div.floatingBtnBox {
+  position: fixed;
+  width: 100%;
+  bottom: 55px;
+  left: 0; }
+  @media all and (min-width: 1000px) {
+    div.floatingBtnBox {
+      position: static;
+      width: 100%;
+      margin: 0 auto;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none; } }
+  @media (max-width: 1000px) and (orientation: landscape) {
+    div.floatingBtnBox {
+      position: static;
+      width: 100%;
+      margin: 0 auto;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none; } }
+
+div.btnLineGroup {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  border: 1px solid #E0E3E6;
+  color: #5C606A; }
+  div.btnLineGroup button {
+    float: left;
+    height: 48px;
+    color: #5C606A;
+    border-left: 1px solid #e3e7ec; }
+    div.btnLineGroup button:first-child {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-left: none; }
+    div.btnLineGroup button:last-child {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px; }
+    div.btnLineGroup button.on {
+      border: 1px solid #33CC33;
+      color: #33CC33;
+      background: #D6F5D6;
+      font-weight: bold; }
+  div.btnLineGroup.col1 {
+    border: none;
+    border-radius: none; }
+    div.btnLineGroup.col1 button {
+      width: 100%;
+      border-radius: 5px; }
+  div.btnLineGroup.col2 button {
+    width: 50%; }
+  div.btnLineGroup.col3 button {
+    width: 33.3%; }
+
+button.btnBigIcon {
+  height: 130px;
+  background: #F7F9FA;
+  color: #c4cacf;
+  border: 1px solid #E0E3E6;
+  border-radius: 5px;
+  font-weight: bold; }
+  button.btnBigIcon i {
+    display: block;
+    padding: 10px 0 0 0;
+    font-size: 40px;
+    margin: 0 0 10px 0; }
+  button.btnBigIcon.on {
+    background: #fff;
+    color: #33CC33;
+    border: 1px solid #33CC33; }
+
+button.btnCircle {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border: 2px solid;
+  border-radius: 100%;
+  background: none; }
+  button.btnCircle.primary {
+    border-color: #33CC33;
+    color: #33CC33; }
+  button.btnCircle i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-top: 2px; }
+
+button.btnGoTop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 30px;
+  border-top-left-radius: 10px;
+  background-color: #271E16;
+  color: #fff;
+  opacity: 0.7;
+  font-size: 13px; }

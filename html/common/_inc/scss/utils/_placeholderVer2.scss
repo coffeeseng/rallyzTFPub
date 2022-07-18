@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+
+//** extend로 사용할 placehoder **//
+
+
+//텍스트 말줄임
+%ellipsis {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+//float 해제
+%clearfix {
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}

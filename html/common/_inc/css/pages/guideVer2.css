@@ -1,0 +1,154 @@
+div.containerVer2 article.guide article.guideBox ul.guideList li button.btnGo:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+div.containerVer2 article.guide {
+  background: #FFFFFF; }
+  div.containerVer2 article.guide div.greetingBox {
+    width: 100%;
+    height: 130px;
+    padding: 23px 16px;
+    background: url("../../images/guide/greeting_01.svg") #E9F8E9 right 16px bottom no-repeat;
+    background-size: 150px; }
+    div.containerVer2 article.guide div.greetingBox h2 {
+      font-size: 20px;
+      margin: 22px 0 7px 0;
+      color: #272A2F;
+      font-weight: 700; }
+      div.containerVer2 article.guide div.greetingBox h2 em {
+        color: #2DB62D; }
+    div.containerVer2 article.guide div.greetingBox p.desc {
+      color: #575B65; }
+  div.containerVer2 article.guide article.guideBox {
+    padding: 31px 0 16px 0;
+    margin: 0 16px; }
+    div.containerVer2 article.guide article.guideBox.border {
+      border-top: 1px solid #F2F4F6; }
+    div.containerVer2 article.guide article.guideBox ul.guideList li button.btnGo {
+      position: relative;
+      width: 100%;
+      padding: 15px 0;
+      text-align: left; }
+      div.containerVer2 article.guide article.guideBox ul.guideList li button.btnGo::after {
+        font-size: 14px;
+        font-family: 'icomoon' !important;
+        speak: never;
+        content: '\e901';
+        position: absolute;
+        top: 33px;
+        right: 10px;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        pointer-events: none;
+        color: #B6BCBF; }
+      div.containerVer2 article.guide article.guideBox ul.guideList li button.btnGo div.ico {
+        -webkit-border-radius: 100px;
+        border-radius: 100px;
+        background-clip: padding-box;
+        /* stops bg color from leaking outside the border: */
+        float: left;
+        width: 50px;
+        height: 50px; }
+        div.containerVer2 article.guide article.guideBox ul.guideList li button.btnGo div.ico.owner {
+          background: url("../../images/guide/icoOwner.svg") #f0fbf7 center no-repeat;
+          background-size: 34px; }
+        div.containerVer2 article.guide article.guideBox ul.guideList li button.btnGo div.ico.teacher {
+          background: url("../../images/guide/icoTeacher.svg") #f0fbf7 center no-repeat;
+          background-size: 34px; }
+        div.containerVer2 article.guide article.guideBox ul.guideList li button.btnGo div.ico.parents {
+          background: url("../../images/guide/icoParents.svg") #f0fbf7 center no-repeat;
+          background-size: 34px; }
+        div.containerVer2 article.guide article.guideBox ul.guideList li button.btnGo div.ico.search {
+          background: url("../../images/guide/icoSearch.svg") #f0fbf7 center no-repeat;
+          background-size: 34px; }
+      div.containerVer2 article.guide article.guideBox ul.guideList li button.btnGo p {
+        font-size: 12px;
+        float: left;
+        margin: 7px 0 0 10px; }
+        div.containerVer2 article.guide article.guideBox ul.guideList li button.btnGo p em {
+          font-size: 14px;
+          display: block;
+          color: #272A2F;
+          font-weight: bold; }
+  div.containerVer2 article.guide button.btnShowHelp {
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    position: fixed;
+    bottom: 32px;
+    right: 16px;
+    width: 56px;
+    height: 56px;
+    background: #33CC33;
+    -webkit-box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15); }
+    div.containerVer2 article.guide button.btnShowHelp i {
+      font-size: 24px;
+      display: block;
+      margin: 2px 0 0 0;
+      color: #FFFFFF; }
+  div.containerVer2 article.guide div.helpWrap {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 200;
+    background: rgba(0, 0, 0, 0.5); }
+    div.containerVer2 article.guide div.helpWrap.on {
+      display: block; }
+    div.containerVer2 article.guide div.helpWrap button.btnCloseHelp {
+      -webkit-border-radius: 100px;
+      border-radius: 100px;
+      background-clip: padding-box;
+      /* stops bg color from leaking outside the border: */
+      position: fixed;
+      bottom: 32px;
+      right: 16px;
+      width: 56px;
+      height: 56px;
+      background: #FFFFFF;
+      -webkit-box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
+      box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
+      z-index: 100; }
+      div.containerVer2 article.guide div.helpWrap button.btnCloseHelp i {
+        font-size: 20px;
+        display: block;
+        color: #383E44; }
+    div.containerVer2 article.guide div.helpWrap ul.helpList {
+      position: fixed;
+      bottom: 96px;
+      right: 16px; }
+      div.containerVer2 article.guide div.helpWrap ul.helpList li {
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        background-clip: padding-box;
+        /* stops bg color from leaking outside the border: */
+        width: 176px;
+        height: 48px;
+        margin: 0 0 7px 0;
+        background: #FFFFFF; }
+        div.containerVer2 article.guide div.helpWrap ul.helpList li:last-child {
+          margin: 0; }
+        div.containerVer2 article.guide div.helpWrap ul.helpList li button.btnGo {
+          width: 100%;
+          height: 48px;
+          padding: 12px 20px; }
+          div.containerVer2 article.guide div.helpWrap ul.helpList li button.btnGo i {
+            font-size: 18px;
+            display: inline-block;
+            width: 20px;
+            margin: 0 10px 0 0;
+            color: #383E44;
+            vertical-align: top; }
+          div.containerVer2 article.guide div.helpWrap ul.helpList li button.btnGo span {
+            display: inline-block;
+            width: calc(100% - 40px);
+            color: #383E44;
+            text-align: center; }
