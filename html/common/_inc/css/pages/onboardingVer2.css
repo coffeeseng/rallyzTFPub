@@ -1,12 +1,1 @@
-div.containerVer2 article.onboarding {
-  background: #FFFFFF; }
-  div.containerVer2 article.onboarding.bookmark {
-    padding: 0 16px; }
-  div.containerVer2 article.onboarding.instCreate {
-    padding: 0 16px; }
-  div.containerVer2 article.onboarding.classCreate {
-    padding: 0 16px; }
-  div.containerVer2 article.onboarding.createDone {
-    padding: 0 16px; }
-  div.containerVer2 article.onboarding.addStudent {
-    padding: 0; }
+div.containerVer2 article.onboarding{background:#FFFFFF}div.containerVer2 article.onboarding.bookmark{padding:0 16px}div.containerVer2 article.onboarding.instCreate{padding:0 16px}div.containerVer2 article.onboarding.classCreate{padding:0 16px}div.containerVer2 article.onboarding.createDone{padding:0 16px}div.containerVer2 article.onboarding.addStudent{padding:0}

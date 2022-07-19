@@ -1,0 +1,193 @@
+@charset "UTF-8";
+@import "../_helperVer2";
+
+
+div.containerVer2 {
+
+
+    div.modalCover {
+        position: fixed;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        width: 100%;
+        height: 100%;
+        padding: 16px;
+        background:rgba(0,0,0,0.4);
+        overflow-y: hidden;
+        &.on {
+            display: flex;
+        }
+        &.off {
+            display: none;
+        }
+        
+        //우측 상단 닫기 버튼
+        div.modalClose {
+            width: 100%;
+            padding: 0 0 4px 0;
+            text-align: right;
+            @include breakpoint(tablet) {
+                max-width: 500px;
+            }
+            button.btnClose {
+                @include font-size(15);
+                width: 20px;
+                height: 20px;
+                color: $White;
+                background: transparent;
+            }
+        }
+
+        //모달 본문
+        div.modalWrap {
+            position: relative;
+            width: 100%;
+            min-height: 150px;
+            max-width: 500px;
+            max-height: 80%;
+            overflow-y: auto;
+            margin: 0 auto;
+            background: $White;
+            box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
+
+            //풀스크린 커버 타입
+            &.coverType {
+                @include border-radius(8px);
+                position: relative;
+                width: 100%;
+                height: auto;
+                padding: 24px 16px 16px 16px;
+                z-index: 1000;
+                div.title {
+                    @include font-size(17);
+                    margin: 0 0 17px 0;
+                    font-weight: 700;
+                    color: $Black;
+                    text-align: center;
+                    &.alignL {
+                        text-align: left;
+                    }
+                }
+                div.contents {
+                    min-height: 50px;
+                    text-align: center;
+                }    
+                div.btnBox {
+                    width: 100%;
+                    margin: 20px 0 0 0;
+                    //버튼 1개
+                    button.btnConfirm {
+                        @include border-radius(8px);
+                        width: 100%;
+                        height: 40px;
+                    }
+                    //버튼 2개
+                    &.col2 {
+                        button {
+                            @include border-radius(8px);
+                            display: inline-block;
+                            height: 48px;
+                            &.left {
+                                width: calc(50% - 6px);
+                                margin: 0 4px 0 0;
+                            }
+                            &.right {
+                                width: calc(50% - 6px);
+                                margin: 0 0 0 4px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            //바텀 타입
+            &.bottomType {
+                position: fixed;
+                top: auto;
+                bottom: 0;
+                min-height: auto;
+                left:  0;
+                width: 100%;
+                height: auto;
+                transform: none;
+                z-index: 1000;
+                border-top-left-radius: 12px;
+                border-top-right-radius: 12px;
+                @include breakpoint(tabletMini) {
+                    @include centerer(true, false);
+                    max-width:800px;
+                }
+                &.line {
+                    bottom: 85px;
+                    border-top: 1px solid $Gray-03;
+                    border-radius: 0;
+                }
+                div.title {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    height: 48px;
+                    color: $Black;
+                    font-weight: 700;
+                    border-bottom: 1px solid $Gray-02;
+                    span {
+                        width: 100%;
+                        display: block;
+                        text-align: center;
+                    }
+                    button {
+                        @include font-size(11);
+                        position: absolute;
+                        top: 0;
+                        width: 48px;
+                        height: 48px;
+                        > i {
+                            display: inline-block;
+                            margin: 4px 0 0 0;
+                        }
+                        &.btnPrev {
+                            left: 0;
+                        }
+                        &.btnClose {
+                            right: 0;
+                        }
+                    }
+                }
+                div.contents {
+                    min-height: 140px;
+                    padding: 20px 16px;
+                    text-align: center;
+                }
+                div.btnBox {
+                    width: 100%;
+                    padding: 16px;
+                    margin: 0 auto;
+                    //버튼 고정(ex.학원공지-글 수정-조회대상 선택 모달)
+                    &.fixed {
+                        // position: fixed;
+                        // bottom: 0;
+                        z-index: 20;
+                        @include breakpoint(tabletMini) {
+                            max-width: 100%;
+                        }
+                    }
+                    //버튼 1개
+                    button.btnConfirm {
+                        @include border-radius(8px);
+                        width: 100%;
+                        height: 56px;
+                    }
+                }
+            }
+
+            div.modal {
+                
+            }
+        }
+    }
+}
