@@ -427,7 +427,7 @@ div.containerVer2 {
 
 
     //즐겨찾기
-    div.bookmarkWrap {
+    div.bookmarkBoxWrap {
         display: inline-block;
         width: 24px;
         height: 24px;
@@ -1172,6 +1172,7 @@ div.containerVer2 {
                         width: calc(100% - 70px);
                         padding: 0 20px 0 0;
                         color: $Gray-06;
+                        line-height: 18px;
                         em.instName {
                             display: block;
                             color: $Black;

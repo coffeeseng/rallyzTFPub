@@ -5,17 +5,186 @@
 div.containerVer2 {
 
     article.onboarding {
-        background: $White;
-
-    
         //인트로
         &.intro {
-    
+            text-align: center;
+            p.mainTxt {
+                @include font-size(20);
+                margin: 0 0 8px 0;
+                color: $Black;
+                font-weight: 700;
+                line-height: 30px;
+            }
+            p.subTxt {
+                @include font-size(14);
+                line-height: 21px;
+            }
+            div.rallyz {
+                width: 100%;
+                padding: 32px 0;
+                img {
+                    width: 375px;
+                    max-width: 100%;
+                    margin: 32px auto 0 auto;
+                }
+            }
+            div.benefitWrap {
+                width: 100%;
+                ul.benefitList {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 9px;
+                    padding: 32px 16px;
+                    li {
+                        @include border-radius(12px);
+                        flex-basis: 48%;
+                        padding: 25px 9px;
+                        margin: 0 0 8px 0;
+                        box-shadow: 0 4px 16px 0 rgba(0,4px,12px,0.05);
+                        img {
+                            width: 48px;
+                            max-width: 100%;
+                        }
+                        p {
+                            @include font-size(12);
+                            color: #5b5b5b;
+                            line-height: 18px;
+                            &.tit {
+                                @include font-size(14);
+                                margin: 0 0 8px 0;
+                                color: $Black;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+            div.rallyzStart {
+                display: flex;
+                padding: 0 16px;
+                background: $Gray-02;
+                text-align: left;
+                align-items: center;
+                img {
+                    display: inline-block;
+                    width: 160px;
+                    max-width: 100%;
+                }
+                p {
+                    @include font-size(16);
+                    display: inline-block;
+                    line-height: 24px;
+                    text-align: left;
+                    font-weight: 700;
+                    color: $Black;
+                }
+            }
         }
     
         //즐겨찾기
         &.bookmark {
             padding: 0 16px;
+            div.processGage {
+                width: 100%;
+                margin: 8px 0 0 0;
+                text-align: right;
+                span {
+                    @include font-size(10);
+                    display: inline-block;
+                    height: 20px;
+                    line-height: 20px;
+                    em {
+                        display: inline-block;
+                        margin: 0 0 0 4px;
+                        color: $Primary;
+                        font-weight: 700;
+                    }
+                }
+                img {
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    margin: 0 0 0 2px;
+                }
+            }
+            div.rallyz {
+                margin: 16px 0 0 0;
+                text-align: center;
+                p {
+                    &.mainTxt {
+                        @include font-size(20);
+                        margin: 0 0 16px 0;
+                        color: $Black;
+                        font-weight: 700;
+                        line-height: 30px;
+                    }
+                    &.subTxt {
+                        @include font-size(14);
+                        line-height: 21px;
+                    }
+                    em {
+                        color: $Green-05;
+                    }
+                }
+            }
+            div.bookmarkWrap {
+                margin: 26px 0 8px 0;
+                ul.bookmarkList {
+                    li {
+                        @include border-radius(10px);
+                        position: relative;
+                        width: 100%;
+                        height: 70px;
+                        padding: 16px 16px;
+                        margin: 0 0 8px 0;
+                        background: $White;
+                        border: 1px solid $Gray-03;
+                        //체크박스가 선택됐을 때
+                        &.selected {
+                            background: $GGreen;
+                            border: 1px solid $Primary;
+                        }
+                        &:last-child {
+                            margin: 0;
+                        }
+                        //기본제공 플래그
+                        div.defaultFlag {
+                            position: absolute;
+                            top: -3px;
+                            right: 8px;
+                            width: 48px;
+                            height: 20px;
+                            background: $Primary;
+                            color: $White;
+                            border-top-left-radius: 2px;
+                            border-top-right-radius: 2px;
+                            border-bottom-left-radius: 7px;
+                            border-bottom-right-radius: 7px;
+                            text-align: center;
+                            span {
+                                @include font-size(10);
+                                font-weight: 700
+                            }
+                        }
+                        //즐겨찾기 체크박스
+                        div.bookmarkBoxWrap {
+                            position: absolute;
+                            top: 8px;
+                            right: 8px;
+                        }
+                        p {
+                            @include font-size(12);
+                            &.tit {
+                                @include font-size(14);
+                                margin: 4px 0 4px 0;
+                                color: $Black;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
         }
     
         //학원만들기
@@ -58,5 +227,37 @@ div.containerVer2 {
     
     
     }
+
+
+
+
+
+
+
+
+
+
+    ///////////////// 모달 /////////////////
+
+    div.modalWrap {
+        div.modal {
+            //페이지별 구분 클래스
+            &.bookmark {
+                div.contents {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
 
 }
