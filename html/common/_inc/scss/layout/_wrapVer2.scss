@@ -376,7 +376,13 @@ div.containerVer2 {
             }
             //각 페이지의 article
             > article {
-                
+                //페이지 내부 메인 타이틀(구조에 따라 h2 h3)
+                h2.title, h3.title {
+                    @include font-size(20);
+                    font-weight: 700;
+                    text-align: center;
+                    color: $Black;
+                }
             }
         }
     }

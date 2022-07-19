@@ -2099,6 +2099,11 @@ div.containerVer2 {
         @media all and (min-width: 1000px) {
           div.containerVer2 div.contWrap div.articleWrap.bgLgtray > article {
             background: #F7F9FA; } }
+      div.containerVer2 div.contWrap div.articleWrap > article h2.title, div.containerVer2 div.contWrap div.articleWrap > article h3.title {
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        color: #272A2F; }
   div.containerVer2 span.alert {
     -webkit-border-radius: 100%;
     border-radius: 100%;
