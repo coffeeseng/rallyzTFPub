@@ -5,6 +5,32 @@
 div.containerVer2 {
 
     article.onboarding {
+
+        //진행상태 게이지
+        div.processGage {
+            width: 100%;
+            margin: 8px 0 0 0;
+            text-align: right;
+            span {
+                @include font-size(10);
+                display: inline-block;
+                height: 20px;
+                line-height: 20px;
+                em {
+                    display: inline-block;
+                    margin: 0 0 0 4px;
+                    color: $Primary;
+                    font-weight: 700;
+                }
+            }
+            img {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin: 0 0 0 2px;
+            }
+        }
+
         //인트로
         &.intro {
             text-align: center;
@@ -30,13 +56,18 @@ div.containerVer2 {
             }
             div.benefitWrap {
                 width: 100%;
+                @include breakpoint(tablet) {
+                    width: 375px;
+                    margin: 0 auto;
+                }
                 ul.benefitList {
+                    width: 100%;
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
                     gap: 9px;
                     padding: 32px 16px;
-                    li {
+                    > li {
                         @include border-radius(12px);
                         flex-basis: 48%;
                         padding: 25px 9px;
@@ -60,12 +91,20 @@ div.containerVer2 {
                     }
                 }
             }
-            div.rallyzStart {
-                display: flex;
-                padding: 0 16px;
+            div.rallyzStartWrap {
+                width: 100%;
                 background: $Gray-02;
-                text-align: left;
-                align-items: center;
+                div.rallyzStart {
+                    width: 100%;
+                    display: flex;
+                    padding: 0 16px;
+                    text-align: left;
+                    align-items: center;
+                    @include breakpoint(tablet) {
+                        width: 375px;
+                        margin: 0 auto;
+                    }
+                }
                 img {
                     display: inline-block;
                     width: 160px;
@@ -85,29 +124,6 @@ div.containerVer2 {
         //즐겨찾기
         &.bookmark {
             padding: 0 16px;
-            div.processGage {
-                width: 100%;
-                margin: 8px 0 0 0;
-                text-align: right;
-                span {
-                    @include font-size(10);
-                    display: inline-block;
-                    height: 20px;
-                    line-height: 20px;
-                    em {
-                        display: inline-block;
-                        margin: 0 0 0 4px;
-                        color: $Primary;
-                        font-weight: 700;
-                    }
-                }
-                img {
-                    display: inline-block;
-                    width: 20px;
-                    height: 20px;
-                    margin: 0 0 0 2px;
-                }
-            }
             div.rallyz {
                 margin: 16px 0 0 0;
                 text-align: center;
@@ -131,7 +147,7 @@ div.containerVer2 {
             div.bookmarkWrap {
                 margin: 26px 0 8px 0;
                 ul.bookmarkList {
-                    li {
+                    > li {
                         @include border-radius(10px);
                         position: relative;
                         width: 100%;
@@ -177,7 +193,7 @@ div.containerVer2 {
                             @include font-size(12);
                             &.tit {
                                 @include font-size(14);
-                                margin: 4px 0 4px 0;
+                                margin: 2px 0 6px 0;
                                 color: $Black;
                                 font-weight: 700;
                             }
@@ -189,25 +205,126 @@ div.containerVer2 {
     
         //학원만들기
         &.instCreate {
-            padding: 0 16px;
+            padding: 0 16px 88px 16px; //버튼 88 fixed때문에 버튼 height만큼 패딩
+            div.instInfoWrap {
+
+            }            
         }
     
         //클래스만들기
         &.classCreate {
-            padding: 0 16px;
+            padding: 0 16px 130px 16px; //버튼 130 fixed때문에 버튼 height만큼 패딩
+            div.classInfoWrap {
+                margin: 18px 0 0 0;
+                dl.inputListRow {
+                    margin: 24px 0 0 0;
+                    dt {
+                        //강사 불러오기 버튼
+                        button.btnLecSelect {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                        }
+                    }
+                    dd {
+                        //수업과목 태그
+                        div.tagBoxWrap {
+                            margin: 8px 0 0 0;
+                        }
+                        //시간 선택
+                        div.timeSelectWrap {
+                            margin: 16px 0 0 0;
+                        }
+                        //클래스 정보 표시
+                        ul.displayItem {
+                            > li {
+                                @extend %clearfix;
+                                @include border-radius(10px);
+                                width: 100%;
+                                height: 48px;
+                                padding: 12px;
+                                margin: 0 0 4px 0;
+                                border: 1px solid $Gray-03;
+                                background: $White;
+                                p.item {
+                                    float: left;
+                                    margin: 4px 0 0 0;
+                                }
+                                div.toggleWrap {
+                                    float: right;
+                                    margin: 4px 0 0 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     
         //생성완료
         &.createDone {
-            padding: 0 16px;
-            //학원
-            &.inst {
-    
+            padding: 48px 16px;
+            div.doneImg {
+                width: 100%;
+                background: url('../../images/ico/completion.svg') top center no-repeat;
+                background-size: 120px;
+                p {
+                    @include font-size(20);
+                    padding: 144px 0 0 0;
+                    color: $Black;
+                    text-align: center;
+                }
             }
-            //클래스
-            &.class {
-    
-            }        
+            div.txtBox {
+                width: 100%;
+                padding: 0 16px;
+                margin: 24px 0 0 0;
+                text-align: center;
+                p {
+                    color: $Gray-06;
+                    line-height: 21px;
+                    &.mainTxt {
+                        @include font-size(20);
+                        margin: 0 0 16px 0;
+                        color: $Green-05;
+                        font-weight: 700;
+                    }
+                    &.subTxt {
+                        @include font-size(20);
+                        margin: 16px 0 0 0;
+                        color: $Black;
+                        font-weight: 700;
+                    }
+                }
+            }
+            div.tipBox {
+                @include border-radius(12px);
+                width: 100%;
+                padding: 16px;
+                margin: 24px 0 0 0;
+                background: #f6fcff;
+                p {
+                    line-height: 21px;
+                    color: $Gray-05;
+                    &.tit {
+                        margin: 0 0 6px 0;
+                        color: $Gray-07;
+                        font-weight: 700;
+                        em {
+                            @include border-radius(4px);
+                            @include font-size(10);
+                            display: inline-block;
+                            padding: 3px 4px;
+                            margin: 3px 7px 0 0;
+                            background: #2477f2;
+                            font-weight: 700;
+                            line-height: 100%;
+                            vertical-align: top;
+                            color: $White;
+                        }
+                    }
+                }                
+            }
         }
     
         //학생등록
@@ -241,14 +358,34 @@ div.containerVer2 {
 
     div.modalWrap {
         div.modal {
-            //페이지별 구분 클래스
+
+            //모달 - 북마크
             &.bookmark {
                 div.contents {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    
                 }
             }
+
+            //모달 - 클래스 등록 나중에
+            &.classCreateExit {
+                div.contents {
+                    p {
+                        @include font-size(12);
+                        line-height: 18px;
+                    }
+                }
+            }
+
+            //모달 - 클래스 등록 완료
+            &.classCreateDone {
+                div.contents {
+                    p {
+                        @include font-size(12);
+                        line-height: 18px;
+                    }
+                }
+            }
+
         }
     }
 

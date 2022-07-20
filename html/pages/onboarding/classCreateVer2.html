@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="배컴" />
+    <meta name="keywords" content="랠리즈">
+    <meta name="description" content="랠리즈">
+    <title>랠리즈 - 002.04 온보딩 - 클래스 등록</title>
+    <link rel="stylesheet" href="../../common/_inc/css/mainVer2.css"><!--기본 CSS-->
+    <link rel="stylesheet" href="../../common/_inc/css/pages/onboardingVer2.css"><!--각 페이지별 CSS-->
+</head>
+<body>
+
+    <div class="containerVer2">
+
+        <div class="contWrap">
+
+            <!-- 서브 페이지 헤더 -->
+            <div class="subHeaderWrap">
+                <header class="subHeader">
+                    <h1 class="pageName">클래스 만들기</h1>
+                    <button type="button" class="btnPoLeft"><i class="icon-close"><span class="blind">닫기</span></i></button>
+                </header>
+            </div>
+            <!-- 서브 페이지 헤더 -->
+
+            <!-- 본문 -->
+            <div class="articleWrap">
+                <article class="onboarding classCreate">
+                    <h2 class="blind">랠리즈 온보딩 - 클래스 등록</h2>
+                    <div class="processGage">
+                        <span>클래스 만들기 <em>2</em>/3</span>
+                        <img src="../../common/_inc/images/ico/processGage_02.svg" alt="step2. 클래스 만들기">
+                    </div>
+                    <div class="classInfoWrap">
+                        <h3 class="title">랠리즈 학원</h3>
+                        <dl class="inputListRow">
+                            <dt>
+                                <span>클래스명</span><span class="essential">필수</span>
+                            </dt>
+                            <dd>
+                                <div class="inputWrap">
+                                    <input type="text" placeholder="클래스명 입력">
+                                </div>
+                            </dd>
+                            <dt>
+                                <span>수업 과목</span><span class="essential">필수</span>
+                                <p class="descSmall">최대 10개 까지 등록 가능</p>
+                            </dt>
+                            <dd>
+                                <div class="inputWrap">
+                                    <button type="button" class="inputBtn primary bdrPrimary">입력</button>
+                                    <input type="text" placeholder="클래스 수업 과목 입력">
+                                </div>
+                                <!--선택된 수업과목 태그-->
+                                <div class="tagBoxWrap">
+                                    <p class="item">
+                                        <span>영어</span>
+                                        <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제</span></i></button>
+                                    </p>
+                                    <p class="item">
+                                        <span>우리학교</span>
+                                        <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제</span></i></button>
+                                    </p>
+                                    <p class="item">
+                                        <span>신나는수업</span>
+                                        <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제</span></i></button>
+                                    </p>
+                                    <p class="item">
+                                        <span>야옹이집사과목</span>
+                                        <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제</span></i></button>
+                                    </p>
+                                    <p class="item">
+                                        <span>수학수학수학</span>
+                                        <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제</span></i></button>
+                                    </p>
+                                </div>
+                                <!--//선택된 수업과목 태그-->
+                            </dd>
+                            <dt>
+                                <span>수업 일정</span><span class="essential">요일 필수</span>s
+                            </dt>
+                            <dd>
+                                <!--요일 선택-->
+                                <div class="weeklySelectWrap">
+                                    <ul>
+                                        <li>
+                                            <button type="button" id="mon" class="mon day" value="월">월</button>
+                                        </li>
+                                        <li>
+                                            <button type="button" id="tue" class="tue day" value="화">화</button>
+                                        </li>
+                                        <li>
+                                            <button type="button" id="wed" class="wed day" value="수">수</button>
+                                        </li>
+                                        <li>
+                                            <button type="button" id="thu" class="thu day" value="목">목</button>
+                                        </li>
+                                        <li>
+                                            <button type="button" id="fri" class="fri day" value="금">금</button>
+                                        </li>
+                                        <li>
+                                            <button type="button" id="sat" class="sat day" value="토">토</button>
+                                        </li>
+                                        <li>
+                                            <button type="button" id="sun" class="sun day on" value="일">일</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--//요일 선택-->
+                                <!--시간 선택-->
+                                <div class="timeSelectWrap">
+                                    <ul class="shortType">
+                                        <li>
+                                            <div class="inputWrap">
+                                                <input type="time">
+                                            </div>
+                                        </li>
+                                        <li class="border">
+                                            <span>-</span>
+                                        </li>
+                                        <li>
+                                            <div class="inputWrap">
+                                                <input type="time">
+                                            </div>
+                                        </li>
+                                        <li class="btn">
+                                            <button type="button" class="btnTimeAdd bdrPrimary">추가</button>
+                                        </li>
+                                    </ul>
+                                    <p class="descNotice">시간 입력 생략 가능합니다.</p>
+                                </div>
+                                <!--//시간 선택-->
+                            </dd>
+                            <dt>
+                                <span>담당 강사</span>
+                                <p class="descSmall">클래스를 운영, 관리할 수 있는 권한이 부여됩니다.</p>
+                                <button type="button" class="bdrDarkGray tinyS btnLecSelect">강사 불러오기</button>
+                            </dt>
+                            <dd>
+                                <div class="inputWrap">
+                                    <input type="text" placeholder="-">
+                                </div>
+                            </dd>
+                            <dt>
+                                <span>클래스 정보 표시 항목</span>
+                                <p class="descSmall">학생, 학부모의 학원 검색 시, 함께 표시되는 클래스 정보 항목을 선택해주세요.</p>
+                            </dt>
+                            <dd>
+                                <!--클래스 정보 표시 선택-->
+                                <ul class="displayItem">
+                                    <li>
+                                        <p class="item">수업 과목</p>
+                                        <div class="toggleWrap">
+                                            <label class="btnToggle">
+                                                <input type="checkbox"><div class="slider round"></div>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="item">강사</p>
+                                        <div class="toggleWrap">
+                                            <label class="btnToggle">
+                                                <input type="checkbox"><div class="slider round"></div>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!--//클래스 정보 표시 선택-->
+                            </dd>
+                        </dl>                        
+                    </div>
+                </article>
+
+                <div class="btnWrap fixed">
+                    <button type="button" class="lg primary">완료</button>
+                    <button type="button" class="btnSubmitLater">나중에 하기</button>
+                </div>
+
+            </div>
+            <!-- //본문 -->
+            
+            <!-- 모달 - 클래스 등록 완료 -->
+            <div class="modalCover off"><!-- .on .off class로 제어 -->
+                <div class="modalWrap coverType">
+                    <div class="modal classCreateDone">
+                        <div class="contents">
+                            <p>클래스 등록이 완료되었습니다.<br />클래스를 추가로 등록하시겠습니까?</p>
+                        </div>
+                        <div class="btnBox col2">
+                            <button type="button" class="left bdrPrimary">추가 등록</button>
+                            <button type="button" class="right primary">등록 완료</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //모달 - 클래스 등록 완료 -->
+
+            <!-- 모달 - 클래스 등록 나중에 하기 -->
+            <div class="modalCover off"><!-- .on .off class로 제어 -->
+                <div class="modalWrap coverType">
+                    <div class="modal classCreateExit">
+                        <div class="contents">
+                            <p>클래스 등록을 중단하고<br />홈 화면으로이동하시겠습니까?</p>
+                        </div>
+                        <div class="btnBox col2">
+                            <button type="button" class="left bdrLgtGray">아니오</button>
+                            <button type="button" class="right primary">예</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //모달 - 클래스 등록 나중에 하기 -->
+
+        </div>
+    </div>
+</body>
+</html>
