@@ -11,7 +11,8 @@ body, html {
 
 div.containerVer2 {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     div.contWrap {
         width: 100%;
         height: 100%;
@@ -20,7 +21,7 @@ div.containerVer2 {
             position: relative;
             width: 800px;
             margin: 0 auto;
-            padding: 0 0 100px 0;
+            //padding: 0 0 100px 0;
         }
 
         //메인 헤더
@@ -328,7 +329,6 @@ div.containerVer2 {
                     height: 30px;
                     > i {
                         display: inline-block;
-                        margin: 2px 0 0 0;
                     }
                 }
 
@@ -358,10 +358,12 @@ div.containerVer2 {
         div.articleWrap {
             width: 100%;
             height: 100%;
-            padding: 48px 0 0 0;
+            padding: 48px 0;
+            background: $White;
             @include breakpoint(tablet) {
                 height: auto;
                 min-height: 100vh;
+                padding: 48px 0 0 0;
             }
             //각 페이지의 article
             > article {

@@ -18,6 +18,8 @@
         ul.sampleList li a { display: block;}
         div.sample { padding: 0 16px; margin: 20px 0;}
         div { margin: 10px 0 0 0;}
+        div.timeSelectWrap { margin: 20px 0;}
+        div.timeSelectWrap div { margin: 0;}
         div.checkBoxWrap { padding: 15px 0;}
         div.slider { margin: 0;}
         div.radioWrap { padding: 0; margin: 20px; }
@@ -94,15 +96,110 @@
 
                 <!--요일 선택-->
                 <div class="weeklySelectWrap">
-                    <button type="button" id="mon" class="mon day" value="월">월</button>
-                    <button type="button" id="tue" class="tue day" value="화">화</button>
-                    <button type="button" id="wed" class="wed day" value="수">수</button>
-                    <button type="button" id="thu" class="thu day" value="목">목</button>
-                    <button type="button" id="fri" class="fri day" value="금">금</button>
-                    <button type="button" id="sat" class="sat day" value="토">토</button>
-                    <button type="button" id="sun" class="sun day on" value="일">일</button>
+                    <ul>
+                        <li>
+                            <button type="button" id="mon" class="mon day" value="월">월</button>
+                        </li>
+                        <li>
+                            <button type="button" id="tue" class="tue day" value="화">화</button>
+                        </li>
+                        <li>
+                            <button type="button" id="wed" class="wed day" value="수">수</button>
+                        </li>
+                        <li>
+                            <button type="button" id="thu" class="thu day" value="목">목</button>
+                        </li>
+                        <li>
+                            <button type="button" id="fri" class="fri day" value="금">금</button>
+                        </li>
+                        <li>
+                            <button type="button" id="sat" class="sat day" value="토">토</button>
+                        </li>
+                        <li>
+                            <button type="button" id="sun" class="sun day on" value="일">일</button>
+                        </li>
+                    </ul>
                 </div>
                 <!--//요일 선택-->
+
+                <!--시간 선택 short -->
+                <div class="timeSelectWrap">
+                    <ul class="shortType">
+                        <li>
+                            <div class="inputWrap">
+                                <input type="time">
+                            </div>
+                        </li>
+                        <li class="border">
+                            <span>-</span>
+                        </li>
+                        <li>
+                            <div class="inputWrap">
+                                <input type="time">
+                            </div>
+                        </li>
+                        <li class="btn">
+                            <button type="button" class="btnTimeAdd bdrPrimary">추가</button>
+                        </li>
+                    </ul>
+                    <p class="descNotice">시간 입력 생략 가능합니다.</p>
+                </div>
+                <!--//시간 선택 short -->
+
+
+
+                <!--과목 선택 큰 네모-->
+                <div class="subjectSelectWrap">
+                    <ul>
+                        <li>
+                            <button type="button" class="subjectLarge" value="">과목1</button>
+                        </li>
+                        <li>
+                            <button type="button" class="subjectLarge" value="">과목2</button>
+                        </li>
+                        <li>
+                            <button type="button" class="subjectLarge" value="">과목3</button>
+                        </li>
+                        <li>
+                            <button type="button" class="subjectLarge on" value="">과목4</button>
+                        </li>
+                        <li>
+                            <button type="button" class="subjectLarge" value="">과목5</button>
+                        </li>
+                        <li>
+                            <button type="button" class="subjectLarge" value="">과목6</button>
+                        </li>
+                    </ul>
+                </div>
+                <!--//과목 선택 큰 네모-->
+
+                <!--과목 선택 작은 네모-->
+                <div class="subjectSelectWrap">
+                    <ul>
+                        <li>
+                            <button type="button" class="subjectSmall" value="">과목1</button>
+                        </li>
+                        <li>
+                            <button type="button" class="subjectSmall" value="">과목2</button>
+                        </li>
+                        <li>
+                            <button type="button" class="subjectSmall" value="">과목3</button>
+                        </li>
+                        <li>
+                            <button type="button" class="subjectSmall on" value="">과목4</button>
+                        </li>
+                        <li>
+                            <button type="button" class="subjectSmall" value="">과목5</button>
+                        </li>
+                        <li>
+                            <button type="button" class="subjectSmall" value="">과목6</button>
+                        </li>
+                    </ul>
+                </div>
+                <!--//과목 선택 작은 네모-->
+
+
+
 
                 <div class="checkBoxWrap">
                     <input type="checkbox" id="fnc01" name="" value="" />
@@ -148,11 +245,75 @@
                     <input type="radio" name="aa" id="fun08"><label for="fun08">아니라구요</label>
                 </div>
 
-                <div>
+                <!--토글 스위치-->
+                <div class="toggleWrap">
                     <label class="btnToggle">
                         <input type="checkbox"><div class="slider round"></div>
                     </label>
                 </div>
+                <!--//토글 스위치-->
+
+                <!--태그 입력 - 과목-->
+                <div class="tagBoxWrap">
+                    <p class="item">
+                        <span>영어</span>
+                        <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제</span></i></button>
+                    </p>
+                    <p class="item">
+                        <span>우리학교</span>
+                        <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제</span></i></button>
+                    </p>
+                    <p class="item">
+                        <span>신나는수업</span>
+                        <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제</span></i></button>
+                    </p>
+                    <p class="item">
+                        <span>야옹이집사과목</span>
+                        <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제</span></i></button>
+                    </p>
+                    <p class="item">
+                        <span>수학수학수학</span>
+                        <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제</span></i></button>
+                    </p>
+                </div>
+                <!--//태그 입력 - 과목-->
+
+                <!--태그 입력 - # 있음 -->
+                <div class="tagBoxWrap">
+                    <p class="item">
+                        <span>#</span>
+                        <span>영어1234</span>
+                        <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제</span></i></button>
+                    </p>
+                    <p class="item">
+                        <span>#</span>
+                        <span>오늘비가올까요</span>
+                        <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제</span></i></button>
+                    </p>
+                    <p class="item">
+                        <span>#</span>
+                        <span>신나는수업</span>
+                        <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제</span></i></button>
+                    </p>
+                </div>
+                <!--//태그 입력 - # 있음-->
+
+                <!--태그 출력 - 삭제 버튼 없음-->
+                <div class="tagBoxWrap">
+                    <p class="item">
+                        <span>#</span>
+                        <span>영어1234</span>
+                    </p>
+                    <p class="item">
+                        <span>#</span>
+                        <span>오늘비가안온다</span>
+                    </p>
+                    <p class="item">
+                        <span>#</span>
+                        <span>신나는수업</span>
+                    </p>
+                </div>
+                <!--//태그 입력-->
                 
                 <div class="inputWrap">
                     <input type="text">

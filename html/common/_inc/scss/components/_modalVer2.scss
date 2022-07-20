@@ -68,13 +68,22 @@ div.containerVer2 {
                     font-weight: 700;
                     color: $Black;
                     text-align: center;
+                    //타이틀이 왼쪽 정렬일 땐
                     &.alignL {
                         text-align: left;
                     }
                 }
                 div.contents {
+                    display: flex;
+                    width: 100%;
                     min-height: 50px;
-                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    p {
+                        width: 100%;
+                        line-height: 135%;
+                        text-align: center;
+                    }
                 }    
                 div.btnBox {
                     width: 100%;
@@ -91,6 +100,7 @@ div.containerVer2 {
                             @include border-radius(8px);
                             display: inline-block;
                             height: 48px;
+                            line-height: 100%;
                             &.left {
                                 width: calc(50% - 6px);
                                 margin: 0 4px 0 0;
