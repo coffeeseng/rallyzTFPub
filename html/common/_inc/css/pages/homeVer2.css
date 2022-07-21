@@ -200,8 +200,15 @@ div.containerVer2 article.home.homeDefault article.homeInner.myInst h3 {
   font-weight: 700;
   font-size: 16px;
 }
+div.containerVer2 article.home.homeDefault article.homeInner.myClass {
+  padding: 32px 0;
+}
+div.containerVer2 article.home.homeDefault article.homeInner.myClass h2.title {
+  padding: 0 16px;
+}
 div.containerVer2 article.home.homeDefault article.homeInner.myClass ul.scrollSelectBtnList {
   margin: 16px 0;
+  padding: 0 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,6 +234,9 @@ div.containerVer2 article.home.homeDefault article.homeInner.myClass ul.scrollSe
   background-color: #33CC33;
   color: #FFFFFF;
   border: 1px solid #33CC33;
+}
+div.containerVer2 article.home.homeDefault article.homeInner.myClass ul.myList {
+  padding: 0 16px;
 }
 div.containerVer2 article.home.homeDefault article.homeInner.myClass ul.myList li div.top:after {
   display: none;
@@ -256,6 +266,20 @@ div.containerVer2 article.home.homeDefault article.homeInner.myClass ul.myList l
   line-height: 1;
   pointer-events: none;
   color: #B6BCBF;
+}
+div.containerVer2 article.home.homeDefault article.homeInner.myClass div.horizontalScrollBox {
+  margin: 0;
+}
+@media all and (min-width: 768px) {
+  div.containerVer2 article.home.homeDefault article.homeInner.myClass h2.title {
+    padding: 0 32px;
+  }
+  div.containerVer2 article.home.homeDefault article.homeInner.myClass ul.scrollSelectBtnList {
+    padding: 0 32px;
+  }
+  div.containerVer2 article.home.homeDefault article.homeInner.myClass ul.myList {
+    padding: 0 32px;
+  }
 }
 div.containerVer2 article.home.homeDefault article.homeInner.todayFeed {
   border-top: 6px solid #F2F4F6;
