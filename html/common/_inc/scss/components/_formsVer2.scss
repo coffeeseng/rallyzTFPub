@@ -980,22 +980,7 @@ div.containerVer2 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    ////// 유저,채팅,권한 등등 리스트의 기본 스타일
+    /////////// 유저,채팅,권한 등등 리스트의 기본 스타일 ///////////
     ul.defaultStyle {
         width: 100%;
         > li {
@@ -1286,6 +1271,9 @@ div.containerVer2 {
     }
 
 
+
+
+
     //알림
     div.alertWrap {
         width: 100%;
@@ -1418,6 +1406,7 @@ div.containerVer2 {
                 }
             }
         }
+        //알림 더 보기 버튼
         button.btnShowAll {
             @include border-radius(8px);
             @include font-size(12);
