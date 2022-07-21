@@ -1,0 +1,133 @@
+@charset "UTF-8";
+@import "../_helperVer2";
+
+div.containerVer2 {
+
+    // 우선 홈에 쓰는 피드 리스트 익스텐드로 지정했음.....
+    %feedListVer2 {
+        // 헤더
+        div.header {
+            p.topInfo {
+                @include font-size(12);
+                span {
+                    margin:0 5px 0 0;
+                    &.strong {
+                        color:$Primary;
+                        font-weight: 500;
+                    }
+                    &.light {
+                        color:$Black;
+                        font-weight: 300;
+                    }
+                }
+            }
+            div.writerInfoBox {
+                display: flex;
+                align-items: flex-start;
+                margin:16px 0 0 0;
+                div.userProfileImg {
+                    width:32px;
+                    height:32px;
+                    margin:0 10px 0 0;
+                    border:1px solid $Gray-03;
+                    border-radius: 100%;
+                }
+                div.writeInfo {
+                    padding:3px 0 0 0;
+                    p.userName {
+                        @include font-size(14);
+                        color:$Black;
+                        font-weight: 700;
+                    }
+                    div.writeInfoDetail {
+                        display: flex;
+                        align-items: center;
+                        p.date {
+                            @include font-size(10);
+                            color:$Gray-06;
+                            font-weight: 300;
+                        }
+                        div.iconGroup {
+                            span {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width:16px;
+                                height:16px;
+                                margin:0 0 0 10px;
+                                color:$Primary;
+                                border:1px solid $Gray-03;
+                                border-radius: 100%;
+                                @include font-size(10);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // 글 내용
+        div.contents {
+            padding:16px 0;
+            > div {
+                &.textWrap {
+                    @include font-size(14);
+                    color:$Gray-06;
+                    white-space: pre-wrap;
+                }
+                &.imageWrap {
+                    img {
+                        width:100%;
+                    }
+                }
+            }
+        }
+        // 밑의 아이콘 및 정보
+        div.footer {
+            display: flex;
+            justify-content: space-between;
+            span {
+                display: flex;
+                align-items: center;
+                @include font-size(10);
+                i {
+                    @include font-size(12);
+                    margin:0 5px 0 0;
+                }
+            }
+            div.leftBox {
+                display: flex;
+                span {
+                    color:$Gray-05;
+                    margin:0 13px 0 0;
+                }
+            }
+            div.rightBox {
+                span {
+                    color:$Primary;
+                }
+            }
+        }
+    }
+
+    // 홈 피드.
+    article.home {
+        &.homeDefault {
+            ul.feedList {
+                margin:16px 0 0 0;
+                padding:0 0 16px 0;
+                background-color: $White;
+                border-bottom:1px solid $Gray-02;
+                border-radius: 16px;
+                li {
+                    @extend %feedListVer2;
+                    padding:16px;
+                    border-top:1px solid $Gray-01;
+                    &:last-child {
+                        padding-bottom:0;
+                        border-bottom:none;
+                    }
+                }
+            }
+        }
+    }
+}
