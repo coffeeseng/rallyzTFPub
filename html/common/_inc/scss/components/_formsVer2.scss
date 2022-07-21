@@ -71,7 +71,7 @@ div.containerVer2 {
         flex-direction: row;
         position: relative;
         padding: 10px;
-        text-align: center;
+        text-align: left;
         &:before {
             font-family: 'icomoon' !important;
             speak: never;
@@ -88,6 +88,8 @@ div.containerVer2 {
     input[type="date"] {
         &::before {
             content: '\e908';
+            display: inline-block;
+            margin: 0 4px 0 0;
         }
     }
     input[type="time"] {
@@ -525,7 +527,6 @@ div.containerVer2 {
                     width: 109px;
                     height: 48px;
                     background: $White;
-                    color: $Gray-06;
                     border: 1px solid $Gray-03;
                     font-weight: 700;
                     line-height: 48px;
@@ -541,7 +542,6 @@ div.containerVer2 {
                     width: 55px;
                     height: 32px;
                     background: $White;
-                    color: $Gray-06;
                     border: 1px solid $Gray-03;
                     font-weight: 400;
                     line-height: 32px;
@@ -1005,6 +1005,7 @@ div.containerVer2 {
             padding: 8px 0;
             background: $White;
             border-bottom: 1px solid $Gray-03;
+            align-items: center;
             &:last-child {
                 border-bottom: 0;
             }
@@ -1113,7 +1114,6 @@ div.containerVer2 {
                 button.btnGo {
                     width: 24px;
                     height: 24px;
-                    margin: 6px 0 0 0;
                     i {
                         color: $Gray-04;
                     }
@@ -1122,7 +1122,6 @@ div.containerVer2 {
                 button.btnSmallToggle {
                     width: 24px;
                     height: 24px;
-                    margin: 6px 0 0 0;
                     i {
                         color: $Gray-04;
                     }
@@ -1153,7 +1152,7 @@ div.containerVer2 {
                             speak: never;
                             content: '\e901';
                             position: absolute;
-                            top: 2px;
+                            top: -1px;
                             right: 0;
                             font-style: normal;
                             font-weight: normal;
@@ -1279,7 +1278,7 @@ div.containerVer2 {
                 button {
                     i {
                         @include font-size(16);
-                        margin: 1px 4px 0 0;
+                        margin: -1px 4px 0 0;
                     }
                 }
             }
