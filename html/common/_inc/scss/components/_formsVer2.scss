@@ -1313,11 +1313,33 @@ div.containerVer2 {
             padding:16px 32px; 
         }
         ul.alertList {
+            display: flex;
+            width:100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
             li {
-                margin: 0 0 8px 0;
-                &:last-child {
-                    margin: 0;
+                width:100%;
+                margin: 10px 0 0 0;
+
+                // 리스트 2개 이상 (리스트가 두 개 이상일 때. 2개씩 보임. !!!PC에서만.)
+                @include breakpoint(tabletMini) {
+                    width:49%;
                 }
+                
+                // 리스트 하나있으면 걍 100%, 첫줄은 margin-top 제외.
+                &:first-child {
+                    margin:0;
+                    &:nth-last-child(1) {
+                        width:100%;
+                    }
+                }
+                // 리스트 2개 이상 두번째 li도 margin-top 제외. (!!!PC에서만.ㅋㅋ)
+                &:nth-child(2) {
+                    @include breakpoint(tabletMini) {
+                        margin:0;
+                    }
+                }
+
                 //클래스 및 일반 알림
                 div.alertMsgBox {
                     position: relative;

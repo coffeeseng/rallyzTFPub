@@ -1646,11 +1646,36 @@ div.containerVer2 div.alertWrap {
     padding: 16px 32px;
   }
 }
-div.containerVer2 div.alertWrap ul.alertList li {
-  margin: 0 0 8px 0;
+div.containerVer2 div.alertWrap ul.alertList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-div.containerVer2 div.alertWrap ul.alertList li:last-child {
+div.containerVer2 div.alertWrap ul.alertList li {
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+@media all and (min-width: 768px) {
+  div.containerVer2 div.alertWrap ul.alertList li {
+    width: 49%;
+  }
+}
+div.containerVer2 div.alertWrap ul.alertList li:first-child {
   margin: 0;
+}
+div.containerVer2 div.alertWrap ul.alertList li:first-child:nth-last-child(1) {
+  width: 100%;
+}
+@media all and (min-width: 768px) {
+  div.containerVer2 div.alertWrap ul.alertList li:nth-child(2) {
+    margin: 0;
+  }
 }
 div.containerVer2 div.alertWrap ul.alertList li div.alertMsgBox {
   position: relative;
