@@ -1302,8 +1302,6 @@ div.containerVer2 {
 
 
 
-
-
     //알림
     div.alertWrap {
         width: 100%;
@@ -1313,36 +1311,8 @@ div.containerVer2 {
             padding:16px 32px; 
         }
         ul.alertList {
-            display: flex;
-            width:100%;
-            justify-content: space-between;
-            flex-wrap: wrap;
+            @extend %responsiveList;
             li {
-                width:100%;
-                margin: 10px 0 0 0;
-
-                // 리스트 2개 이상 (!!!PC에서만.)
-                @include breakpoint(tabletMini) {
-                    width:49%;
-                }
-                
-                // 첫줄은 margin-top 제외.(!!!PC에서만.)
-                &:first-child {
-                    margin:0;
-                    //리스트 하나있으면 걍 100%, (!!!PC에서만.)
-                    &:nth-last-child(1) {
-                        @include breakpoint(tabletMini) {
-                            width:100%;
-                        }
-                    }
-                }
-                // 리스트 2개 이상 두번째 li도 margin-top 제외. (!!!PC에서만.)
-                &:nth-child(2) {
-                    @include breakpoint(tabletMini) {
-                        margin:0;
-                    }
-                }
-
                 //클래스 및 일반 알림
                 div.alertMsgBox {
                     position: relative;
@@ -1479,6 +1449,157 @@ div.containerVer2 {
                 display: inline-block;
                 margin: 0 6px 0 0;
                 vertical-align: top;
+            }
+        }
+    }
+
+    //alert
+    span.alert {
+        @include border-radius(100%);
+        @include font-size(7);
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        top: 10px;
+        right: 2px;
+        font-family: Arial, Helvetica, sans-serif!important;                
+        background-color: $Warning;                
+        color: $White;
+        line-height: 14px;
+    }
+
+
+    // 이미지(클래스, 학원, 프로필 등 백그라운드로 들어가는 이미지 박스 공통)
+    div.imageBoxDefault {
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-color: $Gray-03;
+    }
+
+
+    // 가로스크롤 리스트 박스
+    .horizontalScrollBox {
+        width:100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        &::-webkit-scrollbar { 
+            display: none;
+        }
+        margin:0 0 10px 0;
+    }
+
+
+    // 사용 팁 btnShowHelp 
+    button.btnShowHelp {
+        @include border-radius(100px);
+        position: fixed;
+        bottom: 32px;
+        right: 16px;
+        width: 56px;
+        height: 56px;
+        background: $Primary;
+        box-shadow: 0 4px 16px 0 rgba(0,0,0,0.15);
+        i {
+            @include font-size(24);
+            display: block;
+            margin: 2px 0 0 0;
+            color: $White;
+        }
+        @include breakpoint(tablet) {
+            right: calc(((100% - 800px) / 2) + 32px);
+        }
+    }
+
+
+    //사용 팁 컨텐츠
+    div.helpWrap {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 200;
+        background: rgba(0,0,0,0.5);
+        &.on {
+            display: block;
+        }
+        button.btnCloseHelp {
+            @include border-radius(100px);
+            position: fixed;
+            bottom: 32px;
+            right: 16px;
+            width: 56px;
+            height: 56px;
+            background: $White;
+            box-shadow: 0 4px 16px 0 rgba(0,0,0,0.15);
+            z-index: 100;
+            i {
+                @include font-size(20);
+                display: block;
+                color: $Gray-07;
+            }
+            @include breakpoint(tablet) {
+                right: calc(((100% - 800px) / 2) + 32px);
+            }
+        }
+        ul.helpList {
+            position: fixed;
+            bottom: 96px;
+            right: 16px;
+            li {
+                @include border-radius(50px);
+                width: 176px;
+                height: 48px;
+                margin: 0 0 7px 0;
+                background: $White;
+                &:last-child {
+                    margin: 0;
+                }
+                button.btnGo {
+                    width: 100%;
+                    height: 48px;
+                    padding: 12px 20px;
+                    i {
+                        @include font-size(18);
+                        display: inline-block;
+                        width: 20px;
+                        margin: 0 10px 0 0;
+                        color: $Gray-07;
+                        vertical-align: top;
+                    }
+                    span {
+                        display: inline-block;
+                        width: calc(100% - 40px);
+                        color: $Gray-07;
+                        text-align: center;
+                    }
+                }
+            }
+            @include breakpoint(tablet) {
+                right: calc(((100% - 800px) / 2) + 32px);
+            }
+        }
+    }
+
+
+    //데이터가 아무것도 없을 때 
+    div.emptyWrap {
+        background-image: url('../images/ico/emptyImo.svg');
+        background-repeat: no-repeat;
+        text-align: center;
+        p.emptyTitle {
+           @include font-size(20);
+           color:$Black;
+           font-weight: 700;
+        }
+        p.emptySubTitle {
+            color:$Gray-06;
+            @include font-size(14);
+            strong {
+                color:$Black;
+                font-weight: 700;
             }
         }
     }
