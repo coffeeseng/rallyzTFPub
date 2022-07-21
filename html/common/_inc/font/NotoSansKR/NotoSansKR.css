@@ -2,9 +2,7 @@
 
 @font-face {
     font-family: 'NotoSansKR';
-    src:url('NotoSansKR-Light.woff') format('woff'),
-        url('NotoSansKR-Light.woff2') format('woff2'),
-        url('NotoSansKR-Light.otf') format('opentype');
+    src:url('NotoSansKR-Light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
 
@@ -25,9 +23,7 @@
 
 @font-face {
     font-family: 'NotoSansKR';
-    src:url('NotoSansKR-Medium.woff') format('woff'),
-        url('NotoSansKR-Medium.woff2') format('woff2'),
-        url('NotoSansKR-Medium.otf') format('opentype');
+    src:url('NotoSansKR-Medium.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
 
