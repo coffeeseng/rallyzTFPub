@@ -95,6 +95,7 @@ div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.f
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 300;
   font-size: 10px;
 }
 div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.footer span i {
