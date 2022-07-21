@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?nlmz3i');
-  src:  url('fonts/icomoon.eot?nlmz3i#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?nlmz3i') format('truetype'),
-    url('fonts/icomoon.woff?nlmz3i') format('woff'),
-    url('fonts/icomoon.svg?nlmz3i#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?t3grfa');
+  src:  url('fonts/icomoon.eot?t3grfa#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?t3grfa') format('truetype'),
+    url('fonts/icomoon.woff?t3grfa') format('woff'),
+    url('fonts/icomoon.svg?t3grfa#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-line_bubble-speech:before {
+  content: "\e998";
+}
+.icon-line_smile:before {
+  content: "\e999";
+}
 .icon-gnbFeed-ver2:before {
   content: "\e992";
 }

@@ -98,8 +98,9 @@ div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.f
   font-size: 10px;
 }
 div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.footer span i {
-  font-size: 12px;
+  font-size: 17px;
   margin: 0 5px 0 0;
+  color: #272A2F;
 }
 div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.footer div.leftBox {
   display: -webkit-box;
