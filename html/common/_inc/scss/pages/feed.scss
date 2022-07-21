@@ -94,9 +94,7 @@ div.containerVer2 {
                 align-items: center;
                 @include font-size(10);
                 i {
-                    @include font-size(17);
                     margin:0 5px 0 0;
-                    color:$Black;
                 }
             }
             div.leftBox {
@@ -104,6 +102,11 @@ div.containerVer2 {
                 span {
                     color:$Gray-05;
                     margin:0 13px 0 0;
+                    i {
+                        @include font-size(17);
+                        margin:0 5px 0 0;
+                        color:$Black;
+                    }
                 }
             }
             div.rightBox {
