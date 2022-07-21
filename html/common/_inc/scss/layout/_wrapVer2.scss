@@ -33,6 +33,18 @@ div.containerVer2 {
             height: 48px;
             z-index: 100;
             background: linear-gradient(to right, $Primary 60%, $Secomdary);
+            // gnb가 있어서 슬라이드 될 경우
+            &.on {
+                -webkit-animation-name: headerSlide;
+                animation-name: headerSlide;
+                -webkit-animation-duration: 0.2s;
+                animation-duration: 0.2s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+            }
+            &.off {
+                top:0;
+            }
             header.mainHeader {
                 position: relative;
                 width: 100%;
