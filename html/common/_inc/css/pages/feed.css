@@ -1,18 +1,18 @@
-div.containerVer2 article.home.homeDefault ul.feedList li div.header p.topInfo {
+div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.header p.topInfo {
   font-size: 12px;
 }
-div.containerVer2 article.home.homeDefault ul.feedList li div.header p.topInfo span {
+div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.header p.topInfo span {
   margin: 0 5px 0 0;
 }
-div.containerVer2 article.home.homeDefault ul.feedList li div.header p.topInfo span.strong {
+div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.header p.topInfo span.strong {
   color: #33CC33;
   font-weight: 500;
 }
-div.containerVer2 article.home.homeDefault ul.feedList li div.header p.topInfo span.light {
+div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.header p.topInfo span.light {
   color: #272A2F;
   font-weight: 300;
 }
-div.containerVer2 article.home.homeDefault ul.feedList li div.header div.writerInfoBox {
+div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.header div.writerInfoBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,22 +21,22 @@ div.containerVer2 article.home.homeDefault ul.feedList li div.header div.writerI
           align-items: flex-start;
   margin: 16px 0 0 0;
 }
-div.containerVer2 article.home.homeDefault ul.feedList li div.header div.writerInfoBox div.userProfileImg {
+div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.header div.writerInfoBox div.userProfileImg {
   width: 32px;
   height: 32px;
   margin: 0 10px 0 0;
   border: 1px solid #E0E3E6;
   border-radius: 100%;
 }
-div.containerVer2 article.home.homeDefault ul.feedList li div.header div.writerInfoBox div.writeInfo {
+div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.header div.writerInfoBox div.writeInfo {
   padding: 3px 0 0 0;
 }
-div.containerVer2 article.home.homeDefault ul.feedList li div.header div.writerInfoBox div.writeInfo p.userName {
+div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.header div.writerInfoBox div.writeInfo p.userName {
   font-size: 14px;
   color: #272A2F;
   font-weight: 700;
 }
-div.containerVer2 article.home.homeDefault ul.feedList li div.header div.writerInfoBox div.writeInfo div.writeInfoDetail {
+div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.header div.writerInfoBox div.writeInfo div.writeInfoDetail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,12 +44,12 @@ div.containerVer2 article.home.homeDefault ul.feedList li div.header div.writerI
       -ms-flex-align: center;
           align-items: center;
 }
-div.containerVer2 article.home.homeDefault ul.feedList li div.header div.writerInfoBox div.writeInfo div.writeInfoDetail p.date {
+div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.header div.writerInfoBox div.writeInfo div.writeInfoDetail p.date {
   font-size: 10px;
   color: #575B65;
   font-weight: 300;
 }
-div.containerVer2 article.home.homeDefault ul.feedList li div.header div.writerInfoBox div.writeInfo div.writeInfoDetail div.iconGroup span {
+div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.header div.writerInfoBox div.writeInfo div.writeInfoDetail div.iconGroup span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,18 +67,18 @@ div.containerVer2 article.home.homeDefault ul.feedList li div.header div.writerI
   border-radius: 100%;
   font-size: 10px;
 }
-div.containerVer2 article.home.homeDefault ul.feedList li div.contents {
+div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.contents {
   padding: 16px 0;
 }
-div.containerVer2 article.home.homeDefault ul.feedList li div.contents > div.textWrap {
+div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.contents > div.textWrap {
   font-size: 14px;
   color: #575B65;
   white-space: pre-wrap;
 }
-div.containerVer2 article.home.homeDefault ul.feedList li div.contents > div.imageWrap img {
+div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.contents > div.imageWrap img {
   width: 100%;
 }
-div.containerVer2 article.home.homeDefault ul.feedList li div.footer {
+div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,7 +86,7 @@ div.containerVer2 article.home.homeDefault ul.feedList li div.footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-div.containerVer2 article.home.homeDefault ul.feedList li div.footer span {
+div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.footer span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,20 +95,20 @@ div.containerVer2 article.home.homeDefault ul.feedList li div.footer span {
           align-items: center;
   font-size: 10px;
 }
-div.containerVer2 article.home.homeDefault ul.feedList li div.footer span i {
+div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.footer span i {
   font-size: 12px;
   margin: 0 5px 0 0;
 }
-div.containerVer2 article.home.homeDefault ul.feedList li div.footer div.leftBox {
+div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.footer div.leftBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-div.containerVer2 article.home.homeDefault ul.feedList li div.footer div.leftBox span {
+div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.footer div.leftBox span {
   color: #7E8086;
   margin: 0 13px 0 0;
 }
-div.containerVer2 article.home.homeDefault ul.feedList li div.footer div.rightBox span {
+div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.footer div.rightBox span {
   color: #33CC33;
 }
 div.containerVer2 article.home.homeDefault ul.feedList {
@@ -119,10 +119,13 @@ div.containerVer2 article.home.homeDefault ul.feedList {
   border-radius: 16px;
 }
 div.containerVer2 article.home.homeDefault ul.feedList li {
-  padding: 16px;
-  border-top: 1px solid #F7F9FA;
+  padding: 0 16px;
 }
-div.containerVer2 article.home.homeDefault ul.feedList li:last-child {
+div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap {
+  padding: 16px 0;
+  border-bottom: 1px solid #F7F9FA;
+}
+div.containerVer2 article.home.homeDefault ul.feedList li:last-child div.feedListWrap {
   padding-bottom: 0;
   border-bottom: none;
 }

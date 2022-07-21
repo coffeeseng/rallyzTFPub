@@ -119,12 +119,17 @@ div.containerVer2 {
                 border-bottom:1px solid $Gray-02;
                 border-radius: 16px;
                 li {
-                    @extend %feedListVer2;
-                    padding:16px;
-                    border-top:1px solid $Gray-01;
+                    padding:0 16px;
+                    div.feedListWrap {
+                        @extend %feedListVer2;
+                        padding:16px 0;
+                        border-bottom:1px solid $Gray-01;
+                    }
                     &:last-child {
-                        padding-bottom:0;
-                        border-bottom:none;
+                        div.feedListWrap {
+                            padding-bottom:0;
+                            border-bottom:none;
+                        }
                     }
                 }
             }
