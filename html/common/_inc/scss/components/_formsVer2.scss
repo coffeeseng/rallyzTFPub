@@ -981,7 +981,7 @@ div.containerVer2 {
 
 
     /////////// 유저,채팅,권한 등등 리스트의 기본 스타일 ///////////
-    ul.defaultStyle {
+    %ulDefaultStyle {
         width: 100%;
         > li {
             display: flex;
@@ -996,11 +996,14 @@ div.containerVer2 {
             }
         }
     }
+    ul.defaultStyle {
+        @extend %ulDefaultStyle;
+    }
 
 
     //유저리스트 
     ul.userDefaultList {
-        @extend ul.defaultStyle;
+        @extend %ulDefaultStyle;
         > li {
             //사진
             div.imgBox {
@@ -1156,7 +1159,7 @@ div.containerVer2 {
 
     //채팅 리스트
     ul.chatroomList {
-        @extend ul.defaultStyle;
+        @extend %ulDefaultStyle;
         > li {
             //채팅 정보
             div.chatInfoBox {
@@ -1202,7 +1205,7 @@ div.containerVer2 {
 
     //권한 리스트
     ul.userAuthList {
-        @extend ul.defaultStyle;
+        @extend %ulDefaultStyle;
         > li {
             div.authInfoBox {
                 width: calc(100% - 150px);
@@ -1234,7 +1237,7 @@ div.containerVer2 {
 
     //수강료 리스트
     ul.classPayList {
-        @extend ul.defaultStyle;
+        @extend %ulDefaultStyle;
         > li {
             div.payInfoBox {
                 width: calc(100% - 150px);
