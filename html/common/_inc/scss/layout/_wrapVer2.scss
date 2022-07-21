@@ -404,4 +404,13 @@ div.containerVer2 {
         color: $White;
         line-height: 14px;
     }
+
+
+    // 이미지(클래스, 학원, 프로필 등 백그라운드로 들어가는 이미지 박스 공통)
+    div.imageBoxDefault {
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-color: $Gray-03;
+    }
 }

@@ -2467,6 +2467,12 @@ div.containerVer2 span.alert {
   color: #FFFFFF;
   line-height: 14px;
 }
+div.containerVer2 div.imageBoxDefault {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #E0E3E6;
+}
 
 div.containerVer2 .mgt_5 {
   margin-top: 5px !important;
