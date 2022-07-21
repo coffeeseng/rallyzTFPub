@@ -52,13 +52,18 @@ div.containerVer2 {
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-                                width:16px;
-                                height:16px;
+                                width:18px;
+                                height:18px;
                                 margin:0 0 0 10px;
                                 color:$Primary;
                                 border:1px solid $Gray-03;
                                 border-radius: 100%;
                                 @include font-size(10);
+                                i {
+                                    &.icon-file {
+                                        padding:0 2px 0 0;
+                                    }
+                                }
                             }
                         }
                     }

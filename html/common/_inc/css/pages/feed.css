@@ -59,13 +59,16 @@ div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.h
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   margin: 0 0 0 10px;
   color: #33CC33;
   border: 1px solid #E0E3E6;
   border-radius: 100%;
   font-size: 10px;
+}
+div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.header div.writerInfoBox div.writeInfo div.writeInfoDetail div.iconGroup span i.icon-file {
+  padding: 0 2px 0 0;
 }
 div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.contents {
   padding: 16px 0;
