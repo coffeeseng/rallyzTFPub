@@ -213,7 +213,7 @@ div.containerVer2 {
     
         //클래스만들기
         &.classCreate {
-            padding: 0 16px 130px 16px; //버튼 130 fixed때문에 버튼 height만큼 패딩
+            padding: 0 16px 122px 16px; //버튼 122 fixed때문에 버튼 height만큼 패딩
             div.classInfoWrap {
                 margin: 18px 0 0 0;
                 dl.inputListRow {
@@ -226,34 +226,32 @@ div.containerVer2 {
                             right: 0;
                         }
                     }
-                    dd {
-                        //수업과목 태그
-                        div.tagBoxWrap {
-                            margin: 8px 0 0 0;
-                        }
-                        //시간 선택
-                        div.timeSelectWrap {
-                            margin: 16px 0 0 0;
-                        }
-                        //클래스 정보 표시
-                        ul.displayItem {
-                            > li {
-                                @extend %clearfix;
-                                @include border-radius(10px);
-                                width: 100%;
-                                height: 48px;
-                                padding: 12px;
-                                margin: 0 0 4px 0;
-                                border: 1px solid $Gray-03;
-                                background: $White;
-                                p.item {
-                                    float: left;
-                                    margin: 4px 0 0 0;
-                                }
-                                div.toggleWrap {
-                                    float: right;
-                                    margin: 4px 0 0 0;
-                                }
+                    //수업과목 태그
+                    div.tagBoxWrap {
+                        margin: 8px 0 0 0;
+                    }
+                    //시간 선택
+                    div.timeSelectWrap {
+                        margin: 16px 0 0 0;
+                    }
+                    //클래스 정보 표시
+                    ul.displayItem {
+                        > li {
+                            @extend %clearfix;
+                            @include border-radius(10px);
+                            width: 100%;
+                            height: 48px;
+                            padding: 12px;
+                            margin: 0 0 4px 0;
+                            border: 1px solid $Gray-03;
+                            background: $White;
+                            p.item {
+                                float: left;
+                                margin: 4px 0 0 0;
+                            }
+                            div.toggleWrap {
+                                float: right;
+                                margin: 4px 0 0 0;
                             }
                         }
                     }
@@ -297,6 +295,7 @@ div.containerVer2 {
                     }
                 }
             }
+            //학부모 자동연결 팁
             div.tipBox {
                 @include border-radius(12px);
                 width: 100%;
@@ -329,7 +328,151 @@ div.containerVer2 {
     
         //학생등록
         &.addStudent {
-            padding: 0;
+            padding: 0 0 122px 0; //버튼 122 fixed때문에 버튼 height만큼 패딩
+            div.processGage {
+                padding: 0 16px;;
+            }
+            div.tabWrap {
+                margin: 16px 0;
+            }
+            div.tabContents {
+                padding: 0 16px;
+
+                div.tabSingle, div.tabBatch {
+                    //탭 활성화
+                    &.on {
+                        display: block;
+                    }
+                    //탭 비활성화
+                    &.off {
+                        display: none;
+                    }
+                }
+
+                //개별 등록
+                div.tabSingle {
+                    margin: 18px 0 0 0;
+                    dl.inputListRow {
+                        margin: 24px 0 0 0;
+                        dt {
+                            //기존 학생 불러오기 모달
+                            button.btnStudentSelect {
+                                position: absolute;
+                                top: -8px;
+                                right: 0;
+                            }
+                            //학원비 할인 토글
+                            button.btnInfoToggle {
+                                position: absolute;
+                                top: -1px;
+                                right: 0;
+                                width: 24px;
+                                height: 24px;
+                                i {
+                                    @include font-size(24);
+                                }
+                            }
+                        }
+                        dd {
+                            ul.alignCol2 {
+                                //성별 라디오버튼 정렬
+                                &.gender {
+                                    width: 50%;
+                                }
+                            }
+                        }
+                    }
+                    //학원비 할인 안내
+                    div.saleInfo {
+                        @include border-radius(12px);
+                        width: 100%;
+                        padding: 16px;
+                        margin: 0 0 4px 0;
+                        background: $Gray-01;
+                        p {
+                            color: $Gray-05;
+                            line-height: 21px;
+                        }
+                    }
+                    //학원비 할인 내역
+                    div.saleDetailBox {
+                        margin: 16px 0 0 0;
+                        ul.saleList {
+                            @include border-radius(10px);
+                            border: 1px solid $Gray-03;
+                            > li {
+                                display: flex;
+                                flex-direction: row;
+                                background: $White;
+                                span {
+                                    width: 50%;
+                                    &.item {
+                                        text-align: left;
+                                        font-weight: 500;
+                                        color: $Black;
+                                    }
+                                    &.price {
+                                        text-align: right;
+                                    }
+                                }
+                                //할인 전
+                                &.pre {
+                                    padding: 17px 16px;
+                                    border-top-left-radius: 10px;
+                                    border-top-right-radius: 10px;
+                                    border-bottom: 1px solid $Gray-03;
+                                    span.price {
+                                        em {
+                                            margin: 0 2px 0 0;
+                                            color: $Blue-03;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                }
+                                //할인수단, 할인사유
+                                &.detail {
+                                    flex-direction: column;
+                                    padding: 16px 16px 0 16px;
+                                    ul.alignCol3 {
+                                        > li {
+                                            display: inline-block;
+                                            width: 23.8%;
+                                            &:last-child {
+                                                width: 50%;
+                                                input[type="text"] {
+                                                    text-align: right;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                //할인 후
+                                &.final {
+                                    padding: 17px 16px;
+                                    margin: 16px 0 0 0;
+                                    background: $Gray-01;
+                                    border-top: 1px dotted $Gray-03;
+                                    border-bottom-left-radius: 10px;
+                                    border-bottom-right-radius: 10px;
+                                    span.price {
+                                        em {
+                                            @include font-size(20);
+                                            margin: 0 3px 0 0;
+                                            color: $Primary;
+                                            font-weight: 700;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //일괄 등록
+                div.tabBatch {
+                    
+                }
+            }
         }
     
         //자녀연결
@@ -382,6 +525,18 @@ div.containerVer2 {
                     p {
                         @include font-size(12);
                         line-height: 18px;
+                    }
+                }
+            }
+
+            //모달 - 기존학생 불러오기
+            &.studentSelect {
+                div.contents {
+                    div.sortBox {
+                        margin: 16px 0;
+                        div.selectWrap {
+                            margin: 0 0 8px 0;
+                        }
                     }
                 }
             }

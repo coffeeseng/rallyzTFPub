@@ -101,6 +101,31 @@ div.containerVer2 {
 
 
 
+
+    //검색
+    div.searchWrap {
+        position: relative;
+        input[type="search"] {
+            height: 40px;
+            padding: 8px 10px;
+        }
+        button.btnSearch {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            width: 30px;
+            height: 30px;
+            padding: 5px;
+            > i {
+                @include font-size(20);
+            }
+        }
+    }
+
+
+
+
+
     //셀렉트 박스
     div.selectWrap {
         @include font-size(14);
@@ -1039,6 +1064,7 @@ div.containerVer2 {
             div.userInfoBox {
                 width: calc(100% - 177px);
                 cursor: pointer;
+                text-align: left;
                 p {
                     line-height: 100%;
                     //사용자 이름
@@ -1085,6 +1111,7 @@ div.containerVer2 {
             div.btnBox {
                 position: relative;
                 width: 125px;
+                padding: 0 !important;
                 margin: 0 0 0 10px;
                 text-align: right;
                 //라디오 버튼
