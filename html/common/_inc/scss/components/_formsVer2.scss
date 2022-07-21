@@ -1309,6 +1309,9 @@ div.containerVer2 {
         width: 100%;
         padding: 16px;
         background: $Gray-01;
+        @include breakpoint(tabletMini) {
+            padding:16px 32px; 
+        }
         ul.alertList {
             li {
                 margin: 0 0 8px 0;
