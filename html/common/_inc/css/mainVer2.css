@@ -1669,8 +1669,10 @@ div.containerVer2 div.alertWrap ul.alertList li {
 div.containerVer2 div.alertWrap ul.alertList li:first-child {
   margin: 0;
 }
-div.containerVer2 div.alertWrap ul.alertList li:first-child:nth-last-child(1) {
-  width: 100%;
+@media all and (min-width: 768px) {
+  div.containerVer2 div.alertWrap ul.alertList li:first-child:nth-last-child(1) {
+    width: 100%;
+  }
 }
 @media all and (min-width: 768px) {
   div.containerVer2 div.alertWrap ul.alertList li:nth-child(2) {
