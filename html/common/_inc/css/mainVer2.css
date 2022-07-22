@@ -1932,7 +1932,11 @@ div.containerVer2 div.alertWrap button.btnShowAll i {
   font-size: 20px;
   display: inline-block;
   margin: 0 6px 0 0;
-  vertical-align: top;
+  vertical-align: middle;
+}
+div.containerVer2 div.alertWrap button.btnShowAll span {
+  display: inline-block;
+  vertical-align: middle;
 }
 div.containerVer2 span.alert {
   border-radius: 100%;

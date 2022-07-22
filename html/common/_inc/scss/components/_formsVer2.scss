@@ -1448,7 +1448,11 @@ div.containerVer2 {
                 @include font-size(20);
                 display: inline-block;
                 margin: 0 6px 0 0;
-                vertical-align: top;
+                vertical-align: middle;
+            }
+            span {
+                display: inline-block;
+                vertical-align: middle;
             }
         }
     }
