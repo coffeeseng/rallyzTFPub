@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="배컴" />
+    <meta name="keywords" content="랠리즈">
+    <meta name="description" content="랠리즈">
+    <title>랠리즈 - 006.06 홈화면_상담/교육신청 작성</title>
+    <link rel="stylesheet" href="../../common/_inc/css/mainVer2.css"><!--기본 CSS-->
+    <link rel="stylesheet" href="../../common/_inc/css/pages/homeVer2.css"><!--각 페이지별 CSS-->
+</head>
+<body>
+
+    <div class="containerVer2">
+
+        <div class="contWrap">
+
+            <!-- 서브 페이지 헤더 -->
+            <div class="subHeaderWrap">
+                <header class="subHeader">
+                    <h1 class="pageName">상담/교육 신청</h1>
+                    <button type="button" class="btnPoLeft"><i class="icon-arrowLeft"><span class="blind">이전</span></i></button>
+                </header>
+            </div>
+            <!-- 서브 페이지 헤더 -->
+
+            <!-- 본문 -->
+            <div class="articleWrap">
+                <article class="home consultRequest">
+                    <h2 class="title">랠리즈 상담/교육 신청</h2>
+                    <p class="subTitle">
+                        랠리즈에 대해 궁금하신 점을 알려주시거나
+                        이용 교육을 신청해 주시면 빠르게 답변 드리겠습니다.
+                    </p>
+                    <div class="consultRequestFormWrap">
+
+                        <dl class="inputListRow">
+                            <dt>
+                                <span>유형 선택</span>
+                            </dt>
+                            <dd>
+                                <div class="inputWrap col2">
+                                    <div class="radioWrap">
+                                        <input type="radio" name="consultRequest" id="consultRequest01" /><label for="consultRequest01">랠리즈 관련 문의/상담 신청</label>
+                                    </div>
+                                    <div class="radioWrap">
+                                        <input type="radio" name="consultRequest" id="consultRequest02" /><label for="consultRequest02">랠리즈 교육 신청</label>
+                                    </div>
+                                </div>
+                            </dd>
+                            <dt>
+                                <span>신청자 이름</span>
+                            </dt>
+                            <dd>
+                                <div class="inputWrap">
+                                    <input type="text" placeholder="신청자의 이름 입력" />
+                                </div>
+                            </dd>
+                            <dt>
+                                <span>답변 받으실 연락처</span>
+                            </dt>
+                            <dd>
+                                <div class="inputWrap">
+                                    <input type="number" placeholder="숫자만 입력" />
+                                </div>
+                            </dd>
+                            <dt>
+                                <span>문의 내용</span>
+                            </dt>
+                            <dd>
+                                <div class="textareaWrap">
+                                    <textarea placeholder="내용을 입력하세요"></textarea>
+                                </div>
+                            </dd>
+                        </dl>                        
+                    </div>
+                    <div class="agreeWrap">
+                        <div class="checkBoxWrap small">
+                            <input type="checkbox" id="consultRequestAgree" name="" value="" />
+                            <label for="consultRequestAgree">오늘 하루 보지 않기</label>
+                            <span class="checkmark"></span>
+                        </div>
+                        <button type="button" class="microB primary">보기</button>
+                    </div>
+                    <button type="button" class="md primary">신청하기</button>
+                </article>
+            </div>
+            <!-- //본문 -->
+            
+
+
+            <!-- 모달 -->
+            <div class="modalCover on"><!-- .on .off class로 제어 -->
+                <div class="modalClose">
+                    <button type="button" class="btnClose"><i class="icon-closeThin"><span class="blind">모달 닫기</span></i></button>
+                </div>
+                <div class="modalWrap coverType">
+                    <div class="modal"><!-- 모달을 구분해주는 class는 .modal 옆에  -->
+                        
+                        <div class="contents">
+                            <p>
+                                개인정보 처리방침에 동의하셔야<br />
+                                문의하실 수 있습니다.
+                            </p>
+                        </div>
+                        <div class="btnBox">
+                            <button type="button" class="btnConfirm primary">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //모달 -->
+        </div>
+    </div>
+</body>
+</html>
