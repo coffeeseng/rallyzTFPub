@@ -1,49 +1,39 @@
-
-
 @font-face {
     font-family: 'NotoSansKR';
-    src: url('NotoSansKR-Light.eot');
-    src: url('NotoSansKR-Light.eot?#iefix') format('embedded-opentype'),
-         url('NotoSansKR-Light.woff') format('woff'),
-         url('NotoSansKR-Light.woff2') format('woff2'),
-         url('NotoSansKR-Light.ttf') format('truetype');
+    font-style: normal;
     font-weight: 300;
-    font-style: normal;
+    src: url('NotoSansKR-DemiLight.eot?') format('eot'),
+    url('NotoSansKR-DemiLight.woff2') format('woff2'),
+    url('NotoSansKR-DemiLight.woff') format('woff'),
+    url('NotoSansKR-DemiLight.ttf')  format('truetype');
 }
 
 @font-face {
     font-family: 'NotoSansKR';
-    src: url('NotoSansKR-Regular.eot');
-    src: url('NotoSansKR-Regular.eot?#iefix') format('embedded-opentype'),
-         url('NotoSansKR-Regular.woff') format('woff'),
-         url('NotoSansKR-Regular.woff2') format('woff2'),
-         url('NotoSansKR-Regular.ttf') format('truetype'),
-         url('NotoSansKR-Regular.svg#Noto Sans KR') format('svg');
+    font-style: normal;
     font-weight: 400;
-    font-style: normal;
-
+    src: url('NotoSansKR-Regular.eot?') format('eot'),
+    url('NotoSansKR-Regular.woff2') format('woff2'),
+    url('NotoSansKR-Regular.woff') format('woff'),
+    url('NotoSansKR-Regular.ttf')  format('truetype');
 }
 
 @font-face {
     font-family: 'NotoSansKR';
-    src: url('NotoSansKR-Medium.eot');
-    src: url('NotoSansKR-Medium.eot?#iefix') format('embedded-opentype'),
-         url('NotoSansKR-Medium.woff') format('woff'),
-         url('NotoSansKR-Medium.woff2') format('woff2'),
-         url('NotoSansKR-Medium.ttf') format('truetype');
+    font-style: normal;
     font-weight: 500;
-    font-style: normal;
-
+    src: url('NotoSansKR-Medium.eot?') format('eot'),
+    url('NotoSansKR-Medium.woff2') format('woff2'),
+    url('NotoSansKR-Medium.woff') format('woff'),
+    url('NotoSansKR-Medium.ttf')  format('truetype');
 }
 
 @font-face {
     font-family: 'NotoSansKR';
-    src: url('NotoSansKR-Bold.eot');
-    src: url('NotoSansKR-Bold.eot?#iefix') format('embedded-opentype'),
-         url('NotoSansKR-Bold.woff') format('woff'),
-         url('NotoSansKR-Bold.woff2') format('woff2'),
-         url('NotoSansKR-Bold.ttf') format('truetype');
-    font-weight: 700;
     font-style: normal;
-
+    font-weight: 700;
+    src: url('NotoSansKR-Bold.eot?') format('eot'),
+    url('NotoSansKR-Bold.woff2') format('woff2'),
+    url('NotoSansKR-Bold.woff') format('woff'),
+    url('NotoSansKR-Bold.ttf')  format('truetype');
 }
