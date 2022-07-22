@@ -89,12 +89,14 @@ div.containerVer2 {
         &::before {
             content: '\e908';
             display: inline-block;
-            margin: 0 4px 0 0;
+            margin: 0 6px 0 0;
         }
     }
     input[type="time"] {
         &::before {
             content: '\e929';
+            display: inline-block;
+            margin: 0 6px 0 0;
             color: $Gray-05; 
         }
     }
@@ -914,7 +916,7 @@ div.containerVer2 {
                     color: $Gray-04;
                     > i {
                         display: inline-block;
-                        margin: 5px 0 0 0;
+                        margin: 2px 0 0 0;
                     }
                 }
             }
@@ -1103,7 +1105,7 @@ div.containerVer2 {
                         @include font-size(12);
                         color: $Gray-06;
                         font-weight: 300;
-                        letter-spacing: 0;
+                        letter-spacing: 1px;
                     }
                 }
             }
@@ -1157,10 +1159,12 @@ div.containerVer2 {
                     text-align: right;
                     //등록일
                     &.registDate {
+                        letter-spacing: 0;
                     }
                     //발송일
                     &.sendDate {
                         padding: 0 20px 0 0;
+                        letter-spacing: 0;
                         &::after {
                             @include font-size(14);
                             font-family: 'icomoon' !important;
@@ -1216,7 +1220,7 @@ div.containerVer2 {
                         margin: 0 0 0 4px;
                         color: $Gray-06;
                         font-weight: 300;
-                        letter-spacing: 0;
+                        letter-spacing: 1px;
                     }
                 }
             }
@@ -1254,7 +1258,7 @@ div.containerVer2 {
                 button {
                     i {
                         @include font-size(16);
-                        margin: 1px 4px 0 0;
+                        margin: -1px 4px 0 0;
                     }
                 }
             }
@@ -1281,7 +1285,7 @@ div.containerVer2 {
                         @include font-size(12);
                         color: $Gray-06;
                         font-weight: 300;
-                        letter-spacing: 0;
+                        letter-spacing: 1.1px;
                     }
                 }            
             }
@@ -1479,19 +1483,19 @@ div.containerVer2 {
         background-position:center;
         background-repeat: no-repeat;
         background-color: $Gray-02; //png 파일일 경우 배경이 흰색이어야....?
-        border:1px solid $Gray-02;
+        border: 1px solid $Gray-02;
     }
 
 
     // 가로스크롤 리스트 박스
     .horizontalScrollBox {
-        width:100%;
+        width: 100%;
         overflow-x: scroll;
         overflow-y: hidden;
         &::-webkit-scrollbar { 
             display: none;
         }
-        margin:0 0 10px 0;
+        margin: 0 0 10px 0;
     }
 
 
@@ -1596,12 +1600,12 @@ div.containerVer2 {
         text-align: center;
         p.emptyTitle {
            @include font-size(20);
-           color:$Black;
+           color: $Black;
            font-weight: 700;
         }
         p.emptySubTitle {
-            color:$Gray-06;
             @include font-size(14);
+            color: $Gray-06;
             strong {
                 color:$Black;
                 font-weight: 700;
