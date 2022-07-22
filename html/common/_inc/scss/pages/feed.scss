@@ -96,6 +96,7 @@ div.containerVer2 {
                 @include font-size(10);
                 i {
                     margin:0 5px 0 0;
+                    @include font-size(17);
                 }
             }
             div.leftBox {
@@ -104,8 +105,6 @@ div.containerVer2 {
                     color:$Gray-05;
                     margin:0 13px 0 0;
                     i {
-                        @include font-size(17);
-                        margin:0 5px 0 0;
                         color:$Black;
                     }
                 }

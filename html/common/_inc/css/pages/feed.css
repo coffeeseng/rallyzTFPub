@@ -100,6 +100,7 @@ div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.f
 }
 div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.footer span i {
   margin: 0 5px 0 0;
+  font-size: 17px;
 }
 div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.footer div.leftBox {
   display: -webkit-box;
@@ -111,8 +112,6 @@ div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.f
   margin: 0 13px 0 0;
 }
 div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.footer div.leftBox span i {
-  font-size: 17px;
-  margin: 0 5px 0 0;
   color: #272A2F;
 }
 div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.footer div.rightBox span {
