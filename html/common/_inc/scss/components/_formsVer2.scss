@@ -869,7 +869,6 @@ div.containerVer2 {
 
 
 
-
     //첨부된 파일 리스트
     div.attachListWrap {
         margin: 16px 0 0 0;
@@ -885,16 +884,23 @@ div.containerVer2 {
                 border-left: 1px solid $Gray-03;
                 border-right: 1px solid $Gray-03;
                 border-bottom: 1px solid $Gray-03;
+                //파일명
                 span.fileName {
-                    @include font-size(11);
+                    @include font-size(12);
+                    display: inline-block;
                     position: relative;
                     padding: 0 0 0 16px;
                     color: $Blue-03;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    vertical-align: top;
+                    line-height: 135%;
                     &::before {
                         @include font-size(12);
                         content: "\e963";
                         position: absolute;
-                        top: 4px;
+                        top: 3px;
                         left: 0;
                         font-family: 'icomoon' !important;
                         speak: never;
@@ -905,6 +911,16 @@ div.containerVer2 {
                         line-height: 100%;
                         pointer-events: none;
                     }
+                }
+                //파일 용량
+                span.fileSize {
+                    @include font-size(10);
+                    display: inline-block;
+                    height: 18px;
+                    color: $Gray-05;
+                    margin: 0 0 0 4px;
+                    line-height: 135%;
+                    vertical-align: middle;
                 }
                 button.btnDelete {
                     @include font-size(10);
@@ -1343,13 +1359,13 @@ div.containerVer2 {
                     p.message {
                         @include font-size(12);
                         width: calc(100% - 70px);
-                        padding: 0 20px 0 0;
+                        padding: 1px 20px 0 0;
                         color: $Gray-06;
                         line-height: 18px;
                         em.instName {
                             display: block;
                             color: $Black;
-                            font-weight: bold;
+                            font-weight: 700;
                         }
                     }
                     div.icoArrow {
@@ -1369,20 +1385,16 @@ div.containerVer2 {
                     @include border-radius(8px);
                     position: relative;
                     display: flex;
-                    padding: 16px;
+                    padding: 16px 16px 0 16px;
                     background: $White;
                     cursor: pointer;
                     div.icoBill {
-                        @include border-radius(100px);
+                        display: inline-block;
                         width: 40px;
                         height: 40px;
                         margin: 0 10px 0 0;
-                        background: #f5f5f5;
-                        text-align: center;
-                        img {
-                            width: 24px;
-                            max-width: 100%;
-                        }
+                        background: url('../images/ico/payment.svg') top center no-repeat;
+                        background-size: 40px;
                     }
                     p.message {
                         @include font-size(14);
@@ -1393,36 +1405,33 @@ div.containerVer2 {
                         em.instName {
                             @include font-size(12);
                             display: block;
+                            margin: 3px 0 4px 0;
                             color: $Gray-06;
                             font-weight: 400;
                         }
                     }
                     button.btnClose {
-                        width: 24px;
-                        height: 24px;
+                        @include border-radius(100px);
+                        position: absolute;
                         top: 16px;
                         right: 16px;
+                        width: 24px;
+                        height: 24px;
                         text-align: center;
                         background: $Gray-02;
                         i {
-                            @include font-size(16);
+                            @include font-size(10);
+                            display: inline-block;
+                            margin: 3px 0 0 0;
                             color: $Black;
                         }
-                    }
-                    button.btnPayment {
-                        @include border-radius(8px);
-                        width: 100%;
-                        height: 32px;
-                        background: $Primary;
-                        color: $White;
                     }
                 }
                 div.btnBox {
                     display: flex;
-                    padding: 10px 16px;
+                    padding: 10px 16px 16px 16px;
                     border-bottom-left-radius: 8px;
                     border-bottom-right-radius: 8px;
-                    border-top: 1px solid $Gray-02;
                     background: $White;
                     div.checkBoxWrap {
                         width: calc(100% - 40px);
@@ -1434,6 +1443,14 @@ div.containerVer2 {
                         margin: 0 0 0 10px;
                         color: $Black;
                         font-weight: 300
+                    }
+                    button.btnPayment {
+                        @include border-radius(8px);
+                        @include font-size(12);
+                        width: 100%;
+                        height: 32px;
+                        background: $Primary;
+                        color: $White;
                     }
                 }
             }
