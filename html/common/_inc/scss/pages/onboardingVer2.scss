@@ -83,7 +83,7 @@ div.containerVer2 {
                             line-height: 18px;
                             &.tit {
                                 @include font-size(14);
-                                margin: 0 0 8px 0;
+                                margin: 4px 0 8px 0;
                                 color: $Black;
                                 font-weight: 700;
                             }
@@ -112,11 +112,19 @@ div.containerVer2 {
                 }
                 p {
                     @include font-size(16);
+                    width: calc(100% - 160px);
                     display: inline-block;
                     line-height: 24px;
                     text-align: left;
                     font-weight: 700;
                     color: $Black;
+                    span.subTxt {
+                        @include font-size(12);
+                        display: block;
+                        margin: 8px 0 0 0;
+                        font-weight: 300;
+                        line-height: 18px;
+                    }
                 }
             }
         }
@@ -577,6 +585,42 @@ div.containerVer2 {
                                     background: $Gray-05;
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+
+        //랠리즈 도입 요청
+        &.request {
+            padding: 30px 16px 88px 16px; //버튼 88 fixed때문에 버튼 height만큼 패딩
+            h2.title {//_wrap으로 옮길 것!!!!!!!!!!!!!
+                &.left {
+                    line-height: 30px;
+                    text-align: left !important;
+                }
+            }
+            p.subTxt {
+                margin: 14px 0 24px 0;
+                line-height: 21px
+            }
+            ul.alignPrivacy {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 20px 0 0 0;
+                > li {
+                    float: left;
+                    width: 70%;
+                    padding: 0 10px 0 0;
+                    &:last-child {
+                        width: 30%;
+                        padding: 0;
+                        text-align: right
+                    }
+                    div.checkBoxWrap {
+                        label {
+                            @include font-size(12);
                         }
                     }
                 }
