@@ -253,6 +253,9 @@ div.containerVer2 {
                         @include breakpoint(tablet) {
                             margin: 0 20px;
                         }
+                        @include breakpoint(sssmobile) {
+                            min-width: 25px;
+                        }
                         &.on {
                             border-bottom: 3px solid $Primary;
                             i {
@@ -268,6 +271,9 @@ div.containerVer2 {
                             @include font-size(22);
                             margin: 0;
                             color: $Gray-07;
+                            @include breakpoint(sssmobile) {
+                                @include font-size(18);
+                            }
                         }
                     }
                 }

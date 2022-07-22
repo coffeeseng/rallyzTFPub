@@ -6,40 +6,6 @@ div.containerVer2 dl.inputListRow dd > ul.alignCol3:after, div.containerVer2 dl.
   clear: both;
 }
 
-div.containerVer2 div.alertWrap ul.alertList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-div.containerVer2 div.alertWrap ul.alertList li {
-  width: 100%;
-  margin: 10px 0 0 0;
-}
-@media all and (min-width: 768px) {
-  div.containerVer2 div.alertWrap ul.alertList li {
-    width: 49%;
-  }
-}
-div.containerVer2 div.alertWrap ul.alertList li:first-child {
-  margin: 0;
-}
-@media all and (min-width: 768px) {
-  div.containerVer2 div.alertWrap ul.alertList li:first-child:nth-last-child(1) {
-    width: 100%;
-  }
-}
-@media all and (min-width: 768px) {
-  div.containerVer2 div.alertWrap ul.alertList li:nth-child(2) {
-    margin: 0;
-  }
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -69,12 +35,8 @@ html .light, body .light {
 }
 @media (max-width: 320px) {
   html, body {
-    font-size: 13px;
-  }
-}
-@media (max-width: 280px) {
-  html, body {
     font-size: 12px;
+    line-height: 130%;
   }
 }
 
@@ -103,11 +65,6 @@ em, address {
 
 p {
   word-break: break-word;
-  line-height: 100%;
-}
-
-span {
-  line-height: 100%;
 }
 
 strong {
@@ -199,78 +156,10 @@ div.containerVer2 dl.inputListRow dd > ul.alignCol3:after, div.containerVer2 dl.
   clear: both;
 }
 
-div.containerVer2 div.alertWrap ul.alertList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-div.containerVer2 div.alertWrap ul.alertList li {
-  width: 100%;
-  margin: 10px 0 0 0;
-}
-@media all and (min-width: 768px) {
-  div.containerVer2 div.alertWrap ul.alertList li {
-    width: 49%;
-  }
-}
-div.containerVer2 div.alertWrap ul.alertList li:first-child {
-  margin: 0;
-}
-@media all and (min-width: 768px) {
-  div.containerVer2 div.alertWrap ul.alertList li:first-child:nth-last-child(1) {
-    width: 100%;
-  }
-}
-@media all and (min-width: 768px) {
-  div.containerVer2 div.alertWrap ul.alertList li:nth-child(2) {
-    margin: 0;
-  }
-}
-
 div.containerVer2 dl.inputListRow dd > ul.alignCol3:after, div.containerVer2 dl.inputListCol dd > ul.alignCol3:after, div.containerVer2 dl.inputListRow dd > ul.alignCol2:after, div.containerVer2 dl.inputListCol dd > ul.alignCol2:after, div.containerVer2 dl.inputListCol:after, div.containerVer2 div.btnGroupSmallToggle:after, div.containerVer2 div.btnGroupToggle:after, div.containerVer2 div.btnGroup.col3:after, div.containerVer2 div.btnGroup.col2:after {
   content: "";
   display: block;
   clear: both;
-}
-
-div.containerVer2 div.alertWrap ul.alertList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-div.containerVer2 div.alertWrap ul.alertList li {
-  width: 100%;
-  margin: 10px 0 0 0;
-}
-@media all and (min-width: 768px) {
-  div.containerVer2 div.alertWrap ul.alertList li {
-    width: 49%;
-  }
-}
-div.containerVer2 div.alertWrap ul.alertList li:first-child {
-  margin: 0;
-}
-@media all and (min-width: 768px) {
-  div.containerVer2 div.alertWrap ul.alertList li:first-child:nth-last-child(1) {
-    width: 100%;
-  }
-}
-@media all and (min-width: 768px) {
-  div.containerVer2 div.alertWrap ul.alertList li:nth-child(2) {
-    margin: 0;
-  }
 }
 
 div.containerVer2 button, div.containerVer2 a {
@@ -390,6 +279,12 @@ div.containerVer2 button.tinyS i {
 div.containerVer2 button.tinyS i.right {
   margin: 3px 0 0 8px;
 }
+@media (max-width: 320px) {
+  div.containerVer2 button.tinyS {
+    font-size: 10px;
+    padding: 0 5px;
+  }
+}
 div.containerVer2 button.microB {
   border-radius: 8px;
   background-clip: padding-box;
@@ -476,6 +371,7 @@ div.containerVer2 div.btnWrap {
 div.containerVer2 div.btnWrap.fixed {
   position: fixed;
   bottom: 0px;
+  z-index: 1000;
 }
 div.containerVer2 div.btnWrap button.btnSubmitLater {
   display: block;
@@ -602,40 +498,6 @@ div.containerVer2 dl.inputListRow dd > ul.alignCol3:after, div.containerVer2 dl.
   content: "";
   display: block;
   clear: both;
-}
-
-div.containerVer2 div.alertWrap ul.alertList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-div.containerVer2 div.alertWrap ul.alertList li {
-  width: 100%;
-  margin: 10px 0 0 0;
-}
-@media all and (min-width: 768px) {
-  div.containerVer2 div.alertWrap ul.alertList li {
-    width: 49%;
-  }
-}
-div.containerVer2 div.alertWrap ul.alertList li:first-child {
-  margin: 0;
-}
-@media all and (min-width: 768px) {
-  div.containerVer2 div.alertWrap ul.alertList li:first-child:nth-last-child(1) {
-    width: 100%;
-  }
-}
-@media all and (min-width: 768px) {
-  div.containerVer2 div.alertWrap ul.alertList li:nth-child(2) {
-    margin: 0;
-  }
 }
 
 div.containerVer2 div.inputWrap {
@@ -1126,6 +988,12 @@ div.containerVer2 div.weeklySelectWrap > ul li button.day.on {
   background: #33CC33;
   color: #FFFFFF;
 }
+@media (max-width: 320px) {
+  div.containerVer2 div.weeklySelectWrap > ul li button.day {
+    width: 32px;
+    height: 32px;
+  }
+}
 div.containerVer2 div.timeSelectWrap > ul.shortType {
   width: 100%;
   display: -webkit-box;
@@ -1152,6 +1020,11 @@ div.containerVer2 div.timeSelectWrap > ul.shortType li.btn button.btnTimeAdd {
   width: 73px;
   height: 48px;
   margin: 0 0 0 10px;
+}
+@media (max-width: 320px) {
+  div.containerVer2 div.timeSelectWrap > ul.shortType li.btn button.btnTimeAdd {
+    width: 50px;
+  }
 }
 div.containerVer2 div.subjectSelectWrap {
   text-align: center;
@@ -1865,6 +1738,9 @@ div.containerVer2 div.alertWrap ul.alertList li div.alertBillBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 16px 16px 0 16px;
   background: #FFFFFF;
   cursor: pointer;
@@ -1884,12 +1760,23 @@ div.containerVer2 div.alertWrap ul.alertList li div.alertBillBox p.message {
   color: #271e16;
   font-weight: 700;
 }
+@media (max-width: 320px) {
+  div.containerVer2 div.alertWrap ul.alertList li div.alertBillBox p.message {
+    font-size: 12px;
+  }
+}
 div.containerVer2 div.alertWrap ul.alertList li div.alertBillBox p.message em.instName {
   font-size: 12px;
   display: block;
   margin: 3px 0 4px 0;
   color: #575B65;
   font-weight: 400;
+}
+@media (max-width: 320px) {
+  div.containerVer2 div.alertWrap ul.alertList li div.alertBillBox p.message em.instName {
+    font-weight: 300;
+    font-size: 11px;
+  }
 }
 div.containerVer2 div.alertWrap ul.alertList li div.alertBillBox button.btnClose {
   border-radius: 100px;
@@ -2112,14 +1999,7 @@ div.containerVer2 div.emptyWrap p.emptySubTitle strong {
   color: #272A2F;
   font-weight: 700;
 }
-
-div.containerVer2 div.btnGroup.col2:after, div.containerVer2 div.btnGroup.col3:after, div.containerVer2 div.btnGroupToggle:after, div.containerVer2 div.btnGroupSmallToggle:after, div.containerVer2 dl.inputListCol:after, div.containerVer2 dl.inputListRow dd > ul.alignCol2:after, div.containerVer2 dl.inputListCol dd > ul.alignCol2:after, div.containerVer2 dl.inputListRow dd > ul.alignCol3:after, div.containerVer2 dl.inputListCol dd > ul.alignCol3:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-div.containerVer2 div.alertWrap ul.alertList {
+div.containerVer2 .responsiveList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2130,27 +2010,33 @@ div.containerVer2 div.alertWrap ul.alertList {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-div.containerVer2 div.alertWrap ul.alertList li {
+div.containerVer2 .responsiveList li {
   width: 100%;
   margin: 10px 0 0 0;
 }
 @media all and (min-width: 768px) {
-  div.containerVer2 div.alertWrap ul.alertList li {
+  div.containerVer2 .responsiveList li {
     width: 49%;
   }
 }
-div.containerVer2 div.alertWrap ul.alertList li:first-child {
+div.containerVer2 .responsiveList li:first-child {
   margin: 0;
 }
 @media all and (min-width: 768px) {
-  div.containerVer2 div.alertWrap ul.alertList li:first-child:nth-last-child(1) {
+  div.containerVer2 .responsiveList li:first-child:nth-last-child(1) {
     width: 100%;
   }
 }
 @media all and (min-width: 768px) {
-  div.containerVer2 div.alertWrap ul.alertList li:nth-child(2) {
-    margin: 0;
+  div.containerVer2 .responsiveList li:nth-child(2) {
+    margin: 0 !important;
   }
+}
+
+div.containerVer2 div.btnGroup.col2:after, div.containerVer2 div.btnGroup.col3:after, div.containerVer2 div.btnGroupToggle:after, div.containerVer2 div.btnGroupSmallToggle:after, div.containerVer2 dl.inputListCol:after, div.containerVer2 dl.inputListRow dd > ul.alignCol2:after, div.containerVer2 dl.inputListCol dd > ul.alignCol2:after, div.containerVer2 dl.inputListRow dd > ul.alignCol3:after, div.containerVer2 dl.inputListCol dd > ul.alignCol3:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 div.containerVer2 div.modalCover {
@@ -2386,40 +2272,6 @@ div.containerVer2 div.btnGroup.col2:after, div.containerVer2 div.btnGroup.col3:a
   content: "";
   display: block;
   clear: both;
-}
-
-div.containerVer2 div.alertWrap ul.alertList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-div.containerVer2 div.alertWrap ul.alertList li {
-  width: 100%;
-  margin: 10px 0 0 0;
-}
-@media all and (min-width: 768px) {
-  div.containerVer2 div.alertWrap ul.alertList li {
-    width: 49%;
-  }
-}
-div.containerVer2 div.alertWrap ul.alertList li:first-child {
-  margin: 0;
-}
-@media all and (min-width: 768px) {
-  div.containerVer2 div.alertWrap ul.alertList li:first-child:nth-last-child(1) {
-    width: 100%;
-  }
-}
-@media all and (min-width: 768px) {
-  div.containerVer2 div.alertWrap ul.alertList li:nth-child(2) {
-    margin: 0;
-  }
 }
 
 body, html {
@@ -2686,6 +2538,11 @@ div.containerVer2 div.contWrap div.mainHeaderWrap div.gnbWrap ul.gnbList li {
     margin: 0 20px;
   }
 }
+@media (max-width: 320px) {
+  div.containerVer2 div.contWrap div.mainHeaderWrap div.gnbWrap ul.gnbList li {
+    min-width: 25px;
+  }
+}
 div.containerVer2 div.contWrap div.mainHeaderWrap div.gnbWrap ul.gnbList li.on {
   border-bottom: 3px solid #33CC33;
 }
@@ -2701,6 +2558,11 @@ div.containerVer2 div.contWrap div.mainHeaderWrap div.gnbWrap ul.gnbList li i {
   font-size: 22px;
   margin: 0;
   color: #383E44;
+}
+@media (max-width: 320px) {
+  div.containerVer2 div.contWrap div.mainHeaderWrap div.gnbWrap ul.gnbList li i {
+    font-size: 18px;
+  }
 }
 div.containerVer2 div.contWrap div.mainHeaderWrap.on {
   -webkit-animation-name: headerSlide;

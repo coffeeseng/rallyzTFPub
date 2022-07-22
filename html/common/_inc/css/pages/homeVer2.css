@@ -4,40 +4,6 @@ div.containerVer2 div.contWrap div.articleWrap article.home.privacyPolicy > ol >
   clear: both;
 }
 
-div.containerVer2 div.contWrap div.articleWrap article.home.homeDefault article.homeInner.myClass ul.myList, div.containerVer2 div.contWrap div.articleWrap article.home.homeDefault article.homeInner.myInst ul.myList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-div.containerVer2 div.contWrap div.articleWrap article.home.homeDefault article.homeInner.myClass ul.myList li, div.containerVer2 div.contWrap div.articleWrap article.home.homeDefault article.homeInner.myInst ul.myList li {
-  width: 100%;
-  margin: 10px 0 0 0;
-}
-@media all and (min-width: 768px) {
-  div.containerVer2 div.contWrap div.articleWrap article.home.homeDefault article.homeInner.myClass ul.myList li, div.containerVer2 div.contWrap div.articleWrap article.home.homeDefault article.homeInner.myInst ul.myList li {
-    width: 49%;
-  }
-}
-div.containerVer2 div.contWrap div.articleWrap article.home.homeDefault article.homeInner.myClass ul.myList li:first-child, div.containerVer2 div.contWrap div.articleWrap article.home.homeDefault article.homeInner.myInst ul.myList li:first-child {
-  margin: 0;
-}
-@media all and (min-width: 768px) {
-  div.containerVer2 div.contWrap div.articleWrap article.home.homeDefault article.homeInner.myClass ul.myList li:first-child:nth-last-child(1), div.containerVer2 div.contWrap div.articleWrap article.home.homeDefault article.homeInner.myInst ul.myList li:first-child:nth-last-child(1) {
-    width: 100%;
-  }
-}
-@media all and (min-width: 768px) {
-  div.containerVer2 div.contWrap div.articleWrap article.home.homeDefault article.homeInner.myClass ul.myList li:nth-child(2), div.containerVer2 div.contWrap div.articleWrap article.home.homeDefault article.homeInner.myInst ul.myList li:nth-child(2) {
-    margin: 0;
-  }
-}
-
 div.containerVer2 div.contWrap div.articleWrap article.home.homeDefault {
   padding: 48px 0 0 0;
 }
@@ -545,6 +511,12 @@ div.containerVer2 div.contWrap div.articleWrap article.home.privacyPolicy table.
     line-height: 13px;
   }
 }
+@media (max-width: 320px) {
+  div.containerVer2 div.contWrap div.articleWrap article.home.privacyPolicy table.defaultTb {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
 div.containerVer2 div.contWrap div.articleWrap article.home.privacyPolicy table.defaultTb .col1, div.containerVer2 div.contWrap div.articleWrap article.home.privacyPolicy table.defaultTb .col4 {
   width: 20%;
 }
@@ -555,6 +527,11 @@ div.containerVer2 div.contWrap div.articleWrap article.home.privacyPolicy table.
   text-align: center;
   padding: 5px;
   word-break: keep-all;
+}
+@media (max-width: 320px) {
+  div.containerVer2 div.contWrap div.articleWrap article.home.privacyPolicy table.defaultTb th, div.containerVer2 div.contWrap div.articleWrap article.home.privacyPolicy table.defaultTb td {
+    padding: 3px;
+  }
 }
 div.containerVer2 div.contWrap div.articleWrap article.home.privacyPolicy table.defaultTb th {
   font-weight: 700;

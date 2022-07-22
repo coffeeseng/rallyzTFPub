@@ -288,11 +288,21 @@ div.containerVer2 article.onboarding.createDone div.txtBox p.mainTxt {
   color: #2DB62D;
   font-weight: 700;
 }
+@media (max-width: 320px) {
+  div.containerVer2 article.onboarding.createDone div.txtBox p.mainTxt {
+    font-size: 17px;
+  }
+}
 div.containerVer2 article.onboarding.createDone div.txtBox p.subTxt {
   font-size: 20px;
   margin: 16px 0 0 0;
   color: #272A2F;
   font-weight: 700;
+}
+@media (max-width: 320px) {
+  div.containerVer2 article.onboarding.createDone div.txtBox p.subTxt {
+    font-size: 17px;
+  }
 }
 div.containerVer2 article.onboarding.createDone div.tipBox {
   border-radius: 12px;

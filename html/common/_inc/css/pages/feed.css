@@ -76,6 +76,7 @@ div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.c
   font-size: 14px;
   color: #575B65;
   white-space: pre-wrap;
+  line-height: 21px;
 }
 div.containerVer2 article.home.homeDefault ul.feedList li div.feedListWrap div.contents > div.imageWrap img {
   width: 100%;

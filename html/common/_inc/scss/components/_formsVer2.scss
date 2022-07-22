@@ -501,6 +501,10 @@ div.containerVer2 {
                         background: $Primary;
                         color: $White;
                     }
+                    @include breakpoint(sssmobile) {
+                        width:32px;
+                        height:32px;
+                    }
                 }
             }
         }        
@@ -529,6 +533,9 @@ div.containerVer2 {
                         width: 73px;
                         height: 48px;
                         margin: 0 0 0 10px;
+                        @include breakpoint(sssmobile) {
+                            width:50px;
+                        }
                     }
                 }
             }
@@ -1331,7 +1338,6 @@ div.containerVer2 {
             padding:16px 32px; 
         }
         ul.alertList {
-            @extend %responsiveList;
             li {
                 //클래스 및 일반 알림
                 div.alertMsgBox {
@@ -1385,6 +1391,7 @@ div.containerVer2 {
                     @include border-radius(8px);
                     position: relative;
                     display: flex;
+                    align-items: center;
                     padding: 16px 16px 0 16px;
                     background: $White;
                     cursor: pointer;
@@ -1402,12 +1409,19 @@ div.containerVer2 {
                         padding: 0 20px 0 0;
                         color: #271e16;
                         font-weight: 700;
+                        @include breakpoint(sssmobile) {
+                            @include font-size(12);
+                        }
                         em.instName {
                             @include font-size(12);
                             display: block;
                             margin: 3px 0 4px 0;
                             color: $Gray-06;
                             font-weight: 400;
+                            @include breakpoint(sssmobile) {
+                                font-weight: 300;
+                                @include font-size(11);
+                            }
                         }
                     }
                     button.btnClose {
@@ -1630,4 +1644,40 @@ div.containerVer2 {
         }
     }
 
+
+    // PC에서 2개이상일 때 옘병지랄할 때 쓰는 거(알림창 말고도 케이스가 많아서 여기다 놨음.)
+    .responsiveList {
+        display: flex;
+        width:100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li {
+            width:100%;
+            margin: 10px 0 0 0;
+
+            // 리스트 2개 이상 (!!!PC에서만.)
+            @include breakpoint(tabletMini) {
+                width:49%;
+            }
+            
+            // 첫줄은 margin-top 제외.
+            &:first-child {
+                margin:0;
+                //리스트 하나있으면 걍 100%, (!!!PC에서만.)
+                &:nth-last-child(1) {
+                    @include breakpoint(tabletMini) {
+                        width:100%;
+                    }
+                }
+            }
+            // 리스트 2개 이상 두번째 li도 margin-top 제외. (!!!PC에서만.)
+            &:nth-child(2) {
+                @include breakpoint(tabletMini) {
+                    margin: 0 !important;
+                }
+            }
+        }
+    }
+
+    
 }

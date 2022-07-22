@@ -20,36 +20,3 @@
 	}
 }
 
-// PC에서 2개이상일 때 옘병지랄할 때 쓰는 거(알림창 말고도 케이스가 많아서 여기다 놨음.)
-%responsiveList {
-	display: flex;
-	width:100%;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	li {
-		width:100%;
-		margin: 10px 0 0 0;
-
-		// 리스트 2개 이상 (!!!PC에서만.)
-		@include breakpoint(tabletMini) {
-			width:49%;
-		}
-		
-		// 첫줄은 margin-top 제외.
-		&:first-child {
-			margin:0;
-			//리스트 하나있으면 걍 100%, (!!!PC에서만.)
-			&:nth-last-child(1) {
-				@include breakpoint(tabletMini) {
-					width:100%;
-				}
-			}
-		}
-		// 리스트 2개 이상 두번째 li도 margin-top 제외. (!!!PC에서만.)
-		&:nth-child(2) {
-			@include breakpoint(tabletMini) {
-				margin:0;
-			}
-		}
-	}
-}

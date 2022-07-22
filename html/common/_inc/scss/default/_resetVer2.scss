@@ -22,12 +22,9 @@ html, body  {
     .normal		{ font-weight: 400 }
     .light		{ font-weight: 300 }
     @include breakpoint(sssmobile) {
-        @include font-size(13);
-    }
-    @include breakpoint(micromobile) {
         @include font-size(12);
+        line-height: 130%;
     }
-
 }
 
 body, input, select, button, textarea, h1, h2, h3, h4, h5, h6, table { 
@@ -56,11 +53,11 @@ em, address {
 
 p {
     word-break: break-word;
-    line-height: 100%;
+    //line-height: 100%;
 }
 
 span {
-    line-height: 100%;
+    //line-height: 100%;
 }
 
 strong {

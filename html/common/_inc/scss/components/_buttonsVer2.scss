@@ -113,6 +113,10 @@ div.containerVer2 {
                     margin: 3px 0 0 8px;
                 }
             }
+            @include breakpoint(sssmobile) {
+                @include font-size(10);
+                padding:0 5px;
+            }
         }
     
         &.microB {
@@ -213,6 +217,7 @@ div.containerVer2 {
         &.fixed {
             position: fixed;
             bottom: 0px;
+            z-index:1000;
         }
     
         //나중에하기 버튼
