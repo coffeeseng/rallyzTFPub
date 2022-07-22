@@ -134,12 +134,24 @@ div.containerVer2 article.onboarding.intro div.rallyzStartWrap p {
   font-weight: 700;
   color: #272A2F;
 }
+@media (max-width: 320px) {
+  div.containerVer2 article.onboarding.intro div.rallyzStartWrap p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 div.containerVer2 article.onboarding.intro div.rallyzStartWrap p span.subTxt {
   font-size: 12px;
   display: block;
   margin: 8px 0 0 0;
   font-weight: 300;
   line-height: 18px;
+}
+@media (max-width: 320px) {
+  div.containerVer2 article.onboarding.intro div.rallyzStartWrap p span.subTxt {
+    font-size: 10px;
+    line-height: 14px;
+  }
 }
 div.containerVer2 article.onboarding.bookmark {
   padding: 0 16px;
@@ -215,6 +227,11 @@ div.containerVer2 article.onboarding.bookmark div.bookmarkWrap ul.bookmarkList >
   margin: 2px 0 6px 0;
   color: #272A2F;
   font-weight: 700;
+}
+@media (max-width: 320px) {
+  div.containerVer2 article.onboarding.bookmark div.bookmarkWrap ul.bookmarkList > li p {
+    font-size: 10.5px;
+  }
 }
 div.containerVer2 article.onboarding.instCreate {
   padding: 0 16px 88px 16px;
@@ -440,6 +457,14 @@ div.containerVer2 article.onboarding.addStudent div.tabContents div.saleDetailBo
 div.containerVer2 article.onboarding.addStudent div.tabContents div.saleDetailBox ul.saleList > li.detail ul.alignCol3 > li:last-child input[type=text] {
   text-align: right;
 }
+@media (max-width: 320px) {
+  div.containerVer2 article.onboarding.addStudent div.tabContents div.saleDetailBox ul.saleList > li.detail ul.alignCol3 > li {
+    width: 24.5%;
+  }
+  div.containerVer2 article.onboarding.addStudent div.tabContents div.saleDetailBox ul.saleList > li.detail ul.alignCol3 > li:last-child {
+    width: 48%;
+  }
+}
 div.containerVer2 article.onboarding.addStudent div.tabContents div.saleDetailBox ul.saleList > li.final {
   padding: 17px 16px;
   margin: 16px 0 0 0;
@@ -547,6 +572,11 @@ div.containerVer2 article.onboarding.addStudent div.tabContents.batch label.btnF
 }
 div.containerVer2 article.onboarding.addStudent div.tabContents.batch label.btnFile.delete {
   background: #575B65;
+}
+@media (max-width: 320px) {
+  div.containerVer2 article.onboarding.addStudent div.tabContents.batch label.btnFile {
+    padding: 4px 8px;
+  }
 }
 div.containerVer2 article.onboarding.addStudent div.tabContents.batch div.addNoticeBox {
   padding: 24px 16px 0 16px;

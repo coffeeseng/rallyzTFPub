@@ -118,12 +118,20 @@ div.containerVer2 {
                     text-align: left;
                     font-weight: 700;
                     color: $Black;
+                    @include breakpoint(sssmobile) {
+                        @include font-size(14);
+                        line-height: 20px;
+                    }
                     span.subTxt {
                         @include font-size(12);
                         display: block;
                         margin: 8px 0 0 0;
                         font-weight: 300;
                         line-height: 18px;
+                        @include breakpoint(sssmobile) {
+                            @include font-size(10);
+                            line-height: 14px;
+                        }
                     }
                 }
             }
@@ -204,6 +212,9 @@ div.containerVer2 {
                                 margin: 2px 0 6px 0;
                                 color: $Black;
                                 font-weight: 700;
+                            }
+                            @include breakpoint(sssmobile) {
+                                @include font-size(10.5);
                             }
                         }
                     }
@@ -444,6 +455,12 @@ div.containerVer2 {
                                                 text-align: right;
                                             }
                                         }
+                                        @include breakpoint(sssmobile) {
+                                            width: 24.5%;
+                                            &:last-child {
+                                                width: 48%;
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -561,6 +578,9 @@ div.containerVer2 {
                         }
                         &.delete {
                             background: $Gray-06;
+                        }
+                        @include breakpoint(sssmobile) {
+                            padding:4px 8px;
                         }
                     }
 

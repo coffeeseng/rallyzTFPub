@@ -86,11 +86,20 @@ div.containerVer2 {
 								background: url('../../images/guide/icoSearch.svg') #f0fbf7  center no-repeat;
 								background-size: 34px;
 							}
+							@include breakpoint(sssmobile) {
+								width:40px;
+								height:40px;
+								background-size:24px;
+							}
 						}				
 						p {
 							@include font-size(12);
 							float: left;
 							margin: 10px 0 0 10px;
+							@include breakpoint(sssmobile) {
+								@include font-size(10);
+								margin: 5px 0 0 5px;
+							}
 							em {
 								@include font-size(14);
 								display: block;

@@ -441,6 +441,9 @@ div.containerVer2 {
                         font-weight: 700;
                         margin:32px 0 16px 0;
                         color:$Black;
+                        @include breakpoint(sssmobile) {
+                            @include font-size(14.5);
+                        }
                     }
                     > ol {
                         list-style-type: none;

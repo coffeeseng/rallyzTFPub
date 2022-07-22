@@ -453,6 +453,11 @@ div.containerVer2 div.contWrap div.articleWrap article.home.privacyPolicy h3 {
   margin: 32px 0 16px 0;
   color: #272A2F;
 }
+@media (max-width: 320px) {
+  div.containerVer2 div.contWrap div.articleWrap article.home.privacyPolicy h3 {
+    font-size: 14.5px;
+  }
+}
 div.containerVer2 div.contWrap div.articleWrap article.home.privacyPolicy > ol {
   list-style-type: none;
   counter-reset: up 0;

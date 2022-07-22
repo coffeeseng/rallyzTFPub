@@ -585,6 +585,11 @@ div.containerVer2 {
                         border: 1px solid $Primary;
                     }
                 }
+                @include breakpoint(sssmobile) {
+                    button.subjectLarge {
+                        width:135px;
+                    }
+                }
             }
         }
         
