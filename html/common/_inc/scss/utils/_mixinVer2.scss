@@ -7,11 +7,9 @@
 
 //media query
 @mixin breakpoint($point) {
-	@if $point == micromobile {
-		@media (max-width: 280px) { @content; }
-	}
-	@else if $point == sssmobile {
-		@media (max-width: 320px) { @content; }
+
+	@if $point == sssmobile {
+		@media (min-width: 280px) and (max-width: 360px) { @content; }
 	}
 	@else if $point == ssmobile {
 		@media (max-width: 575px) { @content; }
