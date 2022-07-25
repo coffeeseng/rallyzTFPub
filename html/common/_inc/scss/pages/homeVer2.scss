@@ -154,12 +154,11 @@ div.containerVer2 {
                                             width:auto;
                                             height:98px;
                                             border-radius: 10px;
-                                            background-position: bottom center;
+                                            background-position: center;
                                             background-repeat: no-repeat;
                                             background-size: calc(100% - 32px) 98px;
                                             @include breakpoint(sssmobile) {
-                                                height:88px;
-                                                background-size: calc(100% - 32px);
+                                                height:80px;
                                             }
                                         }
                                     }
