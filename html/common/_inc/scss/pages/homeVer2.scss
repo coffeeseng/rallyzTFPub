@@ -143,19 +143,23 @@ div.containerVer2 {
                         &.banner {
                             padding:16px;
                             background-color: $Gray-02;
+                            @include breakpoint(tabletMini) {
+                                padding:16px 32px;
+                            }
                             div.banSlideWrap {
                                 background-color: $Gray-02;
                                 ul.banSlideList {
                                     li {
                                         div.bannerContents {
-                                            display: flex;
-                                            justify-content: center;
-                                            width:100%;
+                                            width:auto;
                                             height:98px;
                                             border-radius: 10px;
-                                            p.temp {
-                                                padding:16px;
-                                                text-align: center;
+                                            background-position: bottom center;
+                                            background-repeat: no-repeat;
+                                            background-size: calc(100% - 32px) 98px;
+                                            @include breakpoint(sssmobile) {
+                                                height:88px;
+                                                background-size: calc(100% - 32px);
                                             }
                                         }
                                     }
