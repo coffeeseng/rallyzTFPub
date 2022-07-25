@@ -55,6 +55,19 @@ div.containerVer2 {
             margin: 0 auto;
             font-weight: 400;
         }
+
+        //갑자기 나타난 짧은 sm 사이즈.
+        &.ssm {
+            @include border-radius(8px);
+            @include font-size(14);
+            display: block;
+            width: 160px;
+            height: 48px;
+            padding: 0 15px;
+            max-width: 100%;
+            margin: 0 auto;
+            font-weight: 400;
+        }
     
         &.xs {
             @include border-radius(8px);
@@ -223,7 +236,7 @@ div.containerVer2 {
         //나중에하기 버튼
         button.btnSubmitLater {
             display: block;
-            width: 80px;
+            min-width: 80px;
             height: 24px;
             margin: 10px auto 0 auto;
             text-decoration: underline;

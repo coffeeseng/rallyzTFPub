@@ -320,35 +320,6 @@ div.containerVer2 {
                     }
                 }
             }
-            //학부모 자동연결 팁
-            div.tipBox {
-                @include border-radius(12px);
-                width: 100%;
-                padding: 16px;
-                margin: 24px 0 0 0;
-                background: #f6fcff;
-                p {
-                    line-height: 21px;
-                    color: $Gray-05;
-                    &.tit {
-                        margin: 0 0 6px 0;
-                        color: $Gray-07;
-                        font-weight: 700;
-                        em {
-                            @include border-radius(4px);
-                            @include font-size(10);
-                            display: inline-block;
-                            padding: 3px 4px;
-                            margin: 3px 7px 0 0;
-                            background: #2477f2;
-                            font-weight: 700;
-                            line-height: 100%;
-                            vertical-align: top;
-                            color: $White;
-                        }
-                    }
-                }                
-            }
         }
     
         //학생등록
@@ -620,15 +591,14 @@ div.containerVer2 {
         //랠리즈 도입 요청
         &.request {
             padding: 30px 16px 88px 16px; //버튼 88 fixed때문에 버튼 height만큼 패딩
-            h2.title {//_wrap으로 옮길 것!!!!!!!!!!!!!
-                &.left {
-                    line-height: 30px;
-                    text-align: left !important;
-                }
-            }
             p.subTxt {
                 margin: 14px 0 24px 0;
                 line-height: 21px
+            }
+            dl.inputListRow {
+                dt {
+                    @include font-size(12);
+                }
             }
             ul.alignPrivacy {
                 display: flex;
@@ -653,14 +623,323 @@ div.containerVer2 {
             }
         }
     
-        //자녀연결
-        &.dd {
-    
+        //연결 선택
+        &.connectSelect {
+            padding: 0 16px;
+            article.selectBox {
+                padding: 32px 0;
+                &.border {
+                    border-top: 1px solid $Gray-02;
+                }
+                ul.guideList {
+                    margin: 16px 0 0 0;
+                    li {
+                        button.btnGo {
+                            @extend %clearfix;
+                            position: relative;
+                            width: 100%;
+                            padding: 6px 0;
+                            text-align: left;
+                            &::after {
+                                @include font-size(14);
+                                font-family: 'icomoon' !important;
+                                speak: never;
+                                content: '\e901';
+                                position: absolute;
+                                top: 23px;
+                                right: 0;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-variant: normal;
+                                text-transform: none;
+                                line-height: 1;
+                                pointer-events: none;
+                                color: $Gray-04;
+                            }
+                            div.ico {
+                                @include border-radius(100px);
+                                float: left;
+                                width: 50px;
+                                height: 50px;
+                                //부모
+                                &.parents {
+                                    background: url('../../images/ico/icoConneting.svg') #f0fbf7  center no-repeat;
+                                    background-size: 36px;
+                                }
+                                //학생
+                                &.student {
+                                    background: url('../../images/guide/icoSearch.svg') #f0fbf7  center no-repeat;
+                                    background-size: 36px;
+                                }
+                                @include breakpoint(sssmobile) {
+                                    width: 40px;
+                                    height: 40px;
+                                    background-size: 24px;
+                                }
+                            }				
+                            p {
+                                @include font-size(12);
+                                float: left;
+                                width: calc(100% - 60px);
+                                margin: 4px 0 0 10px;
+                                line-height: 18px;
+                                @include breakpoint(sssmobile) {
+                                    @include font-size(10);
+                                    margin: 5px 0 0 5px;
+                                }
+                                em {
+                                    @include font-size(14);
+                                    display: block;
+                                    margin: 0 0 2px 0;
+                                    color: $Black;
+                                    font-weight: 700;
+                                }
+                            }
+                        }				
+                    }
+                }
+            }
+        }
+
+        //자녀 연결
+        &.connectChild {
+            padding: 0 16px 122px 16px; //버튼 122 fixed때문에 버튼 height만큼 패딩
+            div.txtBox {
+                @include border-radius(10px);
+                width: 100%;
+                padding: 24px 26px;
+                margin: 24px 0 16px 0;
+                border: 1px solid $Primary;
+                background: $White;
+                text-align: center;
+                p.mainTxt {
+                    @include font-size(20);
+                    margin: 0 0 16px 0;
+                    color: $Black;
+                    line-height: 30px;
+                    font-weight: 700;
+                }
+                p.subTxt {
+                    line-height: 21px;
+                }
+            }
+            div.instInfoWrap {
+                margin: 32px 0 0 0;
+            }
+        }
+
+        //자녀 연결 실패
+        &.disconnectChild {
+            padding: 0 16px;
+            div.disconnectBox {
+                margin: 96px 0 0 0;
+                text-align: center;
+                img {
+                    display: block;
+                    width: 160px;
+                    max-width: 100%;
+                    margin: 0 auto;
+                }
+                p.mainTxt {
+                    @include font-size(20);
+                    margin: 24px 0 16px 0;
+                    color: $Black;
+                    line-height: 30px;
+                    font-weight: 700;
+                }
+                p.subTxt {
+                    margin: 0 0 24px 0;
+                    line-height: 21px;
+                    em {
+                        display: block;
+                        font-weight: 700;
+                    }
+                }
+            }
+            div.instInfoWrap {
+                margin: 32px 0 0 0;
+            }
         }
     
         //학원찾기
         &.searchInst {
-    
+
+            //검색조건 및 검색창
+            div.sortBox {
+                padding: 8px 16px;
+                background: $Gray-01;
+                > ul.alignCol2 {
+                    @extend %clearfix;
+                    margin: 0 0 16px 0;
+                    > li {
+                        float: left;
+                        width: 40%;
+                        padding: 0 10px 0 0;
+                        &:last-child {
+                            width: 60%;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+
+            //검색 유도
+            div.searchDesc {
+                width: 100%;
+                padding: 110px 0 0 0;
+                margin: 96px auto;
+                text-align: center;
+                background: url('../../images/ico/icoArea.svg') top center no-repeat;
+                background-size: 99px;
+                p {
+                    font-weight: 500;
+                }
+            }
+
+            div.searchResultWrap {
+                padding: 0 16px;
+                //결과 - 배너
+                div.topBanner {
+                    margin: 8px 0;
+                    button.btnGo {
+                        @include border-radius(8px);
+                        position: relative;
+                        width: 100%;
+                        padding: 16px;
+                        background: $Gray-01;
+                        text-align: left;
+                        &::after {
+                            @include font-size(14);
+                            font-family: 'icomoon' !important;
+                            speak: never;
+                            content: '\e901';
+                            position: absolute;
+                            top: 25px;
+                            right: 16px;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-variant: normal;
+                            text-transform: none;
+                            line-height: 1;
+                            pointer-events: none;
+                            color: $Gray-04;
+                        }
+                        img {
+                            display: inline-block;
+                            width: 32px;
+                        }
+                        p {
+                            @include font-size(12);
+                            display: inline-block;
+                        }
+                    }
+                }
+                //검색결과리스트
+                div.resultListWrap {
+                    margin: 8px 0 0 0;
+                    ul.resultList {
+                        > li {
+                            padding: 16px 0 16px;
+                            border-bottom: 1px solid $Gray-02;
+                            //과목 태그
+                            div.subjectTagWrap {
+                                width: 100%;
+                                display: flex;
+                                flex-direction: row;
+                                margin: 0 0 6px 0;
+                                p.tag {
+                                    @include border-radius(4px);
+                                    @include font-size(10);
+                                    min-width: 34px;
+                                    padding: 0 6px;
+                                    margin: 0 4px 0 0;
+                                    background: $Green-01;
+                                    color: $Primary;
+                                    font-weight: 500;
+                                    text-align: center;
+                                }
+                            }
+                            //학원명
+                            p.instTitle {
+                                @include font-size(16);
+                                margin: 0 0 4px 0;
+                                color: $Black;
+                                font-weight: 700 
+                            }
+                            p.instLocation {
+                                @include font-size(12);
+                            }
+                            //학원정보
+                            div.instInfoBox {
+                                display: flex;
+                                margin: 4px 0 0 0;
+                                div.instImage {
+                                    @include border-radius(8px);
+                                    width: 110px;
+                                    height: 69px;
+                                    background-color: $Gray-01;
+                                }
+                                div.instInfo {
+                                    margin: 4px 0 0 7px;
+                                    //학원 대상자
+                                    p.target {
+                                        @include font-size(12);
+                                        line-height: 18px;
+                                    }
+                                    div.instTagWrap {
+                                        width: 100%;
+                                        text-align: left;
+                                        p.tag {
+                                            @include font-size(12);
+                                            display: inline-block;
+                                            margin: 0 4px 0 0;
+                                            color: $Blue-03;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }            
+
+        }
+
+
+
+
+
+
+
+        //팁
+        div.tipBox {
+            @include border-radius(12px);
+            width: 100%;
+            padding: 16px;
+            margin: 24px 0 0 0;
+            background: #f6fcff;
+            p {
+                line-height: 21px;
+                color: $Gray-05;
+                &.tit {
+                    margin: 0 0 6px 0;
+                    color: $Gray-07;
+                    font-weight: 700;
+                    em {
+                        @include border-radius(4px);
+                        @include font-size(10);
+                        display: inline-block;
+                        padding: 3px 4px;
+                        margin: 3px 7px 0 0;
+                        background: #2477f2;
+                        font-weight: 700;
+                        line-height: 100%;
+                        vertical-align: top;
+                        color: $White;
+                    }
+                }
+            }                
         }
     
     
@@ -721,6 +1000,16 @@ div.containerVer2 {
 
             //모달 - 학생 등록 완료
             &.studentAddDone {
+                div.contents {
+                    p {
+                        @include font-size(12);
+                        line-height: 18px;
+                    }
+                }
+            }
+
+            //모달 - 자녀연결 완료
+            &.connectDone {
                 div.contents {
                     p {
                         @include font-size(12);

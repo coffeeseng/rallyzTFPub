@@ -396,6 +396,10 @@ div.containerVer2 {
                     font-weight: 700;
                     text-align: center;
                     color: $Black;
+                    &.left {//가끔 페이지 타이틀이 왼쪽 정렬이 있음
+                        line-height: 30px;
+                        text-align: left !important;
+                    }
                 }
             }
         }

@@ -137,6 +137,7 @@ div.containerVer2 {
         display: flex;
         align-items: center;
         justify-content: center;
+        background: $White;
         border: 1px solid $Gray-03;
         &:before {
             @include font-size(24);
@@ -1140,9 +1141,9 @@ div.containerVer2 {
             //버튼 및 체크박스
             div.btnBox {
                 position: relative;
-                width: 125px;
+                width: 130px;
                 padding: 0 !important;
-                margin: 0 0 0 10px;
+                margin: 0 0 0 5px;
                 text-align: right;
                 //라디오 버튼
                 div.radioWrap {
@@ -1174,8 +1175,8 @@ div.containerVer2 {
             }
             div.rightBox { //텍스트가 들어갈 경우(커서 때문에.)
                 position: relative;
-                width: 125px;
-                margin: 0 0 0 10px;
+                width: 135px;
+                margin: 0 0 0 5px;
                 text-align: right;
                 cursor: pointer;
                 p {

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="배컴" />
+    <meta name="keywords" content="랠리즈">
+    <meta name="description" content="랠리즈">
+    <title>랠리즈 - 003.01 온보딩 - 학생/학부모 자녀 연결</title>
+    <link rel="stylesheet" href="../../common/_inc/css/mainVer2.css"><!--기본 CSS-->
+    <link rel="stylesheet" href="../../common/_inc/css/pages/onboardingVer2.css"><!--각 페이지별 CSS-->
+</head>
+<body>
+
+    <div class="containerVer2">
+
+        <div class="contWrap">
+
+            <!-- 서브 페이지 헤더 -->
+            <div class="subHeaderWrap">
+                <header class="subHeader">
+                    <h1 class="pageName">자녀 연결</h1>
+                    <button type="button" class="btnPoLeft"><i class="icon-arrowLeft"><span class="blind">이전</span></i></button>
+                </header>
+            </div>
+            <!-- 서브 페이지 헤더 -->
+
+            <!-- 본문 -->
+            <div class="articleWrap">
+                <article class="onboarding connectChild">
+                    <h2 class="blind">랠리즈 온보딩 - 자녀연결 </h2>
+                    <div class="txtBox">
+                        <p class="mainTxt">학원생활을 관리할 자녀를<br />연결해주세요.</p>
+                        <p class="subTxt">학원비 결제, 학습 현황 및 확인, 선생님과의 소통 등<br />자녀의 학원 생활 전반을 관리할 수 있습니다.</p>
+                    </div>
+                    <div class="tipBox">
+                        <p class="tit"><em>TIP</em>학부모 자동 연결</p>
+                        <p>학생 등록을 완료하시면,학생과 연결된 보호자는<br/>자동으로 클래스에 등록됩니다.</p>
+                    </div>
+                    <div class="instInfoWrap">
+                        <dl class="inputListRow">
+                            <dt>
+                                <span>자녀 이름</span>
+                            </dt>
+                            <dd>
+                                <div class="inputWrap">
+                                    <input type="text" placeholder="학원에 등록된 자녀 이름 입력">
+                                </div>
+                            </dd>
+                            <dt>
+                                <span>자녀 휴대폰 번호</span>
+                            </dt>
+                            <dd>
+                                <div class="inputWrap">
+                                    <input type="number" placeholder="학원에 등록된 자녀 휴대폰 번호 입력">
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </article>
+
+                <div class="btnWrap fixed">
+                    <button type="button" class="md primary">자녀 연결하기</button>
+                    <button type="button" class="btnSubmitLater">홈 화면으로 이동</button>
+                </div>
+
+            </div>
+            <!-- //본문 -->
+
+            <!-- 모달 - 자녀연결 완료 -->
+            <div class="modalCover off">
+                <div class="modalWrap coverType">
+                    <div class="modal connectDone"><!-- 모달을 구분해주는 class는 .modal 옆에  -->
+                        <div class="blind">자녀 연결 완료</div>
+                        <div class="contents">
+                            <p>자녀와 연결되었습니다.<br />다른 자녀를 추가로 연결하시겠습니까?</p>
+                        </div>
+                        <div class="btnBox col2">
+                            <button type="button" class="left bdrPrimary">추가 연결</button>
+                            <button type="button" class="right primary">연결 완료</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //모달 - 자녀연결 완료 -->
+
+        </div>
+    </div>
+</body>
+</html>
