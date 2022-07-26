@@ -1685,5 +1685,52 @@ div.containerVer2 {
         }
     }
 
-    
+    // 랠리즈 가이드 : 기능별 서비스 설명
+        // TIP : 인포박스
+        div.serviceInfoBox {
+            width:auto;
+            height:auto;
+            margin:16px 0;
+            padding:16px;
+            border-radius: 12px;
+            background-color: #f6fcff;
+            &.txtLeft {
+                h3.infoTitle {
+                    justify-content: flex-start;
+                }             
+            }
+            &.txtCenter {
+                h3.infoTitle {
+                    justify-content: center;
+                }
+            }
+            h3.infoTitle {
+                display: flex;
+                align-items: center;
+                margin:0 0 7px 0;
+                span {
+                    &.tagTip {
+                        width:auto;
+                        height: 18px;
+                        margin:0 8px 0 0;
+                        padding:0 5px;
+                        border-radius: 4px;
+                        color:$White;
+                        background-color: #2477f2;
+                        font-weight: 700;
+                        @include font-size(10);
+                    }
+                    &.title {
+                        @include font-size(14);
+                        font-weight: 700;
+                        color:$Gray-07;
+                    }
+                }
+            }
+            p {
+                @include font-size(14);
+                color:$Gray-05;
+                line-height: 1.5;
+            }
+        }
 }
