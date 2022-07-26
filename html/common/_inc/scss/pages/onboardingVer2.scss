@@ -797,10 +797,9 @@ div.containerVer2 {
             }
 
             div.searchResultWrap {
+                padding: 0 16px;
                 //결과 - 배너
                 div.topBanner {
-                    width: 100%;
-                    padding: 0 16px;
                     margin: 8px 0;
                     button.btnGo {
                         @include border-radius(8px);
@@ -835,14 +834,10 @@ div.containerVer2 {
                         }
                     }
                 }
-
                 //검색결과리스트
                 div.resultListWrap {
                     margin: 8px 0 0 0;
                     ul.resultList {
-                        width: 100%;
-                        padding: 0 16px;
-                        border-bottom: 6px solid $Gray-02;
                         > li {
                             padding: 16px 0 16px;
                             border-bottom: 1px solid $Gray-02;
@@ -851,14 +846,13 @@ div.containerVer2 {
                                 width: 100%;
                                 display: flex;
                                 flex-direction: row;
-                                flex-wrap: wrap;
                                 margin: 0 0 6px 0;
                                 p.tag {
                                     @include border-radius(4px);
                                     @include font-size(10);
                                     min-width: 34px;
                                     padding: 0 6px;
-                                    margin: 0 4px 4px 0;
+                                    margin: 0 4px 0 0;
                                     background: $Green-01;
                                     color: $Primary;
                                     font-weight: 500;
@@ -883,28 +877,22 @@ div.containerVer2 {
                                     @include border-radius(8px);
                                     width: 110px;
                                     height: 69px;
+                                    background-color: $Gray-01;
                                 }
                                 div.instInfo {
-                                    width: calc(100% - 117px);
                                     margin: 4px 0 0 7px;
                                     //학원 대상자
                                     p.target {
                                         @include font-size(12);
                                         line-height: 18px;
                                     }
-                                    //학원 태그
                                     div.instTagWrap {
-                                        width: 100%;
-                                        display: flex;
-                                        flex-direction: row;
-                                        flex-wrap: wrap;
                                         width: 100%;
                                         text-align: left;
                                         p.tag {
                                             @include font-size(12);
                                             display: inline-block;
-                                            min-width: 30px;
-                                            margin: 0 4px 4px 0;
+                                            margin: 0 4px 0 0;
                                             color: $Blue-03;
                                         }
                                     }
@@ -913,287 +901,8 @@ div.containerVer2 {
                         }
                     }
                 }
+
             }            
-        }
-
-        //학원메인
-        &.instMain {
-            
-            //학원 이미지 슬라이더
-            div.imageSliderWrap {
-                position: relative;
-                width: 100%;
-                height: 200px;
-                button.btnClose {
-                    @include border-radius(100px);
-                    position: absolute;
-                    top: 12px;
-                    left: 16px;
-                    width: 24px;
-                    height: 24px;
-                    background: rgba(0,0,0,0.2);
-                    i {
-                        @include font-size(12);
-                        color: $White;
-                    }
-                }
-                div.slider {
-                    width: inherit;
-                    height: inherit;
-                    background-position: center;
-                    background-size: cover;
-                }
-            }
-
-            //학원정보
-            div.instInfoWrap {
-                padding: 16px 16px 8px 16px;
-                border-bottom: 1px solid $Gray-03;
-                div.instInfo {
-                    h2.instName {
-                        font-weight: 700;
-                        color: $Black;
-                    }
-                    p {
-                        @include font-size(12);
-                        position: relative;
-                        padding: 0 0 0 12px;
-                        color: $Gray-05;
-                        &.address {
-                            &::before {
-                                @include font-size(10);
-                                display: inline-block;
-                                vertical-align: middle;
-                                content: "\e907";
-                                position: absolute;
-                                top: 5px;
-                                left: 0px;
-                                font-family: 'icomoon' !important;
-                                speak: never;
-                                font-style: normal;
-                                font-weight: normal;
-                                font-variant: normal;
-                                text-transform: none;
-                                line-height: 1;
-                                pointer-events: none;
-                            }
-                        }
-                        &.mobile {
-                            &::before {
-                                @include font-size(10);
-                                display: inline-block;
-                                vertical-align: middle;
-                                margin:0 0 0 1px;
-                                content: "\e914";
-                                position: absolute;
-                                top: 5px;
-                                left: 0px;
-                                font-family: 'icomoon' !important;
-                                speak: never;
-                                font-style: normal;
-                                font-weight: normal;
-                                font-variant: normal;
-                                text-transform: none;
-                                line-height: 1;
-                                pointer-events: none;
-                            }
-                        }
-                    }
-                }
-            }
-
-            //학원소개
-            div.instIntroWrap {
-                padding: 16px;
-                > h3 {
-                    @include font-size(10);
-                    margin: 0 0 8px 0;
-                    font-weight: 500;
-                    color: $Gray-05;
-                }
-                p {
-                    @include font-size(12);
-                    line-height: 18px;
-                }
-            }
-
-            //문의하기
-            div.requestWrap {
-                width: 100%;
-                padding: 16px;
-                background: $Gray-01;
-                border-bottom: 6px solid $Gray-02;
-                div.request {
-                    @include border-radius(16px);
-                    width: 100%;
-                    padding: 24px 16px;
-                    background: $White;
-                    border: 1px solid $Gray-02;
-                    text-align: center;
-                    p {
-                        margin: 0 0 16px 0;
-                        line-height: 21px;
-                        em {
-                            color: $Primary;
-                            font-weight: 700;
-                        }
-                    }
-                    button {
-                        @include border-radius(8px);
-                        width: 126px;
-                        height: 40px;
-                        margin: 0 4px;
-                    }
-                }
-            }
-
-            //클래스 리스트
-            div.classListWrap {
-                position: relative;
-                width: 100%;
-                padding: 24px 16px;
-                background: $Gray-01;
-                > h3 {
-                    margin: 0 0 16px 0;
-                    color: $Black;
-                    font-weight: 700;
-                    em.amount {
-                        margin: 0 0 0 6px;
-                        font-weight: normal;
-                    }
-                }
-                button.btnFilter {
-                    @include font-size(12);
-                    position: absolute;
-                    top: 24px;
-                    right: 16px;
-                    min-width: 20px;
-                    height: 20px;
-                    i {
-                        @include font-size(18);
-                        display: inline-block;
-                        margin: -2px 3px 0 0;
-                        vertical-align: middle;
-                    }
-                }
-                ul.classList {
-                    width: 100%;
-                    > li {
-                        @include border-radius(16px);
-                        padding: 16px;
-                        margin: 0 0 8px 0;
-                        background: $White;
-                        border: 1px solid $Gray-01;
-                        &:last-child {
-                            margin: 0;
-                        }
-                        div.top {
-                            display: flex;
-                            flex-wrap: wrap;
-                            align-items: center;
-                            div.classImage {
-                                @include border-radius(8px);
-                                float: left;
-                                width: 64px;
-                                height: 64px;
-                                margin: 0 16px 0 0;
-                            }
-                            div.textBox {
-                                width: calc(100% - 80px);
-                                div.subjectTagWrap {
-                                    margin: 0;
-                                }
-                                p.classTitle {
-                                    font-weight: 700;
-                                    color: $Black;
-                                }
-                            }
-                        }
-                        div.bottom {
-                            width: 100%;
-                            margin: 8px 0 0 0;
-                            p.classDay {
-                                @include border-radius(8px);
-                                position: relative;
-                                padding: 11px 12px;
-                                background: #f7f9fa;
-                                span {
-                                    margin: 0 8px 0 0;
-                                    color: #5b5b5b;
-                                    font-weight: 500;
-                                }
-                                &::after {
-                                    @include font-size(12);
-                                    display: inline-block;
-                                    vertical-align: middle;
-                                    content: "\e910";
-                                    position: absolute;
-                                    top: 14px;
-                                    right: 12px;
-                                    font-family: 'icomoon' !important;
-                                    speak: never;
-                                    font-style: normal;
-                                    font-weight: normal;
-                                    font-variant: normal;
-                                    text-transform: none;
-                                    line-height: 1;
-                                    pointer-events: none;
-                                    color: $Gray-04;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-
-
-            //과목 태그
-            div.subjectTagWrap {
-                width: 100%;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                margin: 0 0 6px 0;
-                p.tag {
-                    @include border-radius(100px);
-                    @include font-size(12);
-                    min-width: 43px;
-                    height: 24px;
-                    padding: 2px 6px;
-                    margin: 0 8px 8px 0;
-                    background: $GGreen;
-                    color: $Green-05;
-                    font-weight: 700;
-                    text-align: center;
-                    //학원 메인의 기본 설정
-                    &.default {
-                        padding: 2px 8px;
-                        background: $Primary;
-                        color: $White;
-                    }
-                }
-            }
-
-            //학원 태그
-            div.instTagWrap {
-                width: 100%;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                width: 100%;
-                text-align: left;
-                p.tag {
-                    @include font-size(10);
-                    display: inline-block;
-                    min-width: 30px;
-                    margin: 0 4px 4px 0;
-                    color: $Blue-03;
-                }
-            }
-
-
-
 
         }
 
@@ -1201,7 +910,6 @@ div.containerVer2 {
 
 
 
-        ///////////////////// 공통 //////////////////////
 
 
         //팁

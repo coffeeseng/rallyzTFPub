@@ -320,9 +320,6 @@ div.containerVer2 div.contWrap div.articleWrap article.home.homeDefault {
 
 div.containerVer2 div.contWrap div.articleWrap article.home.consultRequest {
   padding: 32px 16px 0 16px; }
-  @media all and (min-width: 768px) {
-    div.containerVer2 div.contWrap div.articleWrap article.home.consultRequest {
-      padding: 32px; } }
   div.containerVer2 div.contWrap div.articleWrap article.home.consultRequest h2.title {
     text-align: left; }
   div.containerVer2 div.contWrap div.articleWrap article.home.consultRequest p.subTitle {

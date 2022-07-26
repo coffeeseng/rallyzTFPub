@@ -386,9 +386,6 @@ div.containerVer2 {
                 //상담/교육 신청
                 &.consultRequest {
                     padding:32px 16px 0 16px;
-                    @include breakpoint(tabletMini) {
-                        padding:32px;
-                    }
                     h2.title {
                         text-align: left;
                     }
