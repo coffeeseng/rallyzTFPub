@@ -129,7 +129,7 @@ div.containerVer2 {
                 border-top-right-radius: 12px;
                 @include breakpoint(tabletMini) {
                     @include centerer(true, false);
-                    max-width:800px;
+                    max-width: 800px;
                 }
                 &.line {
                     bottom: 85px;
