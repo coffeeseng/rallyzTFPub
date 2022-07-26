@@ -383,11 +383,18 @@ div.containerVer2 {
                 min-height: 100vh;
                 padding: 48px 0 0 0;
             }
+            
             //홈화면의 배경색(아아..정말 이러고 싶지 않았다)
             &.bgGray02 {
                 min-height:100vh;
                 background: $Gray-02;
             }
+
+            //학원메인처럼 헤더가 아예 없는 타입 (나도 이러고 싶지 않았다..)
+            &.pdNone {
+                padding: 0;
+            }
+
             //각 페이지의 article
             > article {
                 //페이지 내부 메인 타이틀(구조에 따라 h2 h3)
