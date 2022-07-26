@@ -1707,7 +1707,6 @@ div.containerVer2 {
             h3.infoTitle {
                 display: flex;
                 align-items: center;
-                margin:0 0 7px 0;
                 span {
                     &.tagTip {
                         width:auto;
@@ -1731,6 +1730,7 @@ div.containerVer2 {
                 @include font-size(14);
                 color:$Gray-05;
                 line-height: 1.5;
+                margin:7px 0 0 0;
             }
         }
 }
