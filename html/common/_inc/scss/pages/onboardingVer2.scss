@@ -964,12 +964,20 @@ div.containerVer2 {
                         color: $White;
                     }
                 }
-                div.slider {
+                div.sliderImage {
+                    position: relative;
                     width: inherit;
                     height: inherit;
-                    background-position: center;
-                    background-size: cover;
-                }
+                    div.imageBox {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: inherit;
+                        height: inherit;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                }                
             }
 
             //학원정보
