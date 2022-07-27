@@ -79,8 +79,9 @@ div.containerVer2 {
                     min-height: 50px;
                     align-items: center;
                     justify-content: center;
-                    p {
-                        width: 100%;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    > p {
                         line-height: 135%;
                         text-align: center;
                     }
@@ -195,9 +196,17 @@ div.containerVer2 {
                 }
             }
 
-            div.modal {
-                
+            //주소검색
+            &.address {
+                @include border-radius(8px);
+                position: relative;
+                width: 100%;
+                height: 360px;
+                padding: 24px 16px 16px 16px;
+                z-index: 1000;
             }
+
+
         }
     }
 }

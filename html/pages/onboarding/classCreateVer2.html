@@ -133,6 +133,21 @@
                                     <p class="descNotice">시간 입력 생략 가능합니다.</p>
                                 </div>
                                 <!--//시간 선택-->
+                                
+                                <!--선택한 시간대-->
+                                <div class="timeSelectWrap">
+                                    <ul class="selectedList">
+                                        <li>
+                                            <span>화,목 오후 4시 ~ 오후 5시</span>
+                                            <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제하기</span></i></button>
+                                        </li>
+                                        <li>
+                                            <span>화,목 오후 4시 ~ 오후 5시</span>
+                                            <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제하기</span></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--//선택한 시간대-->
                             </dd>
                             <dt>
                                 <span>담당 강사</span>
@@ -181,9 +196,127 @@
 
             </div>
             <!-- //본문 -->
+
+
+            <!-- 모달 - 주소검색 -->
+            <div class="modalCover off">
+                <div class="modalClose">
+                    <button type="button" class="btnClose"><i class="icon-closeThin"><span class="blind">모달 닫기</span></i></button>
+                </div>
+                <div class="modalWrap address">
+                    <div class="modal addAddress">
+                        <div class="blind">주소 등록</div>
+                        <div class="contents">
+                            주소 검색 ㄱㄱ
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //모달 - 주소검색 -->
+
+            <!-- 모달 - 강사불러오기 -->
+            <div class="modalCover off">
+                <div class="modalClose">
+                    <button type="button" class="btnClose"><i class="icon-closeThin"><span class="blind">모달 닫기</span></i></button>
+                </div>
+                <div class="modalWrap coverType">
+                    <div class="modal teacherSelect">
+                        <div class="title">새로운 강사 등록</div>
+                        <div class="contents">
+                            <div class="inputBox">
+                                <div class="inputWrap">
+                                    <input type="text" placeholder="강사 등록 시 실명을 입력해주세요.">
+                                </div>
+                                <div class="inputWrap mgt_8">
+                                    <input type="number" placeholder="강사 휴대폰 번호">
+                                </div>
+                                <button type="button" class="xs primary btnConfirm">등록</button>
+                            </div>
+                            <!-- 강사 리스트-->
+                            <div class="userListWrap">
+                                <ul class="userDefaultList">
+                                    <li>
+                                        <div class="imgBox">
+                                            <div class="userImage imageBoxDefault"></div>
+                                        </div>
+                                        <div class="userInfoBox">
+                                            <p class="userName">이랠리2-1</p>
+                                            <p class="profileName">랠리1</p>
+                                            <p class="phone">010-2222-3333</p>
+                                        </div>
+                                        <div class="btnBox">
+                                            <div class="checkBoxWrap alignRight">
+                                                <input type="checkbox" id="fnc01" name="" value="" />
+                                                <label for="fnc01"></label>
+                                                <span class="checkmark"></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <div class="userImage imageBoxDefault"></div>
+                                        </div>
+                                        <div class="userInfoBox">
+                                            <p class="userName">이랠리2-2</p>
+                                            <p class="relation">랠리2</p>
+                                            <p class="phone">010-2222-3333</p>
+                                        </div>
+                                        <div class="btnBox">
+                                            <div class="checkBoxWrap alignRight">
+                                                <input type="checkbox" id="fnc01" name="" value="" />
+                                                <label for="fnc01"></label>
+                                                <span class="checkmark"></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <div class="userImage imageBoxDefault"></div>
+                                        </div>
+                                        <div class="userInfoBox">
+                                            <p class="userName">이랠리2-2</p>
+                                            <p class="relation">랠리3</p>
+                                            <p class="phone">010-2222-3333</p>
+                                        </div>
+                                        <div class="btnBox">
+                                            <div class="checkBoxWrap alignRight">
+                                                <input type="checkbox" id="fnc01" name="" value="" />
+                                                <label for="fnc01"></label>
+                                                <span class="checkmark"></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //강사 리스트-->
+                        </div>
+                        <div class="btnBox">
+                            <button type="button" class="btnConfirm primary">선택</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //모달 - 강사불러오기 -->
+
+            <!-- 모달 - 클래스 시간 선택 -->
+            <div class="modalCover on">
+                <div class="modalWrap coverType">
+                    <div class="modal timeSelect">
+                        <div class="title">시간 설정</div>
+                        <div class="contents">
+                            timepicker는 여기에
+                        </div>
+                        <div class="btnBox col2">
+                            <button type="button" class="left bdrLgtGray">취소</button>
+                            <button type="button" class="right primary">저장</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //모달 - 시간 선택 -->
             
             <!-- 모달 - 클래스 등록 완료 -->
-            <div class="modalCover off"><!-- .on .off class로 제어 -->
+            <div class="modalCover off">
                 <div class="modalWrap coverType">
                     <div class="modal classCreateDone">
                         <div class="contents">
@@ -199,7 +332,7 @@
             <!-- //모달 - 클래스 등록 완료 -->
 
             <!-- 모달 - 클래스 등록 나중에 하기 -->
-            <div class="modalCover off"><!-- .on .off class로 제어 -->
+            <div class="modalCover off">
                 <div class="modalWrap coverType">
                     <div class="modal classCreateExit">
                         <div class="contents">

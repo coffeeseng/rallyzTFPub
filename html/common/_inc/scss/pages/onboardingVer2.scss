@@ -224,10 +224,7 @@ div.containerVer2 {
     
         //학원만들기
         &.instCreate {
-            padding: 0 16px 88px 16px; //버튼 88 fixed때문에 버튼 height만큼 패딩
-            div.instInfoWrap {
-
-            }            
+            padding: 0 16px 88px 16px; //버튼 88 fixed때문에 버튼 height만큼 패딩         
         }
     
         //클래스만들기
@@ -245,14 +242,54 @@ div.containerVer2 {
                             right: 0;
                         }
                     }
+
                     //수업과목 태그
                     div.tagBoxWrap {
                         margin: 8px 0 0 0;
                     }
+
                     //시간 선택
                     div.timeSelectWrap {
                         margin: 16px 0 0 0;
+                        //선택한 시간대
+                        ul.selectedList {
+                            width: 100%;
+                            > li {
+                                position: relative;
+                                width: 300px;
+                                height: 25px;
+                                padding: 3px 8px;
+                                margin: 0 auto 5px auto;
+                                background: $Gray-01;
+                                border: 1px solid $Gray-03;
+                                span {
+                                    @include font-size(12);
+                                    display: inline-block;
+                                    position: relative;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    vertical-align: top;
+                                    line-height: 135%;
+                                }
+                                button.btnDelete {
+                                    @include font-size(10);
+                                    position: absolute;
+                                    top: 1px;
+                                    right: 5px;
+                                    width: 20px;
+                                    height: 20px;
+                                    color: $Gray-04;
+                                    > i {
+                                        display: inline-block;
+                                        margin: 2px 0 0 0;
+                                    }
+                                }
+                            }
+                        } 
                     }
+                    
+
                     //클래스 정보 표시
                     ul.displayItem {
                         > li {
@@ -345,7 +382,7 @@ div.containerVer2 {
                         //학원비 할인 토글
                         button.btnInfoToggle {
                             position: absolute;
-                            top: -1px;
+                            top: -3px;
                             right: 0;
                             width: 24px;
                             height: 24px;
@@ -438,6 +475,7 @@ div.containerVer2 {
 
                             //할인 후
                             &.final {
+                                align-items: center;
                                 padding: 17px 16px;
                                 margin: 16px 0 0 0;
                                 background: $Gray-01;
@@ -1254,6 +1292,55 @@ div.containerVer2 {
 
             //모달 - 클래스 등록 완료
             &.classCreateDone {
+                div.contents {
+                    p {
+                        @include font-size(12);
+                        line-height: 18px;
+                    }
+                }
+            }
+
+            //모달 - 주소 등록
+            &.addAddress {
+                div.contents {
+                    
+                }
+            }
+
+            //모달 - 강사 불러오기
+            &.teacherSelect {
+                div.contents {
+                    div.inputBox {
+                        @include border-radius(10px);
+                        width: 100%;
+                        padding: 14px;
+                        background: $Gray-01;
+                        border: 1px solid $Gray-03;
+                        button.btnConfirm {
+                            width: 100%;
+                            margin: 10px 0 0 0;
+                        }
+                    }
+                    div.userListWrap {
+                        width: 100%;
+                        //모달을 위한 유저리스트 필요함!!
+                        ul.userDefaultList {
+                            > li {
+                                div.userInfoBox {
+                                    width: calc(100% - 82px);
+                                }
+                                div.btnBox {
+                                    width: 40px !important;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            //모달 - 클래스 시간선택
+            &.connectDone {
                 div.contents {
                     p {
                         @include font-size(12);
