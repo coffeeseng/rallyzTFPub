@@ -222,6 +222,7 @@ div.containerVer2 {
         -ms-user-select: none;
         user-select: none;
         line-height: 135% !important;
+        //기본 타입 체크16 폰트 14 Regular
         label {
             display: block;
             position:absolute;
@@ -232,7 +233,25 @@ div.containerVer2 {
             padding: 0 0 0 24px;
             z-index: 10;
             text-align: left;
+
+            //체크16 폰트 14 Medium
+            &.f14M {
+                font-weight: 500;
+            }
+
+            //체크16 폰트 14 Bold
+            &.f14B {
+                font-weight: 700;
+            }
+
+            //체크16 폰트 12 Light
+            &.f12L {
+                @include font-size(12);
+                font-weight: 300;
+            }
+
         }
+        
         input {
             position: absolute;
             opacity: 0;
@@ -1583,9 +1602,9 @@ div.containerVer2 {
             position: fixed;
             bottom: 96px;
             right: 16px;
-            li {
+            > li {
                 @include border-radius(50px);
-                width: 176px;
+                width: 204px;
                 height: 48px;
                 margin: 0 0 7px 0;
                 background: $White;
@@ -1595,18 +1614,19 @@ div.containerVer2 {
                 button.btnGo {
                     width: 100%;
                     height: 48px;
-                    padding: 12px 20px;
+                    padding: 12px 14px;
                     i {
                         @include font-size(18);
                         display: inline-block;
                         width: 20px;
-                        margin: 0 10px 0 0;
+                        margin: 0 8px 0 0;
                         color: $Gray-07;
-                        vertical-align: top;
+                        vertical-align: middle;
                     }
                     span {
                         display: inline-block;
-                        width: calc(100% - 40px);
+                        width: calc(100% - 45px);
+                        padding: 3px 0;
                         color: $Gray-07;
                         text-align: center;
                     }
@@ -1675,51 +1695,166 @@ div.containerVer2 {
     }
 
     // 랠리즈 가이드 : 기능별 서비스 설명
-        // TIP : 인포박스
-        div.serviceInfoBox {
-            width:auto;
-            height:auto;
-            margin:16px 0;
-            padding:16px;
-            border-radius: 12px;
-            background-color: #f6fcff;
-            &.txtLeft {
-                h3.infoTitle {
-                    justify-content: flex-start;
-                }             
-            }
-            &.txtCenter {
-                h3.infoTitle {
-                    justify-content: center;
-                }
-            }
+    // TIP : 인포박스
+    div.serviceInfoBox {
+        width:auto;
+        height:auto;
+        margin:16px 0;
+        padding:16px;
+        border-radius: 12px;
+        background-color: #f6fcff;
+        &.txtLeft {
             h3.infoTitle {
-                display: flex;
-                align-items: center;
-                span {
-                    &.tagTip {
-                        width:auto;
-                        height: 18px;
-                        margin:0 8px 0 0;
-                        padding:0 5px;
-                        border-radius: 4px;
-                        color:$White;
-                        background-color: #2477f2;
-                        font-weight: 700;
-                        @include font-size(10);
-                    }
-                    &.title {
-                        @include font-size(14);
-                        font-weight: 700;
-                        color:$Gray-07;
-                    }
-                }
-            }
-            p {
-                @include font-size(14);
-                color:$Gray-05;
-                line-height: 1.5;
-                margin:7px 0 0 0;
+                justify-content: flex-start;
+            }             
+        }
+        &.txtCenter {
+            h3.infoTitle {
+                justify-content: center;
             }
         }
+        h3.infoTitle {
+            display: flex;
+            align-items: center;
+            span {
+                &.tagTip {
+                    width:auto;
+                    height: 18px;
+                    margin:0 8px 0 0;
+                    padding:0 5px;
+                    border-radius: 4px;
+                    color:$White;
+                    background-color: #2477f2;
+                    font-weight: 700;
+                    @include font-size(10);
+                }
+                &.title {
+                    @include font-size(14);
+                    font-weight: 700;
+                    color:$Gray-07;
+                }
+            }
+        }
+        p {
+            @include font-size(14);
+            color:$Gray-05;
+            line-height: 1.5;
+            margin:7px 0 0 0;
+        }
+    }
+
+    // Time picker
+    div.timePickerWrap {
+
+        .input-wrapper {
+            text-align: center;
+        }
+        
+        #input {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        
+        .timePicker {
+            position: relative;
+            width: 220px;
+            overflow: hidden;
+            margin: 0 auto;
+            padding: 0 30px;
+            background: $White;
+            color: $Black;
+        }
+        
+        .swiper-container {
+            position: relative;
+            width: 80px;
+            height: 164px;
+            float: left;
+            span.stxt {
+                position: absolute;
+                top: 0;
+                display: block;
+                width: 100%;
+                height: 20px;
+                background: $White;
+                text-align: center;
+                color: $Gray-04;
+                z-index: 10;
+            }
+            div.swiper-wrapper {
+                margin: 20px 0 0 0;
+            }
+        }
+        
+        .swiper-slide {
+            @include font-size(20);
+            text-align: center;
+            /* Center slide text vertically */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            //user-select: none;
+            opacity: 0.25;
+            transition: opacity 0.3s ease;
+            cursor: default;
+            font-weight: 700;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        .swiper-slide-prev, .swiper-slide-next {
+            cursor: pointer;
+        }
+        
+        .swiper-slide-active {
+            @include font-size(28);
+            opacity: 1;
+        }
+        
+        div.vizor {
+            @include font-size(28);
+            height: 48px;
+            position: absolute;
+            top: 77px;
+            left: 1rem;
+            right: 1rem;
+            line-height: 42px;
+            &::before {
+                content: ':';
+                display: inline-block;
+                left: 95px;
+                line-height: inherit;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                transform: translateX(-50%);
+            }
+        }
+            
+        .arrows .swiper-container:after, .arrows .swiper-container:before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);    
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 4px;
+            border-color: transparent;
+            opacity: 0.5;
+        }
+        
+        .arrows .swiper-container:before {
+            top: 0.5rem;
+            border-top-width: 0;
+            border-bottom-color: currentColor;
+        }
+        
+        .arrows .swiper-container:after {
+            bottom: 0.5rem;
+            border-bottom-width: 0;
+            border-top-color: currentColor;
+        }
+    }
+
+
 }

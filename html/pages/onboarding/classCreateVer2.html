@@ -304,7 +304,29 @@
                     <div class="modal timeSelect">
                         <div class="title">시간 설정</div>
                         <div class="contents">
-                            timepicker는 여기에
+                            <!-- timepicker -->
+                            <div class="input-wrapper blind">
+                                <span class="blind">선택된 시간 출력</span>
+                                <input type="text" id="input" value="" readOnly />
+                            </div>
+                            <div class="timePickerWrap">
+                                <div class="timePicker"> <!-- 화살표 출력 class: .arrows -->
+                                    <div class="swiper-container hours">
+                                        <span class="stxt">시간</span>
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-container minutes">
+                                        <span class="stxt">분</span>
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"></div>
+                                        </div>
+                                    </div>
+                                    <div class="vizor"></div>
+                                </div>
+                            </div>
+                            <!-- //timepicker -->
                         </div>
                         <div class="btnBox col2">
                             <button type="button" class="left bdrLgtGray">취소</button>
