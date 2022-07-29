@@ -18,7 +18,7 @@ div.containerVer2 {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding:14px 0 12px 0;
+                padding:0;
                 border-bottom: 1px solid $Gray-02;
                 p.left {
                     @include font-size(14);
@@ -26,6 +26,8 @@ div.containerVer2 {
                     color:$Gray-06;
                 }
                 button.right {
+                    width:48px;
+                    height:48px;
                     color:$Black;
                 }
             }
@@ -35,6 +37,7 @@ div.containerVer2 {
                 top:48px;
                 height:calc(100% - 136px);
                 div.listTitleBox {
+                    padding:14px 0 12px 0;
                     div.left {
                         width:50%;
                     }
