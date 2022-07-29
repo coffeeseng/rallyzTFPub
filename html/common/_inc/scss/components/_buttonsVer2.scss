@@ -200,6 +200,12 @@ div.containerVer2 {
             border: 1px solid $Gray-06;
             color: $Gray-06;
         }
+
+        &.bdrBlue {//흰색 배경+파란라인
+            background: $White;
+            border: 1px solid $Blue-03;
+            color: $Blue-03;
+        }
     
     }
     
