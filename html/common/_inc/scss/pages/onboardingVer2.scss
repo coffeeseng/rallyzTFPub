@@ -802,25 +802,6 @@ div.containerVer2 {
         //학원찾기
         &.searchInst {
 
-            //검색조건 및 검색창
-            div.sortBox {
-                padding: 8px 16px;
-                background: $Gray-01;
-                > ul.alignCol2 {
-                    @extend %clearfix;
-                    margin: 0 0 16px 0;
-                    > li {
-                        float: left;
-                        width: 40%;
-                        padding: 0 10px 0 0;
-                        &:last-child {
-                            width: 60%;
-                            padding: 0;
-                        }
-                    }
-                }
-            }
-
             //검색 유도
             div.searchDesc {
                 width: 100%;
