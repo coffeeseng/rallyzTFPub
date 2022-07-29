@@ -1446,10 +1446,18 @@ div.containerVer2 {
                             line-height: 1.5;
                         }
                         &.userName {
-                            @include font-size(14);
-                            font-weight: 700;
-                            color:$Black;
                             margin:2px 0 0 0;
+                            strong {
+                                @include font-size(14);
+                                font-weight: 700;
+                                color:$Black;
+                                margin:0 4px 0 0;
+                            }
+                            span {
+                                @include font-size(12);
+                                font-weight: 300;
+                                color:$Gray-06; 
+                            }
                         }
                     }
                 }
