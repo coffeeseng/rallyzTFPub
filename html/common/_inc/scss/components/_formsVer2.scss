@@ -1366,7 +1366,112 @@ div.containerVer2 {
         }
     }
 
+    //아코디언 리스트
+    ul.accordionList {
+        >li {
+            div.accordionTitleBox {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding:16px 0 8px 0;
+                p.left {
+                    @include font-size(14);
+                    font-weight: 700;
+                    color:$Gray-06;
+                }
+                button.right {
+                    @include font-size(11);
+                    color:$Gray-04;
+                    i {
+                        display: block;
+                    }
+                    &.fold {
+                        i {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
 
+    // 학생,학부모 관리(depth)
+    ul.userTypeDepthList {
+        @extend %ulDefaultStyle;
+        > li {
+            display: block;
+            height:auto;
+            padding:0;
+            border-bottom: none;
+            div.depthBoxWrap {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding:8px 0;
+                border-bottom: 1px solid $Gray-02;
+                div.imgInfoWrap {
+                    display: flex;
+                }
+            }
+            div.imgInfoWrap {
+                //프로필 사진
+                div.userImage {
+                    @include border-radius(100px);
+                    width: 30px;
+                    height: 30px;
+                    margin: 0 10px 0 0;
+                    background-color: $Gray-03;
+                    &.notRegistered {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #bfdbf5;
+                        border:1px solid #b9d4ed;
+                        &:after {
+                            content: "미가입";
+                            @include font-size(9);
+                            color:$White;
+                            font-weight: 500;
+                            letter-spacing: -0.7px;
+                            line-height: 1.75;
+                        }
+                    }
+                }
+                div.userInfoBox {
+                    p {
+                        &.userType, &.phone {
+                            @include font-size(12);
+                            font-weight: 300;
+                            color:$Gray-06;
+                            line-height: 1.5;
+                        }
+                        &.userName {
+                            @include font-size(14);
+                            font-weight: 700;
+                            color:$Black;
+                            margin:2px 0 0 0;
+                        }
+                    }
+                }
+            }
+            div.btnBox {
+                button {
+                    &.goDetail {
+                        margin:0 0 0 8px;
+                        color:$Gray-04;
+                    }
+                }
+            }
+            // depth2
+            ul.userDepth2List {
+                > li {
+                    div.depthBoxWrap {
+                        padding:8px 0 8px 20px;
+                    }
+                }
+            }
+        }
+    }
 
     //알림
     div.alertWrap {

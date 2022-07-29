@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import "../_helperVer2";
+
+div.containerVer2 {
+
+    article.userManagement {
+        //학생, 학부모 관리
+        div.userManagementContentsWrap {
+            position: absolute;
+            padding:0 16px;
+            top:104px;
+            left:0;
+            width:100%;
+            height:calc(100% - 192px);
+            overflow-y: auto;
+            overflow-x: hidden;
+            div.listTitleBox {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding:14px 0 12px 0;
+                border-bottom: 1px solid $Gray-02;
+                p.left {
+                    @include font-size(14);
+                    font-weight: 700;
+                    color:$Gray-06;
+                }
+                button.right {
+                    color:$Black;
+                }
+            }
+        }
+        &.userInviteAll {
+            div.userManagementContentsWrap {
+                top:48px;
+                height:calc(100% - 136px);
+                div.listTitleBox {
+                    div.left {
+                        width:50%;
+                    }
+                    p.right {
+                        width:50%;
+                        @include font-size(14);
+                        font-weight: 500;
+                        color:$Gray-06;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
