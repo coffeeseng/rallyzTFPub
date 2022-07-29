@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="배컴" />
+        <meta name="keywords" content="랠리즈">
+        <meta name="description" content="랠리즈">
+        <title>랠리즈 - 007.14.3. 학원 정보 입력_2</title>
+        <link rel="stylesheet" href="../../../common/_inc/css/mainVer2.css"><!--기본 CSS-->
+        <link rel="stylesheet" href="../../../common/_inc/css/pages/homeVer2.css"><!--각 페이지별 CSS-->
+    </head>
+    <body>
+
+        <div class="containerVer2">
+
+            <div class="contWrap">
+
+                <!-- 서브 페이지 헤더 -->
+                <div class="subHeaderWrap">
+                    <header class="subHeader">
+                        <h1 class="pageName">학원 만들기</h1>
+                        <button type="button" class="btnPoLeft"><i class="icon-close"><span class="blind">닫기</span></i></button>
+                    </header>
+                </div>
+                <!-- 서브 페이지 헤더 -->
+
+                <!-- 본문 -->
+                <div class="articleWrap">
+                    <article class="home function instInfoInput">
+                        <h2 class="blind">007.14.2. 학원 정보 입력_2</h2>
+                        <!-- <div class="processGage">
+                            <span>학원 만들기 <em>1</em>/3</span>
+                            <img src="../../../common/_inc/images/ico/processGage_01.svg" alt="step1. 학원 만들기">
+                        </div> -->
+
+                        <div class="txtBox">
+                            <p class="mainTxt">
+                                <strong>가우디 미술학원</strong>
+                                <span>생성이 완료되었습니다.</span>
+                            </p>
+                            <p class="subTxt">우리 학원의 강점이 드러날 수 있도록<br />홍보 정보를 입력해보세요!<br />입력하신 정보는 학생∙학부모에게 노출되어<br />우리 학원을 홍보하기 위한 소중한 자료가 됩니다.</p>
+                        </div>
+
+                        <dl class="inputListRow">
+                            <dt>학원 홍보 사진</dt>
+                            <dd>
+                                <div class="btnGroupToggle">
+                                    <button type="button" class="left on">기본 사진 사용</button>
+                                    <button type="button" class="right">사진 업로드</button>
+                                </div>
+
+                                <!--기본 사진 사용-->
+                                <div class="defaultImageToggle">
+                                    <div class="preWrap-4-24">
+                                        <div class="imagePreWrap imageBoxDefault">
+                                            <span class="blind">선택 된 기본이미지</span>
+                                        </div>
+                                    </div>
+                                    <ul class="imageChoiceWrap">
+                                        <li>
+                                            <div class="preWrap-4-24">
+                                                <div class="imageWrap imageBoxDefault">
+                                                    <span class="blind">기본이미지</span>
+                                                </div>
+                                            </div>
+                                            <div class="radioWrap">
+                                                <input type="radio" name="defaultImage" checked=""></input>
+                                                <label><span class="blind">기본이미지</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="preWrap-4-24">  
+                                                <div class="imageWrap imageBoxDefault">
+                                                    <span class="blind">기본이미지</span>
+                                                </div>
+                                            </div>
+                                            <div class="radioWrap">
+                                                <input type="radio" name="defaultImage" checked=""></input>
+                                                <label><span class="blind">기본이미지</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="preWrap-4-24">
+                                                <div class="imageWrap imageBoxDefault">
+                                                    <span class="blind">기본이미지</span>
+                                                </div>
+                                            </div>
+                                            <div class="radioWrap">
+                                                <input type="radio" name="defaultImage" checked=""></input>
+                                                <label><span class="blind">기본이미지</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="preWrap-4-24">
+                                                <div class="imageWrap imageBoxDefault">
+                                                    <span class="blind">기본이미지</span>
+                                                </div>
+                                            </div>
+                                            <div class="radioWrap">
+                                                <input type="radio" name="defaultImage" checked=""></input>
+                                                <label><span class="blind">기본이미지</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="preWrap-4-24">
+                                                <div class="imageWrap imageBoxDefault">
+                                                    <span class="blind">기본이미지</span>
+                                                </div>
+                                            </div>
+                                            <div class="radioWrap">
+                                                <input type="radio" name="defaultImage" checked=""></input>
+                                                <label><span class="blind">기본이미지</span></label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <!--사진 업로드 시-->
+                                <div class="picUploadWrap">
+                                    <div class="preWrap-4-24">
+                                        <div class="imagePreWrap imageBoxDefault">
+                                            <span class="blind">선택 된 이미지</span>
+                                        </div>
+                                    </div>
+                                    <ul class="imageUploadThumb col3">
+                                        <li>
+                                            <div class="upload">
+                                                <button class="btnClose btn" type="button" onClick><i class="icon-close"><span class="blind">닫기</span></i></button>
+                                                <div class="preWrap-4-24">
+                                                    <div class="thumb imageBoxDefault"><span class="blind">이미지</span></div>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="picUploadBox">
+                                                <div class="preWrap-4-24">
+                                                    <label htmlFor >
+                                                        <div class="abWrap">
+                                                            <i class="icon-photo"></i>
+                                                            <span>750 * 450</span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <input type="file" accept id class="blind" onChange />
+                                                <p><strong>대표사진</strong><span class="essential">필수</span></p>
+                                                <!-- <p><span>추가 사진 또는 영상</span></p> -->
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="upload ">
+                                                <button class="btnClose btn" type="button" onClick><i class="icon-close"><span class="blind">닫기</span></i></button>
+                                                <div class="preWrap-4-24">
+                                                    <div class="thumb imageBoxDefault"><span class="blind">이미지</span></div>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="picUploadBox">
+                                                <div class="preWrap-4-24">
+                                                    <label htmlFor >
+                                                        <div class="abWrap">
+                                                            <i class="icon-photo"></i>
+                                                            <span>750 * 450</span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <input type="file" accept id class="blind" onChange />
+                                                <!-- <p><strong>대표사진</strong><span class="essential">필수</span></p> -->
+                                                <p><span>추가 사진 또는 영상</span></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="upload ">
+                                                <button class="btnClose btn" type="button" onClick><i class="icon-close"><span class="blind">닫기</span></i></button>
+                                                <div class="preWrap-4-24">
+                                                    <div class="thumb imageBoxDefault"><span class="blind">이미지</span></div>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="picUploadBox">
+                                                <div class="preWrap-4-24">
+                                                    <label htmlFor >
+                                                        <div class="abWrap">
+                                                            <i class="icon-photo"></i>
+                                                            <span>750 * 450</span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <input type="file" accept id class="blind" onChange />
+                                                <!-- <p><strong>대표사진</strong><span class="essential">필수</span></p> -->
+                                                <p><span>추가 사진 또는 영상</span></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </dd>
+                            <dt>학원 홍보 키워드</dt>
+                            <dd>
+                                <p class="ex">예시) #전교 1등 배출  #쾌적한 시설  #최우수 학원</p>
+                                <div class="inputWrap tag">
+                                    <button type="button" class="inputBtn primary bdrPrimary">입력</button>
+                                    <input type="text" placeholder="학원을 대표할 키워드를 입력하세요.">
+                                </div>
+                                <div class="tagBoxWrap">
+                                    <p class="item">
+                                        <span>#</span>
+                                        <span>영어1234</span>
+                                        <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제</span></i></button>
+                                    </p>
+                                    <p class="item">
+                                        <span>#</span>
+                                        <span>오늘비가올까요</span>
+                                        <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제</span></i></button>
+                                    </p>
+                                    <p class="item">
+                                        <span>#</span>
+                                        <span>신나는수업</span>
+                                        <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제</span></i></button>
+                                    </p>
+                                </div>
+                            </dd>
+                            <dt>학원 소개</dt>
+                            <dd>
+                                <div class="textareaWrap">
+                                    <textarea placeholder="학생/학부모에게 학원을 소개해 주세요. 입력하신 내용은 학원을 대표하는 소개 페이지에 보여집니다."></textarea>
+                                </div>
+                            </dd>
+                        </dl>
+                    </article>
+                    <div class="btnGroup col2">
+                        <button type="button" class="bdrLgtGray">다음에 하기</button>
+                        <button type="button" class="primary">완료</button>
+                    </div>
+                </div>
+                <!-- //본문 -->
+
+            </div>
+        </div>
+    </body>
+</html>

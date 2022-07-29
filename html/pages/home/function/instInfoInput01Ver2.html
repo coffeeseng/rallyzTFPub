@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="배컴" />
+        <meta name="keywords" content="랠리즈">
+        <meta name="description" content="랠리즈">
+        <title>랠리즈 - 007.14.1. 학원 정보 입력_1</title>
+        <link rel="stylesheet" href="../../../common/_inc/css/mainVer2.css"><!--기본 CSS-->
+        <link rel="stylesheet" href="../../../common/_inc/css/pages/onboardingVer2.css"><!--각 페이지별 CSS-->
+    </head>
+    <body>
+
+        <div class="containerVer2">
+
+            <div class="contWrap">
+
+                <!-- 서브 페이지 헤더 -->
+                <div class="subHeaderWrap">
+                    <header class="subHeader">
+                        <h1 class="pageName">학원 정보 입력</h1>
+                        <button type="button" class="btnPoLeft"><i class="icon-close"><span class="blind">닫기</span></i></button>
+                    </header>
+                </div>
+                <!-- 서브 페이지 헤더 -->
+
+                <!-- 본문 -->
+                <div class="articleWrap">
+                    <article class="onboarding instCreate">
+                        <h2 class="blind">007.14.1. 학원 정보 입력_1</h2>
+                        <!-- <div class="processGage">
+                            <span>학원 만들기 <em>1</em>/3</span>
+                            <img src="../../../common/_inc/images/ico/processGage_01.svg" alt="step1. 학원 만들기">
+                        </div> -->
+
+                        <!--processGage가 사라질 것 같진 않지만 우선 재플린엔 없어서 주석처리 함. 들어갈 경우 아래 pdt_30 빼주세요.-->
+                        <div class="instInfoWrap pdt_30">
+                            <dl class="inputListRow">
+                                <dt>
+                                    <span>학원명</span><span class="essential">필수</span>
+                                </dt>
+                                <dd>
+                                    <div class="inputWrap">
+                                        <input type="text" placeholder="학원 이름 입력">
+                                    </div>
+                                </dd>
+                                <dt>
+                                    <span>대상 선택</span><span class="essential">필수</span>
+                                </dt>
+                                <dd>
+                                    <div class="subjectSelectWrap">
+                                        <!--대상 선택-->
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="subjectLarge" value="">유아</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="subjectLarge" value="">초저</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="subjectLarge" value="">초고</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="subjectLarge on" value="">중등</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="subjectLarge" value="">고등</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="subjectLarge on" value="">일반</button>
+                                            </li>
+                                        </ul>
+                                        <!--//대상 선택-->
+                                    </div>
+                                </dd>
+                                <dt>
+                                    <span>학원 주소</span><span class="essential">필수</span>
+                                </dt>
+                                <dd>
+                                    <div class="inputWrap">
+                                        <input type="text" placeholder="도로명, 건물명, 번지 검색">
+                                    </div>
+                                    <div class="inputWrap mgt_8">
+                                        <input type="text" placeholder="상세주소 입력">
+                                    </div>
+                                </dd>
+                                <dt>
+                                    <span>학원 대표 번호</span>
+                                </dt>
+                                <dd>
+                                    <div class="inputWrap">
+                                        <input type="number" placeholder="학생, 학부모가 연락할 수 있는 전화번호 입력">
+                                    </div>
+                                </dd>
+                            </dl>                        
+                        </div>
+                    </article>
+
+                    <div class="btnWrap fixed">
+                        <button type="button" class="md primary">완료</button>
+                    </div>
+
+                </div>
+                <!-- //본문 -->
+
+            </div>
+        </div>
+    </body>
+</html>
