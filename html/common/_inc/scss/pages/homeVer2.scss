@@ -10,10 +10,6 @@ div.containerVer2 {
                 &.homeDefault {
                     padding:48px 0 0 0;
         
-                    //알림창
-                    div.alertWrap {
-                        border-bottom:6px solid $Gray-02;
-                    }
                     // 홈안에 있는 아티클들
                     article.homeInner {
                         width:100%;
@@ -37,6 +33,17 @@ div.containerVer2 {
                                 &:first-child {
                                     margin:0;
                                 }
+
+                                //클래스가 없을 때
+                                div.emptyWrap {
+                                    padding: 30px 0;
+                                    background-size: 110px 60px;
+                                    background-position: center 40px;
+                                    p.emptySubTitle {
+                                        padding: 86px 0 0 0;
+                                    }
+                                }
+
                                 div.instClassImage {
                                     width:64px;
                                     height:64px;
@@ -71,7 +78,7 @@ div.containerVer2 {
                                                 align-items: center;
                                                 width:auto;
                                                 height:15px;
-                                                margin:0 12px 0 0;
+                                                margin:0 8px 0 0;
                                                 padding:0 5px;
                                                 @include font-size(10);
                                                 font-weight: 500;
@@ -235,6 +242,7 @@ div.containerVer2 {
                         // My 클래스
                         &.myClass {
                             padding:32px 0;
+                            border-top: 6px solid $Gray-02;
                             h2.title {
                                 padding:0 16px;
                             }
@@ -355,7 +363,7 @@ div.containerVer2 {
                                             background-image: url('../../images/home/icoCreateInst.svg');
                                         }
                                         &.instSearch {
-                                            background-image: url('../../images/onBoarding/icoSearch.svg');
+                                            background-image: url('../../images/home/icoSearchMain.svg');
                                         }
                                         > p {
                                             position: absolute;
@@ -393,7 +401,7 @@ div.containerVer2 {
                         text-align: left;
                     }
                     p.subTitle {
-                        padding:16px 0 24px 0;
+                        padding:16px 0 48px 0;
                         @include font-size(14);
                         color: $Gray-06;
                         line-height: 21px;
@@ -401,9 +409,6 @@ div.containerVer2 {
                     }
                     div.consultRequestFormWrap {
                         dl.inputListRow {
-                            dt {
-                                @include font-size(14);
-                            }
                             dd {
                                 margin:0 0 16px 0;
                                 div.inputWrap {
@@ -418,7 +423,7 @@ div.containerVer2 {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        padding:20px 0 24px 0;
+                        margin: 20px 0 24px 0;
                         button.microB {
                             min-width: 39px;
                         }

@@ -1,0 +1,14 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M192 96c0 53.019-42.981 96-96 96-53.02 0-96-42.981-96-96C0 42.98 42.98 0 96 0c53.019 0 96 42.98 96 96z" fill="#FCFCFC"/>
+    <path d="M90 99h12v18H90V99z" fill="#A7A7A7"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M54 69v12h84V69H54zm-6-12a6 6 0 0 0-6 6v24a6 6 0 0 0 6 6h96a6 6 0 0 0 6-6V63a6 6 0 0 0-6-6H48z" fill="#28EB82"/>
+    <path d="M54 69h84v12H54V69z" fill="url(#0wa5dk67ga)"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M96 90c8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15-8.284 0-15 6.716-15 15 0 8.284 6.716 15 15 15zm0 12c14.912 0 27-12.088 27-27s-12.088-27-27-27-27 12.088-27 27 12.088 27 27 27z" fill="#777"/>
+    <path d="M87 120a6 6 0 0 1 6-6h6a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6h-6a6 6 0 0 1-6-6v-24z" fill="#777"/>
+    <defs>
+        <linearGradient id="0wa5dk67ga" x1="54" y1="81" x2="138" y2="81" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#EEE"/>
+            <stop offset="1" stop-color="#F0F0F0" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+</svg>

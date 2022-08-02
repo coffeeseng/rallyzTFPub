@@ -42,6 +42,13 @@ div.containerVer2 {
             max-width: 100%;
             margin: 0 auto;
             font-weight: 700;
+            @include breakpoint(tablet) {
+                width: 100%;
+                //특정 페이지들에서는 width가 지정되어있...다
+                &.wFixed {
+                    width: 343px;
+                }
+            }
         }
     
         &.sm {
