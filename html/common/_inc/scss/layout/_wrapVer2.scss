@@ -346,7 +346,9 @@ div.containerVer2 {
                     width: 30px;
                     height: 30px;
                     > i {
+                        @include font-size(11);
                         display: inline-block;
+                        margin: 2px 0 0 0;
                     }
                 }
 

@@ -35,6 +35,9 @@ div.containerVer2 {
         &.intro {
             padding: 0 0px 88px 0px; //버튼 88 fixed때문에 버튼 height만큼 패딩   
             text-align: center;
+            &.teacher {
+                padding: 0 0px 136px 0px;//송효섭씨 요청사항
+            }
             p.mainTxt {
                 @include font-size(20);
                 color: $Black;

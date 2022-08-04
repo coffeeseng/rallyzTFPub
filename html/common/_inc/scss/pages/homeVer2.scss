@@ -33,7 +33,9 @@ div.containerVer2 {
                                 &:first-child {
                                     margin:0;
                                 }
-
+                                &.bdrNone {//송효섭씨 요청사항
+                                    border: 0;
+                                }
                                 //클래스가 없을 때
                                 div.emptyWrap {
                                     padding: 30px 0;

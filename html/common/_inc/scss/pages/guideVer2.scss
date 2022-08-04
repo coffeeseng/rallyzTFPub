@@ -51,6 +51,7 @@ div.containerVer2 {
 			div.status {
 				position: relative;
 				width: 110px;
+				min-height: 18px;
 				padding: 0 22px 0 0;
 				text-align: right;
 				&::after {

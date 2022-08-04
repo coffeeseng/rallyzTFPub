@@ -6,6 +6,27 @@ div.containerVer2 {
 
     article.member {
 
+        //로그인
+        &.login {
+
+        }
+
+        //회원가입
+        &.join {
+
+        }
+
+        //가족연결
+        &.connect {
+            padding: 16px 16px 0 16px;
+            p.subText {
+                @include font-size(12);
+                color: $Gray-05;
+            }
+            ul.connectFamilyList {
+                margin: 12px 0 0 0;
+            }
+        }
     }
 
 }

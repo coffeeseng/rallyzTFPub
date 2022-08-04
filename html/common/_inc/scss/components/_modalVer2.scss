@@ -54,6 +54,10 @@ div.containerVer2 {
             background: $White;
             box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
 
+            @include breakpoint(mobile) {
+                max-width: 100%;
+            }
+
             //풀스크린 커버 타입
             &.coverType {
                 @include border-radius(8px);
