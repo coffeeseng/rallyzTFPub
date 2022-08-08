@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="배컴" />
+    <meta name="keywords" content="랠리즈">
+    <meta name="description" content="랠리즈">
+    <title>랠리즈 - 008.04.01 학원현황</title>
+    <link rel="stylesheet" href="../../common/_inc/css/mainVer2.css"><!--기본 CSS-->
+    <link rel="stylesheet" href="../../common/_inc/css/pages/instituteVer2.css"><!--각 페이지별 CSS-->
+</head>
+<body>
+
+    <div class="containerVer2">
+
+        <div class="contWrap">
+
+            <!-- 서브 페이지 헤더 -->
+            <div class="subHeaderWrap">
+                <header class="subHeader">
+                    <h1 class="blind">학원상세페이지 - 학원현황</h1>
+                    <button type="button" class="btnPoLeft"><i class="icon-closeThin"><span class="blind">닫기</span></i></button>
+                </header>
+            </div>
+            <!-- 서브 페이지 헤더 -->
+
+            <!-- 본문 -->
+            <div class="articleWrap">
+
+                <!-- 알림 메시지 -->
+                <div class="alertWrap">
+                    <ul class="alertList responsiveList">
+                        <li>
+                            <div class="alertMsgBox">
+                                <div class="icoAlert"><i class="icon-alert1"></i><span class="blind">알림 아이콘</span></div>
+                                <p class="message">
+                                    <em class="instName">랠리즈 태권도</em>
+                                    <span>학원에 등록된 클래스가 없습니다.<br />클래스 등록 후 이용해주세요!</span>
+                                </p>
+                                <div class="icoArrow"><i class="icon-arrowRight"></i><span class="blind">바로가기 아이콘</span></div>
+                            </div>
+                            <div class="btnBox">
+                                <div class="checkBoxWrap small">
+                                    <input type="checkbox" id="fnc01" name="" value="" />
+                                    <label for="fnc01">오늘 하루 보지 않기</label>
+                                    <span class="checkmark"></span>
+                                </div>
+                                <button type="button" class="btnClose">닫기</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="alertMsgBox">
+                                <div class="icoAlert"><i class="icon-alert1"></i><span class="blind">알림 아이콘</span></div>
+                                <p class="message">
+                                    <em class="instName">랠리즈 태권도</em>
+                                    <span>학원에 등록된 클래스가 없습니다.<br />클래스 등록 후 이용해주세요!</span>
+                                </p>
+                                <div class="icoArrow"><i class="icon-arrowRight"></i><span class="blind">바로가기 아이콘</span></div>
+                            </div>
+                            <div class="btnBox">
+                                <div class="checkBoxWrap small">
+                                    <input type="checkbox" id="fnc01" name="" value="" />
+                                    <label for="fnc01">오늘 하루 보지 않기</label>
+                                    <span class="checkmark"></span>
+                                </div>
+                                <button type="button" class="btnClose">닫기</button>
+                            </div>
+                        </li>
+                    </ul>                          
+                    <button type="button" class="btnShowAll">
+                        <i class="icon-arrowUp2"></i>
+                        <span>접기</span>
+                    </button>
+                </div>
+                <!-- //알림 메시지 -->
+
+                <article class="institute instStatus">
+                    <h2 class="blind">학원현황</h2>
+
+                    <!-- 탭 2개 -->
+                    <div class="tabWrap">
+                        <ul class="tab col2">
+                            <li>학원 관리</li>
+                            <li class="on">학원 현황</li>
+                        </ul>
+                    </div>
+                    <!-- //탭 2개 -->
+
+                    <div class="tabContents">
+
+                        <!-- 학생 학부모-->
+                        <article class="dashboardWrap">
+                            <h3>학생/학부모<span class="date">2022.06.12.목</span></h3>
+                            <div class="dashboard">
+                                <dl class="current">
+                                    <dt>현재 재원생</dt>
+                                    <dd><em class="black">222</em>명</dd>
+                                </dl>
+                                <dl class="detail">
+                                    <dt>전일 대비</dt>
+                                    <!-- up일 땐 em.orange / down일 땐 em.green -->
+                                    <dd><em class="orange"><i class="icon-arrowDown icoArrow"></i>1</em></dd>
+                                    <dt>전월 대비</dt>
+                                    <dd><em class="green"><i class="icon-arrowUp icoArrow"></i>5</em></dd>
+                                </dl>
+                            </div>
+                        </article>
+                        <!-- //학생 학부모-->
+
+                        <!-- 출석 현황-->
+                        <article class="dashboardWrap">
+                            <h3>출석 현황<span class="date">2022.06.12.목</span></h3>
+                            <div class="dashboard">
+                                <dl class="current">
+                                    <dt>투데이</dt>
+                                    <dd><em class="black">199</em>명</dd>
+                                </dl>
+                                <dl class="detail">
+                                    <dt>출석</dt>
+                                    <dd><em class="green">1222</em>명</dd>
+                                    <dt>조퇴</dt>
+                                    <dd><em class="blue">12</em>명</dd>
+                                    <dt>결석</dt>
+                                    <dd><em class="orange">1</em>명</dd>
+                                    <dt>미처리</dt>
+                                    <dd><em class="gray">45</em>명</dd>
+                                </dl>
+                            </div>
+                        </article>
+                        <!-- //출석 현황-->
+
+                        <!-- 청구 납부-->
+                        <article class="dashboardWrap">
+                            <h3>청구/납부</h3>
+                            <button type="button" class="btnMore">더보기</button>
+                            <div class="dashboard">
+                                <dl class="payment">
+                                    <dt class="mgb_25">07월 미발행 청구서</dt>
+                                    <dd class="mgb_25"><em class="gray06">1032</em>건</dd>
+                                    <dt class="mgb_7">06월 납부 완료</dt>
+                                    <dd class="mgb_7"><em class="green">30,433,420</em>원</dd>
+                                    <dt class="mgb_25 small">납부 건수</dt>
+                                    <dd class="mgb_25 small"><em>120</em>건</dd>
+                                    <dt class="mgb_7">총 미납 청구</dt>
+                                    <dd class="mgb_7"><em class="orange">5,345,310</em>원</dd>
+                                    <dt class="small">미납 건수</dt>
+                                    <dd class="small"><em>18</em>건</dd>
+                                </dl>
+                            </div>
+                        </article>
+                        <!-- //청구 납부-->
+
+                        <!-- 학원 문의-->
+                        <article class="dashboardWrap mgNone">
+                            <h3>학원 문의</h3>
+                            <button type="button" class="btnMore">더보기</button>
+                            <div class="dashboard">
+                                <dl class="request">
+                                    <dt>최근 미답변 문의</dt>
+                                    <dd><em class="black">5</em>건</dd>
+                                </dl>
+                            </div>
+                        </article>
+                        <!-- //학원 문의-->
+                    </div>                    
+                </article>
+            </div>
+            <!-- //본문 -->
+
+            <div class="footerWrap">
+                <footer class="csCenter">
+                    <p><em>고객센터</em>1577 - 0682</p>
+                </footer>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

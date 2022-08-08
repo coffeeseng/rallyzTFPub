@@ -1,0 +1,227 @@
+@charset "UTF-8";
+@import "../_helperVer2";
+
+
+div.containerVer2 {
+
+    article.institute {
+	
+        //학원 현황
+        &.instStatus {
+            background: $Gray-01;
+            div.tabContents {
+                width: 100%;
+                height: 100%;
+                min-height: 100vh;
+                padding: 16px;
+            }
+
+            article.dashboardWrap {
+                @include border-radius(16px);
+                position: relative;
+                width: 100%;
+                margin: 0 0 8px 0;
+                background: $White;
+                border: 1px solid $Gray-02;
+                &.mgNone {
+                    margin: 0;
+                }
+                h3 {
+                    display: inline-block;
+                    padding: 16px;
+                    color: $Black;
+                    font-weight: 700;
+                    line-height: 21px;
+                    //기준 날짜
+                    span.date {
+                        @include font-size(10);
+                        position: relative;
+                        display: inline-block;
+                        padding: 0 0 0 14px;
+                        margin: 0 0 0 8px;
+                        line-height: 15px;
+                        color: $Gray-04;
+                        font-weight: 400;
+                        &::before {
+                            @include font-size(11);
+                            font-family: 'icomoon' !important;
+                            speak: never;
+                            content: '\e99c';
+                            position: absolute;
+                            top: 2px;
+                            left: 0;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-variant: normal;
+                            text-transform: none;
+                            line-height: 1;
+                            pointer-events: none;
+                            color: $Gray-04;
+                        }
+                    }
+                }
+                //더보기 버튼
+                button.btnMore {
+                    @include font-size(12);
+                    display: inline-block;
+                    position: absolute;
+                    top: 17px;
+                    right: 16px;
+                    min-width: 35px;
+                    height: 18px;
+                    color: $Black;
+                    font-weight: 300;
+                }
+                
+                div.dashboard {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    width: 100%;
+                    padding: 25px 16px;
+                    border-top: 1px solid $Gray-02;
+
+                    ///// 대시보드 숫자 공통 스타일 /////
+                    em {
+                        margin: 0 1px 0 0;
+                        font-style: normal;
+                        font-weight: 700;
+                        &.orange {
+                            color: #ff6644;
+                        }
+                        &.green {
+                            color: $Green-05;
+                        }
+                        &.blue {
+                            color: $Blue-03;
+                        }
+                        &.gray05 {
+                            color: $Gray-05;
+                        }
+                        &.gray06 {
+                            color: $Gray-06;
+                        }
+                        &.black {
+                            color: $Black;
+                        }
+                    }
+
+                    //항목 - 현재,투데이
+                    dl.current {
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        text-align: center;
+                        dt {
+                            @include font-size(12);
+                            width: 50%;
+                            padding: 0 0 3px 0;
+                            color: $Gray-05;
+                            font-weight: 500;
+                        }
+                        dd {
+                            @include font-size(11);
+                            width: 50%;
+                            em {
+                                @include font-size(20);
+                            }
+                        }
+                    }
+
+                    //항목 - 전일대비,출석조퇴현황
+                    dl.detail {
+                        width: 35%;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        margin: 0 0 0 15%;
+                        dt {
+                            @include font-size(12);
+                            width: 50%;
+                            padding: 3px 0;
+                            text-align: left;
+                            font-weight: 500;
+                        }
+                        dd {
+                            @include font-size(12);
+                            width: 50%;
+                            padding: 3px 0;
+                            text-align: right;
+                            i.icoArrow {
+                                @include font-size(10);
+                            }
+                        }
+                    }
+
+                    //청구건수 및 납부금액
+                    dl.payment {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        dt {
+                            width: 40%;
+                            color: $Black;
+                            font-weight: 700;
+                            //세부항목
+                            &.small {
+                                @include font-size(12);
+                                color: $Gray-06;
+                                line-height: 18px;
+                            }
+                        }
+                        dd {
+                            @include font-size(12);
+                            width: 60%;
+                            color: $Black;
+                            text-align: right;
+                            em {
+                                @include font-size(20);
+                            }
+                            //세부항목
+                            &.small {
+                                @include font-size(12);
+                                color: $Gray-06;
+                                line-height: 18px;
+                                em {
+                                    @include font-size(12);
+                                }
+                            }
+                        }
+                    }
+
+                    //문의
+                    dl.request {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        dt {
+                            @include font-size(12);
+                            width: 50%;
+                            color: $Gray-05;
+                            font-weight: 500;
+                        }
+                        dd {
+                            @include font-size(12);
+                            width: 50%;
+                            color: $Black;
+                            text-align: right;
+                            em {
+                                @include font-size(20);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
