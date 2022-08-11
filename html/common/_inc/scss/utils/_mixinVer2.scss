@@ -86,3 +86,11 @@
 	width:100%;
 	height: calc(100% - $height);
 }
+@mixin top-fixed($top) {
+	position: fixed;
+	top:$top;
+	width:100%;
+	@include breakpoint(tablet) {
+		position:absolute;
+	}
+}

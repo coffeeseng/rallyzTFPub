@@ -10,12 +10,7 @@ div.containerVer2 {
             margin:0 0 8px 0;
         }
         div.sortBox {
-            position: fixed;
-            top:auto;
-            width:100%;
-            @include breakpoint(tablet) {
-                position:absolute;
-            }
+            @include top-fixed(auto);
         }
         div.userManagementContentsWrap {
             @include fixed-contents(152px, 184px);
