@@ -5,20 +5,97 @@ div.containerVer2 {
 
     article.userManagement {
         //학생, 학부모 관리
-        div.userManagementContentsWrap {
-            position: absolute;
-            padding:0 16px;
-            top:104px;
-            left:0;
+        padding:0;
+        div.selectWrap {
+            margin:0 0 8px 0;
+        }
+        div.sortBox {
+            position: fixed;
+            top:auto;
             width:100%;
-            height:calc(100% - 192px);
-            overflow-y: auto;
-            overflow-x: hidden;
+            @include breakpoint(tablet) {
+                position:absolute;
+            }
+        }
+        div.userManagementContentsWrap {
+            @include fixed-contents(152px, 184px);
+            div.userStatus {
+                padding:16px;
+                background-color: $Gray-01;
+                h3.tempTitle {
+                    margin:0 0 4px 0;
+                    @include font-size(16);
+                    color:$Black;
+                    line-height: 24px;
+                    font-weight: 700;
+                }
+                ul.userStatusList {
+                    display: flex;
+                    li {
+                        width:32%;
+                        height:109px;
+                        border-radius: 8px;
+                        border:1px solid $Gray-03;
+                        background-color: $White;
+                        margin:0 0 0 2%;
+                        padding:12px;
+                        &:first-child {
+                            margin:0;
+                        }
+                        p {
+                            color:$Gray-05;
+                            text-align: center;
+                        }
+                        p.title {
+                            @include font-size(14);
+                            margin:0 0 14px 0;
+                            text-align: left;
+                        }
+                        p.num {
+                            @include font-size(20);
+                            font-weight: bold;
+                            strong {
+                                color:$Black;
+                            }
+                        }
+                        p.info {
+                            margin:5px 0 0 0;
+                            @include font-size(12);
+                        }
+                    }
+                }
+                button.btnInvite {
+                    width:100%;
+                    margin:8px 0 0 0;
+                    text-align: right;
+                    @include font-size(12);
+                    font-weight: 500;
+                    color:$Primary;
+                }
+            }
+            div.listTitleBoxTop {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding:16px;
+                border-bottom: 1px solid $Gray-02;
+                p.num {
+                    @include font-size(14);
+                    color:$Gray-06;
+                    font-weight: 500;
+                }
+                div.checkBoxWrap {
+                    width: auto;
+                    label {
+                        position: static;
+                    }
+                }
+            }
             div.listTitleBox {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding:0;
+                padding:0 16px;
                 border-bottom: 1px solid $Gray-02;
                 p.left {
                     @include font-size(14);
@@ -31,11 +108,16 @@ div.containerVer2 {
                     color:$Black;
                 }
             }
+            ul.userTypeDepthList {
+                padding: 0 16px;
+                li {
+                    position: relative;
+                }
+            }
         }
         &.userInviteAll {
             div.userManagementContentsWrap {
-                top:48px;
-                height:calc(100% - 136px);
+                @include fixed-contents(48px, 136px);
                 div.listTitleBox {
                     padding:14px 0 12px 0;
                     div.left {
@@ -49,6 +131,39 @@ div.containerVer2 {
                         text-align: right;
                     }
                 }
+                div.chooseBox {
+                    @include centerer(false, true);
+                    right:0;
+                    width:100%;
+                    height:auto;
+                    z-index: 99;
+                    div.checkBoxWrap {
+                        left:auto;
+                        right:0;
+                        label {
+                            left:auto;
+                            right:0;
+                        }
+                        span.checkmark {
+                            left:auto;
+                            right:0;
+                        }
+                    }
+                }
+
+                div.serviceInfoBoxWrap {
+                    padding:0 16px;
+                    div.serviceInfoBox {
+                        padding:12px 16px;
+                        border-radius: 8px;
+                        p {
+                            margin:0;
+                            color:$Blue-03;
+                            @include font-size(12);
+                        }
+                    }
+                }
+
             }
         }
 

@@ -73,3 +73,16 @@
 	background: $color;
 	background: rgba($color, $opacity);
 }
+
+// 위에 fixed이던 밑에 fixed이던 안에 있는 컨텐츠 조절.
+// $top : 해당 컨텐츠의 윗 부분에 fixed가 된 것이 있을 경우 높이 조절
+// $height : 해당 컨텐츠의 밑 부분에 fixed가 된 것이 있을 경우 높이 조절
+@mixin fixed-contents($top, $height) {
+	position: absolute;
+	top:$top;
+	left: 0;
+	overflow-y: auto;
+	overflow-x: hidden;                
+	width:100%;
+	height: calc(100% - $height);
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="배컴" />
+    <meta name="keywords" content="랠리즈">
+    <meta name="description" content="랠리즈">
+    <title>학생,보호자 - 학생관리 - 미가입 학생/보호자 일괄 초대</title>
+    <link rel="stylesheet" href="../../common/_inc/css/mainVer2.css"><!--기본 CSS-->
+    <link rel="stylesheet" href="../../common/_inc/css/pages/userManagementVer2.css"><!--각 페이지별 CSS-->
+</head>
+<body>
+
+    <div class="containerVer2">
+
+        <div class="contWrap">
+
+            <!-- 서브 페이지 헤더 -->
+            <div class="subHeaderWrap">
+                <header class="subHeader subTxt">
+                    <h1 class="pageName">미가입 학생/보호자 일괄 초대<span class="subTxt">랠리즈 학원 / 기초영여</span></h1>
+                    <button type="button" class="btnPoLeft"><i class="icon-arrowLeft"><span class="blind">이전</span></i></button>
+                </header>
+            </div>
+            <!-- 서브 페이지 헤더 -->
+
+            <!-- 본문 -->
+            <div class="articleWrap">
+                <article class="userManagement userManagementList userInviteAll">
+                    <h2 class="blind">학생,보호자 - 미가입 학생/보호자 일괄 초대</h2>
+                       
+                    
+
+                    <div class="userManagementContentsWrap">
+
+                        <!-- 현황 컬럼 -->
+                        <div class="userStatus">
+                            <h3 class="tempTitle">클래스 전체</h3>
+                            <ul class="userStatusList">
+                                <li>
+                                    <p class="title">전체 인원</p>
+                                    <p class="num"><strong>333</strong></p>
+                                    <p class="info">미가입</p>
+                                </li>
+                                <li>
+                                    <p class="title">학생</p>
+                                    <p class="num"><strong>333</strong></p>
+                                    <p class="info">미가입</p>
+                                </li>
+                                <li>
+                                    <p class="title">보호자</p>
+                                    <p class="num"><strong>333</strong></p>
+                                    <p class="info">미가입</p>
+                                </li>
+                            </ul>
+                            <!-- <button class="btn btnInvite" type="button">해당 클래스 미가입자 초대하기 ></button> -->
+                        </div>
+                        <!-- //현황 컬럼 -->
+
+                        <!--리스트 타이틀-->
+                        <div class="listTitleBoxTop">
+                            <p class="num">
+                                666/777
+                            </p>
+                            <div class="checkBoxWrap">
+                                <input type="checkbox" id="aaa18" name="" value="">
+                                <label for="aaa18">전체선택</label>
+                                <span class="checkmark"></span>
+                            </div>
+                        </div>
+                        <!-- //리스트 타이틀-->
+
+                        <div class="serviceInfoBoxWrap">
+                            <div class="serviceInfoBox txtLeft">
+                                <h3 class="infoTitle blind">
+                                    <span class="tagTip">TIP</span>
+                                    <span class="title">현장 납부 수납 처리</span>
+                                </h3>
+                                <p>
+                                    학생과 보호자 휴대폰번호가 동일한 경우 보호자 초대장만 발송됩니다.
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                        <!-- 유저 리스트 (세 줄이어서 새로 만들었어요.. form에 있어요.) -->
+                        <ul class="userTypeDepthList">
+                            <li>
+                                <div class="depthBoxWrap">
+                                    <div class="imgInfoWrap">
+                                        <div class="imgBox">
+                                            <!-- 미가입 회원의 경우 notRegistered className 추가-->
+                                            <div class="userImage imageBoxDefault notRegistered"></div>
+                                        </div>
+                                        <div class="userInfoBox">
+                                            <p class="userType">학생</p>
+                                            <p class="userName"><strong>김랠리1-3</strong><span>학원닉네임</span></p>
+                                            <p class="phone">010-2222-3333</p>
+                                        </div>
+                                    </div>
+                                    <div class="chooseBox">
+                                        <div class="checkBoxWrap">
+                                            <input type="checkbox" id="aaaaa11" name="" value="">
+                                            <label for="aaaaa11"></label>
+                                            <span class="checkmark"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="depthBoxWrap">
+                                    <div class="imgInfoWrap">
+                                        <div class="imgBox">
+                                            <!-- 미가입 회원의 경우 notRegistered className 추가-->
+                                            <div class="userImage imageBoxDefault notRegistered"></div>
+                                        </div>
+                                        <div class="userInfoBox">
+                                            <p class="userType">학생</p>
+                                            <p class="userName"><strong>김랠리1-3</strong><span>학원닉네임</span></p>
+                                            <p class="phone">010-2222-3333</p>
+                                        </div>
+                                    </div>
+                                    <div class="chooseBox">
+                                        <div class="checkBoxWrap">
+                                            <input type="checkbox" id="aaaaa12" name="" value="">
+                                            <label for="aaaaa12"></label>
+                                            <span class="checkmark"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- // 유저 리스트 -->
+
+                    </div>
+
+
+                </article>
+
+                <div class="btnWrap fixed">
+                    <button type="button" class="md primary">초대하기</button>
+                </div>
+
+            </div>
+            <!-- //본문 -->
+
+
+
+        </div>
+    </div>
+</body>
+</html>

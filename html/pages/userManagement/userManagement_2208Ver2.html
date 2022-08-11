@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="배컴" />
+    <meta name="keywords" content="랠리즈">
+    <meta name="description" content="랠리즈">
+    <title>학생,보호자 - 학생관리</title>
+    <link rel="stylesheet" href="../../common/_inc/css/mainVer2.css"><!--기본 CSS-->
+    <link rel="stylesheet" href="../../common/_inc/css/pages/userManagementVer2.css"><!--각 페이지별 CSS-->
+</head>
+<body>
+
+    <div class="containerVer2">
+
+        <div class="contWrap">
+
+            <!-- 서브 페이지 헤더 -->
+            <div class="subHeaderWrap">
+                <header class="subHeader subTxt">
+                    <h1 class="pageName">학생 / 보호자<span class="subTxt">랠리즈 학원 / 기초영여</span></h1>
+                    <button type="button" class="btnPoLeft"><i class="icon-arrowLeft"><span class="blind">이전</span></i></button>
+                    <button type="button" class="btnPoRight tinyR primary">학생 관리</button>
+                </header>
+            </div>
+            <!-- 서브 페이지 헤더 -->
+
+            <!-- 본문 -->
+            <div class="articleWrap">
+                <article class="userManagement userManagementList">
+                    <h2 class="blind">학생,보호자 - 학생관리</h2>
+                       
+                    <div class="sortBox">
+                        <!-- 클래스 선택 Select -->
+                        <div class="selectWrap">
+                            <select>
+                                <option value="클래스 전체" selected>클래스 전체</option>
+                                <option value="선택하세요1">class1</option>
+                                <option value="선택하세요2">class2</option>
+                            </select>
+                        </div>
+                        <!-- 검색 -->
+                        <div class="searchWrap">
+                            <button type="button" class="btnSearch"><i class="icon-search"><span class="blind">검색</span></i></button>
+                            <input type="search" placeholder="학원명 또는 과목 검색">
+                        </div>
+                    </div>
+                    
+
+                    <div class="userManagementContentsWrap">
+
+                        <!-- 현황 컬럼 -->
+                        <div class="userStatus">
+                            <!-- <h3 class="tempTitle">클래스 전체</h3> -->
+                            <ul class="userStatusList">
+                                <li>
+                                    <p class="title">전체 인원</p>
+                                    <p class="num"><strong>333</strong>/333</p>
+                                    <p class="info">전체 / 미가입</p>
+                                </li>
+                                <li>
+                                    <p class="title">학생</p>
+                                    <p class="num"><strong>333</strong>/333</p>
+                                    <p class="info">전체 / 미가입</p>
+                                </li>
+                                <li>
+                                    <p class="title">보호자</p>
+                                    <p class="num"><strong>333</strong>/333</p>
+                                    <p class="info">전체 / 미가입</p>
+                                </li>
+                            </ul>
+                            <button class="btn btnInvite" type="button">해당 클래스 미가입자 초대하기 ></button>
+                        </div>
+                        <!-- //현황 컬럼 -->
+
+
+                        <!-- 유저 리스트 (세 줄이어서 새로 만들었어요.. form에 있어요.) -->
+                        <ul class="userTypeDepthList">
+                            <li>
+                                <div class="depthBoxWrap">
+                                    <div class="imgInfoWrap">
+                                        <div class="imgBox">
+                                            <!-- 미가입 회원의 경우 notRegistered className 추가-->
+                                            <div class="userImage imageBoxDefault notRegistered"></div>
+                                        </div>
+                                        <div class="userInfoBox">
+                                            <p class="userType">학생</p>
+                                            <p class="userName"><strong>김랠리1-3</strong><span>학원닉네임</span></p>
+                                            <p class="phone">010-2222-3333</p>
+                                        </div>
+                                    </div>
+                                    <div class="btnBox">
+                                        <button type="button" class="tinyS bdrBlue">초대</button>
+                                        <button type="button" class="goDetail"><i class="icon-arrowRight"><span class="blind">상세보기</span></i></button>
+                                    </div>
+                                </div>
+
+                                <!-- 유저 Depth 리스트 -->
+                                <ul class="userDepth2List">
+                                    <li>
+                                        <div class="depthBoxWrap">
+                                            <div class="imgInfoWrap">
+                                                <div class="imgBox">
+                                                    <div class="userImage imageBoxDefault notRegistered"></div>
+                                                </div>
+                                                <div class="userInfoBox">
+                                                    <p class="userType">보호자</p>
+                                                    <p class="userName blind"><strong>김랠리1-3</strong><span>학원닉네임</span></p>
+                                                    <p class="phone">010-2222-3333</p>
+                                                </div>
+                                            </div>
+                                            <div class="btnBox">
+                                                <button type="button" class="tinyS bdrBlue blind">초대</button>
+                                                <button type="button" class="goDetail"><i class="icon-arrowRight"><span class="blind">상세보기</span></i></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="depthBoxWrap">
+                                            <div class="imgInfoWrap">
+                                                <div class="imgBox">
+                                                    <div class="userImage imageBoxDefault"></div>
+                                                </div>
+                                                <div class="userInfoBox">
+                                                    <p class="userType">보호자</p>
+                                                    <p class="userName"><strong>김랠리1-3</strong><span>학원닉네임</span></p>
+                                                    <p class="phone">010-2222-3333</p>
+                                                </div>
+                                            </div>
+                                            <div class="btnBox">
+                                                <button type="button" class="tinyS bdrBlue blind">초대</button>
+                                                <button type="button" class="goDetail"><i class="icon-arrowRight"><span class="blind">상세보기</span></i></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- //유저 Depth 리스트 -->
+
+                            </li>
+
+                            <li>
+                                <div class="depthBoxWrap">
+                                    <div class="imgInfoWrap">
+                                        <div class="imgBox">
+                                            <!-- 미가입 회원의 경우 notRegistered className 추가-->
+                                            <div class="userImage imageBoxDefault notRegistered"></div>
+                                        </div>
+                                        <div class="userInfoBox">
+                                            <p class="userType">학생</p>
+                                            <p class="userName"><strong>김랠리1-3</strong><span>학원닉네임</span></p>
+                                            <p class="phone">010-2222-3333</p>
+                                        </div>
+                                    </div>
+                                    <div class="btnBox">
+                                        <button type="button" class="tinyS bdrBlue">초대</button>
+                                        <button type="button" class="goDetail"><i class="icon-arrowRight"><span class="blind">상세보기</span></i></button>
+                                    </div>
+                                </div>
+
+                                <!-- 유저 Depth 리스트 -->
+                                <ul class="userDepth2List">
+                                    <li>
+                                        <div class="depthBoxWrap">
+                                            <div class="imgInfoWrap">
+                                                <div class="imgBox">
+                                                    <div class="userImage imageBoxDefault notRegistered"></div>
+                                                </div>
+                                                <div class="userInfoBox">
+                                                    <p class="userType">보호자</p>
+                                                    <p class="userName blind"><strong>김랠리1-3</strong><span>학원닉네임</span></p>
+                                                    <p class="phone">010-2222-3333</p>
+                                                </div>
+                                            </div>
+                                            <div class="btnBox">
+                                                <button type="button" class="tinyS bdrBlue blind">초대</button>
+                                                <button type="button" class="goDetail"><i class="icon-arrowRight"><span class="blind">상세보기</span></i></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- //유저 Depth 리스트 -->
+
+                            </li>
+                        </ul>
+                        <!-- // 유저 리스트 -->
+
+                    </div>
+
+
+                </article>
+
+            </div>
+            <!-- //본문 -->
+
+
+
+        </div>
+    </div>
+</body>
+</html>
