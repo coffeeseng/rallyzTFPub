@@ -8,6 +8,28 @@ div.containerVer2 {
     div.inputWrap {
         position: relative;
     }
+    // 텍스트타입 Input 아이콘 넣기
+    div.inputWrap {
+        input[type="text"] {
+            color:$Gray-06;
+            font-weight: 500;
+            padding:0 0 0 35px;
+        }
+        &::before {
+            content: '\e929';
+            position: absolute;
+            @include centerer(false, true);
+            left:13px;
+            color: $Gray-05; 
+            font-family: 'icomoon' !important;
+            speak: never;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            z-index: 3;
+        }
+    }
 
     input[type="text"], input[type="email"], input[type="password"], input[type="url"], input[type="tel"], input[type="number"], input[type="time"], input[type="date"],  input[type="month"] , input[type="search"] {
         @include border-radius(10px);
