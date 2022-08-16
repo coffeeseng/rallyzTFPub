@@ -530,7 +530,7 @@ div.containerVer2 {
             &.instCreate {
                 padding: 0 16px 88px 16px; //버튼 88 fixed때문에 버튼 height만큼 패딩
                 @include breakpoint(tabletMini) {
-                    padding:32px;
+                    padding: 0 32px 88px 32px; //버튼 88 fixed때문에 버튼 height만큼 패딩
                 }
                 div.txtBox {
                     margin: 32px 0 24px 0;
