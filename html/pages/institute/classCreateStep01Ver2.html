@@ -7,9 +7,10 @@
     <meta name="author" content="배컴" />
     <meta name="keywords" content="랠리즈">
     <meta name="description" content="랠리즈">
-    <title>랠리즈 - 008.01.1.클래스만들기/클래스정보입력</title>
-    <link rel="stylesheet" href="../../../common/_inc/css/mainVer2.css"><!--기본 CSS-->
-    <link rel="stylesheet" href="../../../common/_inc/css/pages/onboardingVer2.css"><!--각 페이지별 CSS-->
+    <title>랠리즈 - 008.01.1.1 클래스 만들기</title>
+    <link rel="stylesheet" href="../../common/_inc/css/mainVer2.css"><!--기본 CSS-->
+    <link rel="stylesheet" href="../../common/_inc/css/pages/onboardingVer2.css"><!--각 페이지별 CSS-->
+    <link rel="stylesheet" href="../../common/_inc/css/pages/instituteVer2.css"><!--각 페이지별 CSS-->
 </head>
 <body>
 
@@ -21,19 +22,15 @@
             <div class="subHeaderWrap">
                 <header class="subHeader">
                     <h1 class="pageName">클래스 만들기</h1>
-                    <button type="button" class="btnPoLeft"><i class="icon-closeThin"><span class="blind">닫기</span></i></button>
+                    <button type="button" class="btnPoLeft"><i class="icon-close"><span class="blind">닫기</span></i></button>
                 </header>
             </div>
             <!-- 서브 페이지 헤더 -->
 
             <!-- 본문 -->
             <div class="articleWrap">
-                <article class="onboarding classCreate">
-                    <h2 class="blind">008.01.1.클래스만들기/클래스정보입력</h2>
-                    <!-- <div class="processGage">
-                        <span>클래스 만들기 <em>2</em>/3</span>
-                        <img src="../../../common/_inc/images/ico/processGage_02.svg" alt="step2. 클래스 만들기">
-                    </div> -->
+                <article class="onboarding institute classCreate">
+                    <h2 class="blind">학원상세페이지 - 클래스 만들기</h2>
                     <div class="classInfoWrap">
                         <h3 class="title">랠리즈 학원</h3>
                         <dl class="inputListRow">
@@ -123,7 +120,7 @@
                                         </li>
                                         <li>
                                             <div class="inputWrap time">
-                                                <input type="text" placeholder="오후 --:--" />
+                                                <input type="text" placeholder="오전 --:--" />
                                             </div>
                                         </li>
                                         <li class="btn">
@@ -133,21 +130,7 @@
                                     <p class="descNotice">시간 입력 생략 가능합니다.</p>
                                 </div>
                                 <!--//시간 선택-->
-                                
-                                <!--선택한 시간대-->
-                                <div class="timeSelectWrap">
-                                    <ul class="selectedList">
-                                        <li>
-                                            <span>화,목 오후 4시 ~ 오후 5시</span>
-                                            <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제하기</span></i></button>
-                                        </li>
-                                        <li>
-                                            <span>화,목 오후 4시 ~ 오후 5시</span>
-                                            <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제하기</span></i></button>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!--//선택한 시간대-->
+
                             </dd>
                         </dl>                        
                     </div>
@@ -159,9 +142,6 @@
 
             </div>
             <!-- //본문 -->
-
-
-
 
             <!-- 모달 - 클래스 시간 선택 -->
             <div class="modalCover off">
@@ -201,7 +181,38 @@
                 </div>
             </div>
             <!-- //모달 - 시간 선택 -->
+            
+            <!-- 모달 - 클래스 등록 완료 -->
+            <div class="modalCover off">
+                <div class="modalWrap coverType">
+                    <div class="modal classCreateDone">
+                        <div class="contents">
+                            <p>클래스 등록이 완료되었습니다.<br />클래스를 추가로 등록하시겠습니까?</p>
+                        </div>
+                        <div class="btnBox col2">
+                            <button type="button" class="left bdrPrimary">추가 등록</button>
+                            <button type="button" class="right primary">등록 완료</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //모달 - 클래스 등록 완료 -->
 
+            <!-- 모달 - 클래스 등록 나중에 하기 -->
+            <div class="modalCover off">
+                <div class="modalWrap coverType">
+                    <div class="modal classCreateExit">
+                        <div class="contents">
+                            <p>클래스 등록을 중단하고<br />홈 화면으로이동하시겠습니까?</p>
+                        </div>
+                        <div class="btnBox col2">
+                            <button type="button" class="left bdrLgtGray">아니오</button>
+                            <button type="button" class="right primary">예</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //모달 - 클래스 등록 나중에 하기 -->
 
         </div>
     </div>
