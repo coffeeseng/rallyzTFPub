@@ -539,415 +539,415 @@ div.containerVer2 {
 
 
                 // 홈화면 기능
-                &.function {
+                // &.function {
 
-                    // 온보딩과 겹치는 부분.
-                    &.onboarding {
-                        &.classCreate {
-                            padding: 0 16px 88px 16px; //버튼 88 fixed때문에 버튼 height만큼 패딩
-                        }
-                    }
-                    // 공통 사용 리스트
-                    dl.inputListRow {
-                        dd {
-                            div.imagePreWrap {
-                                border-radius: 5px;
-                            }
-                            //기본 이미지 선택
-                            div.defaultImageToggle {
-                                margin:8px 0 0 0;
-                                ul.imageChoiceWrap {
-                                    display: flex;
-                                    width:100%;
-                                    margin:8px 0 0 0;
-                                    li {
-                                        position:relative;
-                                        width:18.4%;
-                                        margin:0 0 0 2%;
-                                        padding:0 0 25px 0;
-                                        &:first-child {
-                                            margin:0;
-                                        }
-                                        div.imageWrap {
-                                            width:100%;
-                                            border-radius: 5px;
-                                            @include breakpoint(tablet) {
-                                                height:100px;
-                                            }
-                                        }
-                                        div.radioWrap {
-                                            position: absolute;
-                                            bottom:5px;
-                                            margin:0;
-                                            @include centerer(true, false);
-                                            label {
-                                                margin:0;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
+                //     // 온보딩과 겹치는 부분.
+                //     &.onboarding {
+                //         &.classCreate {
+                //             padding: 0 16px 88px 16px; //버튼 88 fixed때문에 버튼 height만큼 패딩
+                //         }
+                //     }
+                //     // 공통 사용 리스트
+                //     dl.inputListRow {
+                //         dd {
+                //             div.imagePreWrap {
+                //                 border-radius: 5px;
+                //             }
+                //             //기본 이미지 선택
+                //             div.defaultImageToggle {
+                //                 margin:8px 0 0 0;
+                //                 ul.imageChoiceWrap {
+                //                     display: flex;
+                //                     width:100%;
+                //                     margin:8px 0 0 0;
+                //                     li {
+                //                         position:relative;
+                //                         width:18.4%;
+                //                         margin:0 0 0 2%;
+                //                         padding:0 0 25px 0;
+                //                         &:first-child {
+                //                             margin:0;
+                //                         }
+                //                         div.imageWrap {
+                //                             width:100%;
+                //                             border-radius: 5px;
+                //                             @include breakpoint(tablet) {
+                //                                 height:100px;
+                //                             }
+                //                         }
+                //                         div.radioWrap {
+                //                             position: absolute;
+                //                             bottom:5px;
+                //                             margin:0;
+                //                             @include centerer(true, false);
+                //                             label {
+                //                                 margin:0;
+                //                             }
+                //                         }
+                //                     }
+                //                 }
+                //             }
 
-                            // 이미지 업로드 시 썸네일
-                            ul.imageUploadThumb {
-                                display: flex;
-                                width:100%;
-                                margin:10px auto;
-                                li {
-                                    position:relative;
-                                    &.necessary {
-                                        div.picUploadBox {
-                                            label {
-                                                border:1px solid $Gray-06;
-                                                background: $Gray-01;
-                                            }
-                                        }
-                                    }
-                                    div.picUploadBox {
-                                        label {
-                                            display: block;
-                                            position:relative;
-                                            cursor: pointer;
-                                            width:100%;
-                                            padding-top:60%;
-                                            border-radius: 8px;
-                                            border:1px dashed $Gray-03;
-                                            div.abWrap {
-                                                @include centerer(true, true);
-                                                width: 100%;
-                                                text-align: center;
-                                                i {
-                                                    @include font-size(20);
-                                                    display: block;
-                                                    margin:0 0 5px 0;
-                                                    color:$Gray-04;
-                                                }
-                                            }
-                                        }
-                                        p { 
-                                            margin:5px 0 0 0;
-                                            text-align: center;
-                                            @include font-size(12);
-                                        }
-                                    }
-                                    div.upload {
-                                        position: absolute;
-                                        top:2px;
-                                        left:2px;
-                                        width:calc(100% - 4px);
-                                        z-index:5;
-                                    }
-                                    div.thumb {
-                                        width:100%;
-                                        border-radius: 5px;
-                                        background-position: 50% 50%;
-                                        border:none;
-                                        @include breakpoint(tablet) {
-                                            height:100px;
-                                        }
-                                    }
-                                    button.btnClose {
-                                        position: absolute;
-                                        top:-5px;
-                                        right:-5px;
-                                        width:20px;
-                                        height:20px;
-                                        padding:3px 0 0 0;
-                                        background:$White;
-                                        border:1px solid $Gray-01;
-                                        box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
-                                        @include font-size(8);
-                                        border-radius: 100%;
-                                        line-height: 10px;
-                                        color:$Gray-06;
-                                        @include breakpoint(tablet) {
-                                            padding:0;
-                                        }
-                                    }
-                                }
-                                &.col3 {
-                                    li {
-                                        width:32%;
-                                        margin:0 0 0 2%;
-                                        &:first-child {
-                                            margin:0;
-                                        }
-                                    }
-                                }
-                                &.col4 {
-                                    li {
-                                        width:23.5%;
-                                        margin:0 0 0 2%;
-                                        &:first-child {
-                                            margin:0;
-                                        }
-                                    }
-                                }
-                            }
+                //             // 이미지 업로드 시 썸네일
+                //             ul.imageUploadThumb {
+                //                 display: flex;
+                //                 width:100%;
+                //                 margin:10px auto;
+                //                 li {
+                //                     position:relative;
+                //                     &.necessary {
+                //                         div.picUploadBox {
+                //                             label {
+                //                                 border:1px solid $Gray-06;
+                //                                 background: $Gray-01;
+                //                             }
+                //                         }
+                //                     }
+                //                     div.picUploadBox {
+                //                         label {
+                //                             display: block;
+                //                             position:relative;
+                //                             cursor: pointer;
+                //                             width:100%;
+                //                             padding-top:60%;
+                //                             border-radius: 8px;
+                //                             border:1px dashed $Gray-03;
+                //                             div.abWrap {
+                //                                 @include centerer(true, true);
+                //                                 width: 100%;
+                //                                 text-align: center;
+                //                                 i {
+                //                                     @include font-size(20);
+                //                                     display: block;
+                //                                     margin:0 0 5px 0;
+                //                                     color:$Gray-04;
+                //                                 }
+                //                             }
+                //                         }
+                //                         p { 
+                //                             margin:5px 0 0 0;
+                //                             text-align: center;
+                //                             @include font-size(12);
+                //                         }
+                //                     }
+                //                     div.upload {
+                //                         position: absolute;
+                //                         top:2px;
+                //                         left:2px;
+                //                         width:calc(100% - 4px);
+                //                         z-index:5;
+                //                     }
+                //                     div.thumb {
+                //                         width:100%;
+                //                         border-radius: 5px;
+                //                         background-position: 50% 50%;
+                //                         border:none;
+                //                         @include breakpoint(tablet) {
+                //                             height:100px;
+                //                         }
+                //                     }
+                //                     button.btnClose {
+                //                         position: absolute;
+                //                         top:-5px;
+                //                         right:-5px;
+                //                         width:20px;
+                //                         height:20px;
+                //                         padding:3px 0 0 0;
+                //                         background:$White;
+                //                         border:1px solid $Gray-01;
+                //                         box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+                //                         @include font-size(8);
+                //                         border-radius: 100%;
+                //                         line-height: 10px;
+                //                         color:$Gray-06;
+                //                         @include breakpoint(tablet) {
+                //                             padding:0;
+                //                         }
+                //                     }
+                //                 }
+                //                 &.col3 {
+                //                     li {
+                //                         width:32%;
+                //                         margin:0 0 0 2%;
+                //                         &:first-child {
+                //                             margin:0;
+                //                         }
+                //                     }
+                //                 }
+                //                 &.col4 {
+                //                     li {
+                //                         width:23.5%;
+                //                         margin:0 0 0 2%;
+                //                         &:first-child {
+                //                             margin:0;
+                //                         }
+                //                     }
+                //                 }
+                //             }
 
-                            p.ex {
-                                @include font-size(12);
-                                color:$Gray-05;
-                            }
+                //             p.ex {
+                //                 @include font-size(12);
+                //                 color:$Gray-05;
+                //             }
 
-                            div.inputWrap {
-                                // 학원비 납부 기준일 보더 박스 안에 들어간 인풋들
-                                ul.inputInInputItem {
-                                    li {
-                                        display: flex;
-                                        justify-content: space-between;
-                                        align-items: center;
-                                        @include border-radius(10px);
-                                        width: 100%;
-                                        height: 40px;
-                                        padding: 12px;
-                                        margin: 0 0 4px 0;
-                                        border: 1px solid $Gray-03;
-                                        background: $White;
-                                        color:$Gray-05;
-                                        div {
-                                            &.radioWrap {
-                                                width:90px;
-                                            }
-                                            &.selectWrap {
-                                                border:none;
-                                                height: auto;
-                                                padding:0 25px 0 0;
-                                                &:before {
-                                                    top:-2px;
-                                                    right:0;
-                                                }
-                                                select {
-                                                    height:auto;
-                                                    padding:0;
-                                                }
-                                            }
-                                        }
-                                        p.right {
-                                            width:calc(100% - 90px);
-                                            text-align: right;
-                                        }
-                                    }
-                                }
-                                &.tag {
-                                    margin:8px 0;
-                                    input {
-                                        padding:0 16px 0 35px;
-                                    }
-                                    &:before {
-                                        position:absolute;
-                                        left:16px;
-                                        top:15px;
-                                        @include font-size(25);
-                                        font-weight: 700;
-                                        color:$Primary;
-                                        content: "#";
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    div.btnGroup {
-                        margin:48px 0 0 0;
-                    }
-                    // 학원 만들기
-                    &.instInfoInput {
-                        padding: 0 16px 88px 16px; //버튼 88 fixed때문에 버튼 height만큼 패딩
-                        @include breakpoint(tabletMini) {
-                            padding:32px;
-                        }
-                        div.txtBox {
-                            margin: 32px 0 24px 0;
-                            padding:24px 16px;
-                            border:1px solid $Primary;
-                            border-radius: 10px;
-                            text-align: center;
-                            p.mainTxt {
-                                strong {
-                                    display: block;
-                                    margin:0 0 4px 0;
-                                    @include font-size(20);
-                                    color:$Primary;
-                                    font-weight: 700;
-                                    line-height: 1.5;
-                                }
-                                span {
-                                    display: block;
-                                    @include font-size(14);
-                                    color:$Gray-06;
-                                    font-weight: 500;
-                                }
-                            }
-                            p.subTxt {
-                                margin:16px 0 0 0;
-                                @include font-size(12);
-                                color:$Gray-06;
-                            }
-                        }
-                        dl.inputListRow {
-                            dd {
-                                div.imagePreWrap {
-                                    border-radius: 5px;
-                                }
-                                //기본 이미지 선택
-                                div.defaultImageToggle {
-                                    margin:8px 0 0 0;
-                                    ul.imageChoiceWrap {
-                                        display: flex;
-                                        width:100%;
-                                        margin:8px 0 0 0;
-                                        li {
-                                            position:relative;
-                                            width:18.4%;
-                                            margin:0 0 0 2%;
-                                            padding:0 0 25px 0;
-                                            &:first-child {
-                                                margin:0;
-                                            }
-                                            div.imageWrap {
-                                                width:100%;
-                                                border-radius: 5px;
-                                                @include breakpoint(tablet) {
-                                                    height:100px;
-                                                }
-                                            }
-                                            div.radioWrap {
-                                                position: absolute;
-                                                bottom:5px;
-                                                margin:0;
-                                                @include centerer(true, false);
-                                                label {
-                                                    margin:0;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
+                //             div.inputWrap {
+                //                 // 학원비 납부 기준일 보더 박스 안에 들어간 인풋들
+                //                 ul.inputInInputItem {
+                //                     li {
+                //                         display: flex;
+                //                         justify-content: space-between;
+                //                         align-items: center;
+                //                         @include border-radius(10px);
+                //                         width: 100%;
+                //                         height: 40px;
+                //                         padding: 12px;
+                //                         margin: 0 0 4px 0;
+                //                         border: 1px solid $Gray-03;
+                //                         background: $White;
+                //                         color:$Gray-05;
+                //                         div {
+                //                             &.radioWrap {
+                //                                 width:90px;
+                //                             }
+                //                             &.selectWrap {
+                //                                 border:none;
+                //                                 height: auto;
+                //                                 padding:0 25px 0 0;
+                //                                 &:before {
+                //                                     top:-2px;
+                //                                     right:0;
+                //                                 }
+                //                                 select {
+                //                                     height:auto;
+                //                                     padding:0;
+                //                                 }
+                //                             }
+                //                         }
+                //                         p.right {
+                //                             width:calc(100% - 90px);
+                //                             text-align: right;
+                //                         }
+                //                     }
+                //                 }
+                //                 &.tag {
+                //                     margin:8px 0;
+                //                     input {
+                //                         padding:0 16px 0 35px;
+                //                     }
+                //                     &:before {
+                //                         position:absolute;
+                //                         left:16px;
+                //                         top:15px;
+                //                         @include font-size(25);
+                //                         font-weight: 700;
+                //                         color:$Primary;
+                //                         content: "#";
+                //                     }
+                //                 }
+                //             }
+                //         }
+                //     }
+                //     div.btnGroup {
+                //         margin:48px 0 0 0;
+                //     }
+                //     // 학원 만들기
+                //     &.instInfoInput {
+                //         padding: 0 16px 88px 16px; //버튼 88 fixed때문에 버튼 height만큼 패딩
+                //         @include breakpoint(tabletMini) {
+                //             padding:32px;
+                //         }
+                //         div.txtBox {
+                //             margin: 32px 0 24px 0;
+                //             padding:24px 16px;
+                //             border:1px solid $Primary;
+                //             border-radius: 10px;
+                //             text-align: center;
+                //             p.mainTxt {
+                //                 strong {
+                //                     display: block;
+                //                     margin:0 0 4px 0;
+                //                     @include font-size(20);
+                //                     color:$Primary;
+                //                     font-weight: 700;
+                //                     line-height: 1.5;
+                //                 }
+                //                 span {
+                //                     display: block;
+                //                     @include font-size(14);
+                //                     color:$Gray-06;
+                //                     font-weight: 500;
+                //                 }
+                //             }
+                //             p.subTxt {
+                //                 margin:16px 0 0 0;
+                //                 @include font-size(12);
+                //                 color:$Gray-06;
+                //             }
+                //         }
+                //         dl.inputListRow {
+                //             dd {
+                //                 div.imagePreWrap {
+                //                     border-radius: 5px;
+                //                 }
+                //                 //기본 이미지 선택
+                //                 div.defaultImageToggle {
+                //                     margin:8px 0 0 0;
+                //                     ul.imageChoiceWrap {
+                //                         display: flex;
+                //                         width:100%;
+                //                         margin:8px 0 0 0;
+                //                         li {
+                //                             position:relative;
+                //                             width:18.4%;
+                //                             margin:0 0 0 2%;
+                //                             padding:0 0 25px 0;
+                //                             &:first-child {
+                //                                 margin:0;
+                //                             }
+                //                             div.imageWrap {
+                //                                 width:100%;
+                //                                 border-radius: 5px;
+                //                                 @include breakpoint(tablet) {
+                //                                     height:100px;
+                //                                 }
+                //                             }
+                //                             div.radioWrap {
+                //                                 position: absolute;
+                //                                 bottom:5px;
+                //                                 margin:0;
+                //                                 @include centerer(true, false);
+                //                                 label {
+                //                                     margin:0;
+                //                                 }
+                //                             }
+                //                         }
+                //                     }
+                //                 }
 
-                                // 이미지 업로드 시 썸네일
-                                ul.imageUploadThumb {
-                                    display: flex;
-                                    width:100%;
-                                    margin:10px auto;
-                                    li {
-                                        position:relative;
-                                        &.necessary {
-                                            div.picUploadBox {
-                                                label {
-                                                    border:1px solid $Gray-06;
-                                                    background: $Gray-01;
-                                                }
-                                            }
-                                        }
-                                        div.picUploadBox {
-                                            label {
-                                                display: block;
-                                                position:relative;
-                                                cursor: pointer;
-                                                width:100%;
-                                                padding-top:60%;
-                                                border-radius: 8px;
-                                                border:1px dashed $Gray-03;
-                                                div.abWrap {
-                                                    @include centerer(true, true);
-                                                    width: 100%;
-                                                    text-align: center;
-                                                    i {
-                                                        @include font-size(20);
-                                                        display: block;
-                                                        margin:0 0 5px 0;
-                                                        color:$Gray-04;
-                                                    }
-                                                }
-                                            }
-                                            p { 
-                                                margin:5px 0 0 0;
-                                                text-align: center;
-                                                @include font-size(12);
-                                            }
-                                        }
-                                        div.upload {
-                                            position: absolute;
-                                            top:2px;
-                                            left:2px;
-                                            width:calc(100% - 4px);
-                                            z-index:5;
-                                        }
-                                        div.thumb {
-                                            width:100%;
-                                            border-radius: 5px;
-                                            background-position: 50% 50%;
-                                            border:none;
-                                            @include breakpoint(tablet) {
-                                                height:100px;
-                                            }
-                                        }
-                                        button.btnClose {
-                                            position: absolute;
-                                            top:-5px;
-                                            right:-5px;
-                                            width:20px;
-                                            height:20px;
-                                            padding:3px 0 0 0;
-                                            background:$White;
-                                            border:1px solid $Gray-01;
-                                            box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
-                                            @include font-size(8);
-                                            border-radius: 100%;
-                                            line-height: 10px;
-                                            color:$Gray-06;
-                                            @include breakpoint(tablet) {
-                                                padding:0;
-                                            }
-                                        }
-                                    }
-                                    &.col3 {
-                                        li {
-                                            width:32%;
-                                            margin:0 0 0 2%;
-                                            &:first-child {
-                                                margin:0;
-                                            }
-                                        }
-                                    }
-                                    &.col4 {
-                                        li {
-                                            width:23.5%;
-                                            margin:0 0 0 2%;
-                                            &:first-child {
-                                                margin:0;
-                                            }
-                                        }
-                                    }
-                                }
+                //                 // 이미지 업로드 시 썸네일
+                //                 ul.imageUploadThumb {
+                //                     display: flex;
+                //                     width:100%;
+                //                     margin:10px auto;
+                //                     li {
+                //                         position:relative;
+                //                         &.necessary {
+                //                             div.picUploadBox {
+                //                                 label {
+                //                                     border:1px solid $Gray-06;
+                //                                     background: $Gray-01;
+                //                                 }
+                //                             }
+                //                         }
+                //                         div.picUploadBox {
+                //                             label {
+                //                                 display: block;
+                //                                 position:relative;
+                //                                 cursor: pointer;
+                //                                 width:100%;
+                //                                 padding-top:60%;
+                //                                 border-radius: 8px;
+                //                                 border:1px dashed $Gray-03;
+                //                                 div.abWrap {
+                //                                     @include centerer(true, true);
+                //                                     width: 100%;
+                //                                     text-align: center;
+                //                                     i {
+                //                                         @include font-size(20);
+                //                                         display: block;
+                //                                         margin:0 0 5px 0;
+                //                                         color:$Gray-04;
+                //                                     }
+                //                                 }
+                //                             }
+                //                             p { 
+                //                                 margin:5px 0 0 0;
+                //                                 text-align: center;
+                //                                 @include font-size(12);
+                //                             }
+                //                         }
+                //                         div.upload {
+                //                             position: absolute;
+                //                             top:2px;
+                //                             left:2px;
+                //                             width:calc(100% - 4px);
+                //                             z-index:5;
+                //                         }
+                //                         div.thumb {
+                //                             width:100%;
+                //                             border-radius: 5px;
+                //                             background-position: 50% 50%;
+                //                             border:none;
+                //                             @include breakpoint(tablet) {
+                //                                 height:100px;
+                //                             }
+                //                         }
+                //                         button.btnClose {
+                //                             position: absolute;
+                //                             top:-5px;
+                //                             right:-5px;
+                //                             width:20px;
+                //                             height:20px;
+                //                             padding:3px 0 0 0;
+                //                             background:$White;
+                //                             border:1px solid $Gray-01;
+                //                             box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+                //                             @include font-size(8);
+                //                             border-radius: 100%;
+                //                             line-height: 10px;
+                //                             color:$Gray-06;
+                //                             @include breakpoint(tablet) {
+                //                                 padding:0;
+                //                             }
+                //                         }
+                //                     }
+                //                     &.col3 {
+                //                         li {
+                //                             width:32%;
+                //                             margin:0 0 0 2%;
+                //                             &:first-child {
+                //                                 margin:0;
+                //                             }
+                //                         }
+                //                     }
+                //                     &.col4 {
+                //                         li {
+                //                             width:23.5%;
+                //                             margin:0 0 0 2%;
+                //                             &:first-child {
+                //                                 margin:0;
+                //                             }
+                //                         }
+                //                     }
+                //                 }
 
-                                p.ex {
-                                    @include font-size(12);
-                                    color:$Gray-05;
-                                }
+                //                 p.ex {
+                //                     @include font-size(12);
+                //                     color:$Gray-05;
+                //                 }
 
-                                div.inputWrap.tag {
-                                    margin:8px 0;
-                                    input {
-                                        padding:0 16px 0 35px;
-                                    }
-                                    &:before {
-                                        position:absolute;
-                                        left:16px;
-                                        top:15px;
-                                        @include font-size(25);
-                                        font-weight: 700;
-                                        color:$Primary;
-                                        content: "#";
-                                    }
-                                }
-                            }
-                        }
-                        div.btnGroup {
-                            margin:48px 0 0 0;
-                        }
-                    }
-                }
+                //                 div.inputWrap.tag {
+                //                     margin:8px 0;
+                //                     input {
+                //                         padding:0 16px 0 35px;
+                //                     }
+                //                     &:before {
+                //                         position:absolute;
+                //                         left:16px;
+                //                         top:15px;
+                //                         @include font-size(25);
+                //                         font-weight: 700;
+                //                         color:$Primary;
+                //                         content: "#";
+                //                     }
+                //                 }
+                //             }
+                //         }
+                //         div.btnGroup {
+                //             margin:48px 0 0 0;
+                //         }
+                //     }
+                // }
         
             }
         }
