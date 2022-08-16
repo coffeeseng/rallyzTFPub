@@ -1902,11 +1902,17 @@ div.containerVer2 {
         background-repeat: no-repeat;
         background-position: center 20px;
         background-size: 110px;
-        padding: 100px 0 20px 0;
+        padding: 100px 16px 20px 16px;
         text-align: center;
+        @include breakpoint(tabletMini) {
+            padding: 100px 32px 20px 32px;
+        }
         &.bigImage { //컨텐츠의 이미지가 큰 경우
             background-size: 165px;
-            padding:130px 0 24px 0;
+            padding:130px 16px 24px 16px;
+            @include breakpoint(tabletMini) {
+                padding: 130px 32px 24px 32px;
+            }
         }
         p.emptyTitle {
            @include font-size(20);
@@ -1918,6 +1924,7 @@ div.containerVer2 {
             padding:16px 0;
             @include font-size(14);
             color: $Gray-06;
+            line-height: 21px;
             strong {
                 color: $Black;
                 font-weight: 700;
