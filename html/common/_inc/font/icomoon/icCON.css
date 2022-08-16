@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?yvr49f');
-  src:  url('fonts/icomoon.eot?yvr49f#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?yvr49f') format('truetype'),
-    url('fonts/icomoon.woff?yvr49f') format('woff'),
-    url('fonts/icomoon.svg?yvr49f#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?i68qye');
+  src:  url('fonts/icomoon.eot?i68qye#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?i68qye') format('truetype'),
+    url('fonts/icomoon.woff?i68qye') format('woff'),
+    url('fonts/icomoon.svg?i68qye#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,39 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-request:before {
+  content: "\e99d";
+}
+.icon-studentAdd:before {
+  content: "\e99e";
+}
+.icon-studentInfo:before {
+  content: "\e99f";
+}
+.icon-instFee:before {
+  content: "\e9a5";
+}
+.icon-paidInOut:before {
+  content: "\e9aa";
+}
+.icon-bill2:before {
+  content: "\e9af";
+}
+.icon-auth:before {
+  content: "\e9b0";
+}
+.icon-employee:before {
+  content: "\e9b1";
+}
+.icon-instInfo:before {
+  content: "\e9b2";
+}
+.icon-attendance:before {
+  content: "\e9b3";
+}
+.icon-liveClass:before {
+  content: "\e9b4";
+}
 .icon-arrowUp:before {
   content: "\e99b";
 }

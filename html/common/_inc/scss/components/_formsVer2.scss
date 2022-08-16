@@ -898,7 +898,7 @@ div.containerVer2 {
             background: $White;
             border-bottom: 1px solid $Gray-03;
             > li {
-                padding: 0 10px;
+                padding: 2px 10px;
                 color: $Gray-05;
                 line-height: 44px;
                 font-weight: 500;
@@ -1900,6 +1900,9 @@ div.containerVer2 {
     div.emptyWrap {
         background-image: url('../images/ico/emptyImo.svg');
         background-repeat: no-repeat;
+        background-position: center 20px;
+        background-size: 110px;
+        padding: 100px 0 20px 0;
         text-align: center;
         p.emptyTitle {
            @include font-size(20);
@@ -1910,9 +1913,17 @@ div.containerVer2 {
             @include font-size(14);
             color: $Gray-06;
             strong {
-                color:$Black;
+                color: $Black;
                 font-weight: 700;
             }
+        }
+        p.emptySmallTxt {//컨텐츠 내부의 작은 텍스트(학원메인의 등록된 클래스 없을 때)
+            @include font-size(12);
+            margin: 8px 0 0 0;
+            line-height: 18px;
+        }
+        button {
+            margin: 16px auto 0 auto;
         }
     }
 

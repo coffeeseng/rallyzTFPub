@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="배컴" />
+    <meta name="keywords" content="랠리즈">
+    <meta name="description" content="랠리즈">
+    <title>랠리즈 - 008.03.01 학원관리</title>
+    <link rel="stylesheet" href="../../common/_inc/css/mainVer2.css"><!--기본 CSS-->
+    <link rel="stylesheet" href="../../common/_inc/css/pages/instituteVer2.css"><!--각 페이지별 CSS-->
+</head>
+<body>
+
+    <div class="containerVer2">
+
+        <div class="contWrap">
+
+            <!-- 서브 페이지 헤더 -->
+            <div class="subHeaderWrap">
+                <header class="subHeader">
+                    <h1 class="blind">학원상세페이지 - 학원관리</h1>
+                    <button type="button" class="btnPoLeft"><i class="icon-closeThin"><span class="blind">닫기</span></i></button>
+                </header>
+            </div>
+            <!-- 서브 페이지 헤더 -->
+
+            <!-- 본문 -->
+            <div class="articleWrap">
+
+                <!-- 알림 메시지 -->
+                <div class="alertWrap">
+                    <ul class="alertList responsiveList">
+                        <li>
+                            <div class="alertMsgBox">
+                                <div class="icoAlert"><i class="icon-alert1"></i><span class="blind">알림 아이콘</span></div>
+                                <p class="message">
+                                    <em class="instName">랠리즈 태권도</em>
+                                    <span>학원에 등록된 클래스가 없습니다.<br />클래스 등록 후 이용해주세요!</span>
+                                </p>
+                                <div class="icoArrow"><i class="icon-arrowRight"></i><span class="blind">바로가기 아이콘</span></div>
+                            </div>
+                            <div class="btnBox">
+                                <div class="checkBoxWrap small">
+                                    <input type="checkbox" id="fnc01" name="" value="" />
+                                    <label for="fnc01">오늘 하루 보지 않기</label>
+                                    <span class="checkmark"></span>
+                                </div>
+                                <button type="button" class="btnClose">닫기</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="alertMsgBox">
+                                <div class="icoAlert"><i class="icon-alert1"></i><span class="blind">알림 아이콘</span></div>
+                                <p class="message">
+                                    <em class="instName">랠리즈 태권도</em>
+                                    <span>학원에 등록된 클래스가 없습니다.<br />클래스 등록 후 이용해주세요!</span>
+                                </p>
+                                <div class="icoArrow"><i class="icon-arrowRight"></i><span class="blind">바로가기 아이콘</span></div>
+                            </div>
+                            <div class="btnBox">
+                                <div class="checkBoxWrap small">
+                                    <input type="checkbox" id="fnc01" name="" value="" />
+                                    <label for="fnc01">오늘 하루 보지 않기</label>
+                                    <span class="checkmark"></span>
+                                </div>
+                                <button type="button" class="btnClose">닫기</button>
+                            </div>
+                        </li>
+                    </ul>                          
+                    <button type="button" class="btnShowAll">
+                        <i class="icon-arrowUp2"></i>
+                        <span>접기</span>
+                    </button>
+                </div>
+                <!-- //알림 메시지 -->
+
+                <article class="institute instManagement">
+                    <h2 class="blind">학원관리</h2>
+
+                    <!-- 탭 2개 -->
+                    <div class="tabWrap">
+                        <ul class="tab col2">
+                            <li class="on">학원 관리</li>
+                            <li>학원 현황</li>
+                        </ul>
+                    </div>
+                    <!-- //탭 2개 -->
+
+                    <div class="tabContents">
+
+                        <!-- 학원 관리-->
+                        <article class="menuBoxWrap">
+                            <h3>학원 관리</h3>
+                            <div class="bookmarkBoxWrap">
+                                <input type="checkbox" id="fun10" name="" value="" class="blind" />
+                                <label for="fun10"><span class="blind">즐겨찾기</span></label>
+                            </div>
+                            <ul class="menuBox">
+                                <li>
+                                    <button type="button" class="btnGo">
+                                        <i class="icon-instInfo"></i><span>학원정보</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnGo">
+                                        <i class="icon-employee"></i><span>직원/강사</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnGo">
+                                        <i class="icon-Asset-32"></i><span>클래스</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnGo">
+                                        <i class="icon-auth"></i><span>권한</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnGo">
+                                        <i class="icon-Asset-27"></i><span>학원공지</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </article>
+                        <!-- //학원 관리-->
+
+                        <!-- 청구 납부-->
+                        <article class="menuBoxWrap">
+                            <h3>청구/납부</h3>
+                            <div class="bookmarkBoxWrap">
+                                <input type="checkbox" id="fun10" name="" value="" class="blind" />
+                                <label for="fun10"><span class="blind">즐겨찾기</span></label>
+                            </div>
+                            <ul class="menuBox">
+                                <li>
+                                    <button type="button" class="btnGo">
+                                        <i class="icon-bill2"></i><span>청구서 관리</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnGo">
+                                        <i class="icon-paidInOut"></i><span>입출금 내역</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnGo">
+                                        <i class="icon-instFee"></i><span>클래스 학원비</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </article>
+                        <!-- //청구 납부-->
+
+                        <!-- 학생 관리-->
+                        <article class="menuBoxWrap">
+                            <h3>학생 관리</h3>
+                            <div class="bookmarkBoxWrap">
+                                <input type="checkbox" id="fun10" name="" value="" class="blind" />
+                                <label for="fun10"><span class="blind">즐겨찾기</span></label>
+                            </div>
+                            <ul class="menuBox">
+                                <li>
+                                    <button type="button" class="btnGo">
+                                        <i class="icon-studentInfo"></i><span>학생/학부모 정보</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnGo">
+                                        <i class="icon-studentAdd"></i><span>학생 등록</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </article>
+                        <!-- //학생 관리-->
+
+                        <!-- 학원 홍보 문의-->
+                        <article class="menuBoxWrap">
+                            <h3>학원 홍보/문의</h3>
+                            <div class="bookmarkBoxWrap">
+                                <input type="checkbox" id="fun10" name="" value="" class="blind" />
+                                <label for="fun10"><span class="blind">즐겨찾기</span></label>
+                            </div>
+                            <ul class="menuBox">
+                                <li>
+                                    <button type="button" class="btnGo">
+                                        <i class="icon-instInfo"></i><span>학원 문의</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </article>
+                        <!-- //학원 홍보 문의-->
+
+                        <!-- 수업 지원-->
+                        <article class="menuBoxWrap mgNone">
+                            <h3>수업 지원</h3>
+                            <div class="bookmarkBoxWrap">
+                                <input type="checkbox" id="fun10" name="" value="" class="blind" />
+                                <label for="fun10"><span class="blind">즐겨찾기</span></label>
+                            </div>
+                            <ul class="menuBox">
+                                <li>
+                                    <button type="button" class="btnGo">
+                                        <i class="icon-liveClass"></i><span>라이브 클래스</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnGo">
+                                        <i class="icon-attendance"></i><span>학원 출석 관리</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnGo">
+                                        <i class="icon-deskcheck"></i><span>데스크 출석</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </article>
+                        <!-- //수업 지원-->
+
+                    </div>                    
+                </article>
+            </div>
+            <!-- //본문 -->
+
+            <div class="footerWrap">
+                <footer class="csCenter">
+                    <p><em>고객센터</em>1577 - 0682</p>
+                </footer>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

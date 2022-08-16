@@ -1,10 +1,89 @@
+div.containerVer2 article.institute.instMain div.imageSliderWrap div.instBtnBox {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  z-index: 100;
+  font-size: 0; }
+  div.containerVer2 article.institute.instMain div.imageSliderWrap div.instBtnBox button.btnInstStatus {
+    margin: 0 0 0 8px; }
+
+div.containerVer2 article.institute div.tabContents {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  padding: 16px; }
+
+div.containerVer2 article.institute.instManagement {
+  background: #F7F9FA; }
+  div.containerVer2 article.institute.instManagement article.menuBoxWrap {
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    position: relative;
+    width: 100%;
+    margin: 0 0 8px 0;
+    background: #FFFFFF;
+    border: 1px solid #F2F4F6; }
+    div.containerVer2 article.institute.instManagement article.menuBoxWrap.mgNone {
+      margin: 0; }
+    div.containerVer2 article.institute.instManagement article.menuBoxWrap h3 {
+      display: inline-block;
+      padding: 16px;
+      color: #272A2F;
+      font-weight: 700;
+      line-height: 21px; }
+    div.containerVer2 article.institute.instManagement article.menuBoxWrap div.bookmarkBoxWrap {
+      position: absolute;
+      top: 14px;
+      right: 16px; }
+    div.containerVer2 article.institute.instManagement article.menuBoxWrap ul.menuBox {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      border-top: 1px solid #F2F4F6; }
+      div.containerVer2 article.institute.instManagement article.menuBoxWrap ul.menuBox > li {
+        width: 50%; }
+        div.containerVer2 article.institute.instManagement article.menuBoxWrap ul.menuBox > li button.btnGo {
+          position: relative;
+          display: block;
+          width: 100%;
+          min-height: 52px;
+          padding: 15px 18px;
+          text-align: left; }
+          div.containerVer2 article.institute.instManagement article.menuBoxWrap ul.menuBox > li button.btnGo:after {
+            font-size: 14px;
+            font-family: 'icomoon' !important;
+            speak: never;
+            content: '\e901';
+            position: absolute;
+            top: 19px;
+            right: 20px;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            pointer-events: none;
+            color: #B6BCBF; }
+          div.containerVer2 article.institute.instManagement article.menuBoxWrap ul.menuBox > li button.btnGo > i {
+            font-size: 22px;
+            display: inline-block;
+            margin: 0 4px 0 0;
+            vertical-align: middle; }
+          div.containerVer2 article.institute.instManagement article.menuBoxWrap ul.menuBox > li button.btnGo span {
+            font-size: 12px;
+            font-weight: 500; }
+
 div.containerVer2 article.institute.instStatus {
   background: #F7F9FA; }
-  div.containerVer2 article.institute.instStatus div.tabContents {
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
-    padding: 16px; }
   div.containerVer2 article.institute.instStatus article.dashboardWrap {
     -webkit-border-radius: 16px;
     border-radius: 16px;
@@ -27,18 +106,19 @@ div.containerVer2 article.institute.instStatus {
         font-size: 10px;
         position: relative;
         display: inline-block;
-        padding: 0 0 0 14px;
+        padding: 2px 0 0 14px;
         margin: 0 0 0 8px;
-        line-height: 15px;
+        line-height: 17px;
         color: #B6BCBF;
-        font-weight: 400; }
+        font-weight: 400;
+        vertical-align: top; }
         div.containerVer2 article.institute.instStatus article.dashboardWrap h3 span.date::before {
           font-size: 11px;
           font-family: 'icomoon' !important;
           speak: never;
           content: '\e99c';
           position: absolute;
-          top: 2px;
+          top: 5px;
           left: 0;
           font-style: normal;
           font-weight: normal;

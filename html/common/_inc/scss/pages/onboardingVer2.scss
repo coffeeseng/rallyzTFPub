@@ -1008,6 +1008,9 @@ div.containerVer2 {
 
         //학원메인
         &.instMain {
+            height: auto;
+            min-height: 100vh;
+            background: $Gray-01;
     
             //학원 이미지 슬라이더
             div.imageSliderWrap {
@@ -1209,6 +1212,7 @@ div.containerVer2 {
             div.instInfoWrap {
                 padding: 16px 16px 8px 16px;
                 border-bottom: 1px solid $Gray-03;
+                background: $White;
                 div.instInfo {
                     h2.instName {
                         font-weight: 700;
@@ -1265,6 +1269,7 @@ div.containerVer2 {
             //학원소개
             div.instIntroWrap {
                 padding: 16px;
+                background: $White;
                 > h3 {
                     @include font-size(10);
                     margin: 0 0 8px 0;
