@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@import "../_helperVer2";
+
+
+div.containerVer2 {
+
+    //클래스
+    article.class {
+        //클래스 상세
+        &.classDetail {
+            padding:0 0 88px 0;
+            div.classTopWrap {
+                position: relative;
+                border-bottom:6px solid $Gray-02;
+                height:78px;
+                background:$White;
+                &:after {
+                    content: '';
+                    display: block;
+                    position:absolute;
+                    top:0;
+                    right:0;
+                    width:25px;
+                    height:64px;
+                    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 70%);
+                }
+                div.classTop {
+                    ul.classTopList {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 78px;
+                        &.teacher {
+                            justify-content: center;
+                            width:100%;
+                            li {
+                                width:20%;
+                                button {
+                                    width:100%;
+                                }
+                            }
+                        }
+                        li {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            height: 78px;
+                            button {
+                                width:65px;
+                                img {
+                                    width:25px;
+                                }
+                                p {
+                                    margin:5px 0 0 0;
+                                    color:$Gray-05;
+                                    @include font-size(12);
+                                }
+                            }
+                        }
+                    }  
+                }
+            }
+            div.emptyWrapAlign {
+                position: relative;
+                padding:32px;
+                min-height: 300px;
+                max-height: 500px;
+                div.emptyWrap {
+                    @include centerer(true, true);
+                }
+            }
+
+            footer.classMainFooter {
+                position:fixed;
+                bottom:0;
+                left:0;
+                width:100%;
+                height:68px;
+                background:$Gray-06;
+                @include breakpoint(tablet) {
+                    position: fixed !important;
+                    width:800px;
+                    @include centerer(true, false);
+                }
+                ul.btnList {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height:68px;
+                    li {
+                        button {
+                            width:60px;
+                            color:$White;
+                            i {
+                                @include font-size(24);
+                            }
+                            p {
+                                margin:5px 0 0 0;
+                                color:$Gray-04;
+                                @include font-size(12);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
