@@ -1904,12 +1904,18 @@ div.containerVer2 {
         background-size: 110px;
         padding: 100px 0 20px 0;
         text-align: center;
+        &.bigImage { //컨텐츠의 이미지가 큰 경우
+            background-size: 165px;
+            padding:130px 0 24px 0;
+        }
         p.emptyTitle {
            @include font-size(20);
            color: $Black;
            font-weight: 700;
+           line-height: 30px;
         }
         p.emptySubTitle {
+            padding:16px 0;
             @include font-size(14);
             color: $Gray-06;
             strong {
