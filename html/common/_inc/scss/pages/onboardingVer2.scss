@@ -1280,6 +1280,9 @@ div.containerVer2 {
                     @include font-size(12);
                     line-height: 18px;
                 }
+                button.btnClassCreate {
+                    margin: 24px auto 8px auto;
+                }
             }
 
             //문의하기

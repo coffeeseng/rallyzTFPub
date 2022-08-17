@@ -733,4 +733,39 @@ div.containerVer2 {
     }
 
 
+
+
+
+
+
+
+
+    ///////////////// 모달 /////////////////
+
+    div.modalWrap {
+        div.modal {
+
+            //모달 - 클래스 필터
+            &.classFilter {
+                div.contents {
+                    text-align: left;
+                }
+            }
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

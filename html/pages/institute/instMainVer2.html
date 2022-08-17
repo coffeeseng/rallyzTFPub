@@ -68,11 +68,14 @@
                     <div class="instIntroWrap">
                         <h3>학원소개</h3>
                         <p>꼼꼼한 관리와 탄탄한 레벨구성으로 인성과 지성을 겸비하여, 한국을 넘어 세계속의 '키맨'이 될 아이들과 함께 매일 즐겁고 신나는 영어학원입니다.</p>
+                        <button type="button" class="sm primary btnClassCreate">클래스 만들기</button>
                     </div>
                     <!-- //학원 소개 -->
                     
                     <!-- 클래스 리스트 -->
                     <div class="classListWrap">
+                        <h3>클래스 목록<em class="amount">2개</em></h3>
+                        <button type="button" class="btnFilter"><i class="icon-Icon-filter2"></i>필터</button>
                         <ul class="classList">
                             <li>
                                 <!-- 등록된 클래스가 없을 때 -->
@@ -83,6 +86,40 @@
                                 </div>
                                 <!-- //등록된 클래스가 없을 때 -->
                             </li>
+                            <li>
+                                <div class="top">
+                                    <div class="classImage imageBoxDefault"></div>
+                                    <div class="textBox">
+                                        <!--과목 태그-->
+                                        <div class="subjectTagWrap">
+                                            <p class="tag">국어</p>
+                                            <p class="tag">수학</p>
+                                        </div>
+                                        <!--//과목 태그-->
+                                        <p class="classTitle">월수금 중1A</p>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <p class="classDay"><span>수업요일</span>월/수/금</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top">
+                                    <div class="classImage imageBoxDefault"></div>
+                                    <div class="textBox">
+                                        <!--과목 태그-->
+                                        <div class="subjectTagWrap">
+                                            <p class="tag">국어</p>
+                                            <p class="tag">수학</p>
+                                        </div>
+                                        <!--//과목 태그-->
+                                        <p class="classTitle">월수금 중1A</p>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <p class="classDay"><span>수업요일</span>월/수/금</p>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <!-- //클래스 리스트 -->
@@ -91,6 +128,73 @@
 
             </div>
             <!-- //본문 -->
+
+            <!-- 모달 - 클래스 필터 -->
+            <div class="modalCover off">
+                <div class="modalWrap bottomType">
+                    <div class="modal classFilter">
+                        <div class="title">
+                            <span>필터</span>
+                            <button type="button" class="btnClose"><i class="icon-closeThin"><span class="blind">모달 닫기</span></i></button>
+                        </div>
+                        <div class="contents">
+                            <dl class="inputListRow">
+                                <dt><span>수업요일 선택</span></dt>
+                                <dd>
+                                    <!--요일 선택-->
+                                    <div class="weeklySelectWrap">
+                                        <ul>
+                                            <li>
+                                                <button type="button" id="mon" class="mon day" value="월">월</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" id="tue" class="tue day" value="화">화</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" id="wed" class="wed day" value="수">수</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" id="thu" class="thu day" value="목">목</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" id="fri" class="fri day" value="금">금</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" id="sat" class="sat day" value="토">토</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" id="sun" class="sun day on" value="일">일</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--//요일 선택-->
+                                </dd>
+                                <dt><span>정렬순</span></dt>
+                                <dd>
+                                    <ul class="filterAlignList">
+                                        <li>
+                                            <div class="radioWrap alignRight">
+                                                <label for="fun18">클래스 가나다순</label>
+                                                <input type="radio" name="aa" id="fun18">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="radioWrap alignRight">
+                                                <label for="fun1818">클래스 가나다순</label>
+                                                <input type="radio" name="aa" id="fun1818">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="btnBox fixed">
+                            <button type="button" class="btnConfirm primary">적용</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //모달 - 클래스 필터 -->
 
         </div>
     </div>

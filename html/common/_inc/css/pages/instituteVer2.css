@@ -1,1 +1,623 @@
-div.containerVer2 article.institute.instMain div.imageSliderWrap div.instBtnBox{position:absolute;top:12px;right:16px;z-index:100;font-size:0}div.containerVer2 article.institute.instMain div.imageSliderWrap div.instBtnBox button.btnInstStatus{margin:0 0 0 8px}div.containerVer2 article.institute div.tabContents{width:100%;height:100%;min-height:100vh;padding:16px}div.containerVer2 article.institute.instManagement{background:#F7F9FA}div.containerVer2 article.institute.instManagement article.menuBoxWrap{border-radius:16px;background-clip:padding-box;position:relative;width:100%;margin:0 0 8px 0;background:#FFFFFF;border:1px solid #F2F4F6}div.containerVer2 article.institute.instManagement article.menuBoxWrap.mgNone{margin:0}div.containerVer2 article.institute.instManagement article.menuBoxWrap h3{display:inline-block;padding:16px;color:#272A2F;font-weight:700;line-height:21px}div.containerVer2 article.institute.instManagement article.menuBoxWrap div.bookmarkBoxWrap{position:absolute;top:14px;right:16px}div.containerVer2 article.institute.instManagement article.menuBoxWrap ul.menuBox{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;border-top:1px solid #F2F4F6}div.containerVer2 article.institute.instManagement article.menuBoxWrap ul.menuBox>li{width:50%}div.containerVer2 article.institute.instManagement article.menuBoxWrap ul.menuBox>li button.btnGo{position:relative;display:block;width:100%;min-height:52px;padding:15px 18px;text-align:left}div.containerVer2 article.institute.instManagement article.menuBoxWrap ul.menuBox>li button.btnGo:after{font-size:14px;font-family:"icomoon"!important;speak:never;content:"\e901";position:absolute;top:19px;right:20px;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;pointer-events:none;color:#B6BCBF}div.containerVer2 article.institute.instManagement article.menuBoxWrap ul.menuBox>li button.btnGo>i{font-size:22px;display:inline-block;margin:0 4px 0 0;vertical-align:middle}div.containerVer2 article.institute.instManagement article.menuBoxWrap ul.menuBox>li button.btnGo span{font-size:12px;font-weight:500}div.containerVer2 article.institute.instStatus{background:#F7F9FA}div.containerVer2 article.institute.instStatus article.dashboardWrap{border-radius:16px;background-clip:padding-box;position:relative;width:100%;margin:0 0 8px 0;background:#FFFFFF;border:1px solid #F2F4F6}div.containerVer2 article.institute.instStatus article.dashboardWrap.mgNone{margin:0}div.containerVer2 article.institute.instStatus article.dashboardWrap h3{display:inline-block;padding:16px;color:#272A2F;font-weight:700;line-height:21px}div.containerVer2 article.institute.instStatus article.dashboardWrap h3 span.date{font-size:10px;position:relative;display:inline-block;padding:2px 0 0 14px;margin:0 0 0 8px;line-height:17px;color:#B6BCBF;font-weight:400;vertical-align:top}div.containerVer2 article.institute.instStatus article.dashboardWrap h3 span.date:before{font-size:11px;font-family:"icomoon"!important;speak:never;content:"\e99c";position:absolute;top:5px;left:0;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;pointer-events:none;color:#B6BCBF}div.containerVer2 article.institute.instStatus article.dashboardWrap button.btnMore{font-size:12px;display:inline-block;position:absolute;top:17px;right:16px;min-width:35px;height:18px;color:#272A2F;font-weight:300}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;padding:25px 16px;border-top:1px solid #F2F4F6}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard em{margin:0 1px 0 0;font-style:normal;font-weight:700}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard em.orange{color:#ff6644}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard em.green{color:#2DB62D}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard em.blue{color:#5887FF}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard em.gray05{color:#7E8086}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard em.gray06{color:#575B65}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard em.black{color:#272A2F}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.current{width:50%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-align:center}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.current dt{font-size:12px;width:50%;padding:0 0 3px 0;color:#7E8086;font-weight:500}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.current dd{font-size:11px;width:50%}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.current dd em{font-size:20px}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.detail{width:35%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0 0 0 15%}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.detail dt{font-size:12px;width:50%;padding:3px 0;text-align:left;font-weight:500}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.detail dd{font-size:12px;width:50%;padding:3px 0;text-align:right}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.detail dd i.icoArrow{font-size:10px}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.payment{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.payment dt{width:40%;color:#272A2F;font-weight:700}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.payment dt.small{font-size:12px;color:#575B65;line-height:18px}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.payment dd{font-size:12px;width:60%;color:#272A2F;text-align:right}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.payment dd em{font-size:20px}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.payment dd.small{font-size:12px;color:#575B65;line-height:18px}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.payment dd.small em{font-size:12px}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.request{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.request dt{font-size:12px;width:50%;color:#7E8086;font-weight:500}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.request dd{font-size:12px;width:50%;color:#272A2F;text-align:right}div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.request dd em{font-size:20px}div.containerVer2 article.institute.createStep.onboarding.classCreate{padding:0 16px 88px 16px}div.containerVer2 article.institute.createStep dl.inputListRow dd div.imagePreWrap{border-radius:5px}div.containerVer2 article.institute.createStep dl.inputListRow dd div.defaultImageToggle{margin:8px 0 0 0}div.containerVer2 article.institute.createStep dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;margin:8px 0 0 0}div.containerVer2 article.institute.createStep dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li{position:relative;width:18.4%;margin:0 0 0 2%;padding:0 0 25px 0}div.containerVer2 article.institute.createStep dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li:first-child{margin:0}div.containerVer2 article.institute.createStep dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li div.imageWrap{width:100%;border-radius:5px}@media (min-width:1000px){div.containerVer2 article.institute.createStep dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li div.imageWrap{height:100px}}div.containerVer2 article.institute.createStep dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li div.radioWrap{position:absolute;bottom:5px;margin:0;position:absolute;left:50%;-webkit-transform:translate(-50%,0);transform:translate(-50%,0)}div.containerVer2 article.institute.createStep dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li div.radioWrap label{margin:0}div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;margin:10px auto}div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb li{position:relative}div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb li.necessary div.picUploadBox label{border:1px solid #575B65;background:#F7F9FA}div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb li div.picUploadBox label{display:block;position:relative;cursor:pointer;width:100%;padding-top:60%;border-radius:8px;border:1px dashed #E0E3E6}div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb li div.picUploadBox label div.abWrap{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);width:100%;text-align:center}div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb li div.picUploadBox label div.abWrap i{font-size:20px;display:block;margin:0 0 5px 0;color:#B6BCBF}div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb li div.picUploadBox p{margin:5px 0 0 0;text-align:center;font-size:12px}div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb li div.upload{position:absolute;top:2px;left:2px;width:calc(100% - 4px);z-index:5}div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb li div.thumb{width:100%;border-radius:5px;background-position:50% 50%;border:none}@media (min-width:1000px){div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb li div.thumb{height:100px}}div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb li button.btnClose{position:absolute;top:-5px;right:-5px;width:20px;height:20px;padding:3px 0 0 0;background:#FFFFFF;border:1px solid #F7F9FA;-webkit-box-shadow:3px 3px 5px rgba(0,0,0,0.1);box-shadow:3px 3px 5px rgba(0,0,0,0.1);font-size:8px;border-radius:100%;line-height:10px;color:#575B65}@media (min-width:1000px){div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb li button.btnClose{padding:0}}div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb.col3 li{width:32%;margin:0 0 0 2%}div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb.col3 li:first-child{margin:0}div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb.col4 li{width:23.5%;margin:0 0 0 2%}div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb.col4 li:first-child{margin:0}div.containerVer2 article.institute.createStep dl.inputListRow dd p.ex{font-size:12px;color:#7E8086}div.containerVer2 article.institute.createStep dl.inputListRow dd div.inputWrap ul.inputInInputItem li{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-radius:10px;background-clip:padding-box;width:100%;height:40px;padding:12px;margin:0 0 4px 0;border:1px solid #E0E3E6;background:#FFFFFF;color:#7E8086}div.containerVer2 article.institute.createStep dl.inputListRow dd div.inputWrap ul.inputInInputItem li div.radioWrap{width:90px}div.containerVer2 article.institute.createStep dl.inputListRow dd div.inputWrap ul.inputInInputItem li div.selectWrap{border:none;height:auto;padding:0 25px 0 0}div.containerVer2 article.institute.createStep dl.inputListRow dd div.inputWrap ul.inputInInputItem li div.selectWrap:before{top:-2px;right:0}div.containerVer2 article.institute.createStep dl.inputListRow dd div.inputWrap ul.inputInInputItem li div.selectWrap select{height:auto;padding:0}div.containerVer2 article.institute.createStep dl.inputListRow dd div.inputWrap ul.inputInInputItem li p.right{width:calc(100% - 90px);text-align:right}div.containerVer2 article.institute.createStep dl.inputListRow dd div.inputWrap.tag{margin:8px 0}div.containerVer2 article.institute.createStep dl.inputListRow dd div.inputWrap.tag input{padding:0 16px 0 35px}div.containerVer2 article.institute.createStep dl.inputListRow dd div.inputWrap.tag:before{position:absolute;left:16px;top:15px;font-size:25px;font-weight:700;color:#33CC33;content:"#"}div.containerVer2 article.institute.createStep div.btnGroup{margin:48px 0 0 0}div.containerVer2 article.institute.createStep.instCreate{padding:0 16px 88px 16px}@media (min-width:768px){div.containerVer2 article.institute.createStep.instCreate{padding:0 32px 88px 32px}}div.containerVer2 article.institute.createStep.instCreate div.txtBox{margin:32px 0 24px 0;padding:24px 16px;border:1px solid #33CC33;border-radius:10px;text-align:center}div.containerVer2 article.institute.createStep.instCreate div.txtBox p.mainTxt strong{display:block;margin:0 0 4px 0;font-size:20px;color:#33CC33;font-weight:700;line-height:1.5}div.containerVer2 article.institute.createStep.instCreate div.txtBox p.mainTxt span{display:block;font-size:14px;color:#575B65;font-weight:500}div.containerVer2 article.institute.createStep.instCreate div.txtBox p.subTxt{margin:16px 0 0 0;font-size:12px;color:#575B65}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.imagePreWrap{border-radius:5px}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.defaultImageToggle{margin:8px 0 0 0}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;margin:8px 0 0 0}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li{position:relative;width:18.4%;margin:0 0 0 2%;padding:0 0 25px 0}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li:first-child{margin:0}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li div.imageWrap{width:100%;border-radius:5px}@media (min-width:1000px){div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li div.imageWrap{height:100px}}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li div.radioWrap{position:absolute;bottom:5px;margin:0;position:absolute;left:50%;-webkit-transform:translate(-50%,0);transform:translate(-50%,0)}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li div.radioWrap label{margin:0}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;margin:10px auto}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb li{position:relative}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb li.necessary div.picUploadBox label{border:1px solid #575B65;background:#F7F9FA}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb li div.picUploadBox label{display:block;position:relative;cursor:pointer;width:100%;padding-top:60%;border-radius:8px;border:1px dashed #E0E3E6}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb li div.picUploadBox label div.abWrap{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);width:100%;text-align:center}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb li div.picUploadBox label div.abWrap i{font-size:20px;display:block;margin:0 0 5px 0;color:#B6BCBF}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb li div.picUploadBox p{margin:5px 0 0 0;text-align:center;font-size:12px}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb li div.upload{position:absolute;top:2px;left:2px;width:calc(100% - 4px);z-index:5}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb li div.thumb{width:100%;border-radius:5px;background-position:50% 50%;border:none}@media (min-width:1000px){div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb li div.thumb{height:100px}}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb li button.btnClose{position:absolute;top:-5px;right:-5px;width:20px;height:20px;padding:3px 0 0 0;background:#FFFFFF;border:1px solid #F7F9FA;-webkit-box-shadow:3px 3px 5px rgba(0,0,0,0.1);box-shadow:3px 3px 5px rgba(0,0,0,0.1);font-size:8px;border-radius:100%;line-height:10px;color:#575B65}@media (min-width:1000px){div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb li button.btnClose{padding:0}}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb.col3 li{width:32%;margin:0 0 0 2%}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb.col3 li:first-child{margin:0}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb.col4 li{width:23.5%;margin:0 0 0 2%}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb.col4 li:first-child{margin:0}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd p.ex{font-size:12px;color:#7E8086}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.inputWrap.tag{margin:8px 0}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.inputWrap.tag input{padding:0 16px 0 35px}div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.inputWrap.tag:before{position:absolute;left:16px;top:15px;font-size:25px;font-weight:700;color:#33CC33;content:"#"}div.containerVer2 article.institute.createStep.instCreate div.btnGroup{margin:48px 0 0 0}
+div.containerVer2 article.institute.instMain div.imageSliderWrap div.instBtnBox {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  z-index: 100;
+  font-size: 0; }
+  div.containerVer2 article.institute.instMain div.imageSliderWrap div.instBtnBox button.btnInstStatus {
+    margin: 0 0 0 8px; }
+
+div.containerVer2 article.institute div.tabContents {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  padding: 16px; }
+
+div.containerVer2 article.institute.instManagement {
+  background: #F7F9FA; }
+  div.containerVer2 article.institute.instManagement article.menuBoxWrap {
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    position: relative;
+    width: 100%;
+    margin: 0 0 8px 0;
+    background: #FFFFFF;
+    border: 1px solid #F2F4F6; }
+    div.containerVer2 article.institute.instManagement article.menuBoxWrap.mgNone {
+      margin: 0; }
+    div.containerVer2 article.institute.instManagement article.menuBoxWrap h3 {
+      display: inline-block;
+      padding: 16px;
+      color: #272A2F;
+      font-weight: 700;
+      line-height: 21px; }
+    div.containerVer2 article.institute.instManagement article.menuBoxWrap div.bookmarkBoxWrap {
+      position: absolute;
+      top: 14px;
+      right: 16px; }
+    div.containerVer2 article.institute.instManagement article.menuBoxWrap ul.menuBox {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      border-top: 1px solid #F2F4F6; }
+      div.containerVer2 article.institute.instManagement article.menuBoxWrap ul.menuBox > li {
+        width: 50%; }
+        div.containerVer2 article.institute.instManagement article.menuBoxWrap ul.menuBox > li button.btnGo {
+          position: relative;
+          display: block;
+          width: 100%;
+          min-height: 52px;
+          padding: 15px 18px;
+          text-align: left; }
+          div.containerVer2 article.institute.instManagement article.menuBoxWrap ul.menuBox > li button.btnGo:after {
+            font-size: 14px;
+            font-family: 'icomoon' !important;
+            speak: never;
+            content: '\e901';
+            position: absolute;
+            top: 19px;
+            right: 20px;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            pointer-events: none;
+            color: #B6BCBF; }
+          div.containerVer2 article.institute.instManagement article.menuBoxWrap ul.menuBox > li button.btnGo > i {
+            font-size: 22px;
+            display: inline-block;
+            margin: 0 4px 0 0;
+            vertical-align: middle; }
+          div.containerVer2 article.institute.instManagement article.menuBoxWrap ul.menuBox > li button.btnGo span {
+            font-size: 12px;
+            font-weight: 500; }
+
+div.containerVer2 article.institute.instStatus {
+  background: #F7F9FA; }
+  div.containerVer2 article.institute.instStatus article.dashboardWrap {
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    position: relative;
+    width: 100%;
+    margin: 0 0 8px 0;
+    background: #FFFFFF;
+    border: 1px solid #F2F4F6; }
+    div.containerVer2 article.institute.instStatus article.dashboardWrap.mgNone {
+      margin: 0; }
+    div.containerVer2 article.institute.instStatus article.dashboardWrap h3 {
+      display: inline-block;
+      padding: 16px;
+      color: #272A2F;
+      font-weight: 700;
+      line-height: 21px; }
+      div.containerVer2 article.institute.instStatus article.dashboardWrap h3 span.date {
+        font-size: 10px;
+        position: relative;
+        display: inline-block;
+        padding: 2px 0 0 14px;
+        margin: 0 0 0 8px;
+        line-height: 17px;
+        color: #B6BCBF;
+        font-weight: 400;
+        vertical-align: top; }
+        div.containerVer2 article.institute.instStatus article.dashboardWrap h3 span.date::before {
+          font-size: 11px;
+          font-family: 'icomoon' !important;
+          speak: never;
+          content: '\e99c';
+          position: absolute;
+          top: 5px;
+          left: 0;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          pointer-events: none;
+          color: #B6BCBF; }
+    div.containerVer2 article.institute.instStatus article.dashboardWrap button.btnMore {
+      font-size: 12px;
+      display: inline-block;
+      position: absolute;
+      top: 17px;
+      right: 16px;
+      min-width: 35px;
+      height: 18px;
+      color: #272A2F;
+      font-weight: 300; }
+    div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%;
+      padding: 25px 16px;
+      border-top: 1px solid #F2F4F6; }
+      div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard em {
+        margin: 0 1px 0 0;
+        font-style: normal;
+        font-weight: 700; }
+        div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard em.orange {
+          color: #ff6644; }
+        div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard em.green {
+          color: #2DB62D; }
+        div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard em.blue {
+          color: #5887FF; }
+        div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard em.gray05 {
+          color: #7E8086; }
+        div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard em.gray06 {
+          color: #575B65; }
+        div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard em.black {
+          color: #272A2F; }
+      div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.current {
+        width: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center; }
+        div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.current dt {
+          font-size: 12px;
+          width: 50%;
+          padding: 0 0 3px 0;
+          color: #7E8086;
+          font-weight: 500; }
+        div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.current dd {
+          font-size: 11px;
+          width: 50%; }
+          div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.current dd em {
+            font-size: 20px; }
+      div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.detail {
+        width: 35%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 0 0 0 15%; }
+        div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.detail dt {
+          font-size: 12px;
+          width: 50%;
+          padding: 3px 0;
+          text-align: left;
+          font-weight: 500; }
+        div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.detail dd {
+          font-size: 12px;
+          width: 50%;
+          padding: 3px 0;
+          text-align: right; }
+          div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.detail dd i.icoArrow {
+            font-size: 10px; }
+      div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.payment {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.payment dt {
+          width: 40%;
+          color: #272A2F;
+          font-weight: 700; }
+          div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.payment dt.small {
+            font-size: 12px;
+            color: #575B65;
+            line-height: 18px; }
+        div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.payment dd {
+          font-size: 12px;
+          width: 60%;
+          color: #272A2F;
+          text-align: right; }
+          div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.payment dd em {
+            font-size: 20px; }
+          div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.payment dd.small {
+            font-size: 12px;
+            color: #575B65;
+            line-height: 18px; }
+            div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.payment dd.small em {
+              font-size: 12px; }
+      div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.request {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.request dt {
+          font-size: 12px;
+          width: 50%;
+          color: #7E8086;
+          font-weight: 500; }
+        div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.request dd {
+          font-size: 12px;
+          width: 50%;
+          color: #272A2F;
+          text-align: right; }
+          div.containerVer2 article.institute.instStatus article.dashboardWrap div.dashboard dl.request dd em {
+            font-size: 20px; }
+
+div.containerVer2 article.institute.createStep.onboarding.classCreate {
+  padding: 0 16px 88px 16px; }
+
+div.containerVer2 article.institute.createStep dl.inputListRow dd div.imagePreWrap {
+  border-radius: 5px; }
+
+div.containerVer2 article.institute.createStep dl.inputListRow dd div.defaultImageToggle {
+  margin: 8px 0 0 0; }
+  div.containerVer2 article.institute.createStep dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 8px 0 0 0; }
+    div.containerVer2 article.institute.createStep dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li {
+      position: relative;
+      width: 18.4%;
+      margin: 0 0 0 2%;
+      padding: 0 0 25px 0; }
+      div.containerVer2 article.institute.createStep dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li:first-child {
+        margin: 0; }
+      div.containerVer2 article.institute.createStep dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li div.imageWrap {
+        width: 100%;
+        border-radius: 5px; }
+        @media all and (min-width: 1000px) {
+          div.containerVer2 article.institute.createStep dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li div.imageWrap {
+            height: 100px; } }
+      div.containerVer2 article.institute.createStep dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li div.radioWrap {
+        position: absolute;
+        bottom: 5px;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        transform: translate(-50%, 0); }
+        div.containerVer2 article.institute.createStep dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li div.radioWrap label {
+          margin: 0; }
+
+div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 10px auto; }
+  div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb li {
+    position: relative; }
+    div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb li.necessary div.picUploadBox label {
+      border: 1px solid #575B65;
+      background: #F7F9FA; }
+    div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb li div.picUploadBox label {
+      display: block;
+      position: relative;
+      cursor: pointer;
+      width: 100%;
+      padding-top: 60%;
+      border-radius: 8px;
+      border: 1px dashed #E0E3E6; }
+      div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb li div.picUploadBox label div.abWrap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center; }
+        div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb li div.picUploadBox label div.abWrap i {
+          font-size: 20px;
+          display: block;
+          margin: 0 0 5px 0;
+          color: #B6BCBF; }
+    div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb li div.picUploadBox p {
+      margin: 5px 0 0 0;
+      text-align: center;
+      font-size: 12px; }
+    div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb li div.upload {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: calc(100% - 4px);
+      z-index: 5; }
+    div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb li div.thumb {
+      width: 100%;
+      border-radius: 5px;
+      background-position: 50% 50%;
+      border: none; }
+      @media all and (min-width: 1000px) {
+        div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb li div.thumb {
+          height: 100px; } }
+    div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb li button.btnClose {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      width: 20px;
+      height: 20px;
+      padding: 3px 0 0 0;
+      background: #FFFFFF;
+      border: 1px solid #F7F9FA;
+      -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+      font-size: 8px;
+      border-radius: 100%;
+      line-height: 10px;
+      color: #575B65; }
+      @media all and (min-width: 1000px) {
+        div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb li button.btnClose {
+          padding: 0; } }
+  div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb.col3 li {
+    width: 32%;
+    margin: 0 0 0 2%; }
+    div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb.col3 li:first-child {
+      margin: 0; }
+  div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb.col4 li {
+    width: 23.5%;
+    margin: 0 0 0 2%; }
+    div.containerVer2 article.institute.createStep dl.inputListRow dd ul.imageUploadThumb.col4 li:first-child {
+      margin: 0; }
+
+div.containerVer2 article.institute.createStep dl.inputListRow dd p.ex {
+  font-size: 12px;
+  color: #7E8086; }
+
+div.containerVer2 article.institute.createStep dl.inputListRow dd div.inputWrap ul.inputInInputItem li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  width: 100%;
+  height: 40px;
+  padding: 12px;
+  margin: 0 0 4px 0;
+  border: 1px solid #E0E3E6;
+  background: #FFFFFF;
+  color: #7E8086; }
+  div.containerVer2 article.institute.createStep dl.inputListRow dd div.inputWrap ul.inputInInputItem li div.radioWrap {
+    width: 90px; }
+  div.containerVer2 article.institute.createStep dl.inputListRow dd div.inputWrap ul.inputInInputItem li div.selectWrap {
+    border: none;
+    height: auto;
+    padding: 0 25px 0 0; }
+    div.containerVer2 article.institute.createStep dl.inputListRow dd div.inputWrap ul.inputInInputItem li div.selectWrap:before {
+      top: -2px;
+      right: 0; }
+    div.containerVer2 article.institute.createStep dl.inputListRow dd div.inputWrap ul.inputInInputItem li div.selectWrap select {
+      height: auto;
+      padding: 0; }
+  div.containerVer2 article.institute.createStep dl.inputListRow dd div.inputWrap ul.inputInInputItem li p.right {
+    width: calc(100% - 90px);
+    text-align: right; }
+
+div.containerVer2 article.institute.createStep dl.inputListRow dd div.inputWrap.tag {
+  margin: 8px 0; }
+  div.containerVer2 article.institute.createStep dl.inputListRow dd div.inputWrap.tag input {
+    padding: 0 16px 0 35px; }
+  div.containerVer2 article.institute.createStep dl.inputListRow dd div.inputWrap.tag:before {
+    position: absolute;
+    left: 16px;
+    top: 15px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #33CC33;
+    content: "#"; }
+
+div.containerVer2 article.institute.createStep div.btnGroup {
+  margin: 48px 0 0 0; }
+
+div.containerVer2 article.institute.createStep.instCreate {
+  padding: 0 16px 88px 16px; }
+  @media all and (min-width: 768px) {
+    div.containerVer2 article.institute.createStep.instCreate {
+      padding: 0 32px 88px 32px; } }
+  div.containerVer2 article.institute.createStep.instCreate div.txtBox {
+    margin: 32px 0 24px 0;
+    padding: 24px 16px;
+    border: 1px solid #33CC33;
+    border-radius: 10px;
+    text-align: center; }
+    div.containerVer2 article.institute.createStep.instCreate div.txtBox p.mainTxt strong {
+      display: block;
+      margin: 0 0 4px 0;
+      font-size: 20px;
+      color: #33CC33;
+      font-weight: 700;
+      line-height: 1.5; }
+    div.containerVer2 article.institute.createStep.instCreate div.txtBox p.mainTxt span {
+      display: block;
+      font-size: 14px;
+      color: #575B65;
+      font-weight: 500; }
+    div.containerVer2 article.institute.createStep.instCreate div.txtBox p.subTxt {
+      margin: 16px 0 0 0;
+      font-size: 12px;
+      color: #575B65; }
+  div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.imagePreWrap {
+    border-radius: 5px; }
+  div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.defaultImageToggle {
+    margin: 8px 0 0 0; }
+    div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      margin: 8px 0 0 0; }
+      div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li {
+        position: relative;
+        width: 18.4%;
+        margin: 0 0 0 2%;
+        padding: 0 0 25px 0; }
+        div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li:first-child {
+          margin: 0; }
+        div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li div.imageWrap {
+          width: 100%;
+          border-radius: 5px; }
+          @media all and (min-width: 1000px) {
+            div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li div.imageWrap {
+              height: 100px; } }
+        div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li div.radioWrap {
+          position: absolute;
+          bottom: 5px;
+          margin: 0;
+          position: absolute;
+          left: 50%;
+          -webkit-transform: translate(-50%, 0);
+          -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0); }
+          div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.defaultImageToggle ul.imageChoiceWrap li div.radioWrap label {
+            margin: 0; }
+  div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 10px auto; }
+    div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb li {
+      position: relative; }
+      div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb li.necessary div.picUploadBox label {
+        border: 1px solid #575B65;
+        background: #F7F9FA; }
+      div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb li div.picUploadBox label {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        width: 100%;
+        padding-top: 60%;
+        border-radius: 8px;
+        border: 1px dashed #E0E3E6; }
+        div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb li div.picUploadBox label div.abWrap {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          width: 100%;
+          text-align: center; }
+          div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb li div.picUploadBox label div.abWrap i {
+            font-size: 20px;
+            display: block;
+            margin: 0 0 5px 0;
+            color: #B6BCBF; }
+      div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb li div.picUploadBox p {
+        margin: 5px 0 0 0;
+        text-align: center;
+        font-size: 12px; }
+      div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb li div.upload {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: calc(100% - 4px);
+        z-index: 5; }
+      div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb li div.thumb {
+        width: 100%;
+        border-radius: 5px;
+        background-position: 50% 50%;
+        border: none; }
+        @media all and (min-width: 1000px) {
+          div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb li div.thumb {
+            height: 100px; } }
+      div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb li button.btnClose {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        width: 20px;
+        height: 20px;
+        padding: 3px 0 0 0;
+        background: #FFFFFF;
+        border: 1px solid #F7F9FA;
+        -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+        font-size: 8px;
+        border-radius: 100%;
+        line-height: 10px;
+        color: #575B65; }
+        @media all and (min-width: 1000px) {
+          div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb li button.btnClose {
+            padding: 0; } }
+    div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb.col3 li {
+      width: 32%;
+      margin: 0 0 0 2%; }
+      div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb.col3 li:first-child {
+        margin: 0; }
+    div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb.col4 li {
+      width: 23.5%;
+      margin: 0 0 0 2%; }
+      div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd ul.imageUploadThumb.col4 li:first-child {
+        margin: 0; }
+  div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd p.ex {
+    font-size: 12px;
+    color: #7E8086; }
+  div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.inputWrap.tag {
+    margin: 8px 0; }
+    div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.inputWrap.tag input {
+      padding: 0 16px 0 35px; }
+    div.containerVer2 article.institute.createStep.instCreate dl.inputListRow dd div.inputWrap.tag:before {
+      position: absolute;
+      left: 16px;
+      top: 15px;
+      font-size: 25px;
+      font-weight: 700;
+      color: #33CC33;
+      content: "#"; }
+  div.containerVer2 article.institute.createStep.instCreate div.btnGroup {
+    margin: 48px 0 0 0; }
+
+div.containerVer2 div.modalWrap div.modal.classFilter div.contents {
+  text-align: left; }

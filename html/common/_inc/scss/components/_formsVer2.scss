@@ -460,14 +460,13 @@ div.containerVer2 {
     // 라디오버튼
     div.radioWrap {
         align-items: center;
-        margin: 0 0 0 20px;
         &:first-child {
             margin:0;
         }
         label {
             display: inline-block;
             vertical-align: middle;
-            margin: 0 0 0 8px;
+            margin: 0 0 0 6px;
         }
         input[type='radio'] {
             -webkit-appearance: none;
@@ -495,6 +494,24 @@ div.containerVer2 {
                 background: $Gray-03;
             }
         }
+        //오른쪽 라디오 버튼
+        &.alignRight {
+            position: relative;
+            label {
+                position: absolute;
+                left: 0;
+                display: inline-block;
+                width: 100%;
+                vertical-align: middle;
+                margin: 0;
+                text-align: left;
+            }
+            input[type='radio'] {
+                position: absolute;
+                right: 0;
+            }
+        }
+        
     }
 
 
@@ -1902,7 +1919,7 @@ div.containerVer2 {
         background-repeat: no-repeat;
         background-position: center 20px;
         background-size: 110px;
-        padding: 100px 16px 20px 16px;
+        padding: 80px 16px 20px 16px;
         text-align: center;
         @include breakpoint(tabletMini) {
             padding: 100px 32px 20px 32px;
@@ -1921,8 +1938,8 @@ div.containerVer2 {
            line-height: 30px;
         }
         p.emptySubTitle {
-            padding:16px 0;
             @include font-size(14);
+            padding: 16px 0 0 0;
             color: $Gray-06;
             line-height: 21px;
             strong {
