@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="배컴" />
+    <meta name="keywords" content="랠리즈">
+    <meta name="description" content="랠리즈">
+    <title>랠리즈 - 011.학생 등록 - 학생 일괄 등록</title>
+    <link rel="stylesheet" href="../../common/_inc/css/mainVer2.css"><!--기본 CSS-->
+    <link rel="stylesheet" href="../../common/_inc/css/pages/onboardingVer2.css"><!--각 페이지별 CSS-->
+    <link rel="stylesheet" href="../../common/_inc/css/pages/studentVer2.css"><!--각 페이지별 CSS-->
+</head>
+<body>
+
+    <div class="containerVer2">
+
+        <div class="contWrap">
+
+            <!-- 서브 페이지 헤더 -->
+            <div class="subHeaderWrap">
+                <header class="subHeader subTxt">
+                    <h1 class="pageName">학생 등록<span class="subTxt">학원명</span></h1>
+                    <button type="button" class="btnPoLeft"><i class="icon-closeThin"><span class="blind">닫기</span></i></button>
+                </header>
+            </div>
+            <!-- 서브 페이지 헤더 -->
+
+            <!-- 본문 -->
+            <div class="articleWrap">
+                <article class="onboarding addStudent student">
+                    <h2 class="blind">랠리즈 온보딩 - 학원등록</h2>
+
+                    <!-- 탭 2개 -->
+                    <div class="tabWrap">
+                        <ul class="tab col2">
+                            <li>개별 등록</li>
+                            <li class="on">일괄 등록</li>
+                        </ul>
+                    </div>
+                    <!-- //탭 2개 -->
+                                        
+                    <div class="tabContents batch">
+                        <div class="addInfoBox">
+                            <img src="../../common/_inc/images/ico/cloud.svg" alt="일괄 등록 안내 이미지"></img>
+                            <p><span>학생 정보</span>를 편리하게 등록해보세요.</p>
+                            <ul class="stepList">
+                                <li><span>양식 내려받기</span><i class="icon-arrowRight"></i></li>
+                                <li><span>내용 작성</span><i class="icon-arrowRight"></i></li>
+                                <li><span>데이터 등록</span></li>
+                            </ul>
+                        </div>
+                        <dl class="inputListRow">
+                            <dt>
+                                <span>양식 내려받기</span>
+                            </dt>
+                            <dd>
+                                <button type="button" class="btnSplDownload">
+                                    <span class="fileName">랠리즈 일괄 등록 .xlsx</span>
+                                    <span class="fileDesc">클래스별 학생/학부모 데이터</span>
+                                </button>
+                            </dd>
+                            <dt>
+                                <span>데이터 등록</span>
+                                <label for="excelFile" class="btnFile upload">등록</label>
+                                <input type="file" id="excelFile" name="" class="blind">
+                                <!--<label for="excelFile" class="btnFile delete">삭제</label>-->
+                                <p class="descSmall">※ PC환경에서도 등록하실 수 있습니다.</p>
+                            </dt>
+                            <dd>
+                                <!-- 첨부된 파일 리스트 -->
+                                <div class="attachListWrap">
+                                    <ul class="attachList">
+                                        <li>
+                                            <span class="fileName">랠리즈+일괄+등록1.xlsx</span><span class="fileSize">(59.18 KB)</span>
+                                            <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제하기</span></i></button>
+                                        </li>
+                                        <li>
+                                            <span class="fileName">랠리즈+일괄+등록222.xlsx.</span><span class="fileSize">(1159.18 KB)</span>
+                                            <button type="button" class="btnDelete"><i class="icon-closeThin"><span class="blind">삭제하기</span></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- //첨부된 파일 리스트 -->
+                            </dd>
+                        </dl>
+
+                        <div class="btnWrap">
+                            <button type="button" class="md primary">완료</button>
+                        </div>
+
+                        <div class="addNoticeBox">
+                            <h3>유의사항</h3>
+                            <ul class="noticeList">
+                                <li>실제 학생/학부모 정보와 일치하지 않을 수 있습니다.</li>
+                                <li>데이터 등록은 담당자 확인 후 진행됩니다. (2~3영업일 소요)</li>
+                                <li>데이터 등록이 완료된 경우 취소할 수 없습니다.</li>
+                                <li>원활한 서비스 이용을 위해 반드시 엑셀 양식 내 가이드를 따라주세요.</li>
+                                <li>제공된 엑셀 양식을 사용하지 않은 경우 오류가 발생할 수 있습니다.</li>
+                                <li>학원법 또는 개인정보보호법에 저촉되는 정보는 제외될 수 있습니다.</li>
+                            </ul>
+                        </div>
+                    </div> 
+                </article>
+
+            </div>
+            <!-- //본문 -->
+
+           
+
+        </div>
+    </div>
+</body>
+</html>

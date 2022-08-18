@@ -173,10 +173,12 @@ div.containerVer2 {
                         }
                     }
                 }
+                
                 div.contents {
                     min-height: 140px;
                     padding: 20px 16px;
                     text-align: center;
+
                     //라디오버튼,체크박스 정렬(ex.클래스 리스트 필터) 
                     ul.filterAlignList {
                         display: flex;
@@ -192,11 +194,34 @@ div.containerVer2 {
                             }
                         }
                     }
+                    
+                    ul {
+                        > li {
+                            //모달에 들어간 리스트타입의 버튼 박스들
+                            div.btnBox {
+                                padding: 0;
+                            }
+                        }
+                    }
+
+                    //컨텐츠 내부에 들어가는 width 100% 버튼
+                    div.btnBox {
+                        width: 100%;
+                        padding: 8px 0 0 0;
+                        button.w100 {
+                            @include border-radius(8px);
+                            @include font-size(14);
+                            width: 100%;
+                            height: 48px;
+                        }
+                    }
                 }
+
                 div.btnBox {
                     width: 100%;
                     padding: 16px;
                     margin: 0 auto;
+
                     //버튼 고정(ex.학원공지-글 수정-조회대상 선택 모달)
                     &.fixed {
                         // position: fixed;
@@ -206,12 +231,14 @@ div.containerVer2 {
                             max-width: 100%;
                         }
                     }
+
                     //버튼 1개
                     button.btnConfirm {
                         @include border-radius(8px);
                         width: 100%;
                         height: 56px;
                     }
+
                 }
             }
 

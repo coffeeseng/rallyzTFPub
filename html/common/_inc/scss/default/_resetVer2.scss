@@ -83,15 +83,17 @@ br {
 }
 
 .blind { 
-    width: 0;
-    height: 0;
+    width: 0 !important;
+    height: 0 !important;
     line-height: 0;
     position: absolute;
     top: 0;
     left: 0;
     overflow:hidden;
     visibility: hidden;
-    font-size: 0;
+    font-size: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 table { 

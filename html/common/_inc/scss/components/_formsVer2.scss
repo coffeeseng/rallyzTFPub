@@ -806,7 +806,6 @@ div.containerVer2 {
         }
     }
 
-
     //input 정렬이 가로형
     dl.inputListCol {
         @extend %clearfix;
@@ -1102,6 +1101,9 @@ div.containerVer2 {
     div.sortBox {
         padding: 8px 16px;
         background: $Gray-01;
+        &.bgW {//배경이 흰색
+            background: $White;
+        }
         &.modal { //모달에 들어갈 경우
             padding: 0;
             background: $White;
@@ -1478,12 +1480,17 @@ div.containerVer2 {
                 width: 140px;
                 text-align: right;
                 font-size: 0;
+                //버튼일 때
                 button {
                     margin: 0 0 0 5px;
                     i {
                         @include font-size(16);
                         margin: -1px 4px 0 0;
                     }
+                }
+                //체크박스일 때
+                div.checkBoxWrap {
+                    margin: 7px 0;
                 }
             }
         }
@@ -1922,11 +1929,12 @@ div.containerVer2 {
         padding: 80px 16px 20px 16px;
         text-align: center;
         @include breakpoint(tabletMini) {
-            padding: 100px 32px 20px 32px;
+            padding: 80px 32px 20px 32px;
         }
         &.bigImage { //컨텐츠의 이미지가 큰 경우
             background-size: 165px;
-            padding:130px 16px 24px 16px;
+            padding: 130px 16px 24px 16px;
+            margin: 96px 0 0 0;
             @include breakpoint(tabletMini) {
                 padding: 130px 32px 24px 32px;
             }

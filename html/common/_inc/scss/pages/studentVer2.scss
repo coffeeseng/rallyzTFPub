@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@import "../_helperVer2";
+
+
+div.containerVer2 {
+
+    article.student {
+        padding: 0 0 88px 0 !important; //버튼 88 fixed때문에 버튼 height만큼 패딩
+        div.tabWrap {
+            margin: 0 !important;
+        }
+    }
+
+
+
+
+    
+
+    ///////////////// 모달 /////////////////
+
+    div.modalWrap {
+        div.modal {
+
+            //모달 - 기존학생 불러오기
+            &.studentSelect {
+                div.contents {
+                    padding: 20px 16px 0 16px;
+                    text-align: left;
+                    div.sortBox {
+                        padding: 0;
+                        margin: 0 0 16px 0;
+                        div.selectWrap {
+                            margin: 0 0 8px 0;
+                        }
+                    }
+                }
+            }
+
+            //모달 - 새로운 수강료 입력
+            &.payAdd {
+                div.contents {
+                    padding: 16px 0 8px 0;
+                    text-align: left;
+
+                    //새로운 학원비 입력박스
+                    div.payAddBox {
+                        @include border-radius(8px);
+                        width: auto;
+                        padding: 16px;
+                        margin: 0 16px 16px 16px;
+                        background: #f9f9f9;
+                    }
+
+                    ul.classPayList {
+                        padding: 0 16px;
+                    }
+
+                    //총 학원비 금액
+                    div.totalPrice {
+                        width: 100%;
+                        padding: 17px 16px;
+                        margin: 16px 0 0 0;
+                        background: $Gray-01;
+                        text-align: right;
+                        span {
+                            @include font-size(16);
+                            font-weight: 700;
+                            &.item {
+                                margin: 0 8px 0 0;
+                                color: $Gray-06;
+                            }
+                            &.price {
+                                color: $Gray-05;
+                                em {
+                                    @include font-size(20);
+                                    margin: 0 3px 0 0;
+                                    color: $Primary;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+}
