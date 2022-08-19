@@ -402,6 +402,9 @@ div.containerVer2 {
                                 div.inputWrap {
                                     &.col2 {
                                         display: flex;
+                                        div.radioWrap {
+                                            margin: 0 10px 0 0;
+                                        }
                                     }
                                 }
                             }
