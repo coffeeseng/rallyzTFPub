@@ -1,0 +1,362 @@
+div.containerVer2 div.reserveHeaderWrap header.reserveHeader {
+  position: relative;
+  width: 100%;
+  height: 56px;
+  padding: 16px 0; }
+  div.containerVer2 div.reserveHeaderWrap header.reserveHeader h1.rallyz {
+    width: 72px;
+    height: 24px;
+    margin: 0 auto; }
+    div.containerVer2 div.reserveHeaderWrap header.reserveHeader h1.rallyz > img {
+      max-width: 100%; }
+  div.containerVer2 div.reserveHeaderWrap header.reserveHeader button.btnPoLeft {
+    position: absolute;
+    top: 16px;
+    left: 22px;
+    width: 24px;
+    height: 24px; }
+    div.containerVer2 div.reserveHeaderWrap header.reserveHeader button.btnPoLeft > i {
+      font-size: 13px;
+      display: inline-block;
+      margin: 1px 0 0 0; }
+
+div.containerVer2 div.reserveArticleWrap {
+  padding: 0; }
+  div.containerVer2 div.reserveArticleWrap article.reserveList div.imgBox {
+    width: 100%;
+    padding: 36px 0 0 0;
+    background: #e4ffdf; }
+    div.containerVer2 div.reserveArticleWrap article.reserveList div.imgBox > img {
+      display: block;
+      width: 260px;
+      max-width: 100%;
+      margin: 0 auto; }
+  div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap {
+    position: relative;
+    width: 100%;
+    padding: 84px 16px 0 16px;
+    background: #F7F9FA; }
+    div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap h3.title {
+      font-size: 20px;
+      line-height: 30px;
+      color: #383E44;
+      font-weight: 700; }
+    div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.appIcon {
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      width: 130px;
+      margin: 0 auto 0 -65px;
+      z-index: 90; }
+      div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.appIcon > img {
+        max-width: 100%; }
+    div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.sortBox {
+      width: 100%;
+      padding: 0;
+      margin: 16px 0 0 0;
+      font-size: 0; }
+      div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.sortBox button.btnLocation {
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        background-clip: padding-box;
+        /* stops bg color from leaking outside the border: */
+        font-size: 12px;
+        min-width: 77px;
+        height: 32px;
+        padding: 6px 16px;
+        margin: 0 8px 0 0;
+        border: 1px solid #E0E3E6;
+        background: #FFFFFF;
+        color: #575B65;
+        line-height: 18px; }
+        div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.sortBox button.btnLocation.on {
+          border: 1px solid #33CC33;
+          font-weight: 700;
+          background: #33CC33;
+          color: #FFFFFF; }
+    div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList {
+      margin: 16px 0 0 0; }
+      div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li {
+        width: 100%;
+        position: relative;
+        margin: 0 0 16px 0; }
+        div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li:last-child {
+          margin: 0; }
+        div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instCi {
+          -webkit-border-radius: 12px;
+          border-radius: 12px;
+          background-clip: padding-box;
+          /* stops bg color from leaking outside the border: */
+          position: absolute;
+          top: 111px;
+          right: 24px;
+          width: 96px;
+          height: 96px;
+          border: 1px solid #E0E3E6;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat; }
+        div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instImageBox {
+          width: 100%;
+          height: 160px;
+          border-top-left-radius: 16px;
+          border-top-right-radius: 16px;
+          background-size: cover;
+          background-position: top;
+          background-repeat: no-repeat; }
+        div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo {
+          width: 100%;
+          padding: 24px;
+          border-bottom-left-radius: 16px;
+          border-bottom-right-radius: 16px;
+          background: #FFFFFF; }
+          div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo div.iconBox {
+            width: 100%;
+            margin: 0 0 8px 0;
+            font-size: 0; }
+            div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo div.iconBox span {
+              -webkit-border-radius: 50px;
+              border-radius: 50px;
+              background-clip: padding-box;
+              /* stops bg color from leaking outside the border: */
+              font-size: 12px;
+              display: inline-block;
+              min-width: 43px;
+              height: 24px;
+              padding: 3px 10px;
+              margin: 0 8px 0 0;
+              line-height: 18px;
+              font-weight: 700; }
+              div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo div.iconBox span.icoDday {
+                background: #33CC33;
+                color: #FFFFFF; }
+              div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo div.iconBox span.icoOngoing {
+                background: #E9F8E9;
+                color: #33CC33; }
+              div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo div.iconBox span.icoScheduled {
+                background: #E2EAFF;
+                color: #2f76ff; }
+              div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo div.iconBox span.icoClose {
+                background: #F2F4F6;
+                color: #7E8086; }
+          div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo h4.ptName {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #383E44; }
+          div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo p {
+            color: #383E44; }
+            div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo p.instName {
+              font-size: 14px;
+              line-height: 21px; }
+            div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo p.instDesc {
+              font-size: 14px;
+              margin: 16px 0 0 0;
+              line-height: 21px;
+              font-weight: 300; }
+    div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.requestWrap {
+      width: 100%;
+      padding: 56px 0;
+      text-align: center; }
+      div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.requestWrap p {
+        font-size: 16px;
+        color: #575B65;
+        line-height: 24px;
+        font-weight: 500; }
+      div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.requestWrap button.btnRequest {
+        font-size: 14px;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+        background-clip: padding-box;
+        /* stops bg color from leaking outside the border: */
+        width: 180px;
+        height: 56px;
+        margin: 16px auto 0 auto;
+        font-weight: 700; }
+  div.containerVer2 div.reserveArticleWrap article.reserveDetail div.instImageBox {
+    width: 100%;
+    height: 211px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat; }
+  div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap {
+    width: 100%;
+    padding: 0 16px 16px 16px;
+    border-bottom: 12px solid #F2F4F6; }
+    div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox {
+      position: relative;
+      width: 100%;
+      padding: 24px 0 24px 60px;
+      background: url("../../images/reservation/rallyz_symbol.svg") no-repeat;
+      background-size: 48px;
+      background-position: left 24px;
+      border-bottom: 1px solid #F2F4F6; }
+      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox h3.ptName {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        color: #383E44; }
+      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox p {
+        color: #383E44; }
+        div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox p.instName {
+          font-size: 14px;
+          display: block;
+          line-height: 21px; }
+        div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox p.date {
+          font-size: 12px;
+          display: inline-block;
+          margin: 4px 0 0 0;
+          line-height: 18px;
+          font-weight: 300;
+          color: #575B65; }
+        div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox p.count {
+          font-size: 12px;
+          position: absolute;
+          bottom: 25px;
+          right: 0;
+          display: inline-block;
+          line-height: 18px;
+          color: #383E44;
+          text-align: right; }
+          div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox p.count > em {
+            display: inline-block;
+            margin: 0 2px 0 0;
+            color: #33CC33; }
+    div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap {
+      width: 100%;
+      padding: 32px 16px; }
+  div.containerVer2 div.reserveArticleWrap article.reserveDetail div.ffffffffffff {
+    padding: 32px 16px; }
+    div.containerVer2 div.reserveArticleWrap article.reserveDetail div.ffffffffffff div.imageBox {
+      -webkit-border-radius: 12px;
+      border-radius: 12px;
+      background-clip: padding-box;
+      /* stops bg color from leaking outside the border: */
+      width: 100%; }
+      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.ffffffffffff div.imageBox > img {
+        -webkit-border-radius: 12px;
+        border-radius: 12px;
+        background-clip: padding-box;
+        /* stops bg color from leaking outside the border: */
+        width: 100%;
+        max-width: 100%; }
+    div.containerVer2 div.reserveArticleWrap article.reserveDetail div.ffffffffffff div.videoBox {
+      -webkit-border-radius: 12px;
+      border-radius: 12px;
+      background-clip: padding-box;
+      /* stops bg color from leaking outside the border: */
+      width: 100%;
+      margin: 16px 0 0 0; }
+      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.ffffffffffff div.videoBox > iframe {
+        -webkit-border-radius: 12px;
+        border-radius: 12px;
+        background-clip: padding-box;
+        /* stops bg color from leaking outside the border: */ }
+    div.containerVer2 div.reserveArticleWrap article.reserveDetail div.ffffffffffff div.introBox {
+      -webkit-border-radius: 12px;
+      border-radius: 12px;
+      background-clip: padding-box;
+      /* stops bg color from leaking outside the border: */
+      width: 100%;
+      padding: 16px;
+      margin: 16px 0 0 0;
+      background: #F7F9FA; }
+      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.ffffffffffff div.introBox p {
+        font-size: 16px;
+        line-height: 24px;
+        color: #272A2F;
+        font-weight: 300; }
+        div.containerVer2 div.reserveArticleWrap article.reserveDetail div.ffffffffffff div.introBox p.title {
+          margin: 0 0 8px 0;
+          font-weight: 700; }
+    div.containerVer2 div.reserveArticleWrap article.reserveDetail div.ffffffffffff div.btnBox {
+      margin: 16px 0 0 0; }
+  div.containerVer2 div.reserveArticleWrap article.reserveRequest {
+    padding: 0 16px 88px 16px;
+    border-top: 1px solid #F2F4F6; }
+    div.containerVer2 div.reserveArticleWrap article.reserveRequest div.infoBox {
+      width: 100%;
+      padding: 32px 0 0 0; }
+      div.containerVer2 div.reserveArticleWrap article.reserveRequest div.infoBox span.smallDesc {
+        line-height: 21px; }
+      div.containerVer2 div.reserveArticleWrap article.reserveRequest div.infoBox h3.ptName {
+        font-size: 20px;
+        margin: 8px 0 16px 0;
+        font-weight: 700;
+        line-height: 30px;
+        color: #272A2F; }
+      div.containerVer2 div.reserveArticleWrap article.reserveRequest div.infoBox div.dateBox {
+        -webkit-border-radius: 12px;
+        border-radius: 12px;
+        background-clip: padding-box;
+        /* stops bg color from leaking outside the border: */
+        width: 100%;
+        padding: 16px;
+        background: #F7F9FA;
+        border: 1px solid #F2F4F6; }
+        div.containerVer2 div.reserveArticleWrap article.reserveRequest div.infoBox div.dateBox p.date {
+          line-height: 21px;
+          color: #575B65;
+          font-weight: 700; }
+          div.containerVer2 div.reserveArticleWrap article.reserveRequest div.infoBox div.dateBox p.date > span {
+            display: block;
+            margin: 8px 0 0 0;
+            line-height: 21px;
+            color: #272A2F;
+            font-weight: 400; }
+    div.containerVer2 div.reserveArticleWrap article.reserveRequest div.requestWrap {
+      margin: 30px 0 0 0; }
+      div.containerVer2 div.reserveArticleWrap article.reserveRequest div.requestWrap dl.inputListRow dd {
+        position: relative; }
+        div.containerVer2 div.reserveArticleWrap article.reserveRequest div.requestWrap dl.inputListRow dd div.studentName {
+          position: absolute;
+          top: -27px;
+          right: 0;
+          width: 94px; }
+    div.containerVer2 div.reserveArticleWrap article.reserveRequest ul.alignPrivacy {
+      width: 100%;
+      margin: 20px 0 0 0; }
+      div.containerVer2 div.reserveArticleWrap article.reserveRequest ul.alignPrivacy > li {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0 0 8px 0; }
+        div.containerVer2 div.reserveArticleWrap article.reserveRequest ul.alignPrivacy > li:last-child {
+          padding: 0; }
+        div.containerVer2 div.reserveArticleWrap article.reserveRequest ul.alignPrivacy > li div.leftCheck {
+          width: 70%; }
+        div.containerVer2 div.reserveArticleWrap article.reserveRequest ul.alignPrivacy > li div.rightBtn {
+          width: 30%;
+          text-align: right; }
+
+div.containerVer2 div.reserveFooterWrap {
+  width: 100%;
+  padding: 54px 0;
+  background: #F2F4F6; }
+  div.containerVer2 div.reserveFooterWrap footer.reserveFooter {
+    text-align: center; }
+    div.containerVer2 div.reserveFooterWrap footer.reserveFooter > img {
+      display: block;
+      width: 96px;
+      height: 32px;
+      margin: 0 auto 16px auto; }
+    div.containerVer2 div.reserveFooterWrap footer.reserveFooter span {
+      font-size: 10px;
+      display: block;
+      color: #383E44;
+      line-height: 15px; }
+    div.containerVer2 div.reserveFooterWrap footer.reserveFooter address {
+      font-size: 10px;
+      display: block;
+      color: #383E44;
+      line-height: 15px; }

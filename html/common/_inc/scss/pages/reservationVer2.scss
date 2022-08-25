@@ -1,0 +1,485 @@
+@charset "UTF-8";
+@import "../_helperVer2";
+
+
+div.containerVer2 {
+
+    div.reserveHeaderWrap {
+        header.reserveHeader {
+            position: relative;
+            width: 100%;
+            height: 56px;
+            padding: 16px 0;
+            h1.rallyz {
+                width: 72px;
+                height: 24px;
+                margin: 0 auto;
+                > img {
+                    max-width: 100%;
+                }
+            }
+            //뒤로가기,닫기 버튼 - 왼쪽 고정
+            button.btnPoLeft {
+                position: absolute;
+                top: 16px;
+                left: 22px;
+                width: 24px;
+                height: 24px;
+                > i {
+                    @include font-size(13);
+                    display: inline-block;
+                    margin: 1px 0 0 0;
+                }
+            }
+        }
+    }
+
+
+    div.reserveArticleWrap {
+        padding: 0;
+
+        //설명회 리스트
+        article.reserveList {
+            div.imgBox {
+                width: 100%;
+                padding: 36px 0 0 0;
+                background: #e4ffdf;
+                > img {
+                    display: block;
+                    width: 260px;
+                    max-width: 100%;
+                    margin: 0 auto;
+                }
+            }
+            div.listWrap {
+                position: relative;
+                width: 100%;
+                padding: 84px 16px 0 16px;
+                background: $Gray-01;
+                h3.title {
+                    @include font-size(20);
+                    line-height: 30px;
+                    color: $Gray-07;
+                    font-weight: 700;
+                }
+                div.appIcon {
+                    position: absolute;
+                    top: -50px;
+                    left: 50%;
+                    width: 130px;
+                    margin: 0 auto 0 -65px;
+                    z-index: 90;
+                    > img {
+                        max-width: 100%;
+                    }
+                }
+                //지역 선택
+                div.sortBox {
+                    width: 100%;
+                    padding: 0;
+                    margin: 16px 0 0 0;
+                    font-size: 0;
+                    button.btnLocation {
+                        @include border-radius(50px);
+                        @include font-size(12);
+                        min-width: 77px;
+                        height: 32px;
+                        padding: 6px 16px;
+                        margin: 0 8px 0 0;
+                        border: 1px solid $Gray-03;
+                        background: $White;
+                        color: $Gray-06;
+                        line-height: 18px;
+                        &.on {
+                            border: 1px solid $Primary;
+                            font-weight: 700;
+                            background: $Primary;
+                            color: $White;
+                        }
+                    }
+                }
+                //진행중인 학원 리스트
+                ul.instList {
+                    margin: 16px 0 0 0;
+                    > li {
+                        width: 100%;
+                        position: relative;
+                        margin: 0 0 16px 0;
+                        &:last-child {
+                            margin: 0;
+                        }
+
+                        //학원 CI
+                        div.instCi {
+                            @include border-radius(12px);
+                            position: absolute;
+                            top: 111px;
+                            right: 24px;
+                            width: 96px;
+                            height: 96px;
+                            border: 1px solid $Gray-03;
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                        }
+
+                        //학원 이미지
+                        div.instImageBox {
+                            width: 100%;
+                            height: 160px;
+                            border-top-left-radius: 16px;
+                            border-top-right-radius: 16px;
+                            background-size: cover;
+                            background-position: top;
+                            background-repeat: no-repeat;
+                        }
+
+                        //학원 정보
+                        div.instInfo {
+                            width: 100%;
+                            padding: 24px;
+                            border-bottom-left-radius: 16px;
+                            border-bottom-right-radius: 16px;
+                            background: $White;
+                            //디데이,상태 아이콘
+                            div.iconBox {
+                                width: 100%;
+                                margin: 0 0 8px 0;
+                                font-size: 0;
+                                span {
+                                    @include border-radius(50px);
+                                    @include font-size(12);
+                                    display: inline-block;
+                                    min-width: 43px;
+                                    height: 24px;
+                                    padding: 3px 10px;
+                                    margin: 0 8px 0 0;
+                                    line-height: 18px;
+                                    font-weight: 700;
+                                    //디데이
+                                    &.icoDday {
+                                        background: $Primary;
+                                        color: $White;
+                                    }
+                                    //진행 중
+                                    &.icoOngoing {
+                                        background: $GGreen;
+                                        color: $Primary;
+                                    }
+                                    //예정
+                                    &.icoScheduled {
+                                        background: $GBlue;
+                                        color: #2f76ff;
+                                    }
+                                    //마감
+                                    &.icoClose {
+                                        background: $Gray-02;
+                                        color: $Gray-05;
+                                    }
+                                }
+                            }
+                            //설명회 명
+                            h4.ptName {
+                                @include font-size(16);
+                                    font-weight: 700;
+                                    line-height: 24px;
+                                    color: $Gray-07;
+                            }
+                            p {
+                                color: $Gray-07;
+                                //학원명
+                                &.instName {
+                                    @include font-size(14);
+                                    line-height: 21px;
+                                }
+                                //학원 설명
+                                &.instDesc {
+                                    @include font-size(14);
+                                    margin: 16px 0 0 0;
+                                    line-height: 21px;
+                                    font-weight: 300;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                //신청 버튼
+                div.requestWrap {
+                    width: 100%;
+                    padding: 56px 0;
+                    text-align: center;
+                    p {
+                        @include font-size(16);
+                        color: $Gray-06;
+                        line-height: 24px;
+                        font-weight: 500;
+                    }
+                    button.btnRequest {
+                        @include font-size(14);
+                        @include border-radius(8px);
+                        width: 180px;
+                        height: 56px;
+                        margin: 16px auto 0 auto;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        //설명회 상세
+        article.reserveDetail {
+
+            //학원 이미지
+            div.instImageBox {
+                width: 100%;
+                height: 211px;
+                background-size: cover;
+                background-position: top;
+                background-repeat: no-repeat;
+            }
+            
+            //설명회 정보
+            div.infoWrap {
+                width: 100%;
+                padding: 0 16px 16px 16px;
+                border-bottom: 12px solid $Gray-02;
+
+                //설명회 정보
+                div.infoBox {
+                    position: relative;
+                    width: 100%;
+                    padding: 24px 0 24px 60px;
+                    background: url("../../images/reservation/rallyz_symbol.svg") no-repeat;
+                    background-size: 48px;
+                    background-position: left 24px;
+                    border-bottom: 1px solid $Gray-02;
+
+                    //설명회 명
+                    h3.ptName {
+                        @include font-size(16);
+                        font-weight: 700;
+                        line-height: 24px;
+                        color: $Gray-07;
+                    }
+
+                    p {
+                        color: $Gray-07;
+                        //학원명
+                        &.instName {
+                            @include font-size(14);
+                            display: block;
+                            line-height: 21px;
+                        }
+                        //등록일
+                        &.date {
+                            @include font-size(12);
+                            display: inline-block;
+                            margin: 4px 0 0 0;
+                            line-height: 18px;
+                            font-weight: 300;
+                            color: $Gray-06;
+                        }
+                        //조회수
+                        &.count {
+                            @include font-size(12);
+                            position: absolute;
+                            bottom: 25px;
+                            right: 0;
+                            display: inline-block;
+                            line-height: 18px;
+                            color: $Gray-07;
+                            text-align: right;
+                            > em {
+                                display: inline-block;
+                                margin: 0 2px 0 0;
+                                color: $Primary;
+                            }
+                        }
+                    }
+                }
+
+                //설명회 요약
+                div.summaryWrap {
+                    width: 100%;
+                    padding: 32px 16px;
+
+                    div.summaryBox {
+                        dl.summaryList {
+                            dt {
+
+                            }
+                            dd {
+
+                            }
+                        }
+                    }
+                    
+                    
+
+                }
+            }
+
+            //영상???
+            div.ffffffffffff {
+                padding: 32px 16px;
+
+                //설명회 안내 이미지
+                div.imageBox {
+                    @include border-radius(12px);
+                    width: 100%;
+                    > img {
+                        @include border-radius(12px);
+                        width: 100%;
+                        max-width: 100%;
+                    }
+                }
+
+                //설명회 안내 영상
+                div.videoBox {
+                    @include border-radius(12px);
+                    width: 100%;
+                    margin: 16px 0 0 0;
+                    > iframe {
+                        @include border-radius(12px);
+                    }
+                }
+
+                //소개
+                div.introBox {
+                    @include border-radius(12px);
+                    width: 100%;
+                    padding: 16px;
+                    margin: 16px 0 0 0;
+                    background: $Gray-01;
+                    p {
+                        @include font-size(16);
+                        line-height: 24px;
+                        color: $Black;
+                        font-weight: 300;
+                        &.title {
+                            margin: 0 0 8px 0;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                div.btnBox {
+                    margin: 16px 0 0 0;
+                }
+            }
+        }
+
+        //설명회 신청
+        article.reserveRequest {
+            padding: 0 16px 88px 16px; //버튼 88 fixed때문에 버튼 height만큼 패딩
+            border-top: 1px solid $Gray-02;
+
+            //정보
+            div.infoBox {
+                width: 100%;
+                padding: 32px 0 0 0;
+                span.smallDesc {
+                    line-height: 21px;
+                }
+                //설명회 명
+                h3.ptName {
+                    @include font-size(20);
+                    margin: 8px 0 16px 0;
+                    font-weight: 700;
+                    line-height: 30px;
+                    color: $Black;
+                }
+                div.dateBox {
+                    @include border-radius(12px);
+                    width: 100%;
+                    padding: 16px;
+                    background: $Gray-01;
+                    border: 1px solid $Gray-02;
+                    p.date {
+                        line-height: 21px;
+                        color: $Gray-06;
+                        font-weight: 700;
+                        > span {
+                            display: block;
+                            margin: 8px 0 0 0;
+                            line-height: 21px;
+                            color: $Black;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+
+            //신청하기
+            div.requestWrap {
+                margin: 30px 0 0 0;
+                dl.inputListRow {
+                    dd {
+                        position: relative;
+                        div.studentName {
+                            position: absolute;
+                            top: -27px;
+                            right: 0;
+                            width: 94px;
+                        }
+                    }
+                }
+            }
+
+            //약관 동의
+            ul.alignPrivacy {
+                width: 100%;
+                margin: 20px 0 0 0;
+                > li {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    padding: 0 0 8px 0;
+                    &:last-child {
+                        padding: 0;
+                    }
+                    div.leftCheck {
+                        width: 70%;
+                    }
+                    div.rightBtn {
+                        width: 30%;
+                        text-align: right;
+                    }                    
+                }
+            }
+        }
+    }
+
+    
+    div.reserveFooterWrap {
+        width: 100%;
+        padding: 54px 0;
+        background: $Gray-02;
+        footer.reserveFooter {
+            text-align: center;
+            > img {
+                display: block;
+                width: 96px;
+                height: 32px;
+                margin: 0 auto 16px auto;
+            }
+            span {
+                @include font-size(10);
+                display: block;
+                color: $Gray-07;
+                line-height: 15px;
+
+            }
+            address {
+                @include font-size(10);
+                display: block;
+                color: $Gray-07;
+                line-height: 15px;
+            }
+        }
+    }
+
+
+}

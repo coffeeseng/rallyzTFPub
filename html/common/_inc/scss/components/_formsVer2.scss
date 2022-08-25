@@ -271,6 +271,7 @@ div.containerVer2 {
             //체크16 폰트 12 Light
             &.f12L {
                 @include font-size(12);
+                top: -1px;
                 font-weight: 300;
             }
 
