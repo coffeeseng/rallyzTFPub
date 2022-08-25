@@ -22,6 +22,10 @@ div.containerVer2 div.reserveHeaderWrap header.reserveHeader {
 
 div.containerVer2 div.reserveArticleWrap {
   padding: 0; }
+  @media all and (min-width: 1000px) {
+    div.containerVer2 div.reserveArticleWrap {
+      height: auto;
+      min-height: 100vh; } }
   div.containerVer2 div.reserveArticleWrap article.reserveList div.imgBox {
     width: 100%;
     padding: 36px 0 0 0;

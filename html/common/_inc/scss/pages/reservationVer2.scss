@@ -37,6 +37,10 @@ div.containerVer2 {
 
     div.reserveArticleWrap {
         padding: 0;
+        @include breakpoint(tablet) {
+            height: auto;
+            min-height: 100vh;
+        }
 
         //설명회 리스트
         article.reserveList {
