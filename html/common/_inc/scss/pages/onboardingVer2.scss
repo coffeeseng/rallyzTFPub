@@ -1600,6 +1600,12 @@ div.containerVer2 {
                         }
                     }
                 }
+                ul.userDefaultList {
+                    width:100%;
+                    height:192px;
+                    overflow-y: auto;
+                    overflow-x: hidden;
+                }
             }
 
             //모달 - 학생 등록 완료

@@ -53,6 +53,10 @@ div.containerVer2 {
 
                     ul.classPayList {
                         padding: 0 16px;
+                        width:100%;
+                        height:100px;
+                        overflow-y: auto;
+                        overflow-x: hidden;
                     }
 
                     //총 학원비 금액
