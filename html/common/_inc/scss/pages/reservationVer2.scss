@@ -44,6 +44,7 @@ div.containerVer2 {
 
         //설명회 리스트
         article.reserveList {
+
             div.imgBox {
                 width: 100%;
                 padding: 36px 0 0 0;
@@ -306,26 +307,66 @@ div.containerVer2 {
                 //설명회 요약
                 div.summaryWrap {
                     width: 100%;
-                    padding: 32px 16px;
-
+                    padding: 32px 0 0 0;
+                    h4 {
+                        line-height: 21px;
+                        font-weight: 700;
+                    }
                     div.summaryBox {
+                        @include border-radius(12px);
+                        width: 100%;
+                        padding: 24px 24px 12px 24px;
+                        margin: 16px 0;
+                        background: $Gray-01;
                         dl.summaryList {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
                             dt {
-
+                                width: 25%;
+                                margin: 0 0 8px 0;
+                                color: $Gray-04;
+                                line-height: 21px;
                             }
                             dd {
-
+                                width: 75%;
+                                margin: 0 0 8px 0;
+                                line-height: 21px;
+                                p {
+                                    padding: 0 0 4px 0;
+                                    //온,오프라인
+                                    span.item {
+                                        display: inline-block;
+                                        width: 55px;
+                                    }
+                                    //정원
+                                    span.capacity {
+                                        display: inline-block;
+                                        margin: 0 8px 0 4px;
+                                        color: $Gray-07;
+                                        font-weight: 700;
+                                    }
+                                    //잔여석
+                                    span.remainTxt {
+                                        color: $Primary;
+                                        font-weight: 700;
+                                    }
+                                    //잔여석 숫자
+                                    em.remainNum {
+                                        display: inline-block;
+                                        margin: 0 2px;
+                                        color: $Primary;
+                                        font-weight: 700;
+                                    }
+                                }
                             }
                         }
                     }
-                    
-                    
-
                 }
             }
 
-            //영상???
-            div.ffffffffffff {
+            //설명회 안내
+            div.explainWrap {
                 padding: 32px 16px;
 
                 //설명회 안내 이미지
@@ -339,7 +380,7 @@ div.containerVer2 {
                     }
                 }
 
-                //설명회 안내 영상
+                //안내 영상
                 div.videoBox {
                     @include border-radius(12px);
                     width: 100%;
@@ -451,6 +492,117 @@ div.containerVer2 {
                         width: 30%;
                         text-align: right;
                     }                    
+                }
+            }
+        }
+
+        //설명회 예약 완료
+        article.reserveDone {
+            height: 100%;
+            padding: 32px 16px 16px 16px;
+            background: $Gray-01;
+            @include breakpoint(tablet) {
+                min-height: 100vh;
+            }
+            
+            //예약 결과
+            div.reserveResult {
+                @include border-radius(12px);
+                width: 100%;
+                padding: 24px 16px;
+                background: $White;
+                div.doneImg {
+                    width: 100%;
+                    background: url('../../images/ico/completion.svg') top center no-repeat;
+                    background-size: 120px;
+                    p {
+                        @include font-size(20);
+                        padding: 144px 0 0 0;
+                        color: $Black;
+                        line-height: 30px;
+                        text-align: center;
+                        span {
+                            font-weight: 700;
+                        }
+                    }
+                }
+
+                //설명회 요약
+                div.summaryWrap {
+                    width: 100%;
+                    margin: 24px 0 0 0;
+                    div.summaryBox {
+                        @include border-radius(12px);
+                        width: 100%;
+                        padding: 24px 24px 12px 24px;
+                        background: $Gray-01;
+                        h4 {
+                            @include font-size(16);
+                            margin: 0 0 16px 0;
+                            line-height: 24px;
+                            font-weight: 700;
+                            color: $Black
+                        }
+                        dl.summaryList {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            dt {
+                                width: 25%;
+                                margin: 0 0 8px 0;
+                                color: $Gray-04;
+                                line-height: 21px;
+                            }
+                            dd {
+                                width: 75%;
+                                margin: 0 0 8px 0;
+                                color: $Black;
+                                line-height: 21px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            //앱 다운로드
+            div.appDownload {
+                @include border-radius(12px);
+                width: 100%;
+                min-height: 174px;
+                padding: 24px;
+                margin: 16px 0 0 0;
+                background: url("../../images/reservation/download_hand.svg") no-repeat bottom right $White;
+                background-size: 96px;
+                font-size: 0;
+                a.btnAppstore {
+                    display: inline-block;
+                    width: 104px;
+                    height: 32px;
+                    margin: 0 4px 0 0;
+                    background: url("../../images/reservation/download_appstore.svg") no-repeat;
+                    background-size: 100%;
+                }
+                a.btnPlaystore {
+                    display: inline-block;
+                    width: 104px;
+                    height: 32px;
+                    background: url("../../images/reservation/download_google.svg") no-repeat;
+                    background-size: 100%;
+                }
+                p {
+                    &.mainTxt {
+                        @include font-size(16);
+                        margin: 0 0 8px 0;
+                        line-height: 24px;
+                        font-weight: 700;
+                        color: $Black;
+                    }
+                    &.subTxt {
+                        @include font-size(12);
+                        margin: 0 0 18px 0;
+                        line-height: 18px;
+                        color: $Gray-05;
+                    }
                 }
             }
         }

@@ -228,35 +228,84 @@ div.containerVer2 div.reserveArticleWrap {
             color: #33CC33; }
     div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap {
       width: 100%;
-      padding: 32px 16px; }
-  div.containerVer2 div.reserveArticleWrap article.reserveDetail div.ffffffffffff {
+      padding: 32px 0 0 0; }
+      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap h4 {
+        line-height: 21px;
+        font-weight: 700; }
+      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox {
+        -webkit-border-radius: 12px;
+        border-radius: 12px;
+        background-clip: padding-box;
+        /* stops bg color from leaking outside the border: */
+        width: 100%;
+        padding: 24px 24px 12px 24px;
+        margin: 16px 0;
+        background: #F7F9FA; }
+        div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+          div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList dt {
+            width: 25%;
+            margin: 0 0 8px 0;
+            color: #B6BCBF;
+            line-height: 21px; }
+          div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList dd {
+            width: 75%;
+            margin: 0 0 8px 0;
+            line-height: 21px; }
+            div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList dd p {
+              padding: 0 0 4px 0; }
+              div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList dd p span.item {
+                display: inline-block;
+                width: 55px; }
+              div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList dd p span.capacity {
+                display: inline-block;
+                margin: 0 8px 0 4px;
+                color: #383E44;
+                font-weight: 700; }
+              div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList dd p span.remainTxt {
+                color: #33CC33;
+                font-weight: 700; }
+              div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList dd p em.remainNum {
+                display: inline-block;
+                margin: 0 2px;
+                color: #33CC33;
+                font-weight: 700; }
+  div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap {
     padding: 32px 16px; }
-    div.containerVer2 div.reserveArticleWrap article.reserveDetail div.ffffffffffff div.imageBox {
+    div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.imageBox {
       -webkit-border-radius: 12px;
       border-radius: 12px;
       background-clip: padding-box;
       /* stops bg color from leaking outside the border: */
       width: 100%; }
-      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.ffffffffffff div.imageBox > img {
+      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.imageBox > img {
         -webkit-border-radius: 12px;
         border-radius: 12px;
         background-clip: padding-box;
         /* stops bg color from leaking outside the border: */
         width: 100%;
         max-width: 100%; }
-    div.containerVer2 div.reserveArticleWrap article.reserveDetail div.ffffffffffff div.videoBox {
+    div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.videoBox {
       -webkit-border-radius: 12px;
       border-radius: 12px;
       background-clip: padding-box;
       /* stops bg color from leaking outside the border: */
       width: 100%;
       margin: 16px 0 0 0; }
-      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.ffffffffffff div.videoBox > iframe {
+      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.videoBox > iframe {
         -webkit-border-radius: 12px;
         border-radius: 12px;
         background-clip: padding-box;
         /* stops bg color from leaking outside the border: */ }
-    div.containerVer2 div.reserveArticleWrap article.reserveDetail div.ffffffffffff div.introBox {
+    div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.introBox {
       -webkit-border-radius: 12px;
       border-radius: 12px;
       background-clip: padding-box;
@@ -265,15 +314,15 @@ div.containerVer2 div.reserveArticleWrap {
       padding: 16px;
       margin: 16px 0 0 0;
       background: #F7F9FA; }
-      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.ffffffffffff div.introBox p {
+      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.introBox p {
         font-size: 16px;
         line-height: 24px;
         color: #272A2F;
         font-weight: 300; }
-        div.containerVer2 div.reserveArticleWrap article.reserveDetail div.ffffffffffff div.introBox p.title {
+        div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.introBox p.title {
           margin: 0 0 8px 0;
           font-weight: 700; }
-    div.containerVer2 div.reserveArticleWrap article.reserveDetail div.ffffffffffff div.btnBox {
+    div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.btnBox {
       margin: 16px 0 0 0; }
   div.containerVer2 div.reserveArticleWrap article.reserveRequest {
     padding: 0 16px 88px 16px;
@@ -342,6 +391,106 @@ div.containerVer2 div.reserveArticleWrap {
         div.containerVer2 div.reserveArticleWrap article.reserveRequest ul.alignPrivacy > li div.rightBtn {
           width: 30%;
           text-align: right; }
+  div.containerVer2 div.reserveArticleWrap article.reserveDone {
+    height: 100%;
+    padding: 32px 16px 16px 16px;
+    background: #F7F9FA; }
+    @media all and (min-width: 1000px) {
+      div.containerVer2 div.reserveArticleWrap article.reserveDone {
+        min-height: 100vh; } }
+    div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult {
+      -webkit-border-radius: 12px;
+      border-radius: 12px;
+      background-clip: padding-box;
+      /* stops bg color from leaking outside the border: */
+      width: 100%;
+      padding: 24px 16px;
+      background: #FFFFFF; }
+      div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.doneImg {
+        width: 100%;
+        background: url("../../images/ico/completion.svg") top center no-repeat;
+        background-size: 120px; }
+        div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.doneImg p {
+          font-size: 20px;
+          padding: 144px 0 0 0;
+          color: #272A2F;
+          line-height: 30px;
+          text-align: center; }
+          div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.doneImg p span {
+            font-weight: 700; }
+      div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.summaryWrap {
+        width: 100%;
+        margin: 24px 0 0 0; }
+        div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.summaryWrap div.summaryBox {
+          -webkit-border-radius: 12px;
+          border-radius: 12px;
+          background-clip: padding-box;
+          /* stops bg color from leaking outside the border: */
+          width: 100%;
+          padding: 24px 24px 12px 24px;
+          background: #F7F9FA; }
+          div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.summaryWrap div.summaryBox h4 {
+            font-size: 16px;
+            margin: 0 0 16px 0;
+            line-height: 24px;
+            font-weight: 700;
+            color: #272A2F; }
+          div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.summaryWrap div.summaryBox dl.summaryList {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+            div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.summaryWrap div.summaryBox dl.summaryList dt {
+              width: 25%;
+              margin: 0 0 8px 0;
+              color: #B6BCBF;
+              line-height: 21px; }
+            div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.summaryWrap div.summaryBox dl.summaryList dd {
+              width: 75%;
+              margin: 0 0 8px 0;
+              color: #272A2F;
+              line-height: 21px; }
+    div.containerVer2 div.reserveArticleWrap article.reserveDone div.appDownload {
+      -webkit-border-radius: 12px;
+      border-radius: 12px;
+      background-clip: padding-box;
+      /* stops bg color from leaking outside the border: */
+      width: 100%;
+      min-height: 174px;
+      padding: 24px;
+      margin: 16px 0 0 0;
+      background: url("../../images/reservation/download_hand.svg") no-repeat bottom right #FFFFFF;
+      background-size: 96px;
+      font-size: 0; }
+      div.containerVer2 div.reserveArticleWrap article.reserveDone div.appDownload a.btnAppstore {
+        display: inline-block;
+        width: 104px;
+        height: 32px;
+        margin: 0 4px 0 0;
+        background: url("../../images/reservation/download_appstore.svg") no-repeat;
+        background-size: 100%; }
+      div.containerVer2 div.reserveArticleWrap article.reserveDone div.appDownload a.btnPlaystore {
+        display: inline-block;
+        width: 104px;
+        height: 32px;
+        background: url("../../images/reservation/download_google.svg") no-repeat;
+        background-size: 100%; }
+      div.containerVer2 div.reserveArticleWrap article.reserveDone div.appDownload p.mainTxt {
+        font-size: 16px;
+        margin: 0 0 8px 0;
+        line-height: 24px;
+        font-weight: 700;
+        color: #272A2F; }
+      div.containerVer2 div.reserveArticleWrap article.reserveDone div.appDownload p.subTxt {
+        font-size: 12px;
+        margin: 0 0 18px 0;
+        line-height: 18px;
+        color: #7E8086; }
 
 div.containerVer2 div.reserveFooterWrap {
   width: 100%;
