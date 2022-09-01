@@ -4,6 +4,12 @@
 
 div.containerVer2 {
 
+    div.contWrap {
+        @include breakpoint(tablet) {
+            width: 100%;
+        }
+    }
+
     div.reserveHeaderWrap {
         header.reserveHeader {
             position: relative;
@@ -44,23 +50,35 @@ div.containerVer2 {
 
         //설명회 리스트
         article.reserveList {
+            width: 100%;
+            background: $Gray-01;
 
             div.imgBox {
                 width: 100%;
                 padding: 36px 0 0 0;
                 background: #e4ffdf;
+                @include breakpoint(tablet) {
+                    padding: 70px 0 0 0;
+                }
                 > img {
                     display: block;
                     width: 260px;
                     max-width: 100%;
                     margin: 0 auto;
+                    @include breakpoint(tablet) {
+                        width: 400px;
+                    }
                 }
             }
             div.listWrap {
                 position: relative;
                 width: 100%;
                 padding: 84px 16px 0 16px;
-                background: $Gray-01;
+                @include breakpoint(tablet) {
+                    width: 1320px;
+                    padding: 84px 0 0 0;
+                    margin: 0 auto;
+                }
                 h3.title {
                     @include font-size(20);
                     line-height: 30px;
@@ -74,6 +92,11 @@ div.containerVer2 {
                     width: 130px;
                     margin: 0 auto 0 -65px;
                     z-index: 90;
+                    @include breakpoint(tablet) {
+                        top: -110px;
+                        width: 208px;
+                        margin: 0 auto 0 -104px;
+                    }
                     > img {
                         max-width: 100%;
                     }
@@ -105,13 +128,21 @@ div.containerVer2 {
                 }
                 //진행중인 학원 리스트
                 ul.instList {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
                     margin: 16px 0 0 0;
+                    @include breakpoint(tablet) {
+                        margin: 16px -6px 0 -6px;
+                    }
                     > li {
                         width: 100%;
                         position: relative;
                         margin: 0 0 16px 0;
-                        &:last-child {
-                            margin: 0;
+                        cursor: pointer;
+                        @include breakpoint(tablet) {
+                            width: calc(calc(100% / 3) - 12px);
+                            margin: 0 6px 16px 6px;
                         }
 
                         //학원 CI
@@ -243,62 +274,75 @@ div.containerVer2 {
                 background-position: top;
                 background-repeat: no-repeat;
             }
-            
+
             //설명회 정보
             div.infoWrap {
                 width: 100%;
-                padding: 0 16px 16px 16px;
-                border-bottom: 12px solid $Gray-02;
-
-                //설명회 정보
+                padding: 24px 16px 16px 16px;
                 div.infoBox {
-                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
                     width: 100%;
-                    padding: 24px 0 24px 60px;
-                    background: url("../../images/reservation/rallyz_symbol.svg") no-repeat;
-                    background-size: 48px;
-                    background-position: left 24px;
+                    padding: 0 0 24px 0;
                     border-bottom: 1px solid $Gray-02;
-
-                    //설명회 명
-                    h3.ptName {
-                        @include font-size(16);
-                        font-weight: 700;
-                        line-height: 24px;
-                        color: $Gray-07;
+                    //학원 CI
+                    div.instCi {
+                        @include border-radius(12px);
+                        width: 48px;
+                        height: 48px;
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
                     }
 
-                    p {
-                        color: $Gray-07;
-                        //학원명
-                        &.instName {
-                            @include font-size(14);
-                            display: block;
-                            line-height: 21px;
-                        }
-                        //등록일
-                        &.date {
-                            @include font-size(12);
-                            display: inline-block;
-                            margin: 4px 0 0 0;
-                            line-height: 18px;
-                            font-weight: 300;
-                            color: $Gray-06;
-                        }
-                        //조회수
-                        &.count {
-                            @include font-size(12);
-                            position: absolute;
-                            bottom: 25px;
-                            right: 0;
-                            display: inline-block;
-                            line-height: 18px;
+                    //기본 정보
+                    div.instInfo {
+                        position: relative;
+                        width: calc(100% - 48px);
+                        padding: 0 0 0 12px;
+
+                        //설명회 명
+                        h3.ptName {
+                            @include font-size(16);
+                            margin: -3px 0 0 0;
+                            font-weight: 700;
+                            line-height: 24px;
                             color: $Gray-07;
-                            text-align: right;
-                            > em {
+                        }
+
+                        p {
+                            color: $Gray-07;
+                            //학원명
+                            &.instName {
+                                @include font-size(14);
+                                display: block;
+                                line-height: 21px;
+                            }
+                            //등록일
+                            &.date {
+                                @include font-size(12);
                                 display: inline-block;
-                                margin: 0 2px 0 0;
-                                color: $Primary;
+                                margin: 4px 0 0 0;
+                                line-height: 18px;
+                                font-weight: 300;
+                                color: $Gray-06;
+                            }
+                            //조회수
+                            &.count {
+                                @include font-size(12);
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+                                display: inline-block;
+                                line-height: 18px;
+                                color: $Gray-07;
+                                text-align: right;
+                                > em {
+                                    display: inline-block;
+                                    margin: 0 2px 0 0;
+                                    color: $Primary;
+                                }
                             }
                         }
                     }
@@ -307,7 +351,7 @@ div.containerVer2 {
                 //설명회 요약
                 div.summaryWrap {
                     width: 100%;
-                    padding: 32px 0 0 0;
+                    padding: 24px 0 16px 0;
                     h4 {
                         line-height: 21px;
                         font-weight: 700;
@@ -316,7 +360,7 @@ div.containerVer2 {
                         @include border-radius(12px);
                         width: 100%;
                         padding: 24px 24px 12px 24px;
-                        margin: 16px 0;
+                        margin: 16px 0 0 0;
                         background: $Gray-01;
                         dl.summaryList {
                             display: flex;
@@ -368,6 +412,7 @@ div.containerVer2 {
             //설명회 안내
             div.explainWrap {
                 padding: 32px 16px;
+                border-top: 12px solid $Gray-02;
 
                 //설명회 안내 이미지
                 div.imageBox {
@@ -579,15 +624,17 @@ div.containerVer2 {
                     width: 104px;
                     height: 32px;
                     margin: 0 4px 0 0;
-                    background: url("../../images/reservation/download_appstore.svg") no-repeat;
-                    background-size: 100%;
+                    > img {
+                        max-width: 100%;
+                    }
                 }
                 a.btnPlaystore {
                     display: inline-block;
                     width: 104px;
                     height: 32px;
-                    background: url("../../images/reservation/download_google.svg") no-repeat;
-                    background-size: 100%;
+                    > img {
+                        max-width: 100%;
+                    }
                 }
                 p {
                     &.mainTxt {

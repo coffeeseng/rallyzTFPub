@@ -5,7 +5,8 @@
 body, html {
     background: $White;
     @include breakpoint(tablet) {
-        background: lighten($Gray-03, 2%);
+        //background: lighten($Gray-03, 2%);
+        background: $Gray-01;
     }
 }
 
