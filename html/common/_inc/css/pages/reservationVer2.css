@@ -1,5 +1,5 @@
 @media all and (min-width: 1000px) {
-  div.containerVer2 div.contWrap {
+  div.containerVer2 div.contWrap.w100 {
     width: 100%; } }
 
 div.containerVer2 div.reserveHeaderWrap header.reserveHeader {
@@ -36,9 +36,11 @@ div.containerVer2 div.reserveArticleWrap {
     div.containerVer2 div.reserveArticleWrap article.reserveList div.imgBox {
       width: 100%;
       padding: 36px 0 0 0;
-      background: #e4ffdf; }
+      background: #e4ffdf;
+      overflow: hidden; }
       @media all and (min-width: 1000px) {
         div.containerVer2 div.reserveArticleWrap article.reserveList div.imgBox {
+          height: 553px;
           padding: 70px 0 0 0; } }
       div.containerVer2 div.reserveArticleWrap article.reserveList div.imgBox > img {
         display: block;
@@ -47,7 +49,7 @@ div.containerVer2 div.reserveArticleWrap {
         margin: 0 auto; }
         @media all and (min-width: 1000px) {
           div.containerVer2 div.reserveArticleWrap article.reserveList div.imgBox > img {
-            width: 400px; } }
+            width: 390px; } }
     div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap {
       position: relative;
       width: 100%;
@@ -71,7 +73,7 @@ div.containerVer2 div.reserveArticleWrap {
         z-index: 90; }
         @media all and (min-width: 1000px) {
           div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.appIcon {
-            top: -110px;
+            top: -116px;
             width: 208px;
             margin: 0 auto 0 -104px; } }
         div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.appIcon > img {
@@ -137,6 +139,9 @@ div.containerVer2 div.reserveArticleWrap {
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat; }
+            @media all and (min-width: 1000px) {
+              div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instCi {
+                top: 195px; } }
           div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instImageBox {
             width: 100%;
             height: 160px;
@@ -145,6 +150,9 @@ div.containerVer2 div.reserveArticleWrap {
             background-size: cover;
             background-position: top;
             background-repeat: no-repeat; }
+            @media all and (min-width: 1000px) {
+              div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instImageBox {
+                height: 243px; } }
           div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo {
             width: 100%;
             padding: 24px;
@@ -362,6 +370,15 @@ div.containerVer2 div.reserveArticleWrap {
         border-radius: 12px;
         background-clip: padding-box;
         /* stops bg color from leaking outside the border: */ }
+        @media (max-width: 575px) {
+          div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.videoBox > iframe {
+            height: 193px; } }
+        @media all and (min-width: 768px) {
+          div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.videoBox > iframe {
+            height: 413px; } }
+        @media all and (min-width: 1000px) {
+          div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.videoBox > iframe {
+            height: 431px; } }
     div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.introBox {
       -webkit-border-radius: 12px;
       border-radius: 12px;

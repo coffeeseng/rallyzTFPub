@@ -5,8 +5,10 @@
 div.containerVer2 {
 
     div.contWrap {
-        @include breakpoint(tablet) {
-            width: 100%;
+        &.w100 {
+            @include breakpoint(tablet) {
+                width: 100%;
+            }
         }
     }
 
@@ -57,7 +59,9 @@ div.containerVer2 {
                 width: 100%;
                 padding: 36px 0 0 0;
                 background: #e4ffdf;
+                overflow: hidden;
                 @include breakpoint(tablet) {
+                    height: 553px;
                     padding: 70px 0 0 0;
                 }
                 > img {
@@ -66,7 +70,7 @@ div.containerVer2 {
                     max-width: 100%;
                     margin: 0 auto;
                     @include breakpoint(tablet) {
-                        width: 400px;
+                        width: 390px;
                     }
                 }
             }
@@ -93,7 +97,7 @@ div.containerVer2 {
                     margin: 0 auto 0 -65px;
                     z-index: 90;
                     @include breakpoint(tablet) {
-                        top: -110px;
+                        top: -116px;
                         width: 208px;
                         margin: 0 auto 0 -104px;
                     }
@@ -157,6 +161,9 @@ div.containerVer2 {
                             background-size: cover;
                             background-position: center;
                             background-repeat: no-repeat;
+                            @include breakpoint(tablet) {
+                                top: 195px;
+                            }
                         }
 
                         //학원 이미지
@@ -168,6 +175,9 @@ div.containerVer2 {
                             background-size: cover;
                             background-position: top;
                             background-repeat: no-repeat;
+                            @include breakpoint(tablet) {
+                                height: 243px;
+                            }
                         }
 
                         //학원 정보
@@ -432,6 +442,15 @@ div.containerVer2 {
                     margin: 16px 0 0 0;
                     > iframe {
                         @include border-radius(12px);
+                        @include breakpoint(ssmobile) {
+                            height: 193px;
+                        }
+                        @include breakpoint(tabletMini) {
+                            height: 413px;
+                        }
+                        @include breakpoint(tablet) {
+                            height: 431px;
+                        }
                     }
                 }
 
