@@ -1,311 +1,108 @@
-@media all and (min-width: 1000px) {
-  div.containerVer2 div.contWrap.w100 {
-    width: 100%; } }
-
-div.containerVer2 div.reserveHeaderWrap header.reserveHeader {
-  position: relative;
-  width: 100%;
-  height: 56px;
-  padding: 16px 0; }
-  div.containerVer2 div.reserveHeaderWrap header.reserveHeader h1.rallyz {
-    width: 72px;
-    height: 24px;
-    margin: 0 auto; }
-    div.containerVer2 div.reserveHeaderWrap header.reserveHeader h1.rallyz > img {
-      max-width: 100%; }
-  div.containerVer2 div.reserveHeaderWrap header.reserveHeader button.btnPoLeft {
-    position: absolute;
-    top: 16px;
-    left: 22px;
-    width: 24px;
-    height: 24px; }
-    div.containerVer2 div.reserveHeaderWrap header.reserveHeader button.btnPoLeft > i {
-      font-size: 13px;
-      display: inline-block;
-      margin: 1px 0 0 0; }
-
-div.containerVer2 div.reserveArticleWrap {
-  padding: 0; }
+div.containerVer2 {
+  background: #F7F9FA; }
   @media all and (min-width: 1000px) {
-    div.containerVer2 div.reserveArticleWrap {
-      height: auto;
-      min-height: 100vh; } }
-  div.containerVer2 div.reserveArticleWrap article.reserveList {
+    div.containerVer2 div.contWrap.w100 {
+      width: 100%; } }
+  div.containerVer2 div.reserveHeaderWrap header.reserveHeader {
+    position: relative;
     width: 100%;
-    background: #F7F9FA; }
-    div.containerVer2 div.reserveArticleWrap article.reserveList div.imgBox {
+    height: 56px;
+    padding: 16px 0; }
+    div.containerVer2 div.reserveHeaderWrap header.reserveHeader h1.rallyz {
+      width: 72px;
+      height: 24px;
+      margin: 0 auto; }
+      div.containerVer2 div.reserveHeaderWrap header.reserveHeader h1.rallyz > img {
+        max-width: 100%; }
+    div.containerVer2 div.reserveHeaderWrap header.reserveHeader button.btnPoLeft {
+      position: absolute;
+      top: 16px;
+      left: 22px;
+      width: 24px;
+      height: 24px; }
+      div.containerVer2 div.reserveHeaderWrap header.reserveHeader button.btnPoLeft > i {
+        font-size: 13px;
+        display: inline-block;
+        margin: 1px 0 0 0; }
+  div.containerVer2 div.reserveArticleWrap {
+    padding: 0; }
+    @media all and (min-width: 1000px) {
+      div.containerVer2 div.reserveArticleWrap {
+        height: auto;
+        min-height: 100vh; } }
+    div.containerVer2 div.reserveArticleWrap article.reserveList {
       width: 100%;
-      padding: 36px 0 0 0;
-      background: #e4ffdf;
-      overflow: hidden; }
-      @media all and (min-width: 1000px) {
-        div.containerVer2 div.reserveArticleWrap article.reserveList div.imgBox {
-          height: 553px;
-          padding: 70px 0 0 0; } }
-      div.containerVer2 div.reserveArticleWrap article.reserveList div.imgBox > img {
-        display: block;
-        width: 260px;
-        max-width: 100%;
-        margin: 0 auto; }
-        @media all and (min-width: 1000px) {
-          div.containerVer2 div.reserveArticleWrap article.reserveList div.imgBox > img {
-            width: 390px; } }
-    div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap {
-      position: relative;
-      width: 100%;
-      padding: 84px 16px 0 16px; }
-      @media all and (min-width: 1000px) {
-        div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap {
-          width: 1320px;
-          padding: 84px 0 0 0;
-          margin: 0 auto; } }
-      div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap h3.title {
-        font-size: 20px;
-        line-height: 30px;
-        color: #383E44;
-        font-weight: 700; }
-      div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.appIcon {
-        position: absolute;
-        top: -50px;
-        left: 50%;
-        width: 130px;
-        margin: 0 auto 0 -65px;
-        z-index: 90; }
-        @media all and (min-width: 1000px) {
-          div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.appIcon {
-            top: -116px;
-            width: 208px;
-            margin: 0 auto 0 -104px; } }
-        div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.appIcon > img {
-          max-width: 100%; }
-      div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.sortBox {
+      background: #F7F9FA; }
+      div.containerVer2 div.reserveArticleWrap article.reserveList div.imgBox {
         width: 100%;
-        padding: 0;
-        margin: 16px 0 0 0;
-        font-size: 0; }
-        div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.sortBox button.btnLocation {
-          -webkit-border-radius: 50px;
-          border-radius: 50px;
-          background-clip: padding-box;
-          /* stops bg color from leaking outside the border: */
-          font-size: 12px;
-          min-width: 77px;
-          height: 32px;
-          padding: 6px 16px;
-          margin: 0 8px 0 0;
-          border: 1px solid #E0E3E6;
-          background: #FFFFFF;
-          color: #575B65;
-          line-height: 18px; }
-          div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.sortBox button.btnLocation.on {
-            border: 1px solid #33CC33;
-            font-weight: 700;
-            background: #33CC33;
-            color: #FFFFFF; }
-      div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        margin: 16px 0 0 0; }
+        padding: 36px 0 0 0;
+        background: #e4ffdf;
+        overflow: hidden; }
         @media all and (min-width: 1000px) {
-          div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList {
-            margin: 16px -6px 0 -6px; } }
-        div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li {
-          width: 100%;
-          position: relative;
-          margin: 0 0 16px 0;
-          cursor: pointer; }
+          div.containerVer2 div.reserveArticleWrap article.reserveList div.imgBox {
+            height: 553px;
+            padding: 70px 0 0 0; } }
+        div.containerVer2 div.reserveArticleWrap article.reserveList div.imgBox > img {
+          display: block;
+          width: 260px;
+          max-width: 100%;
+          margin: 0 auto; }
           @media all and (min-width: 1000px) {
-            div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li {
-              width: calc(calc(100% / 3) - 12px);
-              margin: 0 6px 16px 6px; } }
-          div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instCi {
-            -webkit-border-radius: 12px;
-            border-radius: 12px;
+            div.containerVer2 div.reserveArticleWrap article.reserveList div.imgBox > img {
+              width: 390px; } }
+      div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap {
+        position: relative;
+        width: 100%;
+        padding: 84px 16px 0 16px; }
+        @media all and (min-width: 1000px) {
+          div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap {
+            width: 1320px;
+            padding: 84px 0 0 0;
+            margin: 0 auto; } }
+        div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap h3.title {
+          font-size: 20px;
+          line-height: 30px;
+          color: #383E44;
+          font-weight: 700; }
+        div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.appIcon {
+          position: absolute;
+          top: -50px;
+          left: 50%;
+          width: 130px;
+          margin: 0 auto 0 -65px;
+          z-index: 90; }
+          @media all and (min-width: 1000px) {
+            div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.appIcon {
+              top: -116px;
+              width: 208px;
+              margin: 0 auto 0 -104px; } }
+          div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.appIcon > img {
+            max-width: 100%; }
+        div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.sortBox {
+          width: 100%;
+          padding: 0;
+          margin: 16px 0 0 0;
+          font-size: 0; }
+          div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.sortBox button.btnLocation {
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
             background-clip: padding-box;
             /* stops bg color from leaking outside the border: */
-            position: absolute;
-            top: 111px;
-            right: 24px;
-            width: 96px;
-            height: 96px;
+            font-size: 12px;
+            min-width: 77px;
+            height: 32px;
+            padding: 6px 16px;
+            margin: 0 8px 0 0;
             border: 1px solid #E0E3E6;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat; }
-            @media all and (min-width: 1000px) {
-              div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instCi {
-                top: 195px; } }
-          div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instImageBox {
-            width: 100%;
-            height: 160px;
-            border-top-left-radius: 16px;
-            border-top-right-radius: 16px;
-            background-size: cover;
-            background-position: top;
-            background-repeat: no-repeat; }
-            @media all and (min-width: 1000px) {
-              div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instImageBox {
-                height: 243px; } }
-          div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo {
-            width: 100%;
-            padding: 24px;
-            border-bottom-left-radius: 16px;
-            border-bottom-right-radius: 16px;
-            background: #FFFFFF; }
-            div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo div.iconBox {
-              width: 100%;
-              margin: 0 0 8px 0;
-              font-size: 0; }
-              div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo div.iconBox span {
-                -webkit-border-radius: 50px;
-                border-radius: 50px;
-                background-clip: padding-box;
-                /* stops bg color from leaking outside the border: */
-                font-size: 12px;
-                display: inline-block;
-                min-width: 43px;
-                height: 24px;
-                padding: 3px 10px;
-                margin: 0 8px 0 0;
-                line-height: 18px;
-                font-weight: 700; }
-                div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo div.iconBox span.icoDday {
-                  background: #33CC33;
-                  color: #FFFFFF; }
-                div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo div.iconBox span.icoOngoing {
-                  background: #E9F8E9;
-                  color: #33CC33; }
-                div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo div.iconBox span.icoScheduled {
-                  background: #E2EAFF;
-                  color: #2f76ff; }
-                div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo div.iconBox span.icoClose {
-                  background: #F2F4F6;
-                  color: #7E8086; }
-            div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo h4.ptName {
-              font-size: 16px;
+            background: #FFFFFF;
+            color: #575B65;
+            line-height: 18px; }
+            div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.sortBox button.btnLocation.on {
+              border: 1px solid #33CC33;
               font-weight: 700;
-              line-height: 24px;
-              color: #383E44; }
-            div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo p {
-              color: #383E44; }
-              div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo p.instName {
-                font-size: 14px;
-                line-height: 21px; }
-              div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo p.instDesc {
-                font-size: 14px;
-                margin: 16px 0 0 0;
-                line-height: 21px;
-                font-weight: 300; }
-      div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.requestWrap {
-        width: 100%;
-        padding: 56px 0;
-        text-align: center; }
-        div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.requestWrap p {
-          font-size: 16px;
-          color: #575B65;
-          line-height: 24px;
-          font-weight: 500; }
-        div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.requestWrap button.btnRequest {
-          font-size: 14px;
-          -webkit-border-radius: 8px;
-          border-radius: 8px;
-          background-clip: padding-box;
-          /* stops bg color from leaking outside the border: */
-          width: 180px;
-          height: 56px;
-          margin: 16px auto 0 auto;
-          font-weight: 700; }
-  div.containerVer2 div.reserveArticleWrap article.reserveDetail div.instImageBox {
-    width: 100%;
-    height: 211px;
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat; }
-  div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap {
-    width: 100%;
-    padding: 24px 16px 16px 16px; }
-    div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      width: 100%;
-      padding: 0 0 24px 0;
-      border-bottom: 1px solid #F2F4F6; }
-      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox div.instCi {
-        -webkit-border-radius: 12px;
-        border-radius: 12px;
-        background-clip: padding-box;
-        /* stops bg color from leaking outside the border: */
-        width: 48px;
-        height: 48px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat; }
-      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox div.instInfo {
-        position: relative;
-        width: calc(100% - 48px);
-        padding: 0 0 0 12px; }
-        div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox div.instInfo h3.ptName {
-          font-size: 16px;
-          margin: -3px 0 0 0;
-          font-weight: 700;
-          line-height: 24px;
-          color: #383E44; }
-        div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox div.instInfo p {
-          color: #383E44; }
-          div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox div.instInfo p.instName {
-            font-size: 14px;
-            display: block;
-            line-height: 21px; }
-          div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox div.instInfo p.date {
-            font-size: 12px;
-            display: inline-block;
-            margin: 4px 0 0 0;
-            line-height: 18px;
-            font-weight: 300;
-            color: #575B65; }
-          div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox div.instInfo p.count {
-            font-size: 12px;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            display: inline-block;
-            line-height: 18px;
-            color: #383E44;
-            text-align: right; }
-            div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox div.instInfo p.count > em {
-              display: inline-block;
-              margin: 0 2px 0 0;
-              color: #33CC33; }
-    div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap {
-      width: 100%;
-      padding: 24px 0 16px 0; }
-      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap h4 {
-        line-height: 21px;
-        font-weight: 700; }
-      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox {
-        -webkit-border-radius: 12px;
-        border-radius: 12px;
-        background-clip: padding-box;
-        /* stops bg color from leaking outside the border: */
-        width: 100%;
-        padding: 24px 24px 12px 24px;
-        margin: 16px 0 0 0;
-        background: #F7F9FA; }
-        div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList {
+              background: #33CC33;
+              color: #FFFFFF; }
+        div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -314,137 +111,127 @@ div.containerVer2 div.reserveArticleWrap {
           -ms-flex-direction: row;
           flex-direction: row;
           -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
-          div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList dt {
-            width: 25%;
-            margin: 0 0 8px 0;
-            color: #B6BCBF;
-            line-height: 21px; }
-          div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList dd {
-            width: 75%;
-            margin: 0 0 8px 0;
-            line-height: 21px; }
-            div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList dd p {
-              padding: 0 0 4px 0; }
-              div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList dd p span.item {
-                display: inline-block;
-                width: 55px; }
-              div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList dd p span.capacity {
-                display: inline-block;
-                margin: 0 8px 0 4px;
-                color: #383E44;
-                font-weight: 700; }
-              div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList dd p span.remainTxt {
-                color: #33CC33;
-                font-weight: 700; }
-              div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList dd p em.remainNum {
-                display: inline-block;
-                margin: 0 2px;
-                color: #33CC33;
-                font-weight: 700; }
-  div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap {
-    padding: 32px 16px;
-    border-top: 12px solid #F2F4F6; }
-    div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.imageBox {
-      -webkit-border-radius: 12px;
-      border-radius: 12px;
-      background-clip: padding-box;
-      /* stops bg color from leaking outside the border: */
-      width: 100%; }
-      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.imageBox > img {
-        -webkit-border-radius: 12px;
-        border-radius: 12px;
-        background-clip: padding-box;
-        /* stops bg color from leaking outside the border: */
-        width: 100%;
-        max-width: 100%; }
-    div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.videoBox {
-      -webkit-border-radius: 12px;
-      border-radius: 12px;
-      background-clip: padding-box;
-      /* stops bg color from leaking outside the border: */
+          flex-wrap: wrap;
+          margin: 16px 0 0 0; }
+          @media all and (min-width: 1000px) {
+            div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList {
+              margin: 16px -6px 0 -6px; } }
+          div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li {
+            width: 100%;
+            position: relative;
+            margin: 0 0 16px 0;
+            cursor: pointer; }
+            @media all and (min-width: 1000px) {
+              div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li {
+                width: calc(calc(100% / 3) - 12px);
+                margin: 0 6px 16px 6px; } }
+            div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instCi {
+              -webkit-border-radius: 12px;
+              border-radius: 12px;
+              background-clip: padding-box;
+              /* stops bg color from leaking outside the border: */
+              position: absolute;
+              top: 111px;
+              right: 24px;
+              width: 96px;
+              height: 96px;
+              border: 1px solid #E0E3E6;
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat; }
+              @media all and (min-width: 1000px) {
+                div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instCi {
+                  top: 195px; } }
+            div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instImageBox {
+              width: 100%;
+              height: 160px;
+              border-top-left-radius: 16px;
+              border-top-right-radius: 16px;
+              background-size: cover;
+              background-position: top;
+              background-repeat: no-repeat; }
+              @media all and (min-width: 1000px) {
+                div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instImageBox {
+                  height: 243px; } }
+            div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo {
+              width: 100%;
+              padding: 24px;
+              border-bottom-left-radius: 16px;
+              border-bottom-right-radius: 16px;
+              background: #FFFFFF; }
+              div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo div.iconBox {
+                width: 100%;
+                margin: 0 0 8px 0;
+                font-size: 0; }
+                div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo div.iconBox span {
+                  -webkit-border-radius: 50px;
+                  border-radius: 50px;
+                  background-clip: padding-box;
+                  /* stops bg color from leaking outside the border: */
+                  font-size: 12px;
+                  display: inline-block;
+                  min-width: 43px;
+                  height: 24px;
+                  padding: 3px 10px;
+                  margin: 0 8px 0 0;
+                  line-height: 18px;
+                  font-weight: 700; }
+                  div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo div.iconBox span.icoDday {
+                    background: #33CC33;
+                    color: #FFFFFF; }
+                  div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo div.iconBox span.icoOngoing {
+                    background: #E9F8E9;
+                    color: #33CC33; }
+                  div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo div.iconBox span.icoScheduled {
+                    background: #E2EAFF;
+                    color: #2f76ff; }
+                  div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo div.iconBox span.icoClose {
+                    background: #F2F4F6;
+                    color: #7E8086; }
+              div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo h4.ptName {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+                color: #383E44; }
+              div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo p {
+                color: #383E44; }
+                div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo p.instName {
+                  font-size: 14px;
+                  line-height: 21px; }
+                div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap ul.instList > li div.instInfo p.instDesc {
+                  font-size: 14px;
+                  margin: 16px 0 0 0;
+                  line-height: 21px;
+                  font-weight: 300; }
+        div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.requestWrap {
+          width: 100%;
+          padding: 56px 0;
+          text-align: center; }
+          div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.requestWrap p {
+            font-size: 16px;
+            color: #575B65;
+            line-height: 24px;
+            font-weight: 500; }
+          div.containerVer2 div.reserveArticleWrap article.reserveList div.listWrap div.requestWrap button.btnRequest {
+            font-size: 14px;
+            -webkit-border-radius: 8px;
+            border-radius: 8px;
+            background-clip: padding-box;
+            /* stops bg color from leaking outside the border: */
+            width: 180px;
+            height: 56px;
+            margin: 16px auto 0 auto;
+            font-weight: 700; }
+    div.containerVer2 div.reserveArticleWrap article.reserveDetail div.instImageBox {
       width: 100%;
-      margin: 16px 0 0 0; }
-      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.videoBox > iframe {
-        -webkit-border-radius: 12px;
-        border-radius: 12px;
-        background-clip: padding-box;
-        /* stops bg color from leaking outside the border: */ }
-        @media (max-width: 575px) {
-          div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.videoBox > iframe {
-            height: 193px; } }
-        @media all and (min-width: 768px) {
-          div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.videoBox > iframe {
-            height: 413px; } }
-        @media all and (min-width: 1000px) {
-          div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.videoBox > iframe {
-            height: 431px; } }
-    div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.introBox {
-      -webkit-border-radius: 12px;
-      border-radius: 12px;
-      background-clip: padding-box;
-      /* stops bg color from leaking outside the border: */
+      height: 211px;
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat; }
+    div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap {
       width: 100%;
-      padding: 16px;
-      margin: 16px 0 0 0;
-      background: #F7F9FA; }
-      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.introBox p {
-        font-size: 16px;
-        line-height: 24px;
-        color: #272A2F;
-        font-weight: 300; }
-        div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.introBox p.title {
-          margin: 0 0 8px 0;
-          font-weight: 700; }
-    div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.btnBox {
-      margin: 16px 0 0 0; }
-  div.containerVer2 div.reserveArticleWrap article.reserveRequest {
-    padding: 0 16px 88px 16px;
-    border-top: 1px solid #F2F4F6; }
-    div.containerVer2 div.reserveArticleWrap article.reserveRequest div.infoBox {
-      width: 100%;
-      padding: 32px 0 0 0; }
-      div.containerVer2 div.reserveArticleWrap article.reserveRequest div.infoBox span.smallDesc {
-        line-height: 21px; }
-      div.containerVer2 div.reserveArticleWrap article.reserveRequest div.infoBox h3.ptName {
-        font-size: 20px;
-        margin: 8px 0 16px 0;
-        font-weight: 700;
-        line-height: 30px;
-        color: #272A2F; }
-      div.containerVer2 div.reserveArticleWrap article.reserveRequest div.infoBox div.dateBox {
-        -webkit-border-radius: 12px;
-        border-radius: 12px;
-        background-clip: padding-box;
-        /* stops bg color from leaking outside the border: */
-        width: 100%;
-        padding: 16px;
-        background: #F7F9FA;
-        border: 1px solid #F2F4F6; }
-        div.containerVer2 div.reserveArticleWrap article.reserveRequest div.infoBox div.dateBox p.date {
-          line-height: 21px;
-          color: #575B65;
-          font-weight: 700; }
-          div.containerVer2 div.reserveArticleWrap article.reserveRequest div.infoBox div.dateBox p.date > span {
-            display: block;
-            margin: 8px 0 0 0;
-            line-height: 21px;
-            color: #272A2F;
-            font-weight: 400; }
-    div.containerVer2 div.reserveArticleWrap article.reserveRequest div.requestWrap {
-      margin: 30px 0 0 0; }
-      div.containerVer2 div.reserveArticleWrap article.reserveRequest div.requestWrap dl.inputListRow dd {
-        position: relative; }
-        div.containerVer2 div.reserveArticleWrap article.reserveRequest div.requestWrap dl.inputListRow dd div.studentName {
-          position: absolute;
-          top: -27px;
-          right: 0;
-          width: 94px; }
-    div.containerVer2 div.reserveArticleWrap article.reserveRequest ul.alignPrivacy {
-      width: 100%;
-      margin: 20px 0 0 0; }
-      div.containerVer2 div.reserveArticleWrap article.reserveRequest ul.alignPrivacy > li {
-        width: 100%;
+      padding: 24px 16px 16px 16px; }
+      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -454,62 +241,71 @@ div.containerVer2 div.reserveArticleWrap {
         flex-direction: row;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        padding: 0 0 8px 0; }
-        div.containerVer2 div.reserveArticleWrap article.reserveRequest ul.alignPrivacy > li:last-child {
-          padding: 0; }
-        div.containerVer2 div.reserveArticleWrap article.reserveRequest ul.alignPrivacy > li div.leftCheck {
-          width: 70%; }
-        div.containerVer2 div.reserveArticleWrap article.reserveRequest ul.alignPrivacy > li div.rightBtn {
-          width: 30%;
-          text-align: right; }
-  div.containerVer2 div.reserveArticleWrap article.reserveDone {
-    height: 100%;
-    padding: 32px 16px 16px 16px;
-    background: #F7F9FA; }
-    @media all and (min-width: 1000px) {
-      div.containerVer2 div.reserveArticleWrap article.reserveDone {
-        min-height: 100vh; } }
-    div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult {
-      -webkit-border-radius: 12px;
-      border-radius: 12px;
-      background-clip: padding-box;
-      /* stops bg color from leaking outside the border: */
-      width: 100%;
-      padding: 24px 16px;
-      background: #FFFFFF; }
-      div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.doneImg {
         width: 100%;
-        background: url("../../images/ico/completion.svg") top center no-repeat;
-        background-size: 120px; }
-        div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.doneImg p {
-          font-size: 20px;
-          padding: 144px 0 0 0;
-          color: #272A2F;
-          line-height: 30px;
-          text-align: center; }
-          div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.doneImg p span {
-            font-weight: 700; }
-      div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.summaryWrap {
+        padding: 0 0 24px 0;
+        border-bottom: 1px solid #F2F4F6; }
+        div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox div.instCi {
+          -webkit-border-radius: 12px;
+          border-radius: 12px;
+          background-clip: padding-box;
+          /* stops bg color from leaking outside the border: */
+          width: 48px;
+          height: 48px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat; }
+        div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox div.instInfo {
+          position: relative;
+          width: calc(100% - 48px);
+          padding: 0 0 0 12px; }
+          div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox div.instInfo h3.ptName {
+            font-size: 16px;
+            margin: -3px 0 0 0;
+            font-weight: 700;
+            line-height: 24px;
+            color: #383E44; }
+          div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox div.instInfo p {
+            color: #383E44; }
+            div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox div.instInfo p.instName {
+              font-size: 14px;
+              display: block;
+              line-height: 21px; }
+            div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox div.instInfo p.date {
+              font-size: 12px;
+              display: inline-block;
+              margin: 4px 0 0 0;
+              line-height: 18px;
+              font-weight: 300;
+              color: #575B65; }
+            div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox div.instInfo p.count {
+              font-size: 12px;
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              display: inline-block;
+              line-height: 18px;
+              color: #383E44;
+              text-align: right; }
+              div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.infoBox div.instInfo p.count > em {
+                display: inline-block;
+                margin: 0 2px 0 0;
+                color: #33CC33; }
+      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap {
         width: 100%;
-        margin: 24px 0 0 0; }
-        div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.summaryWrap div.summaryBox {
+        padding: 24px 0 16px 0; }
+        div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap h4 {
+          line-height: 21px;
+          font-weight: 700; }
+        div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox {
           -webkit-border-radius: 12px;
           border-radius: 12px;
           background-clip: padding-box;
           /* stops bg color from leaking outside the border: */
           width: 100%;
           padding: 24px 24px 12px 24px;
+          margin: 16px 0 0 0;
           background: #F7F9FA; }
-          div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.summaryWrap div.summaryBox h4 {
-            font-size: 16px;
-            margin: 0 0 16px 0;
-            line-height: 24px;
-            font-weight: 700;
-            color: #272A2F; }
-          div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.summaryWrap div.summaryBox dl.summaryList {
+          div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -519,71 +315,274 @@ div.containerVer2 div.reserveArticleWrap {
             flex-direction: row;
             -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
-            div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.summaryWrap div.summaryBox dl.summaryList dt {
+            div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList dt {
               width: 25%;
               margin: 0 0 8px 0;
               color: #B6BCBF;
               line-height: 21px; }
-            div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.summaryWrap div.summaryBox dl.summaryList dd {
+            div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList dd {
               width: 75%;
               margin: 0 0 8px 0;
-              color: #272A2F;
               line-height: 21px; }
-    div.containerVer2 div.reserveArticleWrap article.reserveDone div.appDownload {
-      -webkit-border-radius: 12px;
-      border-radius: 12px;
-      background-clip: padding-box;
-      /* stops bg color from leaking outside the border: */
-      width: 100%;
-      min-height: 174px;
-      padding: 24px;
-      margin: 16px 0 0 0;
-      background: url("../../images/reservation/download_hand.svg") no-repeat bottom right #FFFFFF;
-      background-size: 96px;
-      font-size: 0; }
-      div.containerVer2 div.reserveArticleWrap article.reserveDone div.appDownload a.btnAppstore {
-        display: inline-block;
-        width: 104px;
+              div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList dd p {
+                padding: 0 0 4px 0; }
+                div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList dd p span.item {
+                  display: inline-block;
+                  width: 55px; }
+                div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList dd p span.capacity {
+                  display: inline-block;
+                  margin: 0 8px 0 4px;
+                  color: #383E44;
+                  font-weight: 700; }
+                div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList dd p span.remainTxt {
+                  color: #33CC33;
+                  font-weight: 700; }
+                div.containerVer2 div.reserveArticleWrap article.reserveDetail div.infoWrap div.summaryWrap div.summaryBox dl.summaryList dd p em.remainNum {
+                  display: inline-block;
+                  margin: 0 2px;
+                  color: #33CC33;
+                  font-weight: 700; }
+    div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap {
+      padding: 32px 16px;
+      border-top: 12px solid #F2F4F6; }
+      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.imageBox {
+        -webkit-border-radius: 12px;
+        border-radius: 12px;
+        background-clip: padding-box;
+        /* stops bg color from leaking outside the border: */
+        width: 100%; }
+        div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.imageBox > img {
+          -webkit-border-radius: 12px;
+          border-radius: 12px;
+          background-clip: padding-box;
+          /* stops bg color from leaking outside the border: */
+          width: 100%;
+          max-width: 100%; }
+      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.videoBox {
+        -webkit-border-radius: 12px;
+        border-radius: 12px;
+        background-clip: padding-box;
+        /* stops bg color from leaking outside the border: */
+        width: 100%;
+        margin: 16px 0 0 0; }
+        div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.videoBox > iframe {
+          -webkit-border-radius: 12px;
+          border-radius: 12px;
+          background-clip: padding-box;
+          /* stops bg color from leaking outside the border: */ }
+          @media (max-width: 575px) {
+            div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.videoBox > iframe {
+              height: 193px; } }
+          @media all and (min-width: 768px) {
+            div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.videoBox > iframe {
+              height: 413px; } }
+          @media all and (min-width: 1000px) {
+            div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.videoBox > iframe {
+              height: 431px; } }
+      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.introBox {
+        -webkit-border-radius: 12px;
+        border-radius: 12px;
+        background-clip: padding-box;
+        /* stops bg color from leaking outside the border: */
+        width: 100%;
+        padding: 16px;
+        margin: 16px 0 0 0;
+        background: #F7F9FA; }
+        div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.introBox p {
+          font-size: 16px;
+          line-height: 24px;
+          color: #272A2F;
+          font-weight: 300; }
+          div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.introBox p.title {
+            margin: 0 0 8px 0;
+            font-weight: 700; }
+      div.containerVer2 div.reserveArticleWrap article.reserveDetail div.explainWrap div.btnBox {
+        margin: 16px 0 0 0; }
+    div.containerVer2 div.reserveArticleWrap article.reserveRequest {
+      padding: 0 16px 88px 16px;
+      border-top: 1px solid #F2F4F6; }
+      div.containerVer2 div.reserveArticleWrap article.reserveRequest div.infoBox {
+        width: 100%;
+        padding: 32px 0 0 0; }
+        div.containerVer2 div.reserveArticleWrap article.reserveRequest div.infoBox span.smallDesc {
+          line-height: 21px; }
+        div.containerVer2 div.reserveArticleWrap article.reserveRequest div.infoBox h3.ptName {
+          font-size: 20px;
+          margin: 8px 0 16px 0;
+          font-weight: 700;
+          line-height: 30px;
+          color: #272A2F; }
+        div.containerVer2 div.reserveArticleWrap article.reserveRequest div.infoBox div.dateBox {
+          -webkit-border-radius: 12px;
+          border-radius: 12px;
+          background-clip: padding-box;
+          /* stops bg color from leaking outside the border: */
+          width: 100%;
+          padding: 16px;
+          background: #F7F9FA;
+          border: 1px solid #F2F4F6; }
+          div.containerVer2 div.reserveArticleWrap article.reserveRequest div.infoBox div.dateBox p.date {
+            line-height: 21px;
+            color: #575B65;
+            font-weight: 700; }
+            div.containerVer2 div.reserveArticleWrap article.reserveRequest div.infoBox div.dateBox p.date > span {
+              display: block;
+              margin: 8px 0 0 0;
+              line-height: 21px;
+              color: #272A2F;
+              font-weight: 400; }
+      div.containerVer2 div.reserveArticleWrap article.reserveRequest div.requestWrap {
+        margin: 30px 0 0 0; }
+        div.containerVer2 div.reserveArticleWrap article.reserveRequest div.requestWrap dl.inputListRow dd {
+          position: relative; }
+          div.containerVer2 div.reserveArticleWrap article.reserveRequest div.requestWrap dl.inputListRow dd div.studentName {
+            position: absolute;
+            top: -27px;
+            right: 0;
+            width: 94px; }
+      div.containerVer2 div.reserveArticleWrap article.reserveRequest ul.alignPrivacy {
+        width: 100%;
+        margin: 20px 0 0 0; }
+        div.containerVer2 div.reserveArticleWrap article.reserveRequest ul.alignPrivacy > li {
+          width: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          padding: 0 0 8px 0; }
+          div.containerVer2 div.reserveArticleWrap article.reserveRequest ul.alignPrivacy > li:last-child {
+            padding: 0; }
+          div.containerVer2 div.reserveArticleWrap article.reserveRequest ul.alignPrivacy > li div.leftCheck {
+            width: 70%; }
+          div.containerVer2 div.reserveArticleWrap article.reserveRequest ul.alignPrivacy > li div.rightBtn {
+            width: 30%;
+            text-align: right; }
+    div.containerVer2 div.reserveArticleWrap article.reserveDone {
+      height: 100%;
+      padding: 32px 16px 16px 16px;
+      background: #F7F9FA; }
+      @media all and (min-width: 1000px) {
+        div.containerVer2 div.reserveArticleWrap article.reserveDone {
+          min-height: 100vh; } }
+      div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult {
+        -webkit-border-radius: 12px;
+        border-radius: 12px;
+        background-clip: padding-box;
+        /* stops bg color from leaking outside the border: */
+        width: 100%;
+        padding: 24px 16px;
+        background: #FFFFFF; }
+        div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.doneImg {
+          width: 100%;
+          background: url("../../images/ico/completion.svg") top center no-repeat;
+          background-size: 120px; }
+          div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.doneImg p {
+            font-size: 20px;
+            padding: 144px 0 0 0;
+            color: #272A2F;
+            line-height: 30px;
+            text-align: center; }
+            div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.doneImg p span {
+              font-weight: 700; }
+        div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.summaryWrap {
+          width: 100%;
+          margin: 24px 0 0 0; }
+          div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.summaryWrap div.summaryBox {
+            -webkit-border-radius: 12px;
+            border-radius: 12px;
+            background-clip: padding-box;
+            /* stops bg color from leaking outside the border: */
+            width: 100%;
+            padding: 24px 24px 12px 24px;
+            background: #F7F9FA; }
+            div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.summaryWrap div.summaryBox h4 {
+              font-size: 16px;
+              margin: 0 0 16px 0;
+              line-height: 24px;
+              font-weight: 700;
+              color: #272A2F; }
+            div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.summaryWrap div.summaryBox dl.summaryList {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+              flex-direction: row;
+              -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+              div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.summaryWrap div.summaryBox dl.summaryList dt {
+                width: 25%;
+                margin: 0 0 8px 0;
+                color: #B6BCBF;
+                line-height: 21px; }
+              div.containerVer2 div.reserveArticleWrap article.reserveDone div.reserveResult div.summaryWrap div.summaryBox dl.summaryList dd {
+                width: 75%;
+                margin: 0 0 8px 0;
+                color: #272A2F;
+                line-height: 21px; }
+      div.containerVer2 div.reserveArticleWrap article.reserveDone div.appDownload {
+        -webkit-border-radius: 12px;
+        border-radius: 12px;
+        background-clip: padding-box;
+        /* stops bg color from leaking outside the border: */
+        width: 100%;
+        min-height: 174px;
+        padding: 24px;
+        margin: 16px 0 0 0;
+        background: url("../../images/reservation/download_hand.svg") no-repeat bottom right #FFFFFF;
+        background-size: 96px;
+        font-size: 0; }
+        div.containerVer2 div.reserveArticleWrap article.reserveDone div.appDownload a.btnAppstore {
+          display: inline-block;
+          width: 104px;
+          height: 32px;
+          margin: 0 4px 0 0; }
+          div.containerVer2 div.reserveArticleWrap article.reserveDone div.appDownload a.btnAppstore > img {
+            max-width: 100%; }
+        div.containerVer2 div.reserveArticleWrap article.reserveDone div.appDownload a.btnPlaystore {
+          display: inline-block;
+          width: 104px;
+          height: 32px; }
+          div.containerVer2 div.reserveArticleWrap article.reserveDone div.appDownload a.btnPlaystore > img {
+            max-width: 100%; }
+        div.containerVer2 div.reserveArticleWrap article.reserveDone div.appDownload p.mainTxt {
+          font-size: 16px;
+          margin: 0 0 8px 0;
+          line-height: 24px;
+          font-weight: 700;
+          color: #272A2F; }
+        div.containerVer2 div.reserveArticleWrap article.reserveDone div.appDownload p.subTxt {
+          font-size: 12px;
+          margin: 0 0 18px 0;
+          line-height: 18px;
+          color: #7E8086; }
+  div.containerVer2 div.reserveFooterWrap {
+    width: 100%;
+    padding: 54px 0;
+    background: #F2F4F6; }
+    div.containerVer2 div.reserveFooterWrap footer.reserveFooter {
+      text-align: center; }
+      div.containerVer2 div.reserveFooterWrap footer.reserveFooter > img {
+        display: block;
+        width: 96px;
         height: 32px;
-        margin: 0 4px 0 0; }
-        div.containerVer2 div.reserveArticleWrap article.reserveDone div.appDownload a.btnAppstore > img {
-          max-width: 100%; }
-      div.containerVer2 div.reserveArticleWrap article.reserveDone div.appDownload a.btnPlaystore {
-        display: inline-block;
-        width: 104px;
-        height: 32px; }
-        div.containerVer2 div.reserveArticleWrap article.reserveDone div.appDownload a.btnPlaystore > img {
-          max-width: 100%; }
-      div.containerVer2 div.reserveArticleWrap article.reserveDone div.appDownload p.mainTxt {
-        font-size: 16px;
-        margin: 0 0 8px 0;
-        line-height: 24px;
-        font-weight: 700;
-        color: #272A2F; }
-      div.containerVer2 div.reserveArticleWrap article.reserveDone div.appDownload p.subTxt {
-        font-size: 12px;
-        margin: 0 0 18px 0;
-        line-height: 18px;
-        color: #7E8086; }
-
-div.containerVer2 div.reserveFooterWrap {
-  width: 100%;
-  padding: 54px 0;
-  background: #F2F4F6; }
-  div.containerVer2 div.reserveFooterWrap footer.reserveFooter {
-    text-align: center; }
-    div.containerVer2 div.reserveFooterWrap footer.reserveFooter > img {
-      display: block;
-      width: 96px;
-      height: 32px;
-      margin: 0 auto 16px auto; }
-    div.containerVer2 div.reserveFooterWrap footer.reserveFooter span {
-      font-size: 10px;
-      display: block;
-      color: #383E44;
-      line-height: 15px; }
-    div.containerVer2 div.reserveFooterWrap footer.reserveFooter address {
-      font-size: 10px;
-      display: block;
-      color: #383E44;
-      line-height: 15px; }
+        margin: 0 auto 16px auto; }
+      div.containerVer2 div.reserveFooterWrap footer.reserveFooter span {
+        font-size: 10px;
+        display: block;
+        color: #383E44;
+        line-height: 15px; }
+      div.containerVer2 div.reserveFooterWrap footer.reserveFooter address {
+        font-size: 10px;
+        display: block;
+        color: #383E44;
+        line-height: 15px; }
