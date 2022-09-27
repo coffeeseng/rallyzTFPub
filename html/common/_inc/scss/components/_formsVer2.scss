@@ -178,8 +178,9 @@ div.containerVer2 {
             line-height: 1;
             pointer-events: none;
             color: $Gray-05;
-        }    
-        select {    
+        }
+        select {
+            @include border-radius(8px);
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
@@ -193,6 +194,11 @@ div.containerVer2 {
                 @include border-radius(8px);
                 border: 1px solid $Primary;
                 outline: $Primary;
+            }
+            &:disabled {
+                @include border-radius(8px);
+                background: $Gray-03;
+                color: $Gray-04;
             }
         }
     }
@@ -212,12 +218,13 @@ div.containerVer2 {
             padding: 10px;
             background: $White;
             border: 1px solid $Gray-03;
+            line-height: 21px;
             &.visible {
                 overflow: visible;
                 height: auto;
             }
             &:focus {
-                border:1px solid $Primary;
+                border: 1px solid $Primary;
                 outline: $Primary;
             }
             &::placeholder {
@@ -959,7 +966,7 @@ div.containerVer2 {
                 border-left: 1px solid $Gray-03;
                 border-right: 1px solid $Gray-03;
                 border-bottom: 1px solid $Gray-03;
-                //파일명
+                //파일명 - 블루
                 span.fileName {
                     @include font-size(12);
                     display: inline-block;
@@ -969,13 +976,13 @@ div.containerVer2 {
                     text-overflow: ellipsis;
                     overflow: hidden;
                     white-space: nowrap;
-                    vertical-align: top;
-                    line-height: 135%;
+                    vertical-align: text-top;
+                    line-height: 18px;
                     &::before {
                         @include font-size(12);
                         content: "\e963";
                         position: absolute;
-                        top: 3px;
+                        top: 0px;
                         left: 0;
                         font-family: 'icomoon' !important;
                         speak: never;
@@ -983,7 +990,33 @@ div.containerVer2 {
                         font-weight: normal;
                         font-variant: normal;
                         text-transform: none;
-                        line-height: 100%;
+                        pointer-events: none;
+                    }
+                }
+                //파일명 - 그레이
+                span.fileNameGray {
+                    @include font-size(12);
+                    display: inline-block;
+                    position: relative;
+                    padding: 0 0 0 16px;
+                    color: $Gray-06;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    vertical-align: text-top;
+                    line-height: 18px;
+                    &::before {
+                        @include font-size(16);
+                        content: "\e9a0";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-family: 'icomoon' !important;
+                        speak: never;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-variant: normal;
+                        text-transform: none;
                         pointer-events: none;
                     }
                 }
@@ -1246,7 +1279,10 @@ div.containerVer2 {
                 button.btnGo {
                     width: 24px;
                     height: 24px;
-                    i {
+                    > i {
+                        @include font-size(14);
+                        display: inline-block;
+                        padding: 4px 0;
                         color: $Gray-04;
                     }
                 }
@@ -1353,7 +1389,7 @@ div.containerVer2 {
                         @include font-size(12);
                         color: $Gray-06;
                         font-weight: 300;
-                        letter-spacing: 1px;
+                        letter-spacing: 0;
                         line-height: 100%;
                     }
                 }
@@ -1404,7 +1440,7 @@ div.containerVer2 {
                         margin: 0 0 0 4px;
                         color: $Gray-06;
                         font-weight: 300;
-                        letter-spacing: 1px;
+                        letter-spacing: 0;
                     }
                 }
             }

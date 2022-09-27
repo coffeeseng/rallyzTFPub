@@ -334,24 +334,25 @@ div.containerVer2 {
     }
     
     .on_w {
-        @include breakpoint(tablet) {
-            display: none;
+        display: block !important;
+        @include breakpoint(mobile) {
+            display: none !important;
         }
     }
     
     .on_m {
-        display: none;
+        display: none !important;
         @include breakpoint(mobile) {
-            display: block;
+            display: block !important;
         }
     }
     
     .on_t {
         @include breakpoint(tablet) {
-            display: block;
+            display: block !important;
         }
         @include breakpoint(mobile) {
-            display: none;
+            display: none !important;
         }
     }
     

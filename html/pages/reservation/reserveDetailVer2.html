@@ -15,16 +15,16 @@
 
         <div class="containerVer2">
 
-            <div class="contWrap">
+            <!-- 설명회 예약 헤더 -->
+            <div class="reserveHeaderWrap">
+                <header class="reserveHeader">
+                    <h1 class="rallyz"><img src="../../common/_inc/images/reservation/headerBi.svg" alt="Rallyz"><span class="blind">랠리즈</span></h1>
+                    <button type="button" class="btnPoLeft"><i class="icon-arrowLeft"><span class="blind">이전</span></i></button>
+                </header>
+            </div>
+            <!-- 설명회 예약 헤더 -->
 
-                <!-- 설명회 예약 헤더 -->
-                <div class="reserveHeaderWrap">
-                    <header class="reserveHeader">
-                        <h1 class="rallyz"><img src="../../common/_inc/images/reservation/headerBi.svg" alt="Rallyz"><span class="blind">랠리즈</span></h1>
-                        <button type="button" class="btnPoLeft"><i class="icon-arrowLeft"><span class="blind">이전</span></i></button>
-                    </header>
-                </div>
-                <!-- 설명회 예약 헤더 -->
+            <div class="reserveContWrap">
 
                 <!-- 본문 -->
                 <div class="reserveArticleWrap">
@@ -120,11 +120,392 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna sed ultricies sagittis suscipit metus massa porta id varius. Nibh in platea facilisis in. Consequat eu ultrices quam ac. Molestie mattis tristique egestas ultricies in integer.</p>
                             </div>
                             <!-- //연사 프로필 -->
+
                             <div class="btnBox">
                                 <button type="button" class="md primary btnApply">설명회 신청하기</button>
-                            </div>                            
+                            </div>
                         </div>
                         <!-- //설명회 안내 -->
+
+                        
+                        <!-- 이모티콘 -->
+                        <div class="emojiWrap">
+                            <div class="countBox">
+                                <p class="emojiCount">표정<em>18</em></p>
+                                <p class="commentCount">댓글<em>118</em></p>
+                            </div>
+                            <div class="emojiListWrap">
+                                <ul class="emojiList">
+                                    <li>
+                                        <button class="btnEmojiAdd" type="button"><i class="icon-plus"><span class="blind">표정짓기</span></i></button>
+                                        <!-- 이모티콘 리스트 -->
+                                        <div class="expressionToggle blind">
+                                            <ul class="expressionList">
+                                                <li><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/285/grinning-squinting-face_1f606.png" alt="grinning-squinting-face_1f606.png" /></li>
+                                                <li><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/285/grinning-squinting-face_1f606.png" alt="grinning-squinting-face_1f606.png" /></li>
+                                                <li><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/285/grinning-squinting-face_1f606.png" alt="grinning-squinting-face_1f606.png" /></li>
+                                                <li><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/285/grinning-squinting-face_1f606.png" alt="grinning-squinting-face_1f606.png" /></li>
+                                                <li><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/285/grinning-squinting-face_1f606.png" alt="grinning-squinting-face_1f606.png" /></li>
+                                                <li><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/285/grinning-squinting-face_1f606.png" alt="grinning-squinting-face_1f606.png" /></li>
+                                            </ul>
+                                        </div>
+                                        <!-- //이모티콘 리스트 -->
+                                    </li>
+                                    <li>
+                                        <div class="userImoWrap">
+                                            <div class="userImageBox"></div>
+                                            <div class="userImoBox"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //이모티콘 -->
+
+                        <!-- 댓글 -->
+                        <div class="commentWrap">
+                            
+                            <!-- 댓글 리스트 -->
+                            <ul class="commentList">
+                                <li>
+                                    <!-- 댓글 박스 -->
+                                    <div class="commentBox">
+                                        <div class="infoWrap">
+                                            <div class="userImage"><span class="blind">user 이미지</span></div>
+                                            <div class="userInfo">김사부</div>
+                                            <button type="button" class="btnSmToggle inside"><span class="blind">수정/삭제</span></button>
+                                            <div class="smallToggleBox inside on"><!-- button.btnSmToggle 을 터치하면 div.smallToggleBox를 .on / off로 제어 -->
+                                                <button type="button" class="btnCommentEdit">수정</button>
+                                                <!-- button.btnCommentEdit 터치하면 댓글 수정 div.commentInputBox edit 노출 -->
+                                                <button type="button" class="btnCommentDelete">삭제</button>
+                                            </div>
+                                        </div>
+                                        <div class="contents">
+                                            <p>첫번째 댓글 테스트입니다^^</p>
+                                            <!-- 첨부된 파일 리스트 -->
+                                            <div class="attachListWrap">
+                                                <ul class="attachList">
+                                                    <li>
+                                                        <a href=""><span class="fileNameGray">15464643434.jpg</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href=""><span class="fileNameGray">ssfgshflsfssss.jpg</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- 첨부된 파일 리스트 -->
+                                        </div>
+                                        <div class="detailGroup">
+                                            <span>2020.02.22 오전 11:04</span>
+                                            <button type="button" class="btnComment">답글 쓰기</button>
+                                            <!-- button.btnComment 터치하면 답글 입력 div.commentReplyInputBox 노출 -->
+                                        </div>
+                                    </div>
+                                    <!-- //댓글 박스 -->
+
+                                    <!-- 답글 입력 및 수정 -->
+                                    <div class="commentReplyInputBox">
+                                        <div class="infoWrap">
+                                            <div class="userImage"><span class="blind">user 이미지</span></div>
+                                            <div class="userInfo">답글작성자123</div>
+                                        </div>
+                                        <div class="contentsWrap">
+                                            <textarea placeholder="답글을 남겨주세요."></textarea>
+                                            <!-- 첨부된 파일 리스트 -->
+                                            <div class="attachListWrap">
+                                                <ul class="attachList">
+                                                    <li>
+                                                        <a href=""><span class="fileNameGray">15464643434.jpg</span></a>
+                                                        <button type="button" class="btnDelete"><i class="icon-closeThin"></i><span class="blind">첨부파일 삭제</span></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- 첨부된 파일 리스트 -->
+                                        </div>
+                                        <div class="btnWrap">
+                                            <div class="fileWrap">
+                                                <label class="fileUpload" for="replyFile"><i class="icon-file2-ver2"></i>파일 업로드</label>
+                                                <input type="file" id="replyFile" accept=".doc, .docx, .ppt, .pptx, .xls, .xlsx, .hwp, .hwpx, .gul, .pdf, .mp3, .mp4, .avi, .wmv, .mov, .jpg, .jpeg, .png" class="blind"></input>
+                                            </div>
+                                            <button class="btnCancel" type="button">취소</button>
+                                            <button class="btnAddComment" type="button">등록</button>
+                                        </div>
+                                    </div>
+                                    <!-- 답글 입력 및 수정 -->
+                                </li>
+                                <li>
+                                    <div class="commentBox">
+                                        <div class="infoWrap">
+                                            <div class="userImage"><span class="blind">user 이미지</span></div>
+                                            <div class="userInfo">이사부</div>
+                                            <div class="icoSecret">
+                                                <i class="icon-lock-ver2"><span class="blind">비밀 댓글</span></i>
+                                            </div>
+                                            <button type="button" class="btnSmToggle inside"><span class="blind">수정/삭제</span></button>
+                                            <div class="smallToggleBox inside off">
+                                                <button type="button" class="btnCommentEdit">수정</button>
+                                                <button type="button" class="btnCommentDelete">삭제</button>
+                                            </div>
+                                        </div>
+                                        <div class="contents">
+                                            <p>두번째 댓글 테스트입니다^^</p>
+                                        </div>
+                                        <div class="detailGroup">
+                                            <span>2020.02.22 오전 11:04</span>
+                                            <button type="button" class="btnComment">답글 쓰기</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="commentBox">
+                                        <div class="infoWrap">
+                                            <div class="userImage"><span class="blind">user 이미지</span></div>
+                                            <div class="userInfo">강사부</div>
+                                            <button type="button" class="btnSmToggle inside"><span class="blind">수정/삭제</span></button>
+                                            <div class="smallToggleBox inside off">
+                                                <button type="button" class="btnCommentEdit">수정</button>
+                                                <button type="button" class="btnCommentDelete">삭제</button>
+                                            </div>
+                                        </div>
+                                        <div class="contents">
+                                            <p>세번째 댓글 테스트입니다^^</p>
+                                        </div>
+                                        <div class="detailGroup">
+                                            <span>2020.02.22 오전 11:04</span>
+                                            <button type="button" class="btnComment">답글 쓰기</button>
+                                        </div>     
+                                    </div>      
+
+                                    <!-- 답글 리스트 -->
+                                    <ul class="commentReplyList">
+                                        <li>
+                                            <div class="replyBox">
+                                                <div class="infoWrap">
+                                                    <div class="userImage"><span class="blind">user 이미지</span></div>
+                                                    <div class="userInfo">세번째 댓글의 답글 작성자 1</div>
+                                                    <button type="button" class="btnSmToggle inside"><span class="blind">수정/삭제</span></button>
+                                                    <div class="smallToggleBox inside off">
+                                                        <button class="btn" type="button">수정</button>
+                                                        <button class="btn" type="button">삭제</button>
+                                                    </div>
+                                                </div>
+                                                <div class="contents">
+                                                    <p>세번째 댓글의 첫번째 답글을 작성함</p>
+                                                    <!-- 첨부된 파일 리스트 -->
+                                                    <div class="attachListWrap">
+                                                        <ul class="attachList">
+                                                            <li>
+                                                                <a href=""><span class="fileNameGray">15464643434.jpg</span></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- 첨부된 파일 리스트 -->
+                                                </div>
+                                                <div class="detailGroup">
+                                                    <span>2020.02.22 오전 11:04</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="replyBox">
+                                                <div class="infoWrap">
+                                                    <div class="userImage"><span class="blind">user 이미지</span></div>
+                                                    <div class="userInfo">세번째 댓글의 답글 작성자 2</div>
+                                                    <button type="button" class="btnSmToggle inside"><span class="blind">수정/삭제</span></button>
+                                                    <div class="smallToggleBox inside off">
+                                                        <button class="btn" type="button">수정</button>
+                                                        <button class="btn" type="button">삭제</button>
+                                                    </div>
+                                                </div>
+                                                <div class="contents">
+                                                    <p>세번째 댓글의 두번째 답글을 작성함</p>
+                                                </div>
+                                                <div class="detailGroup">
+                                                    <span>2020.02.22 오전 11:04</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <!-- 답글 삭제 -->
+                                            <div class="commentReplyDeleteBox">
+                                                <p>답글이 삭제되었습니다.</p>
+                                            </div>
+                                            <!-- 답글 삭제 -->
+                                        </li>
+                                        <li>
+                                            <div class="replyBox">
+                                                <div class="infoWrap">
+                                                    <div class="userImage"><span class="blind">user 이미지</span></div>
+                                                    <div class="userInfo">세번째 댓글의 답글 작성자 3</div>
+                                                    <button type="button" class="btnSmToggle inside"><span class="blind">수정/삭제</span></button>
+                                                    <div class="smallToggleBox inside off">
+                                                        <button class="btn" type="button">수정</button>
+                                                        <button class="btn" type="button">삭제</button>
+                                                    </div>
+                                                </div>
+                                                <div class="contents">
+                                                    <p>세번째 댓글의 세번째 답글을 작성함</p>
+                                                </div>
+                                                <div class="detailGroup">
+                                                    <span>2020.02.22 오전 11:04</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- 답글 리스트 -->
+                                </li>                                        
+                                <li>
+                                    <!-- 댓글 수정 -->
+                                    <div class="commentEditBox">
+                                        <div class="infoWrap">
+                                            <div class="userImage"><span class="blind">user 이미지</span></div>
+                                            <div class="userInfo">댓글수정자3</div>
+                                            <div class="icoSecret">
+                                                <i class="icon-lock-ver2"><span class="blind">비밀 댓글</span></i>
+                                            </div>
+                                        </div>
+                                        <div class="contentsWrap">
+                                            <textarea value="입력된 댓글 내용을 수정할게요."></textarea>
+                                            <!-- 첨부된 파일 리스트 -->
+                                            <div class="attachListWrap">
+                                                <ul class="attachList">
+                                                    <li>
+                                                        <a href=""><span class="fileNameGray">15464643434.jpg</span></a>
+                                                        <button type="button" class="btnDelete"><i class="icon-closeThin"></i><span class="blind">첨부파일 삭제</span></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- 첨부된 파일 리스트 -->
+                                        </div>
+                                        <div class="btnWrap">
+                                            <div class="checkBoxWrap" >
+                                                <input type="checkbox" id="commentLock" name="commentLock" />
+                                                <label for="commentLock">비밀 댓글</label>
+                                                <span class="checkmark"></span>
+                                            </div>
+                                            <div class="fileWrap">
+                                                <label class="fileUpload" for="replyFile"><i class="icon-file2-ver2"></i>파일 업로드</label>
+                                                <input type="file" id="replyFile" accept=".doc, .docx, .ppt, .pptx, .xls, .xlsx, .hwp, .hwpx, .gul, .pdf, .mp3, .mp4, .avi, .wmv, .mov, .jpg, .jpeg, .png" class="blind"></input>
+                                            </div>
+                                            <button class="btnCancel" type="button">취소</button>
+                                            <button class="btnAddComment" type="button">등록</button>
+                                        </div>
+                                    </div>
+                                    <!-- 댓글 수정 -->
+                                </li>
+                                <li>
+                                    <div class="commentBox">
+                                        <div class="infoWrap">
+                                            <div class="userImage"><span class="blind">user 이미지</span></div>
+                                            <div class="userInfo">
+                                                <strong>이사부</strong>
+                                            </div>
+                                            <button type="button" class="btnSmToggle inside"><span class="blind">수정/삭제</span></button>
+                                            <div class="smallToggleBox inside off">
+                                                <button type="button" class="btnCommentEdit">수정</button>
+                                                <button type="button" class="btnCommentDelete">삭제</button>
+                                            </div>
+                                        </div>
+                                        <div class="contents">
+                                            <p>네번째 댓글 테스트입니다^^</p>
+                                        </div>
+                                        <div class="detailGroup">
+                                            <span>2020.02.22 오전 11:04</span>
+                                            <button type="button" class="btnComment">답글 쓰기</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <!-- 댓글 삭제 -->
+                                    <div class="commentDeleteBox">
+                                        <p>댓글이 삭제되었습니다.</p>
+                                    </div>
+                                    <!-- 댓글 삭제 -->
+                                </li>
+                                <li>
+                                    <div class="commentBox">
+                                        <div class="infoWrap">
+                                            <div class="userImage"><span class="blind">user 이미지</span></div>
+                                            <div class="userInfo">
+                                                <strong>박사부</strong>
+                                            </div>
+                                            <button type="button" class="btnSmToggle inside"><span class="blind">수정/삭제</span></button>
+                                            <div class="smallToggleBox inside off">
+                                                <button type="button" class="btnCommentEdit">수정</button>
+                                                <button type="button" class="btnCommentDelete">삭제</button>
+                                            </div>
+                                        </div>
+                                        <div class="contents">
+                                            <p>다섯번째 댓글 테스트입니다^^</p>
+                                        </div>
+                                        <div class="detailGroup">
+                                            <span>2020.02.22 오전 11:04</span>
+                                            <button type="button" class="btnComment">답글 쓰기</button> 
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <!-- 댓글 삭제 -->
+                                    <div class="commentDeleteBox">
+                                        <p>댓글이 삭제되었습니다.</p>
+                                    </div>
+                                    <!-- 댓글 삭제 -->
+                                    
+                                    <!-- 답글 리스트 -->
+                                    <ul class="commentReplyList">
+                                        <li>
+                                            <!-- 답글 삭제 -->
+                                            <div class="commentReplyDeleteBox">
+                                                <p>답글이 삭제되었습니다.</p>
+                                            </div>
+                                            <!-- 답글 삭제 -->
+                                        </li>
+                                    </ul>
+                                    <!-- //답글 리스트 -->
+                                </li>
+                            </ul>
+                            <!-- //댓글 리스트 -->
+
+                            <!-- 댓글 입력 -->
+                            <div class="commentInputBox">
+                                <div class="infoWrap">
+                                    <div class="userImage"><span class="blind">user 이미지</span></div>
+                                </div>
+                                <div class="contentsWrap">
+                                    <textarea class="reply" placeholder="댓글을 남겨주세요."></textarea>
+                                    <!-- 첨부된 파일 리스트 -->
+                                    <div class="attachListWrap">
+                                        <ul class="attachList">
+                                            <li>
+                                                <a href=""><span class="fileNameGray">15464643434.jpg</span></a>
+                                                <button type="button" class="btnDelete"><i class="icon-closeThin"></i><span class="blind">첨부파일 삭제</span></button>
+                                            </li>
+                                            <li>
+                                                <a href=""><span class="fileNameGray">ssfgshflsfssss.jpg</span></a>
+                                                <button type="button" class="btnDelete"><i class="icon-closeThin"></i><span class="blind">첨부파일 삭제</span></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- 첨부된 파일 리스트 -->
+                                </div>
+                                <div class="btnWrap">
+                                    <div class="checkBoxWrap" >
+                                        <input type="checkbox" id="commentLock1" name="commentLock1" />
+                                        <label for="commentLock1">비밀 댓글</label>
+                                        <span class="checkmark"></span>
+                                    </div>
+                                    <div class="fileWrap">
+                                        <label class="fileUpload" for="inputFile"><i class="icon-file2-ver2"></i>파일 업로드</label>
+                                        <input type="file" id="inputFile" class="blind" />
+                                    </div>
+                                    <button class="btnAddComment disable" type="button">등록</button><!-- 댓글 입력되기 전이나 파일 업로드 전에는 butotn.disable 상태 / 입력되면 .disable 삭제 -->
+                                </div>
+                            </div>
+                            <!-- 댓글 입력 -->
+
+                        </div>
+                        <!-- 댓글 -->
+
                     </article>
                 </div>
                 <!-- //본문 -->

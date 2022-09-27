@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="배컴" />
+    <meta name="keywords" content="랠리즈">
+    <meta name="description" content="랠리즈">
+    <title>랠리즈 - 설명회 예약 - 예약내역확인 모달팝업</title>
+    <link rel="stylesheet" href="../../common/_inc/css/mainVer2.css"><!--기본 CSS-->
+    <link rel="stylesheet" href="../../common/_inc/css/pages/guideVer2.css"><!--각 페이지별 CSS-->
+    <link rel="stylesheet" href="../../common/_inc/css/pages/reservationVer2.css"><!--각 페이지별 CSS-->
+</head>
+<body>
+
+    <div class="containerVer2">
+
+        <div class="contWrap">
+
+            <!-- 헤더 -->
+            <div class="mainHeaderWrap">
+                <header class="mainHeader">
+                    <h1 class="bi">
+                        <i class="icon-bi-kr"></i><span class="blind">랠리즈</span>
+                    </h1>
+                    <span class="currentPosition">홈</span>
+                    <ul class="topBtnList">
+                        <li><button type="button" class="btn"><i class="icon-search"><span class="blind">검색</span></i></button></li>
+                        <li>
+                            <button type="button" class="btn"><span class="alert">N</span><i class="icon-alert"><span class="blind">알람</span></i></button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btnUserInfo"><!-- .btnUserInfo 버튼 터치하면 div.userInfoBox 노출 -->
+                                <div class="profileImage">
+                                    <i class="icon-user"><span class="blind">유저 인포</span></i>
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- 사용자 정보-->
+                    <div class="userInfoBoxWrap"><!-- .on 클래스로 제어 -->
+                        <div class="userInfoBox">
+                            <div class="profileImage"></div>
+                            <p class="useName">유비온</p>
+                            <div class="infoBtnList col2">
+                                <button type="button" class="btn"><i class="icon-user"></i><span>내 정보</span></button>
+                                <button type="button" class="btn"><i class="icon-logout"></i><span>로그아웃</span></button>
+                            </div>
+                            <div class="termBtnList">
+                                <button type="button" class="btn">개인정보처리방침</button>
+                                <button type="button" class="btn bdl">서비스 약관</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//사용자 정보-->
+                </header>
+            </div>
+            <!-- //헤더 -->
+
+            <!-- 본문 -->
+            <div class="articleWrap">
+                <!-- 알림 메시지 -->
+                <div class="alertWrap">
+                    <ul class="alertList responsiveList">
+                        <li>
+                            <div class="alertMsgBox">
+                                <div class="icoAlert"><i class="icon-alert1"></i><span class="blind">알림 아이콘</span></div>
+                                <p class="message">
+                                    <span>초기 설정이 완료되지 않았습니다<br />계속 진행하시겠습니까?</span>
+                                </p>
+                                <div class="icoArrow"><i class="icon-arrowRight"></i><span class="blind">바로가기 아이콘</span></div>
+                            </div>
+                            <div class="btnBox">
+                                <div class="checkBoxWrap small">
+                                    <input type="checkbox" id="fnc01" name="" value="" />
+                                    <label for="fnc01">오늘 하루 보지 않기</label>
+                                    <span class="checkmark"></span>
+                                </div>
+                                <button type="button" class="btnClose">닫기</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="alertMsgBox">
+                                <div class="icoAlert inst"><i class="icon-alert1"></i><span class="blind">알림 아이콘</span></div>
+                                <p class="message">
+                                    <em class="instName">랠리즈 피아노</em>
+                                    <span>초기 설정이 완료되지 않았습니다<br />계속 진행하시겠습니까?</span>
+                                </p>
+                                <div class="icoArrow"><i class="icon-arrowRight"></i><span class="blind">바로가기 아이콘</span></div>
+                            </div>
+                            <div class="btnBox">
+                                <div class="checkBoxWrap small">
+                                    <input type="checkbox" id="fnc01" name="" value="" />
+                                    <label for="fnc01">오늘 하루 보지 않기</label>
+                                    <span class="checkmark"></span>
+                                </div>
+                                <button type="button" class="btnClose">닫기</button>
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="button" class="btnShowAll">
+                        <i class="icon-arrowUp2"></i>
+                        <span>접기</span>
+                    </button>
+                </div>
+                <!-- //알림 메시지 -->
+
+                <article class="guide">
+                    <h2 class="blind">랠리즈 가이드 </h2>
+                    <!-- 개인화 영역 -->
+                    <div class="greetingBox">
+                        <h2>환영합니다! <em>김랠리</em>님</h2>
+                        <p class="desc">새로운 학원생활을 시작해볼까요?</p>
+                    </div>
+                    <!-- //개인화 영역 -->
+
+
+                    <!-- 학원 문의 내역 -->
+                    <div class="requestBox">
+                        <p class="menuTitle">
+                            <em>학원 문의내역</em>
+                            <span>접수하신 내역을 확인하실 수 있습니다.</span>
+                        </p>
+                        <div class="status">
+                            <!-- <p class="done"><em>1</em>건 답변완료</p> -->
+                            <!-- <p class="waiting"><em>1</em>건 답변대기</p> -->
+                        </div>
+                    </div>
+                    <!-- //학원 문의 내역 -->
+
+
+                    <!-- 랠리즈 가이드 -->
+                    <article class="guideBox">
+                        <h3>학원에 소속되어 있다면?</h3>
+                        <ul class="guideList">
+                            <li>
+                                <button type="button" class="btnGo">
+                                    <div class="ico owner"><span class="blind">아이콘</span></div>
+                                    <p>
+                                        <em>학원장, 직원</em>
+                                        <span>학원을 운영/관리하고 있어요.</span>
+                                    </p>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btnGo">
+                                    <div class="ico teacher"><span class="blind">아이콘</span></div>
+                                    <p>
+                                        <em>학원 선생님</em>
+                                        <span>학원에서 수업을 하고 있어요.</span>
+                                    </p>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btnGo">
+                                    <div class="ico parents"><span class="blind">아이콘</span></div>
+                                    <p>
+                                        <em>학생과 학부모</em>
+                                        <span>학원 수업을 수강하거나, 학생의 보호자예요.</span>
+                                    </p>
+                                </button>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="guideBox border">
+                        <h3>학원에 소속되지 않았다면?</h3>
+                        <ul class="guideList">
+                            <li class="search">
+                                <button type="button" class="btnGo">
+                                    <div class="ico search"><span class="blind">아이콘</span></div>
+                                    <p>
+                                        <em>관심 학원 찾아보기</em>
+                                        <span>관심 지역, 과목, 키워드로 내게 맞는 학원을 찾아요.</span>
+                                    </p>
+                                </button>
+                            </li>
+                        </ul>
+                    </article>
+                    <!-- //랠리즈 가이드 -->
+
+                    <!-- 사용 팁 -->
+                    <button type="button" class="btnShowHelp"><!-- button.btnShowHelp 터치하면 div.helpWrap 노출 -->
+                        <i class="icon-icoTip"><span class="blind">헬프 메뉴 열기</span></i>
+                    </button>
+                    <div class="helpWrap off"><!-- .on 클래스로 제어 -->
+                        <ul class="helpList">
+                            <li>
+                                <button type="button" class="btnGo">
+                                    <i class="icon-call"></i>
+                                    <span>랠리즈 전화 문의</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btnGo">
+                                    <i class="icon-consulting"></i>
+                                    <span>랠리즈 상담/교육 신청</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btnGo">
+                                    <i class="icon-trial"></i>
+                                    <span>랠리즈 주요 기능 체험</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btnGo">
+                                    <i class="icon-best"></i>
+                                    <span>랠리즈 우수 활용 영상 </span>
+                                </button>
+                            </li>
+                        </ul>
+                        <button type="button" class="btnCloseHelp"><i class="icon-close"><span class="blind">헬프 메뉴 닫기</span></i></button>
+                    </div>
+                    <!-- //사용 팁 -->
+
+                </article>
+            </div>
+            <!-- //본문 -->
+
+            <!-- 모달 - 설명회 예약 알림 -->
+            <div class="modalCover on"><!-- .on .off class로 제어 -->
+                <div class="modalWrap coverType">
+                    <div class="modal reserveAlert">
+                        <div class="contents">
+                            <div class="doneImg">
+                                <p class="title">환영합니다!</p>
+                                <p class="text">신청하신 설명회 예약 건이 있습니다!<br/>지금 확인해보세요!</p>
+                            </div>
+                        </div>
+                        <div class="btnBox">
+                            <button type="button" class="btnConfirm primary">예약 내역 확인하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //모달 - 설명회 예약 알림 -->
+
+        </div>
+    </div>
+</body>
+</html>

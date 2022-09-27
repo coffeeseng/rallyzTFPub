@@ -152,7 +152,7 @@ div.containerVer2 {
                 display: inline-block;
                 margin: 2px 6px 0 0;
                 &.right {
-                    margin: 2px 0 0 6px
+                    margin: 2px 0 0 6px;
                 }
             }
         }
@@ -170,7 +170,7 @@ div.containerVer2 {
                 display: inline-block;
                 margin: 2px 6px 0 0;
                 &.right {
-                    margin: 2px 0 0 6px
+                    margin: 2px 0 0 6px;
                 }
             }
         }
@@ -188,6 +188,11 @@ div.containerVer2 {
         &.darkGray {
             background: $Gray-06;
             color: $White;
+        }
+
+        &.lgtGray {
+            background: $Gray-03;
+            color: $Gray-05;
         }
     
         &.bdrPrimary {//흰색 배경+초록라인
@@ -212,6 +217,12 @@ div.containerVer2 {
             background: $White;
             border: 1px solid $Blue-03;
             color: $Blue-03;
+        }
+
+        &.bdrRed {//흰색 배경+빨간라인
+            background: $White;
+            border: 1px solid $Red;
+            color: $Red;
         }
     
     }
@@ -399,6 +410,47 @@ div.containerVer2 {
         i {
             @include centerer(true, true);
             margin-top: 2px;
+        }
+    }
+
+
+    //스몰토글박스 버튼(메뉴 더보기) - 최상단
+    button.btnSmToggle {
+        @include font-size(14);
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        width: 55px;
+        height: 48px;
+        color: $Gray-04;
+        z-index: 10;
+        &::before {
+            @include font-size(15);
+            font-family: 'icomoon' !important;
+            speak: never;
+            content: '\e922';
+            position: absolute;
+            top: 17px;
+            left: 25px;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            pointer-events: none;
+        }
+        //컨텐츠 내부
+        &.inside {
+            position: absolute;
+            top: 4px;
+            right: 0;
+            width: 24px;
+            height: 24px;
+            &::before {
+                top: 4px;
+                left: 10px;
+            }
         }
     }
     

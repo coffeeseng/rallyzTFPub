@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@import "../_helperVer2";
+
+div.containerVer2 {
+
+    //더보기
+    article.more {
+        padding: 48px 16px;
+        ul.menuWrap {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 32px 0 0 0;
+            > li {
+                width: 25%;
+                margin: 0 0 24px 0;
+                button.btnGo {
+                    width: calc(100% - 12px);
+                    margin: 0 6px;
+                    > i {
+                        @include font-size(40);
+                        display: block;
+                        margin: 0 0 4px 0;
+                        color: $Gray-06;
+                    }
+                    span {
+                        @include font-size(14);
+                        line-height: 21px;
+                        color: $Gray-06;
+                    }
+                }
+            }
+        }
+    }
+
+}

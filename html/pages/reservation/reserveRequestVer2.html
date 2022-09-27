@@ -15,16 +15,16 @@
 
         <div class="containerVer2">
 
-            <div class="contWrap">
+            <!-- 설명회 예약 헤더 -->
+            <div class="reserveHeaderWrap">
+                <header class="reserveHeader">
+                    <h1 class="rallyz"><img src="../../common/_inc/images/reservation/headerBi.svg" alt="Rallyz"><span class="blind">랠리즈</span></h1>
+                    <button type="button" class="btnPoLeft on_m"><i class="icon-arrowLeft"><span class="blind">이전</span></i></button>
+                </header>
+            </div>
+            <!-- 설명회 예약 헤더 -->
 
-                <!-- 설명회 예약 헤더 -->
-                <div class="reserveHeaderWrap">
-                    <header class="reserveHeader">
-                        <h1 class="rallyz"><img src="../../common/_inc/images/reservation/headerBi.svg" alt="Rallyz"><span class="blind">랠리즈</span></h1>
-                        <button type="button" class="btnPoLeft"><i class="icon-arrowLeft"><span class="blind">이전</span></i></button>
-                    </header>
-                </div>
-                <!-- 설명회 예약 헤더 -->
+            <div class="reserveContWrap roundTypeA">
 
                 <!-- 본문 -->
                 <div class="reserveArticleWrap">
@@ -36,12 +36,13 @@
                             <span class="smallDesc">설명회</span>
                             <h3 class="ptName">예비고1 설명회 - 고교분석, 전략고교분석, 전략고교분석, 전략고교분석</h3>
                             <div class="dateBox">
-                                <p class="date">진행 일시 <span>2022.01.19 오후 03:07</span></p>
+                                <span>진행 일시</span>
+                                <p class="date"><em>2022.01.19 오후 03:07</em></p>
                             </div>
                         </div>
                         <!-- //설명회 정보 -->
 
-                        <div class="requestWrap">                            
+                        <div class="requestWrap">
                             <dl class="inputListRow">
                                 <dt><span>참여방식</span><span class="essential">필수</span></dt>
                                 <dd>
@@ -121,8 +122,8 @@
                             </dl>                            
                         </div>
 
-                        <!-- 약관 동의 -->
-                        <ul class="alignPrivacy">
+                        <!-- 모바일 약관 동의 -->
+                        <ul class="alignPrivacy on_m">
                             <li>
                                 <div class="leftCheck">
                                     <div class="checkBoxWrap">
@@ -148,17 +149,46 @@
                                 </div>
                             </li>
                         </ul>
-                        <!-- //약관 동의 -->
+                        <!-- //모바일 약관 동의 -->
 
+                        <!-- pc 약관 동의 -->
+                        <ul class="alignPrivacy on_w">
+                            <li>
+                                <div class="leftCheck">
+                                    <div class="checkBoxWrap">
+                                        <input type="checkbox" id="fnc03" name="" value="" />
+                                        <label for="fnc03" class="f12L">개인정보 처리방침에 동의합니다.</label>
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </div>
+                                <div class="rightBtn">
+                                    <button type="button" class="microB primary">보기</button>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //pc 약관 동의 -->
                     </article>
 
-                    <div class="btnWrap fixed">
+                    <div class="reserveBtnWrap inner">
                         <button type="button" class="md primary">신청하기</button>
                     </div>
                 </div>
                 <!-- //본문 -->
 
             </div>
+
+            <!-- 설명회 예약 푸터 -->
+            <div class="reserveFooterWrap on_w">
+                <footer class="reserveFooter">
+                    <img src="../../common/_inc/images/reservation/footerBi.svg" alt="Rallyz">
+                    <span>(주)배컴 대표자명 박기홍 사업자 번호 429-81-02343</span>
+                    <span>통신판매업 신고번호 2022-서울강남-01722</span>
+                    <address>서울특별시 강남구 테헤란로 410 금강타워 17층</address>
+                    <span>© 2022 Baecomm Co., Ltd. All rights reserved.</span>
+                </footer>
+            </div>
+            <!-- //설명회 예약 푸터 -->
+
         </div>
     </body>
 </html>

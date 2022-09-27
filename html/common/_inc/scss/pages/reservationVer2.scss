@@ -4,20 +4,25 @@
 div.containerVer2 {
     background: $Gray-01;
 
-    div.contWrap {
-        &.w100 {
-            @include breakpoint(tablet) {
-                width: 100%;
-            }
-        }
+    //송효섭님이 원하는 특정 페이지에서의 랠리즈 배경 컬러
+    &.rallyzBg {
+        background: $Gray-03;
     }
 
+    //설명회 예약 - 헤더
     div.reserveHeaderWrap {
+        width: 100%;
+        background: $White;
+        border-bottom: 1px solid $Gray-02;
         header.reserveHeader {
             position: relative;
             width: 100%;
             height: 56px;
             padding: 16px 0;
+            @include breakpoint(tablet) {
+                width: 800px;
+                margin: 0 auto;
+            }
             h1.rallyz {
                 width: 72px;
                 height: 24px;
@@ -33,28 +38,132 @@ div.containerVer2 {
                 left: 22px;
                 width: 24px;
                 height: 24px;
+                @include breakpoint(tablet) {
+                    left: 0
+                }
                 > i {
                     @include font-size(13);
                     display: inline-block;
                     margin: 1px 0 0 0;
+                    color: $Gray-05;
+                    @include breakpoint(tablet) {
+                        @include font-size(16);
+                    }
+                }
+            }
+        }
+    }
+
+    //설명회 예약 - 서브페이지 헤더
+    div.reserveSubHeaderWrap {
+        width: 100%;
+        height: 48px;
+        z-index: 100;
+        background: $Gray-02;
+        header.subHeader {
+            position: relative;
+            width: 100%;
+            height: inherit;
+            text-align: center;
+            @include breakpoint(tablet) {
+                width: 800px;
+                margin: 0 auto;
+            }
+            h1.pageName {
+                padding: 0 60px;
+                font-weight: 700;
+                color: $Black;
+                line-height: 48px;
+            }
+
+            //뒤로가기,닫기 버튼 - 왼쪽 고정
+            button.btnPoLeft {
+                position: absolute;
+                top: 10px;
+                left: 16px;
+                width: 30px;
+                height: 30px;
+                > i {
+                    @include font-size(11);
+                    display: inline-block;
+                    margin: 2px 0 0 0;
                 }
             }
         }
     }
 
 
-    div.reserveArticleWrap {
-        padding: 0;
+    div.reserveContWrap {
+        width: 100%;
+        height: calc(100% - 48px);
+        //height: 100%;
+        background: $White;
+        //가장 기본 타입은 pc일땐 w800 & 모바일은 프로덕트처럼 w800
         @include breakpoint(tablet) {
+            width: 800px;
+            margin: 0 auto;
+        }
+        //리스트 - pc일땐 w100 & 모바일은 그냥 모바일
+        &.w100 {
+            @include breakpoint(tablet) {
+                width: 100%;
+            }
+        }
+        //예약신청 - pc일땐 w407 라운드 박스 & 모바일에서는 박스없이 w407 풀커버
+        &.roundTypeA {
             height: auto;
-            min-height: 100vh;
+            padding: 0 16px;
+            background: $White;
+            @include breakpoint(tablet) {
+                @include border-radius(16px);
+                width: 407px;
+                padding: 0 32px;
+                margin: 48px auto;
+            }
+        }
+        //신청완료 - pc일땐 w407 라운드 박스 & 모바일에서도 w407 박스있음
+        &.roundTypeB {
+            height: auto;
+            padding: 32px 16px 16px 16px;
+            background: $Gray-01;
+            @include breakpoint(tablet) {
+                @include border-radius(16px);
+                width: 407px;
+                padding: 0 32px;
+                margin: 48px auto;
+                background: $White;
+            }
+        }
+    }
+    
+
+    //설명회 예약 - 본문
+    div.reserveArticleWrap {
+        position: relative;
+        @include breakpoint(tablet) {
+            //height: auto;
+            height: 100%;
+        }
+
+        div.reserveBtnWrap {
+            padding: 48px 0 16px 0;
+            background: $White;
+            @include breakpoint(tablet) {
+                padding: 48px 16px 16px 16px;
+            }
+            //라운드박스에 들어가있는 BtnWrap
+            &.inner {
+                padding: 48px 0 16px 0;
+                @include breakpoint(tablet) {
+                    padding: 48px 0;
+                }
+            }
         }
 
         //설명회 리스트
         article.reserveList {
             width: 100%;
             background: $Gray-01;
-
             div.imgBox {
                 width: 100%;
                 padding: 36px 0 0 0;
@@ -227,9 +336,9 @@ div.containerVer2 {
                             //설명회 명
                             h4.ptName {
                                 @include font-size(16);
-                                    font-weight: 700;
-                                    line-height: 24px;
-                                    color: $Gray-07;
+                                font-weight: 700;
+                                line-height: 24px;
+                                color: $Gray-07;
                             }
                             p {
                                 color: $Gray-07;
@@ -275,6 +384,7 @@ div.containerVer2 {
 
         //설명회 상세
         article.reserveDetail {
+            background: $White;
 
             //학원 이미지
             div.instImageBox {
@@ -283,6 +393,9 @@ div.containerVer2 {
                 background-size: cover;
                 background-position: top;
                 background-repeat: no-repeat;
+                @include breakpoint(tabletMini) {
+                    height: 357.4px;
+                }
             }
 
             //설명회 정보
@@ -377,13 +490,13 @@ div.containerVer2 {
                             flex-direction: row;
                             flex-wrap: wrap;
                             dt {
-                                width: 25%;
+                                width: 50px;
                                 margin: 0 0 8px 0;
                                 color: $Gray-04;
                                 line-height: 21px;
                             }
                             dd {
-                                width: 75%;
+                                width: calc(100% - 50px);
                                 margin: 0 0 8px 0;
                                 line-height: 21px;
                                 p {
@@ -421,7 +534,7 @@ div.containerVer2 {
 
             //설명회 안내
             div.explainWrap {
-                padding: 32px 16px;
+                padding: 32px 16px 56px 16px;
                 border-top: 12px solid $Gray-02;
 
                 //설명회 안내 이미지
@@ -464,10 +577,16 @@ div.containerVer2 {
                     p {
                         @include font-size(16);
                         line-height: 24px;
-                        color: $Black;
+                        color: $BBlack;
                         font-weight: 300;
+                        @include breakpoint(tablet) {
+                            @include font-size(14);
+                            line-height: 21px;
+                        }
                         &.title {
+                            @include font-size(16);
                             margin: 0 0 8px 0;
+                            color: $Black;
                             font-weight: 700;
                         }
                     }
@@ -480,8 +599,33 @@ div.containerVer2 {
 
         //설명회 신청
         article.reserveRequest {
-            padding: 0 16px 88px 16px; //버튼 88 fixed때문에 버튼 height만큼 패딩
-            border-top: 1px solid $Gray-02;
+            background: $White;
+            
+            //예약 상세
+            &.detail {
+                padding: 0 16px;
+                div.infoBox {
+                    //디자인이 이렇게 되어 있음.
+                    div.dateBox {
+                        span {
+                            @include breakpoint(tablet) {
+                                display: block;
+                                margin: 0 0 8px 0;
+                                font-weight: 700;
+                                color: $Gray-06;
+                            }
+                        }
+                        p {
+                            //진행일
+                            &.date {
+                                @include breakpoint(tablet) {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
 
             //정보
             div.infoBox {
@@ -502,18 +646,30 @@ div.containerVer2 {
                     @include border-radius(12px);
                     width: 100%;
                     padding: 16px;
+                    margin: 0 0 8px 0;
                     background: $Gray-01;
                     border: 1px solid $Gray-02;
-                    p.date {
+                    span {
+                        display: block;
+                        margin: 0 0 8px 0;
                         line-height: 21px;
-                        color: $Gray-06;
                         font-weight: 700;
-                        > span {
-                            display: block;
-                            margin: 8px 0 0 0;
-                            line-height: 21px;
-                            color: $Black;
+                        @include breakpoint(tablet) {
+                            display: inline-block;
+                            margin: 0 16px 0 0;
+                            color: $Gray-05;
                             font-weight: 400;
+                        }
+                    }
+                    p {
+                        @include font-size(14);
+                        line-height: 21px;
+                        //진행일
+                        &.date {
+                            color: $Black;
+                            @include breakpoint(tablet) {
+                                display: inline-block;
+                            }
                         }
                     }
                 }
@@ -530,6 +686,9 @@ div.containerVer2 {
                             top: -27px;
                             right: 0;
                             width: 94px;
+                            @include breakpoint(tablet) {
+                                display: none;
+                            }
                         }
                     }
                 }
@@ -562,11 +721,8 @@ div.containerVer2 {
 
         //설명회 예약 완료
         article.reserveDone {
-            height: 100%;
-            padding: 32px 16px 16px 16px;
-            background: $Gray-01;
             @include breakpoint(tablet) {
-                min-height: 100vh;
+                padding: 16px 0 40px 0;
             }
             
             //예약 결과
@@ -575,6 +731,9 @@ div.containerVer2 {
                 width: 100%;
                 padding: 24px 16px;
                 background: $White;
+                @include breakpoint(tablet) {
+                    padding: 24px 0;
+                }
                 div.doneImg {
                     width: 100%;
                     background: url('../../images/ico/completion.svg') top center no-repeat;
@@ -600,6 +759,7 @@ div.containerVer2 {
                         width: 100%;
                         padding: 24px 24px 12px 24px;
                         background: $Gray-01;
+                        border: 1px solid $Gray-02;
                         h4 {
                             @include font-size(16);
                             margin: 0 0 16px 0;
@@ -612,13 +772,13 @@ div.containerVer2 {
                             flex-direction: row;
                             flex-wrap: wrap;
                             dt {
-                                width: 25%;
+                                width: 50px;
                                 margin: 0 0 8px 0;
                                 color: $Gray-04;
                                 line-height: 21px;
                             }
                             dd {
-                                width: 75%;
+                                width: calc(100% - 50px);
                                 margin: 0 0 8px 0;
                                 color: $Black;
                                 line-height: 21px;
@@ -637,6 +797,7 @@ div.containerVer2 {
                 margin: 16px 0 0 0;
                 background: url("../../images/reservation/download_hand.svg") no-repeat bottom right $White;
                 background-size: 96px;
+                border: 1px solid $Gray-02;
                 font-size: 0;
                 a.btnAppstore {
                     display: inline-block;
@@ -672,9 +833,158 @@ div.containerVer2 {
                 }
             }
         }
+
+        //설명회 예약 현황
+        article.reserveStatus {
+            height: calc(100vh - 48px);
+            ul.reserveList {
+                > li {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    padding: 16px;
+                    border-bottom: 1px solid $Gray-02;
+                    &:last-child {
+                        border-bottom: 0;
+                    }
+                    @include breakpoint(tablet) {
+                        cursor: pointer;
+                    }
+                    div.infoBox {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        width: calc(100% - 34px);
+                        //학원 CI
+                        div.instCi {
+                            @include border-radius(50px);
+                            width: 48px;
+                            height: 48px;
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-color: $Gray-02;
+                        }
+    
+                        //기본 정보
+                        div.instInfo {
+                            position: relative;
+                            width: calc(100% - 48px);
+                            padding: 0 0 0 12px;
+
+                            //상태 아이콘
+                            div.iconBox {
+                                width: 100%;
+                                margin: 0 0 2px 0;
+                                span {
+                                    @include border-radius(4px);
+                                    @include font-size(10);
+                                    display: inline-block;
+                                    min-width: 45px;
+                                    height: 16px;
+                                    padding: 1px 4px;
+                                    line-height: 15px;
+                                    font-weight: 500;
+                                    //예약취소
+                                    &.icoCancel {
+                                        background: #ffe3e3;
+                                        color:  $Red;
+                                    }
+                                }
+                            }
+    
+                            //설명회 명
+                            h3.ptName {
+                                @include font-size(14);
+                                margin: 0 0 2px 0;
+                                font-weight: 700;
+                                line-height: 21px;
+                                color: $Gray-07;
+                            }
+    
+                            p {
+                                //학원명
+                                &.instName {
+                                    @include font-size(14);
+                                    margin: 0 0 2px 0;
+                                    line-height: 21px;
+                                    color: $Gray-05;
+                                }
+                                //등록일
+                                &.date {
+                                    @include font-size(12);
+                                    line-height: 18px;
+                                    color: $Gray-06;
+                                }
+                            }
+                        }
+                    }
+                    div.arrowBox {
+                        align-self: center; //얘만 세로 가운데 정렬
+                        width: 24px;
+                        height: 24px;
+                        margin: 0 0 0 10px;
+                        text-align: center;
+                        > i {
+                            display: inline-block;
+                            padding: 4px 0;
+                            color: $Gray-04;
+                        }
+                    }
+                }
+            }
+        }
+
+        //설명회 등록 문의
+        article.reserveInquiry {
+            padding: 30px 16px 88px 16px; //버튼 88 fixed때문에 버튼 height만큼 패딩
+            background: $White;
+            h2.title {
+                @include font-size(20);
+                font-weight: 700;
+                line-height: 30px;
+                color: $Black;
+            }
+            p.subTxt {
+                margin: 14px 0 24px 0;
+                line-height: 21px
+            }
+            div.instInfoWrap {
+                margin: 48px 0 0 0;
+                dl.inputListRow {
+                    dd {
+                        margin: 0 0 16px 0;
+                    }
+                }
+            }
+            ul.alignPrivacy {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 20px 0 0 0;
+                > li {
+                    float: left;
+                    width: 70%;
+                    padding: 0 10px 0 0;
+                    &:last-child {
+                        width: 30%;
+                        padding: 0;
+                        text-align: right
+                    }
+                    div.checkBoxWrap {
+                        label {
+                            @include font-size(12);
+                        }
+                    }
+                }
+            }
+        }
+
+        
     }
 
     
+    //설명회 예약 푸터
     div.reserveFooterWrap {
         width: 100%;
         padding: 54px 0;
@@ -704,4 +1014,40 @@ div.containerVer2 {
     }
 
 
+
+    ///////////////// 모달 /////////////////
+
+    div.modalWrap {
+        div.modal {
+
+            //모달 - 설명회 예약 알림
+            &.reserveAlert {
+                padding-top: 24px;
+                div.contents {
+                    div.doneImg {
+                        width: 100%;
+                        background: url('../../images/ico/completion.svg') top center no-repeat;
+                        background-size: 120px;
+                        p {
+                            color: $Black;
+                            text-align: center;
+                            &.title {
+                                @include font-size(16);
+                                padding: 144px 0 16px 0;
+                                line-height: 24px;
+                                font-weight: 700;
+                            }
+                            &.text {
+                                @include font-size(12);
+                                line-height: 18px;
+                            }
+                        }
+                    }
+
+
+                }
+            }
+
+        }
+    }
 }
